@@ -34,8 +34,42 @@ class Mode():
         logging.info('Created %s mode', self.name)
 
 
+# Retrieves the list of modes for use outside of the module
+def allModes():
+    logging.debug('allModes() called')
+    return all_modes
+
+
+# Changes parameter values of the given mode
+# Logs an error message if a parameter name doesn't match the parameters of the mode
+def saveParamValues(modeEdit, parameterValues):
+    logging.debug('saveParamValues() called for %s mode', modeEdit.name)
+    for mode in all_modes:
+        if mode.name == modeEdit.name:
+            for param in parameterValues:
+                try:
+                    mode.params[param]
+                    mode.params[param] = parameterValues[param]
+                except KeyError:
+                    logging.error(
+                        '%s operating parameter does not exist in the %s mode', param, mode.name)
+
+
+# Makes the given mode as the current operating mode
+def setCurrentMode(currMode):
+    logging.debug('setCurrentMode() called for %s mode', currMode.name)
+    for mode in all_modes:
+        if mode.name == currMode.name:
+            mode.currentMode = True
+            logging.info('%s is the current mode', mode.name)
+        else:
+            mode.currentMode = False
+
 # Defines all pacing modes and default values
+
+
 def _createModes():
+    logging.debug('_createModes() called')
     modes = []
     voo = Mode(
         'voo',
@@ -93,39 +127,6 @@ def _startLog():
         level=logging.DEBUG
     )
     logging.info('Logging started')
-
-
-# Retrieves the list of modes for use outside of the module
-def allModes():
-    logging.debug('allModes() called')
-    return all_modes
-
-
-# Changes parameter values of the given mode
-# Logs an error message if a parameter name doesn't match the parameters of the mode
-def saveParamValues(modeEdit, parameterValues):
-    for mode in all_modes:
-        if mode.name == modeEdit.name:
-            for param in parameterValues:
-                try:
-                    mode.params[param]
-                    mode.params[param] = parameterValues[param]
-                except KeyError:
-                    logging.error(
-                        '%s operating parameter does not exist in the %s mode', param, mode.name)
-
-    logging.debug('saveParamValues() called for %s mode', mode.name)
-
-
-# Makes the given mode as the current operating mode
-def setCurrentMode(currMode):
-    for mode in all_modes:
-        if mode.name == currMode.name:
-            mode.currentMode = True
-            logging.info('%s is the current mode', mode.name)
-        else:
-            mode.currentMode = False
-    logging.debug('setCurrentMode() called for %s mode', currMode.name)
 
 
 # Run on import of module
