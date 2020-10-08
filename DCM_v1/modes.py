@@ -65,9 +65,8 @@ def setCurrentMode(currMode):
         else:
             mode.currentMode = False
 
+
 # Defines all pacing modes and default values
-
-
 def _createModes():
     logging.debug('_createModes() called')
     modes = []

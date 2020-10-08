@@ -1,8 +1,8 @@
 # Users Module
 #
-# Version 1.0
+# Version 1.1
 # Created by: M. Lemcke
-# Date Modified: Oct. 4, 2020
+# Date Modified: Oct. 8, 2020
 #
 # Purpose: To register and store new user information and verify user credentials to access to the
 # pacemaker application
@@ -29,22 +29,33 @@ class User():
 # Registers new user information
 def makeNewUser(name, password):
     logging.debug('makeNewUser() called for %s', name)
-    newUser = User(name, password)
+    newUser = User(name.lstrip().rstrip(), password.lstrip().rstrip())
     all_users.append(newUser)
     _writeFile()
 
 
-# Verifies that the given user exists and the password is correct
-def signInUser(name, password):
+# Deletes the given user and the corresponding saved info if they are signed in
+def deleteUser(name):
+    logging.debug('deleteUser() called for %s', name)
     for user in all_users:
-        if user.name == name and user.password == password:
-            user.currentUser = True
-            logging.debug(
-                'signInUser() called for %s', user.name)
-            logging.info('%s was verified', user.name)
-            return True
+        if user.currentUser and user.name == name:
+            all_users.pop(all_users.index(user))
+            logging.info('%s deleted', name)
+            _writeFile()
+
+
+# Signs in the given user if the password is correct
+def signInUser(name, password):
     logging.debug(
         'signInUser() called for %s', name)
+    validatedUser = _validateUser(name, password)
+    if (validatedUser):
+        for user in all_users:
+            if user == validatedUser:
+                user.currentUser = True
+                logging.info('%s is signed in', name)
+                return True
+
     logging.info('%s could not be verified', name)
     return False
 
@@ -104,6 +115,19 @@ def _writeFile():
             logging.info('User data written to JSON file')
     except:
         logging.error('JSON file could not be opened')
+
+
+# Determines if the credentials given are valid and returns the user object of the validated user
+def _validateUser(name, password):
+    logging.debug('_validateUser() called for %s', name)
+    nameEdit = name.rstrip().lstrip()
+    passEdit = password.rstrip().lstrip()
+    for user in all_users:
+        if user.name == nameEdit and user.password == passEdit:
+            logging.info('%s was validated', name)
+            return user
+    logging.info('%s was not validated', name)
+    return None
 
 
 # Starts the logging file
