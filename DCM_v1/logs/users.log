@@ -1,20 +1,19 @@
-[2020-10-08 15:45:21,427] INFO: Logging started
-[2020-10-08 15:45:21,427] DEBUG: _readfile() called
-[2020-10-08 15:45:21,428] DEBUG: User data read
-[2020-10-08 15:45:21,428] INFO: Created user object for Matt
-[2020-10-08 15:45:21,428] INFO: User objects created from file
-[2020-10-08 15:45:21,429] DEBUG: makeNewUser() called for Elston
-[2020-10-08 15:45:21,429] INFO: Created user object for Elston
-[2020-10-08 15:45:21,429] DEBUG: _writefile() called
-[2020-10-08 15:45:21,429] INFO: User data stored for Matt
-[2020-10-08 15:45:21,429] INFO: User data stored for Elston
-[2020-10-08 15:45:21,429] INFO: User data written to JSON file
-[2020-10-08 15:45:21,431] DEBUG: signInUser() called for Elston
-[2020-10-08 15:45:21,431] DEBUG: _validateUser() called for Elston
-[2020-10-08 15:45:21,431] INFO: Elston was validated
-[2020-10-08 15:45:21,432] INFO: Elston is signed in
-[2020-10-08 15:45:21,432] DEBUG: deleteUser() called for Elston
-[2020-10-08 15:45:21,432] INFO: Elston deleted
-[2020-10-08 15:45:21,432] DEBUG: _writefile() called
-[2020-10-08 15:45:21,432] INFO: User data stored for Matt
-[2020-10-08 15:45:21,432] INFO: User data written to JSON file
+[2020-10-16 14:06:25,096] - users -  DEBUG: _getInfo() called
+[2020-10-16 14:06:25,127] - users -  DEBUG: makeNewUser() called for Test
+[2020-10-16 14:06:25,127] - users -  DEBUG: _getInfo() called
+[2020-10-16 14:06:25,127] - users -  INFO: Created user object for Test
+[2020-10-16 14:06:25,127] - users -  DEBUG: _saveInfo() called
+[2020-10-16 14:06:25,139] - users -  DEBUG: _getInfo() called
+[2020-10-16 14:06:25,139] - users -  INFO: Created user object for Test
+[2020-10-16 14:06:25,139] - users -  DEBUG: signInUser() called for Test
+[2020-10-16 14:06:25,140] - users -  DEBUG: _validateUser() called for Test
+[2020-10-16 14:06:25,140] - users -  INFO: Test was validated
+[2020-10-16 14:06:25,140] - users -  INFO: Test is signed in
+[2020-10-16 14:06:25,140] - users -  DEBUG: currentUserInfo() called
+[2020-10-16 14:06:25,140] - users -  INFO: Test is logged in
+[2020-10-16 14:06:25,166] - users -  DEBUG: makeNewUser() called for Test2
+[2020-10-16 14:06:25,166] - users -  DEBUG: _getInfo() called
+[2020-10-16 14:06:25,166] - users -  INFO: Created user object for Test2
+[2020-10-16 14:06:25,166] - users -  DEBUG: _saveInfo() called
+[2020-10-16 14:06:25,173] - users -  DEBUG: _getInfo() called
+[2020-10-16 14:06:25,173] - users -  INFO: Created user object for Test2

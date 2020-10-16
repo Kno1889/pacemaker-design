@@ -1,0 +1,49 @@
+[2020-10-16 14:06:25,083] - data -  DEBUG: _readData() called
+[2020-10-16 14:06:25,084] - data -  DEBUG: Pacemaker 3 data read
+[2020-10-16 14:06:25,084] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-16 14:06:25,084] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-16 14:06:25,085] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-16 14:06:25,085] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-16 14:06:25,096] - data -  DEBUG: getUserInfo() called
+[2020-10-16 14:06:25,096] - data -  DEBUG: setConnectedPacemaker() called
+[2020-10-16 14:06:25,096] - data -  INFO: Pacemaker 1 disconnected
+[2020-10-16 14:06:25,096] - data -  DEBUG: _writeData() called
+[2020-10-16 14:06:25,096] - data -  INFO: Pacemaker 2 updated
+[2020-10-16 14:06:25,097] - data -  INFO: Data written to JSON file
+[2020-10-16 14:06:25,099] - data -  DEBUG: _readData() called
+[2020-10-16 14:06:25,125] - data -  DEBUG: Pacemaker 3 data read
+[2020-10-16 14:06:25,126] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-16 14:06:25,126] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-16 14:06:25,126] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-16 14:06:25,127] - data -  DEBUG: getUserInfo() called
+[2020-10-16 14:06:25,127] - data -  DEBUG: changeUserInfo() called
+[2020-10-16 14:06:25,127] - data -  DEBUG: _writeData() called
+[2020-10-16 14:06:25,127] - data -  INFO: Pacemaker 2 updated
+[2020-10-16 14:06:25,128] - data -  INFO: Data written to JSON file
+[2020-10-16 14:06:25,130] - data -  DEBUG: _readData() called
+[2020-10-16 14:06:25,139] - data -  DEBUG: Pacemaker 3 data read
+[2020-10-16 14:06:25,139] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-16 14:06:25,139] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-16 14:06:25,139] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-16 14:06:25,139] - data -  DEBUG: getUserInfo() called
+[2020-10-16 14:06:25,157] - data -  DEBUG: setConnectedPacemaker() called
+[2020-10-16 14:06:25,157] - data -  INFO: Pacemaker 2 disconnected
+[2020-10-16 14:06:25,157] - data -  DEBUG: _writeData() called
+[2020-10-16 14:06:25,157] - data -  INFO: Pacemaker 3 updated
+[2020-10-16 14:06:25,158] - data -  INFO: Data written to JSON file
+[2020-10-16 14:06:25,159] - data -  DEBUG: _readData() called
+[2020-10-16 14:06:25,165] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-16 14:06:25,165] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-16 14:06:25,165] - data -  DEBUG: Pacemaker 3 data read
+[2020-10-16 14:06:25,165] - data -  INFO: Pacemaker 3 is/was connected
+[2020-10-16 14:06:25,166] - data -  DEBUG: getUserInfo() called
+[2020-10-16 14:06:25,166] - data -  DEBUG: changeUserInfo() called
+[2020-10-16 14:06:25,166] - data -  DEBUG: _writeData() called
+[2020-10-16 14:06:25,166] - data -  INFO: Pacemaker 3 updated
+[2020-10-16 14:06:25,167] - data -  INFO: Data written to JSON file
+[2020-10-16 14:06:25,168] - data -  DEBUG: _readData() called
+[2020-10-16 14:06:25,173] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-16 14:06:25,173] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-16 14:06:25,173] - data -  DEBUG: Pacemaker 3 data read
+[2020-10-16 14:06:25,173] - data -  INFO: Pacemaker 3 is/was connected
+[2020-10-16 14:06:25,173] - data -  DEBUG: getUserInfo() called

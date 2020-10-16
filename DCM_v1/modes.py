@@ -30,20 +30,20 @@ class Mode():
             for arg in kwargs:
                 self.params[arg] = kwargs[arg]
         except:
-            logging.error('Keyword argument error creating %s', self.name)
-        logging.info('Created %s mode', self.name)
+            logger.error('Keyword argument error creating %s', self.name)
+        logger.info('Created %s mode', self.name)
 
 
 # Retrieves the list of modes for use outside of the module
 def allModes():
-    logging.debug('allModes() called')
+    logger.debug('allModes() called')
     return all_modes
 
 
 # Changes parameter values of the given mode
 # Logs an error message if a parameter name doesn't match the parameters of the mode
 def saveParamValues(modeEdit, parameterValues):
-    logging.debug('saveParamValues() called for %s mode', modeEdit.name)
+    logger.debug('saveParamValues() called for %s mode', modeEdit.name)
     for mode in all_modes:
         if mode.name == modeEdit.name:
             for param in parameterValues:
@@ -51,24 +51,24 @@ def saveParamValues(modeEdit, parameterValues):
                     mode.params[param]
                     mode.params[param] = parameterValues[param]
                 except KeyError:
-                    logging.error(
+                    logger.error(
                         '%s operating parameter does not exist in the %s mode', param, mode.name)
 
 
 # Makes the given mode as the current operating mode
 def setCurrentMode(currMode):
-    logging.debug('setCurrentMode() called for %s mode', currMode.name)
+    logger.debug('setCurrentMode() called for %s mode', currMode.name)
     for mode in all_modes:
         if mode.name == currMode.name:
             mode.currentMode = True
-            logging.info('%s is the current mode', mode.name)
+            logger.info('%s is the current mode', mode.name)
         else:
             mode.currentMode = False
 
 
 # Defines all pacing modes and default values
 def _createModes():
-    logging.debug('_createModes() called')
+    logger.debug('_createModes() called')
     modes = []
     voo = Mode(
         'voo',
@@ -120,14 +120,16 @@ def _createModes():
 
 # Starts the logging file
 def _startLog():
-    logging.basicConfig(
-        format='[%(asctime)s] %(levelname)s: %(message)s',
-        filename='DCM_v1/logs/modes.log',
-        level=logging.DEBUG
-    )
-    logging.info('Logging started')
+    logger = logging.getLogger(__name__)
+    logger.setLevel(logging.DEBUG)
+
+    f_handler = logging.FileHandler('DCM_v1/logs/modes.log')
+    formatter = logging.Formatter(
+        '[%(asctime)s] - %(name)s -  %(levelname)s: %(message)s')
+    f_handler.setFormatter(formatter)
+    logger.addHandler(f_handler)
+    return logger
 
 
-# Run on import of module
-_startLog()
+logger = _startLog()
 all_modes = _createModes()
