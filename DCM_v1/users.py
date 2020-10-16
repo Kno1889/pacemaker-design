@@ -1,6 +1,6 @@
 # Users Module
 #
-# Version 1.1
+# Version 2.0
 # Created by: M. Lemcke
 # Date Modified: Oct. 8, 2020
 #
@@ -27,7 +27,7 @@ class User():
         logger.info('Created user object for %s', self.name)
 
 
-# Registers new user information
+# registers new user information. Returns true if action was successful
 def makeNewUser(name, password):
     logger.debug('makeNewUser() called for %s', name)
     global all_users
@@ -40,7 +40,7 @@ def makeNewUser(name, password):
     return False
 
 
-# Deletes the given user and the corresponding saved info if they are signed in and returns the status of the save
+# deletes the given user and the corresponding saved info if they are signed in. Returns true if the user was deleted successfully
 def deleteUser(name):
     logger.debug('deleteUser() called for %s', name)
     global all_users
@@ -53,7 +53,7 @@ def deleteUser(name):
     return False
 
 
-# Signs in the given user if the password is correct
+# signs in the given user if the password is correct. Returns true if sign in was successful
 def signInUser(name, password):
     logger.debug(
         'signInUser() called for %s', name)
@@ -73,6 +73,7 @@ def signInUser(name, password):
 
 # Signs out the given user if they were logged in
 def signOutUser(name):
+    logger.debug('signOutUser() called')
     for user in all_users:
         if user.name == name and user.currentUser:
             user.currentUser = False
@@ -90,6 +91,7 @@ def currentUserInfo():
     return []
 
 
+# gets all user data registered with the connected pacemaker and returns a list of user objects
 def _getInfo():
     logger.debug('_getInfo() called')
     info = data.getUserInfo()
@@ -100,6 +102,7 @@ def _getInfo():
     return users
 
 
+# sends all user and pacemaker data to the data module and updates information within the module
 def _saveInfo():
     logger.debug('_saveInfo() called')
     global all_users
@@ -131,13 +134,20 @@ def _validateUser(name, password):
 def _startLog():
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.DEBUG)
+
     f_handler = logging.FileHandler('DCM_v1/logs/file.log')
-    formatter = logging.Formatter(
+    l_handler = logging.FileHandler('DCM_v1/logs/users.log')
+    f_formatter = logging.Formatter(
         '[%(asctime)s] - %(name)s -  %(levelname)s: %(message)s')
-    f_handler.setFormatter(formatter)
+    l_formatter = logging.Formatter(
+        '[%(asctime)s] %(levelname)s: %(message)s')
+    f_handler.setFormatter(f_formatter)
+    l_handler.setFormatter(l_formatter)
     logger.addHandler(f_handler)
+    logger.addHandler(l_handler)
     return logger
 
 
+# Run on import
 logger = _startLog()
 all_users = _getInfo()

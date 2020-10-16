@@ -28,7 +28,7 @@ class Pacemaker():
         self.lastUsed = lastUsed
 
 
-# connects to the given pacemaker and determines if a different pacemaker was connected previously
+# connects to the given pacemaker. Returns true if the given pacemaker was the last to be connected
 def connect(model):
     logger.debug('connect() called')
     global all_pacemakers
@@ -60,9 +60,8 @@ def connect(model):
     _getData()
     return lastConnected
 
+
 # creates a new pacemaker with the given model number and returns the object
-
-
 def _addNewPacemaker(model):
     logger.debug('_addNewPacemaker called')
     newP = Pacemaker(model, 0, False)
@@ -98,12 +97,18 @@ def _startLog():
     logger.setLevel(logging.DEBUG)
 
     f_handler = logging.FileHandler('DCM_v1/logs/file.log')
-    formatter = logging.Formatter(
+    l_handler = logging.FileHandler('DCM_v1/logs/pacemaker.log')
+    f_formatter = logging.Formatter(
         '[%(asctime)s] - %(name)s -  %(levelname)s: %(message)s')
-    f_handler.setFormatter(formatter)
+    l_formatter = logging.Formatter(
+        '[%(asctime)s] %(levelname)s: %(message)s')
+    f_handler.setFormatter(f_formatter)
+    l_handler.setFormatter(l_formatter)
     logger.addHandler(f_handler)
+    logger.addHandler(l_handler)
     return logger
 
 
+# Run on import
 logger = _startLog()
 _getData()

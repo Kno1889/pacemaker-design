@@ -1,5 +1,5 @@
-[2020-10-16 12:56:26,321] - __main__ -  DEBUG: _createModes() called
-[2020-10-16 12:56:26,321] - __main__ -  INFO: Created voo mode
-[2020-10-16 12:56:26,321] - __main__ -  INFO: Created aoo mode
-[2020-10-16 12:56:26,322] - __main__ -  INFO: Created vvi mode
-[2020-10-16 12:56:26,322] - __main__ -  INFO: Created aai mode
+[2020-10-16 15:43:10,355] DEBUG: _createModes() called
+[2020-10-16 15:43:10,355] INFO: Created voo mode
+[2020-10-16 15:43:10,355] INFO: Created aoo mode
+[2020-10-16 15:43:10,355] INFO: Created vvi mode
+[2020-10-16 15:43:10,355] INFO: Created aai mode

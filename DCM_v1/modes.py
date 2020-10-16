@@ -123,13 +123,19 @@ def _startLog():
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.DEBUG)
 
-    f_handler = logging.FileHandler('DCM_v1/logs/modes.log')
-    formatter = logging.Formatter(
+    f_handler = logging.FileHandler('DCM_v1/logs/file.log')
+    l_handler = logging.FileHandler('DCM_v1/logs/modes.log')
+    f_formatter = logging.Formatter(
         '[%(asctime)s] - %(name)s -  %(levelname)s: %(message)s')
-    f_handler.setFormatter(formatter)
+    l_formatter = logging.Formatter(
+        '[%(asctime)s] %(levelname)s: %(message)s')
+    f_handler.setFormatter(f_formatter)
+    l_handler.setFormatter(l_formatter)
     logger.addHandler(f_handler)
+    logger.addHandler(l_handler)
     return logger
 
 
+# Run on import
 logger = _startLog()
 all_modes = _createModes()

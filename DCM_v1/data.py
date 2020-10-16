@@ -18,7 +18,7 @@ all_data = {}
 current_data = {}
 
 
-# Sets the given pacemaker as currently connected
+# disconnects the previously connected pacemaker and sets the given one as connected
 def setConnectedPacemaker(newInfo):
     logger.debug('setConnectedPacemaker() called')
     global current_data
@@ -148,13 +148,18 @@ def _startLog():
     logger.setLevel(logging.DEBUG)
 
     f_handler = logging.FileHandler('DCM_v1/logs/file.log')
-    formatter = logging.Formatter(
+    l_handler = logging.FileHandler('DCM_v1/logs/data.log')
+    f_formatter = logging.Formatter(
         '[%(asctime)s] - %(name)s -  %(levelname)s: %(message)s')
-    f_handler.setFormatter(formatter)
+    l_formatter = logging.Formatter(
+        '[%(asctime)s] %(levelname)s: %(message)s')
+    f_handler.setFormatter(f_formatter)
+    l_handler.setFormatter(l_formatter)
     logger.addHandler(f_handler)
+    logger.addHandler(l_handler)
     return logger
 
 
+# Run on import
 logger = _startLog()
-
 all_data, current_data = _readData()

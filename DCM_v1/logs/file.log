@@ -1,0 +1,27 @@
+[2020-10-16 15:43:05,413] - data -  DEBUG: _readData() called
+[2020-10-16 15:43:05,414] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-16 15:43:05,414] - data -  DEBUG: Pacemaker 3 data read
+[2020-10-16 15:43:05,414] - data -  INFO: Pacemaker 3 is/was connected
+[2020-10-16 15:43:05,415] - pacemaker -  DEBUG: _getData() called
+[2020-10-16 15:43:05,415] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-16 15:43:05,420] - users -  DEBUG: _getInfo() called
+[2020-10-16 15:43:05,420] - data -  DEBUG: getUserInfo() called
+[2020-10-16 15:43:05,421] - users -  INFO: Created user object for Matt
+[2020-10-16 15:43:05,421] - pacemaker -  DEBUG: connect() called
+[2020-10-16 15:43:05,421] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-16 15:43:05,422] - pacemaker -  INFO: Pacemaker 3 is connected
+[2020-10-16 15:43:05,422] - pacemaker -  INFO: Pacemaker 3 is already connected
+[2020-10-16 15:43:05,422] - pacemaker -  DEBUG: _getData() called
+[2020-10-16 15:43:05,422] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-16 15:43:05,422] - users -  DEBUG: signInUser() called for Matt
+[2020-10-16 15:43:05,422] - users -  DEBUG: _getInfo() called
+[2020-10-16 15:43:05,423] - data -  DEBUG: getUserInfo() called
+[2020-10-16 15:43:05,423] - users -  INFO: Created user object for Matt
+[2020-10-16 15:43:05,423] - users -  DEBUG: _validateUser() called for Matt
+[2020-10-16 15:43:05,423] - users -  INFO: Matt was validated
+[2020-10-16 15:43:05,423] - users -  INFO: Matt is signed in
+[2020-10-16 15:43:10,355] - __main__ -  DEBUG: _createModes() called
+[2020-10-16 15:43:10,355] - __main__ -  INFO: Created voo mode
+[2020-10-16 15:43:10,355] - __main__ -  INFO: Created aoo mode
+[2020-10-16 15:43:10,355] - __main__ -  INFO: Created vvi mode
+[2020-10-16 15:43:10,355] - __main__ -  INFO: Created aai mode
