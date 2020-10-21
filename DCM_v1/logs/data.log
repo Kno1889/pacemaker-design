@@ -377,3 +377,34 @@
 [2020-10-21 07:29:17,509] DEBUG: Pacemaker 2 data read
 [2020-10-21 07:29:17,509] INFO: Pacemaker 2 is/was connected
 [2020-10-21 07:29:17,510] DEBUG: getUserInfo() called
+[2020-10-21 07:35:30,350] DEBUG: _readData() called
+[2020-10-21 07:35:30,350] DEBUG: Pacemaker 1 data read
+[2020-10-21 07:35:30,350] DEBUG: Pacemaker 2 data read
+[2020-10-21 07:35:30,350] INFO: Pacemaker 2 is/was connected
+[2020-10-21 07:35:30,351] DEBUG: getUserInfo() called
+[2020-10-21 07:36:21,053] DEBUG: _readData() called
+[2020-10-21 07:36:21,054] DEBUG: Pacemaker 1 data read
+[2020-10-21 07:36:21,054] DEBUG: Pacemaker 2 data read
+[2020-10-21 07:36:21,054] INFO: Pacemaker 2 is/was connected
+[2020-10-21 07:36:21,054] DEBUG: getUserInfo() called
+[2020-10-21 07:37:43,162] DEBUG: _readData() called
+[2020-10-21 07:37:43,162] DEBUG: Pacemaker 1 data read
+[2020-10-21 07:37:43,163] DEBUG: Pacemaker 2 data read
+[2020-10-21 07:37:43,163] INFO: Pacemaker 2 is/was connected
+[2020-10-21 07:37:43,163] DEBUG: getUserInfo() called
+[2020-10-21 07:37:43,250] DEBUG: _readData() called
+[2020-10-21 07:37:43,250] DEBUG: Pacemaker 1 data read
+[2020-10-21 07:37:43,250] DEBUG: Pacemaker 2 data read
+[2020-10-21 07:37:43,250] INFO: Pacemaker 2 is/was connected
+[2020-10-21 07:37:43,251] DEBUG: getUserInfo() called
+[2020-10-21 07:37:43,340] DEBUG: _readData() called
+[2020-10-21 07:37:43,340] DEBUG: Pacemaker 1 data read
+[2020-10-21 07:37:43,340] DEBUG: Pacemaker 2 data read
+[2020-10-21 07:37:43,341] INFO: Pacemaker 2 is/was connected
+[2020-10-21 07:37:43,341] DEBUG: getUserInfo() called
+[2020-10-21 07:37:45,484] DEBUG: _readData() called
+[2020-10-21 07:37:45,484] DEBUG: Pacemaker 1 data read
+[2020-10-21 07:37:45,485] DEBUG: Pacemaker 2 data read
+[2020-10-21 07:37:45,485] INFO: Pacemaker 2 is/was connected
+[2020-10-21 07:37:45,485] DEBUG: getUserInfo() called
+[2020-10-21 07:37:49,617] DEBUG: getUserInfo() called

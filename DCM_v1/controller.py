@@ -87,7 +87,8 @@ def delete_user():
     for data in raw_user_data:
         options.append(data['name'])
     
-
+    # Tkinter being silly needs two none options for one to be default and for one to show
+    # in the dropdown
     options.insert(0,"None")
     options.insert(0,"None")
 
@@ -110,9 +111,8 @@ def delete_user():
 
     delete_user.mainloop()
 
-
-
-
+def edit_user():
+    tm.showerror("Arr M8", "Feature not yet implemented")
 
 class Controller(tk.Tk):
     def __init__(self, *args, **kwargs):
@@ -153,7 +153,7 @@ class Controller(tk.Tk):
 
         user_menu = tk.Menu(menubar, tearoff = 0)
         user_menu.add_command(label="Add User", command = lambda: self.popup(create_user))
-        user_menu.add_command(label="Edit User", command = lambda: popupmsg('Not Supported Yet!'))
+        user_menu.add_command(label="Edit User", command = lambda: self.popup(edit_user))
         user_menu.add_command(label="Delete User", command = lambda: self.popup(delete_user))
 
         version_menu = tk.Menu(menubar, tearoff=0)

@@ -1464,3 +1464,100 @@
 [2020-10-21 07:29:17,510] - users -  INFO: Created user object for test8
 [2020-10-21 07:29:17,510] - users -  INFO: Created user object for test9
 [2020-10-21 07:29:17,510] - users -  INFO: Created user object for 1234
+[2020-10-21 07:35:30,350] - data -  DEBUG: _readData() called
+[2020-10-21 07:35:30,350] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 07:35:30,350] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 07:35:30,350] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 07:35:30,351] - users -  DEBUG: _getInfo() called
+[2020-10-21 07:35:30,351] - data -  DEBUG: getUserInfo() called
+[2020-10-21 07:35:30,351] - users -  INFO: Created user object for test1
+[2020-10-21 07:35:30,351] - users -  INFO: Created user object for test2
+[2020-10-21 07:35:30,351] - users -  INFO: Created user object for test3
+[2020-10-21 07:35:30,351] - users -  INFO: Created user object for test4
+[2020-10-21 07:35:30,351] - users -  INFO: Created user object for test5
+[2020-10-21 07:35:30,351] - users -  INFO: Created user object for test6
+[2020-10-21 07:35:30,351] - users -  INFO: Created user object for test7
+[2020-10-21 07:35:30,351] - users -  INFO: Created user object for test8
+[2020-10-21 07:35:30,351] - users -  INFO: Created user object for test9
+[2020-10-21 07:35:30,352] - users -  INFO: Created user object for 1234
+[2020-10-21 07:36:21,053] - data -  DEBUG: _readData() called
+[2020-10-21 07:36:21,054] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 07:36:21,054] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 07:36:21,054] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 07:36:21,054] - users -  DEBUG: _getInfo() called
+[2020-10-21 07:36:21,054] - data -  DEBUG: getUserInfo() called
+[2020-10-21 07:36:21,054] - users -  INFO: Created user object for test1
+[2020-10-21 07:36:21,054] - users -  INFO: Created user object for test2
+[2020-10-21 07:36:21,054] - users -  INFO: Created user object for test3
+[2020-10-21 07:36:21,054] - users -  INFO: Created user object for test4
+[2020-10-21 07:36:21,055] - users -  INFO: Created user object for test5
+[2020-10-21 07:36:21,055] - users -  INFO: Created user object for test6
+[2020-10-21 07:36:21,055] - users -  INFO: Created user object for test7
+[2020-10-21 07:36:21,055] - users -  INFO: Created user object for test8
+[2020-10-21 07:36:21,055] - users -  INFO: Created user object for test9
+[2020-10-21 07:36:21,055] - users -  INFO: Created user object for 1234
+[2020-10-21 07:37:43,162] - data -  DEBUG: _readData() called
+[2020-10-21 07:37:43,162] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 07:37:43,163] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 07:37:43,163] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 07:37:43,163] - users -  DEBUG: _getInfo() called
+[2020-10-21 07:37:43,163] - data -  DEBUG: getUserInfo() called
+[2020-10-21 07:37:43,163] - users -  INFO: Created user object for test1
+[2020-10-21 07:37:43,163] - users -  INFO: Created user object for test2
+[2020-10-21 07:37:43,163] - users -  INFO: Created user object for test3
+[2020-10-21 07:37:43,163] - users -  INFO: Created user object for test4
+[2020-10-21 07:37:43,163] - users -  INFO: Created user object for test5
+[2020-10-21 07:37:43,163] - users -  INFO: Created user object for test6
+[2020-10-21 07:37:43,164] - users -  INFO: Created user object for test7
+[2020-10-21 07:37:43,164] - users -  INFO: Created user object for test8
+[2020-10-21 07:37:43,164] - users -  INFO: Created user object for test9
+[2020-10-21 07:37:43,164] - users -  INFO: Created user object for 1234
+[2020-10-21 07:37:43,250] - data -  DEBUG: _readData() called
+[2020-10-21 07:37:43,250] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 07:37:43,250] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 07:37:43,250] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 07:37:43,251] - users -  DEBUG: _getInfo() called
+[2020-10-21 07:37:43,251] - data -  DEBUG: getUserInfo() called
+[2020-10-21 07:37:43,251] - users -  INFO: Created user object for test1
+[2020-10-21 07:37:43,251] - users -  INFO: Created user object for test2
+[2020-10-21 07:37:43,251] - users -  INFO: Created user object for test3
+[2020-10-21 07:37:43,251] - users -  INFO: Created user object for test4
+[2020-10-21 07:37:43,251] - users -  INFO: Created user object for test5
+[2020-10-21 07:37:43,251] - users -  INFO: Created user object for test6
+[2020-10-21 07:37:43,251] - users -  INFO: Created user object for test7
+[2020-10-21 07:37:43,251] - users -  INFO: Created user object for test8
+[2020-10-21 07:37:43,251] - users -  INFO: Created user object for test9
+[2020-10-21 07:37:43,251] - users -  INFO: Created user object for 1234
+[2020-10-21 07:37:43,340] - data -  DEBUG: _readData() called
+[2020-10-21 07:37:43,340] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 07:37:43,340] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 07:37:43,341] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 07:37:43,341] - users -  DEBUG: _getInfo() called
+[2020-10-21 07:37:43,341] - data -  DEBUG: getUserInfo() called
+[2020-10-21 07:37:43,341] - users -  INFO: Created user object for test1
+[2020-10-21 07:37:43,341] - users -  INFO: Created user object for test2
+[2020-10-21 07:37:43,341] - users -  INFO: Created user object for test3
+[2020-10-21 07:37:43,341] - users -  INFO: Created user object for test4
+[2020-10-21 07:37:43,341] - users -  INFO: Created user object for test5
+[2020-10-21 07:37:43,341] - users -  INFO: Created user object for test6
+[2020-10-21 07:37:43,342] - users -  INFO: Created user object for test7
+[2020-10-21 07:37:43,342] - users -  INFO: Created user object for test8
+[2020-10-21 07:37:43,342] - users -  INFO: Created user object for test9
+[2020-10-21 07:37:43,342] - users -  INFO: Created user object for 1234
+[2020-10-21 07:37:45,484] - data -  DEBUG: _readData() called
+[2020-10-21 07:37:45,484] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 07:37:45,485] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 07:37:45,485] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 07:37:45,485] - users -  DEBUG: _getInfo() called
+[2020-10-21 07:37:45,485] - data -  DEBUG: getUserInfo() called
+[2020-10-21 07:37:45,485] - users -  INFO: Created user object for test1
+[2020-10-21 07:37:45,485] - users -  INFO: Created user object for test2
+[2020-10-21 07:37:45,485] - users -  INFO: Created user object for test3
+[2020-10-21 07:37:45,485] - users -  INFO: Created user object for test4
+[2020-10-21 07:37:45,485] - users -  INFO: Created user object for test5
+[2020-10-21 07:37:45,486] - users -  INFO: Created user object for test6
+[2020-10-21 07:37:45,486] - users -  INFO: Created user object for test7
+[2020-10-21 07:37:45,486] - users -  INFO: Created user object for test8
+[2020-10-21 07:37:45,486] - users -  INFO: Created user object for test9
+[2020-10-21 07:37:45,486] - users -  INFO: Created user object for 1234
+[2020-10-21 07:37:49,617] - data -  DEBUG: getUserInfo() called
