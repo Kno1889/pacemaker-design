@@ -13,7 +13,7 @@ from tkinter import ttk
 from tkinter import messagebox as tm
 
 import users 
-import data
+import data         # Should not be imported or used by the frontend
 
 from pages import *
 import settings
