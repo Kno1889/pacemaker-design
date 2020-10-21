@@ -18,16 +18,12 @@ import pacemaker
 
 
 def dev_ID_proc(controller, dev_id):
-    # done some things
-    last_connected  = pacemaker.connect(dev_id) # this is weird   # pacemaker.connect(dev_id) returns true if dev_id was connected last, else returns false
-    if last_connected != dev_id:
+    last_connected  = pacemaker.connect(int(dev_id.get()))  # probs device id should be string: 1-AA2-DD2 
+    if last_connected != True:
         tm.showwarning("New ID", settings.newIdErr)
-    controller.show_frame(pages.Frames["Monitor"])
+    controller.show_frame(pages.Frames["Login"])
     return True
 
-def logout(controller):
-    # some function
-    controller.show_frame(pages.Frames["Login"])
 
 class DeviceIdentification(tk.Frame):
 
@@ -42,10 +38,7 @@ class DeviceIdentification(tk.Frame):
         id = ttk.Entry(self)
         id.grid(row=2)
 
-        b1 = ttk.Button(self, text="Okay", command= lambda: dev_ID_proc(controller, id.get()))
+        b1 = ttk.Button(self, text="Connect", command= lambda: dev_ID_proc(controller, id))
         b1.grid(row=3)#pack()
-
-        b1 = ttk.Button(self, text="Logout", command= lambda: logout(controller))
-        b1.grid(row=4)#pack()
 
 

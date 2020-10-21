@@ -44,7 +44,7 @@ class LoginPage(tk.Frame):
         password_entry.grid(row=2, column=2)#pack()
 
         login_button = ttk.Button(self, text="Login", command= lambda: 
-        controller.show_frame(pages.Frames["DevID"]) if 
+        controller.show_frame(pages.Frames["DefMode"]) if 
         self.authenticate(username_entry, password_entry) 
         else tm.showerror("Validation Error", settings.invalidUserErr)) 
                                                     

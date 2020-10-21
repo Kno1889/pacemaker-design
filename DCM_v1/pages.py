@@ -17,6 +17,7 @@ from deviceIdentification import *
 Frames = {
     "Login": LoginPage, 
     "Monitor": Monitor,
+    "DefMode": DefMode,
     "DevID": DeviceIdentification, 
     }
 

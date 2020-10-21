@@ -1887,3 +1887,890 @@
 [2020-10-21 08:28:27,061] - users -  DEBUG: deleteUser() called for test1
 [2020-10-21 08:28:32,255] - data -  DEBUG: getUserInfo() called
 [2020-10-21 08:28:33,853] - users -  DEBUG: deleteUser() called for test2
+[2020-10-21 10:22:17,897] - data -  DEBUG: _readData() called
+[2020-10-21 10:22:17,897] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:22:17,898] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:22:17,898] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 10:22:17,898] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:22:17,898] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:22:17,898] - users -  INFO: Created user object for test1
+[2020-10-21 10:22:17,898] - users -  INFO: Created user object for test2
+[2020-10-21 10:22:17,898] - users -  INFO: Created user object for test3
+[2020-10-21 10:22:17,898] - users -  INFO: Created user object for test4
+[2020-10-21 10:22:17,898] - users -  INFO: Created user object for test5
+[2020-10-21 10:22:17,899] - users -  INFO: Created user object for test6
+[2020-10-21 10:22:17,899] - users -  INFO: Created user object for test7
+[2020-10-21 10:22:17,899] - users -  INFO: Created user object for test8
+[2020-10-21 10:22:17,899] - users -  INFO: Created user object for test9
+[2020-10-21 10:22:17,899] - users -  INFO: Created user object for 1234
+[2020-10-21 10:22:17,902] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:22:17,902] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:22:31,333] - users -  DEBUG: signInUser() called for test9
+[2020-10-21 10:22:31,333] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:22:31,333] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:22:31,333] - users -  INFO: Created user object for test1
+[2020-10-21 10:22:31,333] - users -  INFO: Created user object for test2
+[2020-10-21 10:22:31,333] - users -  INFO: Created user object for test3
+[2020-10-21 10:22:31,333] - users -  INFO: Created user object for test4
+[2020-10-21 10:22:31,333] - users -  INFO: Created user object for test5
+[2020-10-21 10:22:31,333] - users -  INFO: Created user object for test6
+[2020-10-21 10:22:31,334] - users -  INFO: Created user object for test7
+[2020-10-21 10:22:31,334] - users -  INFO: Created user object for test8
+[2020-10-21 10:22:31,334] - users -  INFO: Created user object for test9
+[2020-10-21 10:22:31,334] - users -  INFO: Created user object for 1234
+[2020-10-21 10:22:31,334] - users -  DEBUG: _validateUser() called for test9
+[2020-10-21 10:22:31,334] - users -  INFO: test9 was validated
+[2020-10-21 10:22:31,334] - users -  INFO: test9 is signed in
+[2020-10-21 10:22:33,173] - pacemaker -  DEBUG: connect() called
+[2020-10-21 10:22:33,173] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 10:22:33,173] - pacemaker -  INFO: Pacemaker 2 is connected
+[2020-10-21 10:22:33,173] - pacemaker -  DEBUG: _addNewPacemaker called
+[2020-10-21 10:22:33,173] - pacemaker -  INFO: Pacemaker  created
+[2020-10-21 10:22:33,173] - data -  DEBUG: setConnectedPacemaker() called
+[2020-10-21 10:22:33,173] - data -  INFO: Pacemaker 2 disconnected
+[2020-10-21 10:22:33,173] - data -  DEBUG: _writeData() called
+[2020-10-21 10:22:33,173] - data -  INFO: Pacemaker  added to list
+[2020-10-21 10:22:33,174] - data -  INFO: Data written to JSON file
+[2020-10-21 10:22:33,174] - data -  DEBUG: _readData() called
+[2020-10-21 10:22:33,181] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:22:33,181] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:22:33,181] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 10:22:33,181] - data -  INFO: Pacemaker  is/was connected
+[2020-10-21 10:22:33,181] - pacemaker -  INFO: Pacemaker  is now connected
+[2020-10-21 10:22:33,181] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:22:33,181] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:22:40,962] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:22:50,159] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:32:02,018] - data -  DEBUG: _readData() called
+[2020-10-21 10:32:02,018] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:32:02,019] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:32:02,019] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 10:32:02,019] - data -  INFO: Pacemaker  is/was connected
+[2020-10-21 10:32:02,019] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:32:02,019] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:32:02,022] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:32:02,022] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:33:29,768] - data -  DEBUG: _readData() called
+[2020-10-21 10:33:29,768] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:33:29,768] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:33:29,768] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 10:33:29,768] - data -  INFO: Pacemaker  is/was connected
+[2020-10-21 10:33:29,769] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:33:29,769] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:33:29,773] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:33:29,774] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:33:37,915] - data -  DEBUG: _readData() called
+[2020-10-21 10:33:37,916] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:33:37,916] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:33:37,916] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 10:33:37,916] - data -  INFO: Pacemaker  is/was connected
+[2020-10-21 10:33:37,916] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:33:37,916] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:33:37,918] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:33:37,918] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:33:41,495] - pacemaker -  DEBUG: connect() called
+[2020-10-21 10:33:41,495] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 10:33:41,495] - pacemaker -  INFO: Pacemaker  is connected
+[2020-10-21 10:33:41,496] - pacemaker -  DEBUG: _addNewPacemaker called
+[2020-10-21 10:33:41,496] - pacemaker -  INFO: Pacemaker 123 created
+[2020-10-21 10:33:41,496] - data -  DEBUG: setConnectedPacemaker() called
+[2020-10-21 10:33:41,496] - data -  INFO: Pacemaker  disconnected
+[2020-10-21 10:33:41,496] - data -  DEBUG: _writeData() called
+[2020-10-21 10:33:41,496] - data -  INFO: Pacemaker 123 added to list
+[2020-10-21 10:33:41,496] - data -  INFO: Data written to JSON file
+[2020-10-21 10:33:41,497] - data -  DEBUG: _readData() called
+[2020-10-21 10:33:41,506] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:33:41,506] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:33:41,506] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 10:33:41,506] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 10:33:41,507] - data -  INFO: Pacemaker 123 is/was connected
+[2020-10-21 10:33:41,507] - pacemaker -  INFO: Pacemaker 123 is now connected
+[2020-10-21 10:33:41,507] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:33:41,507] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:33:56,695] - data -  DEBUG: _readData() called
+[2020-10-21 10:33:56,695] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:33:56,696] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:33:56,696] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 10:33:56,696] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 10:33:56,696] - data -  INFO: Pacemaker 123 is/was connected
+[2020-10-21 10:33:56,696] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:33:56,696] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:33:56,698] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:33:56,698] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:33:59,795] - pacemaker -  DEBUG: connect() called
+[2020-10-21 10:33:59,795] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 10:33:59,795] - pacemaker -  INFO: Pacemaker 123 is connected
+[2020-10-21 10:33:59,795] - pacemaker -  INFO: Pacemaker 123 is already connected
+[2020-10-21 10:33:59,795] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:33:59,795] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:34:03,750] - data -  DEBUG: _readData() called
+[2020-10-21 10:34:03,750] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:34:03,750] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:34:03,750] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 10:34:03,750] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 10:34:03,750] - data -  INFO: Pacemaker 123 is/was connected
+[2020-10-21 10:34:03,750] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:34:03,751] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:34:03,752] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:34:03,752] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:34:05,265] - pacemaker -  DEBUG: connect() called
+[2020-10-21 10:34:05,265] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 10:34:05,265] - pacemaker -  INFO: Pacemaker 123 is connected
+[2020-10-21 10:34:05,265] - pacemaker -  INFO: Pacemaker 123 is already connected
+[2020-10-21 10:34:05,265] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:34:05,266] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:34:49,625] - data -  DEBUG: _readData() called
+[2020-10-21 10:34:49,625] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:34:49,625] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:34:49,625] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 10:34:49,625] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 10:34:49,625] - data -  INFO: Pacemaker 123 is/was connected
+[2020-10-21 10:34:49,626] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:34:49,626] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:34:49,629] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:34:49,630] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:34:52,744] - data -  DEBUG: _readData() called
+[2020-10-21 10:34:52,744] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:34:52,745] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:34:52,745] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 10:34:52,745] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 10:34:52,745] - data -  INFO: Pacemaker 123 is/was connected
+[2020-10-21 10:34:52,745] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:34:52,745] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:34:52,747] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:34:52,747] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:34:55,409] - pacemaker -  DEBUG: connect() called
+[2020-10-21 10:34:55,409] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 10:34:55,409] - pacemaker -  INFO: Pacemaker 123 is connected
+[2020-10-21 10:34:55,409] - pacemaker -  INFO: Pacemaker 123 is already connected
+[2020-10-21 10:34:55,409] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:34:55,409] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:35:09,231] - data -  DEBUG: _readData() called
+[2020-10-21 10:35:09,231] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:35:09,231] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:35:09,231] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 10:35:09,231] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 10:35:09,231] - data -  INFO: Pacemaker 123 is/was connected
+[2020-10-21 10:35:09,232] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:35:09,232] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:35:09,236] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:35:09,236] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:35:11,771] - data -  DEBUG: _readData() called
+[2020-10-21 10:35:11,771] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:35:11,772] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:35:11,772] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 10:35:11,772] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 10:35:11,772] - data -  INFO: Pacemaker 123 is/was connected
+[2020-10-21 10:35:11,772] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:35:11,772] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:35:11,774] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:35:11,774] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:35:14,693] - pacemaker -  DEBUG: connect() called
+[2020-10-21 10:35:14,693] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 10:35:14,693] - pacemaker -  INFO: Pacemaker 123 is connected
+[2020-10-21 10:35:14,693] - pacemaker -  INFO: Pacemaker 123 is already connected
+[2020-10-21 10:35:14,693] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:35:14,693] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:35:23,276] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:44:12,543] - data -  DEBUG: _readData() called
+[2020-10-21 10:44:12,544] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:44:12,544] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:44:12,544] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 10:44:12,544] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 10:44:12,544] - data -  INFO: Pacemaker 123 is/was connected
+[2020-10-21 10:44:12,544] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:44:12,544] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:44:12,548] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:44:12,548] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:44:14,793] - pacemaker -  DEBUG: connect() called
+[2020-10-21 10:44:14,793] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 10:44:14,793] - pacemaker -  INFO: Pacemaker 123 is connected
+[2020-10-21 10:44:14,793] - pacemaker -  INFO: Pacemaker 123 is already connected
+[2020-10-21 10:44:14,793] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:44:14,793] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:44:27,620] - users -  DEBUG: signInUser() called for test1
+[2020-10-21 10:44:27,620] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:44:27,620] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:44:27,620] - users -  DEBUG: _validateUser() called for test1
+[2020-10-21 10:44:27,621] - users -  INFO: test1 was not validated
+[2020-10-21 10:44:27,621] - users -  INFO: test1 could not be verified
+[2020-10-21 10:44:35,619] - users -  DEBUG: signInUser() called for test1
+[2020-10-21 10:44:35,619] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:44:35,620] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:44:35,620] - users -  DEBUG: _validateUser() called for test1
+[2020-10-21 10:44:35,620] - users -  INFO: test1 was not validated
+[2020-10-21 10:44:35,620] - users -  INFO: test1 could not be verified
+[2020-10-21 10:45:05,066] - data -  DEBUG: _readData() called
+[2020-10-21 10:45:05,067] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:45:05,067] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:45:05,067] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 10:45:05,067] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 10:45:05,067] - data -  INFO: Pacemaker 123 is/was connected
+[2020-10-21 10:45:05,067] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:45:05,067] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:45:05,069] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:45:05,069] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:45:06,326] - pacemaker -  DEBUG: connect() called
+[2020-10-21 10:45:06,326] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 10:45:06,326] - pacemaker -  INFO: Pacemaker 123 is connected
+[2020-10-21 10:45:06,326] - pacemaker -  DEBUG: _addNewPacemaker called
+[2020-10-21 10:45:06,327] - pacemaker -  INFO: Pacemaker 1 created
+[2020-10-21 10:45:06,327] - data -  DEBUG: setConnectedPacemaker() called
+[2020-10-21 10:45:06,327] - data -  INFO: Pacemaker 123 disconnected
+[2020-10-21 10:45:06,327] - data -  DEBUG: _writeData() called
+[2020-10-21 10:45:06,327] - data -  INFO: Pacemaker 1 added to list
+[2020-10-21 10:45:06,327] - data -  INFO: Data written to JSON file
+[2020-10-21 10:45:06,328] - data -  DEBUG: _readData() called
+[2020-10-21 10:45:06,338] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:45:06,338] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:45:06,338] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 10:45:06,338] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 10:45:06,338] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:45:06,338] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 10:45:06,338] - pacemaker -  INFO: Pacemaker 1 is now connected
+[2020-10-21 10:45:06,338] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:45:06,338] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:46:02,293] - data -  DEBUG: _readData() called
+[2020-10-21 10:46:02,294] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:46:02,294] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:46:02,294] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 10:46:02,294] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 10:46:02,294] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:46:02,294] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 10:46:02,294] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:46:02,295] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:46:02,296] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:46:02,296] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:46:04,655] - pacemaker -  DEBUG: connect() called
+[2020-10-21 10:46:04,655] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 10:46:04,655] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-21 10:46:04,655] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-21 10:46:04,655] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:46:04,655] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:46:20,894] - users -  DEBUG: signInUser() called for test4
+[2020-10-21 10:46:20,894] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:46:20,894] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:46:20,894] - users -  DEBUG: _validateUser() called for test4
+[2020-10-21 10:46:20,894] - users -  INFO: test4 was not validated
+[2020-10-21 10:46:20,894] - users -  INFO: test4 could not be verified
+[2020-10-21 10:48:31,269] - data -  DEBUG: _readData() called
+[2020-10-21 10:48:31,269] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:48:31,269] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:48:31,269] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 10:48:31,269] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 10:48:31,269] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:48:31,269] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 10:48:31,270] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:48:31,270] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:48:31,275] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:48:31,275] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:48:34,924] - pacemaker -  DEBUG: connect() called
+[2020-10-21 10:48:34,924] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 10:48:34,924] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-21 10:48:34,924] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-21 10:48:34,924] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:48:34,924] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:51:07,770] - data -  DEBUG: _readData() called
+[2020-10-21 10:51:07,771] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:51:07,771] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:51:07,771] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 10:51:07,771] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 10:51:07,771] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:51:07,771] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 10:51:07,771] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:51:07,771] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:51:07,776] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:51:07,776] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:51:09,239] - pacemaker -  DEBUG: connect() called
+[2020-10-21 10:51:09,239] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 10:51:09,239] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-21 10:51:09,239] - data -  DEBUG: setConnectedPacemaker() called
+[2020-10-21 10:51:09,239] - data -  INFO: Pacemaker 1 disconnected
+[2020-10-21 10:51:09,239] - data -  DEBUG: _writeData() called
+[2020-10-21 10:51:09,239] - data -  INFO: Pacemaker 1 updated
+[2020-10-21 10:51:09,240] - data -  INFO: Data written to JSON file
+[2020-10-21 10:51:09,240] - data -  DEBUG: _readData() called
+[2020-10-21 10:51:09,246] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:51:09,246] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 10:51:09,246] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 10:51:09,247] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:51:09,247] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:51:09,247] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 10:51:09,247] - pacemaker -  INFO: Pacemaker 1 is now connected
+[2020-10-21 10:51:09,247] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:51:09,247] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:51:19,780] - users -  DEBUG: signInUser() called for test3
+[2020-10-21 10:51:19,780] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:51:19,780] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:51:19,780] - users -  INFO: Created user object for test4
+[2020-10-21 10:51:19,780] - users -  INFO: Created user object for test3
+[2020-10-21 10:51:19,780] - users -  INFO: Created user object for Matt
+[2020-10-21 10:51:19,780] - users -  DEBUG: _validateUser() called for test3
+[2020-10-21 10:51:19,780] - users -  INFO: test3 was validated
+[2020-10-21 10:51:19,781] - users -  INFO: test3 is signed in
+[2020-10-21 10:51:23,204] - users -  DEBUG: signInUser() called for 
+[2020-10-21 10:51:23,204] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:51:23,204] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:51:23,204] - users -  INFO: Created user object for test4
+[2020-10-21 10:51:23,204] - users -  INFO: Created user object for test3
+[2020-10-21 10:51:23,204] - users -  INFO: Created user object for Matt
+[2020-10-21 10:51:23,205] - users -  DEBUG: _validateUser() called for 
+[2020-10-21 10:51:23,205] - users -  INFO:  was not validated
+[2020-10-21 10:51:23,205] - users -  INFO:  could not be verified
+[2020-10-21 10:56:43,664] - data -  DEBUG: _readData() called
+[2020-10-21 10:56:43,665] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 10:56:43,665] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 10:56:43,665] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 10:56:43,665] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:56:43,665] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 10:56:43,665] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 10:56:43,666] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:56:43,666] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:56:43,666] - users -  INFO: Created user object for test4
+[2020-10-21 10:56:43,666] - users -  INFO: Created user object for test3
+[2020-10-21 10:56:43,666] - users -  INFO: Created user object for Matt
+[2020-10-21 10:56:43,673] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:56:43,673] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:56:45,173] - pacemaker -  DEBUG: connect() called
+[2020-10-21 10:56:45,173] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 10:56:45,173] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-21 10:56:45,173] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-21 10:56:45,173] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:56:45,173] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 10:56:53,253] - users -  DEBUG: signInUser() called for test1
+[2020-10-21 10:56:53,253] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:56:53,253] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:56:53,253] - users -  INFO: Created user object for test4
+[2020-10-21 10:56:53,253] - users -  INFO: Created user object for test3
+[2020-10-21 10:56:53,253] - users -  INFO: Created user object for Matt
+[2020-10-21 10:56:53,253] - users -  DEBUG: _validateUser() called for test1
+[2020-10-21 10:56:53,254] - users -  INFO: test1 was not validated
+[2020-10-21 10:56:53,254] - users -  INFO: test1 could not be verified
+[2020-10-21 10:56:59,227] - users -  DEBUG: signInUser() called for test3
+[2020-10-21 10:56:59,227] - users -  DEBUG: _getInfo() called
+[2020-10-21 10:56:59,227] - data -  DEBUG: getUserInfo() called
+[2020-10-21 10:56:59,227] - users -  INFO: Created user object for test4
+[2020-10-21 10:56:59,227] - users -  INFO: Created user object for test3
+[2020-10-21 10:56:59,227] - users -  INFO: Created user object for Matt
+[2020-10-21 10:56:59,227] - users -  DEBUG: _validateUser() called for test3
+[2020-10-21 10:56:59,227] - users -  INFO: test3 was validated
+[2020-10-21 10:56:59,228] - users -  INFO: test3 is signed in
+[2020-10-21 10:57:01,669] - users -  DEBUG: currentUserInfo() called
+[2020-10-21 10:57:01,670] - users -  INFO: test3 is logged in
+[2020-10-21 10:57:01,670] - users -  DEBUG: signOutUser() called
+[2020-10-21 10:57:01,670] - users -  INFO: test3 has been logged out
+[2020-10-21 10:57:05,587] - pacemaker -  DEBUG: connect() called
+[2020-10-21 10:57:05,587] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 10:57:05,587] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-21 10:57:05,587] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-21 10:57:05,587] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 10:57:05,587] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 11:00:12,590] - data -  DEBUG: _readData() called
+[2020-10-21 11:00:12,590] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 11:00:12,590] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 11:00:12,590] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 11:00:12,590] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 11:00:12,590] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 11:00:12,591] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 11:00:12,591] - users -  DEBUG: _getInfo() called
+[2020-10-21 11:00:12,591] - data -  DEBUG: getUserInfo() called
+[2020-10-21 11:00:12,591] - users -  INFO: Created user object for test4
+[2020-10-21 11:00:12,591] - users -  INFO: Created user object for test3
+[2020-10-21 11:00:12,591] - users -  INFO: Created user object for Matt
+[2020-10-21 11:00:12,596] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 11:00:12,596] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 11:00:14,735] - pacemaker -  DEBUG: connect() called
+[2020-10-21 11:00:14,735] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 11:00:14,735] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-21 11:00:14,735] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-21 11:00:14,736] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 11:00:14,736] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 11:33:07,414] - data -  DEBUG: _readData() called
+[2020-10-21 11:33:07,414] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 11:33:07,414] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 11:33:07,414] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 11:33:07,414] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 11:33:07,414] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 11:33:07,414] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 11:33:07,415] - users -  DEBUG: _getInfo() called
+[2020-10-21 11:33:07,415] - data -  DEBUG: getUserInfo() called
+[2020-10-21 11:33:07,415] - users -  INFO: Created user object for test4
+[2020-10-21 11:33:07,415] - users -  INFO: Created user object for test3
+[2020-10-21 11:33:07,415] - users -  INFO: Created user object for Matt
+[2020-10-21 11:33:07,417] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 11:33:07,417] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 11:33:11,844] - pacemaker -  DEBUG: connect() called
+[2020-10-21 11:33:11,844] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 11:33:11,844] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-21 11:33:11,844] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-21 11:33:11,844] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 11:33:11,844] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 11:33:18,608] - users -  DEBUG: signInUser() called for test3
+[2020-10-21 11:33:18,608] - users -  DEBUG: _getInfo() called
+[2020-10-21 11:33:18,608] - data -  DEBUG: getUserInfo() called
+[2020-10-21 11:33:18,609] - users -  INFO: Created user object for test4
+[2020-10-21 11:33:18,609] - users -  INFO: Created user object for test3
+[2020-10-21 11:33:18,609] - users -  INFO: Created user object for Matt
+[2020-10-21 11:33:18,609] - users -  DEBUG: _validateUser() called for test3
+[2020-10-21 11:33:18,609] - users -  INFO: test3 was validated
+[2020-10-21 11:33:18,609] - users -  INFO: test3 is signed in
+[2020-10-21 11:33:19,836] - users -  DEBUG: currentUserInfo() called
+[2020-10-21 11:33:19,836] - users -  INFO: test3 is logged in
+[2020-10-21 11:33:19,836] - users -  DEBUG: signOutUser() called
+[2020-10-21 11:33:19,836] - users -  INFO: test3 has been logged out
+[2020-10-21 12:23:06,195] - data -  DEBUG: _readData() called
+[2020-10-21 12:23:06,200] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 12:23:06,200] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 12:23:06,200] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 12:23:06,201] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 12:23:06,201] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 12:23:06,201] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 12:23:06,201] - users -  DEBUG: _getInfo() called
+[2020-10-21 12:23:06,201] - data -  DEBUG: getUserInfo() called
+[2020-10-21 12:23:06,201] - users -  INFO: Created user object for test4
+[2020-10-21 12:23:06,202] - users -  INFO: Created user object for test3
+[2020-10-21 12:23:06,202] - users -  INFO: Created user object for Matt
+[2020-10-21 12:23:06,211] - modes -  DEBUG: _createModes() called
+[2020-10-21 12:23:06,211] - modes -  INFO: Created voo mode
+[2020-10-21 12:23:06,211] - modes -  INFO: Created aoo mode
+[2020-10-21 12:23:06,211] - modes -  INFO: Created vvi mode
+[2020-10-21 12:23:06,211] - modes -  INFO: Created aai mode
+[2020-10-21 12:23:06,214] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 12:23:06,214] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 12:23:08,803] - pacemaker -  DEBUG: connect() called
+[2020-10-21 12:23:08,803] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 12:23:08,803] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-21 12:23:08,803] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-21 12:23:08,803] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 12:23:08,803] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 12:23:14,048] - users -  DEBUG: signInUser() called for test3
+[2020-10-21 12:23:14,048] - users -  DEBUG: _getInfo() called
+[2020-10-21 12:23:14,048] - data -  DEBUG: getUserInfo() called
+[2020-10-21 12:23:14,048] - users -  INFO: Created user object for test4
+[2020-10-21 12:23:14,048] - users -  INFO: Created user object for test3
+[2020-10-21 12:23:14,048] - users -  INFO: Created user object for Matt
+[2020-10-21 12:23:14,048] - users -  DEBUG: _validateUser() called for test3
+[2020-10-21 12:23:14,048] - users -  INFO: test3 was validated
+[2020-10-21 12:23:14,048] - users -  INFO: test3 is signed in
+[2020-10-21 12:23:23,045] - modes -  DEBUG: allModes() called
+[2020-10-21 12:26:26,938] - data -  DEBUG: _readData() called
+[2020-10-21 12:26:26,938] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 12:26:26,939] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 12:26:26,939] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 12:26:26,939] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 12:26:26,939] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 12:26:26,939] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 12:26:26,939] - users -  DEBUG: _getInfo() called
+[2020-10-21 12:26:26,939] - data -  DEBUG: getUserInfo() called
+[2020-10-21 12:26:26,939] - users -  INFO: Created user object for test4
+[2020-10-21 12:26:26,939] - users -  INFO: Created user object for test3
+[2020-10-21 12:26:26,940] - users -  INFO: Created user object for Matt
+[2020-10-21 12:26:26,945] - modes -  DEBUG: _createModes() called
+[2020-10-21 12:26:26,946] - modes -  INFO: Created voo mode
+[2020-10-21 12:26:26,946] - modes -  INFO: Created aoo mode
+[2020-10-21 12:26:26,946] - modes -  INFO: Created vvi mode
+[2020-10-21 12:26:26,946] - modes -  INFO: Created aai mode
+[2020-10-21 12:26:26,949] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 12:26:26,949] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 12:26:27,005] - modes -  DEBUG: allModes() called
+[2020-10-21 12:26:28,459] - pacemaker -  DEBUG: connect() called
+[2020-10-21 12:26:28,459] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 12:26:28,460] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-21 12:26:28,460] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-21 12:26:28,460] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 12:26:28,460] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 12:26:35,529] - users -  DEBUG: signInUser() called for test3
+[2020-10-21 12:26:35,529] - users -  DEBUG: _getInfo() called
+[2020-10-21 12:26:35,529] - data -  DEBUG: getUserInfo() called
+[2020-10-21 12:26:35,529] - users -  INFO: Created user object for test4
+[2020-10-21 12:26:35,529] - users -  INFO: Created user object for test3
+[2020-10-21 12:26:35,529] - users -  INFO: Created user object for Matt
+[2020-10-21 12:26:35,530] - users -  DEBUG: _validateUser() called for test3
+[2020-10-21 12:26:35,530] - users -  INFO: test3 was validated
+[2020-10-21 12:26:35,530] - users -  INFO: test3 is signed in
+[2020-10-21 12:34:30,583] - data -  DEBUG: _readData() called
+[2020-10-21 12:34:30,583] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 12:34:30,583] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 12:34:30,583] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 12:34:30,583] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 12:34:30,583] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 12:34:30,583] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 12:34:30,584] - users -  DEBUG: _getInfo() called
+[2020-10-21 12:34:30,584] - data -  DEBUG: getUserInfo() called
+[2020-10-21 12:34:30,584] - users -  INFO: Created user object for test4
+[2020-10-21 12:34:30,584] - users -  INFO: Created user object for test3
+[2020-10-21 12:34:30,584] - users -  INFO: Created user object for Matt
+[2020-10-21 12:34:30,588] - modes -  DEBUG: _createModes() called
+[2020-10-21 12:34:30,588] - modes -  INFO: Created voo mode
+[2020-10-21 12:34:30,588] - modes -  INFO: Created aoo mode
+[2020-10-21 12:34:30,588] - modes -  INFO: Created vvi mode
+[2020-10-21 12:34:30,588] - modes -  INFO: Created aai mode
+[2020-10-21 12:34:30,590] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 12:34:30,590] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 12:36:00,420] - data -  DEBUG: _readData() called
+[2020-10-21 12:36:00,420] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 12:36:00,420] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 12:36:00,420] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 12:36:00,420] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 12:36:00,420] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 12:36:00,420] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 12:36:00,421] - users -  DEBUG: _getInfo() called
+[2020-10-21 12:36:00,421] - data -  DEBUG: getUserInfo() called
+[2020-10-21 12:36:00,421] - users -  INFO: Created user object for test4
+[2020-10-21 12:36:00,421] - users -  INFO: Created user object for test3
+[2020-10-21 12:36:00,421] - users -  INFO: Created user object for Matt
+[2020-10-21 12:36:00,425] - modes -  DEBUG: _createModes() called
+[2020-10-21 12:36:00,425] - modes -  INFO: Created voo mode
+[2020-10-21 12:36:00,425] - modes -  INFO: Created aoo mode
+[2020-10-21 12:36:00,426] - modes -  INFO: Created vvi mode
+[2020-10-21 12:36:00,426] - modes -  INFO: Created aai mode
+[2020-10-21 12:36:00,427] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 12:36:00,427] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 12:36:00,478] - modes -  DEBUG: allModes() called
+[2020-10-21 12:36:02,220] - pacemaker -  DEBUG: connect() called
+[2020-10-21 12:36:02,220] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 12:36:02,221] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-21 12:36:02,221] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-21 12:36:02,221] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 12:36:02,221] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 12:36:08,277] - users -  DEBUG: signInUser() called for test3
+[2020-10-21 12:36:08,277] - users -  DEBUG: _getInfo() called
+[2020-10-21 12:36:08,277] - data -  DEBUG: getUserInfo() called
+[2020-10-21 12:36:08,277] - users -  INFO: Created user object for test4
+[2020-10-21 12:36:08,278] - users -  INFO: Created user object for test3
+[2020-10-21 12:36:08,278] - users -  INFO: Created user object for Matt
+[2020-10-21 12:36:08,278] - users -  DEBUG: _validateUser() called for test3
+[2020-10-21 12:36:08,278] - users -  INFO: test3 was validated
+[2020-10-21 12:36:08,278] - users -  INFO: test3 is signed in
+[2020-10-21 12:36:54,152] - data -  DEBUG: _readData() called
+[2020-10-21 12:36:54,152] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 12:36:54,152] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 12:36:54,152] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 12:36:54,152] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 12:36:54,152] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 12:36:54,153] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 12:36:54,153] - users -  DEBUG: _getInfo() called
+[2020-10-21 12:36:54,153] - data -  DEBUG: getUserInfo() called
+[2020-10-21 12:36:54,153] - users -  INFO: Created user object for test4
+[2020-10-21 12:36:54,153] - users -  INFO: Created user object for test3
+[2020-10-21 12:36:54,153] - users -  INFO: Created user object for Matt
+[2020-10-21 12:36:54,158] - modes -  DEBUG: _createModes() called
+[2020-10-21 12:36:54,158] - modes -  INFO: Created voo mode
+[2020-10-21 12:36:54,158] - modes -  INFO: Created aoo mode
+[2020-10-21 12:36:54,158] - modes -  INFO: Created vvi mode
+[2020-10-21 12:36:54,158] - modes -  INFO: Created aai mode
+[2020-10-21 12:36:54,160] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 12:36:54,160] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 12:36:54,212] - modes -  DEBUG: allModes() called
+[2020-10-21 12:36:55,757] - pacemaker -  DEBUG: connect() called
+[2020-10-21 12:36:55,758] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 12:36:55,758] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-21 12:36:55,758] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-21 12:36:55,758] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 12:36:55,758] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 12:37:06,991] - users -  DEBUG: signInUser() called for test3
+[2020-10-21 12:37:06,992] - users -  DEBUG: _getInfo() called
+[2020-10-21 12:37:06,992] - data -  DEBUG: getUserInfo() called
+[2020-10-21 12:37:06,992] - users -  INFO: Created user object for test4
+[2020-10-21 12:37:06,992] - users -  INFO: Created user object for test3
+[2020-10-21 12:37:06,992] - users -  INFO: Created user object for Matt
+[2020-10-21 12:37:06,992] - users -  DEBUG: _validateUser() called for test3
+[2020-10-21 12:37:06,992] - users -  INFO: test3 was validated
+[2020-10-21 12:37:06,992] - users -  INFO: test3 is signed in
+[2020-10-21 12:39:03,049] - data -  DEBUG: _readData() called
+[2020-10-21 12:39:03,050] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 12:39:03,050] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 12:39:03,050] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 12:39:03,050] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 12:39:03,050] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 12:39:03,050] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 12:39:03,050] - users -  DEBUG: _getInfo() called
+[2020-10-21 12:39:03,050] - data -  DEBUG: getUserInfo() called
+[2020-10-21 12:39:03,051] - users -  INFO: Created user object for test4
+[2020-10-21 12:39:03,051] - users -  INFO: Created user object for test3
+[2020-10-21 12:39:03,051] - users -  INFO: Created user object for Matt
+[2020-10-21 12:39:03,055] - modes -  DEBUG: _createModes() called
+[2020-10-21 12:39:03,055] - modes -  INFO: Created voo mode
+[2020-10-21 12:39:03,055] - modes -  INFO: Created aoo mode
+[2020-10-21 12:39:03,055] - modes -  INFO: Created vvi mode
+[2020-10-21 12:39:03,055] - modes -  INFO: Created aai mode
+[2020-10-21 12:39:03,057] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 12:39:03,057] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 12:39:03,108] - modes -  DEBUG: allModes() called
+[2020-10-21 12:39:04,840] - pacemaker -  DEBUG: connect() called
+[2020-10-21 12:39:04,840] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 12:39:04,840] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-21 12:39:04,840] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-21 12:39:04,840] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 12:39:04,840] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 12:39:13,251] - users -  DEBUG: signInUser() called for test3
+[2020-10-21 12:39:13,251] - users -  DEBUG: _getInfo() called
+[2020-10-21 12:39:13,251] - data -  DEBUG: getUserInfo() called
+[2020-10-21 12:39:13,251] - users -  INFO: Created user object for test4
+[2020-10-21 12:39:13,251] - users -  INFO: Created user object for test3
+[2020-10-21 12:39:13,251] - users -  INFO: Created user object for Matt
+[2020-10-21 12:39:13,252] - users -  DEBUG: _validateUser() called for test3
+[2020-10-21 12:39:13,252] - users -  INFO: test3 was validated
+[2020-10-21 12:39:13,252] - users -  INFO: test3 is signed in
+[2020-10-21 12:40:42,909] - data -  DEBUG: _readData() called
+[2020-10-21 12:40:42,909] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 12:40:42,909] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 12:40:42,909] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 12:40:42,909] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 12:40:42,909] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 12:40:42,909] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 12:40:42,910] - users -  DEBUG: _getInfo() called
+[2020-10-21 12:40:42,910] - data -  DEBUG: getUserInfo() called
+[2020-10-21 12:40:42,910] - users -  INFO: Created user object for test4
+[2020-10-21 12:40:42,910] - users -  INFO: Created user object for test3
+[2020-10-21 12:40:42,910] - users -  INFO: Created user object for Matt
+[2020-10-21 12:40:42,915] - modes -  DEBUG: _createModes() called
+[2020-10-21 12:40:42,915] - modes -  INFO: Created voo mode
+[2020-10-21 12:40:42,915] - modes -  INFO: Created aoo mode
+[2020-10-21 12:40:42,915] - modes -  INFO: Created vvi mode
+[2020-10-21 12:40:42,915] - modes -  INFO: Created aai mode
+[2020-10-21 12:40:42,917] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 12:40:42,917] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 12:40:42,970] - modes -  DEBUG: allModes() called
+[2020-10-21 12:40:44,691] - pacemaker -  DEBUG: connect() called
+[2020-10-21 12:40:44,691] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 12:40:44,691] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-21 12:40:44,691] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-21 12:40:44,691] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 12:40:44,692] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 12:40:51,466] - users -  DEBUG: signInUser() called for test3
+[2020-10-21 12:40:51,466] - users -  DEBUG: _getInfo() called
+[2020-10-21 12:40:51,466] - data -  DEBUG: getUserInfo() called
+[2020-10-21 12:40:51,466] - users -  INFO: Created user object for test4
+[2020-10-21 12:40:51,466] - users -  INFO: Created user object for test3
+[2020-10-21 12:40:51,466] - users -  INFO: Created user object for Matt
+[2020-10-21 12:40:51,466] - users -  DEBUG: _validateUser() called for test3
+[2020-10-21 12:40:51,466] - users -  INFO: test3 was validated
+[2020-10-21 12:40:51,466] - users -  INFO: test3 is signed in
+[2020-10-21 12:41:10,972] - users -  DEBUG: currentUserInfo() called
+[2020-10-21 12:41:10,973] - users -  INFO: test3 is logged in
+[2020-10-21 12:41:10,973] - users -  DEBUG: signOutUser() called
+[2020-10-21 12:41:10,973] - users -  INFO: test3 has been logged out
+[2020-10-21 13:19:38,401] - data -  DEBUG: _readData() called
+[2020-10-21 13:19:38,401] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 13:19:38,401] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 13:19:38,401] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 13:19:38,401] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 13:19:38,401] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 13:19:38,401] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 13:19:38,402] - users -  DEBUG: _getInfo() called
+[2020-10-21 13:19:38,402] - data -  DEBUG: getUserInfo() called
+[2020-10-21 13:19:38,402] - users -  INFO: Created user object for test4
+[2020-10-21 13:19:38,402] - users -  INFO: Created user object for test3
+[2020-10-21 13:19:38,402] - users -  INFO: Created user object for Matt
+[2020-10-21 13:19:38,408] - modes -  DEBUG: _createModes() called
+[2020-10-21 13:19:38,408] - modes -  INFO: Created voo mode
+[2020-10-21 13:19:38,408] - modes -  INFO: Created aoo mode
+[2020-10-21 13:19:38,408] - modes -  INFO: Created vvi mode
+[2020-10-21 13:19:38,408] - modes -  INFO: Created aai mode
+[2020-10-21 13:19:38,410] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 13:19:38,411] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 13:29:53,471] - data -  DEBUG: _readData() called
+[2020-10-21 13:29:53,471] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 13:29:53,471] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 13:29:53,472] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 13:29:53,472] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 13:29:53,472] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 13:29:53,472] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 13:29:53,472] - users -  DEBUG: _getInfo() called
+[2020-10-21 13:29:53,472] - data -  DEBUG: getUserInfo() called
+[2020-10-21 13:29:53,472] - users -  INFO: Created user object for test4
+[2020-10-21 13:29:53,472] - users -  INFO: Created user object for test3
+[2020-10-21 13:29:53,472] - users -  INFO: Created user object for Matt
+[2020-10-21 13:29:53,476] - modes -  DEBUG: _createModes() called
+[2020-10-21 13:29:53,477] - modes -  INFO: Created voo mode
+[2020-10-21 13:29:53,477] - modes -  INFO: Created aoo mode
+[2020-10-21 13:29:53,477] - modes -  INFO: Created vvi mode
+[2020-10-21 13:29:53,477] - modes -  INFO: Created aai mode
+[2020-10-21 13:29:53,479] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 13:29:53,479] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 13:29:53,531] - modes -  DEBUG: allModes() called
+[2020-10-21 13:29:55,274] - pacemaker -  DEBUG: connect() called
+[2020-10-21 13:29:55,274] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 13:29:55,274] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-21 13:29:55,274] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-21 13:29:55,274] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 13:29:55,274] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 13:30:04,698] - users -  DEBUG: signInUser() called for test3
+[2020-10-21 13:30:04,698] - users -  DEBUG: _getInfo() called
+[2020-10-21 13:30:04,698] - data -  DEBUG: getUserInfo() called
+[2020-10-21 13:30:04,698] - users -  INFO: Created user object for test4
+[2020-10-21 13:30:04,698] - users -  INFO: Created user object for test3
+[2020-10-21 13:30:04,699] - users -  INFO: Created user object for Matt
+[2020-10-21 13:30:04,699] - users -  DEBUG: _validateUser() called for test3
+[2020-10-21 13:30:04,699] - users -  INFO: test3 was validated
+[2020-10-21 13:30:04,699] - users -  INFO: test3 is signed in
+[2020-10-21 13:31:21,241] - data -  DEBUG: _readData() called
+[2020-10-21 13:31:21,242] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 13:31:21,242] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 13:31:21,242] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 13:31:21,242] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 13:31:21,242] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 13:31:21,242] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 13:31:21,243] - users -  DEBUG: _getInfo() called
+[2020-10-21 13:31:21,243] - data -  DEBUG: getUserInfo() called
+[2020-10-21 13:31:21,243] - users -  INFO: Created user object for test4
+[2020-10-21 13:31:21,243] - users -  INFO: Created user object for test3
+[2020-10-21 13:31:21,243] - users -  INFO: Created user object for Matt
+[2020-10-21 13:31:21,247] - modes -  DEBUG: _createModes() called
+[2020-10-21 13:31:21,247] - modes -  INFO: Created voo mode
+[2020-10-21 13:31:21,247] - modes -  INFO: Created aoo mode
+[2020-10-21 13:31:21,247] - modes -  INFO: Created vvi mode
+[2020-10-21 13:31:21,247] - modes -  INFO: Created aai mode
+[2020-10-21 13:31:21,250] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 13:31:21,250] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 13:31:21,300] - modes -  DEBUG: allModes() called
+[2020-10-21 13:31:23,144] - pacemaker -  DEBUG: connect() called
+[2020-10-21 13:31:23,144] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 13:31:23,144] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-21 13:31:23,144] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-21 13:31:23,144] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 13:31:23,144] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 13:31:31,838] - users -  DEBUG: signInUser() called for test3
+[2020-10-21 13:31:31,838] - users -  DEBUG: _getInfo() called
+[2020-10-21 13:31:31,838] - data -  DEBUG: getUserInfo() called
+[2020-10-21 13:31:31,838] - users -  INFO: Created user object for test4
+[2020-10-21 13:31:31,838] - users -  INFO: Created user object for test3
+[2020-10-21 13:31:31,838] - users -  INFO: Created user object for Matt
+[2020-10-21 13:31:31,839] - users -  DEBUG: _validateUser() called for test3
+[2020-10-21 13:31:31,839] - users -  INFO: test3 was validated
+[2020-10-21 13:31:31,839] - users -  INFO: test3 is signed in
+[2020-10-21 13:32:19,237] - data -  DEBUG: _readData() called
+[2020-10-21 13:32:19,237] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 13:32:19,237] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 13:32:19,237] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 13:32:19,237] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 13:32:19,237] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 13:32:19,237] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 13:32:19,238] - users -  DEBUG: _getInfo() called
+[2020-10-21 13:32:19,238] - data -  DEBUG: getUserInfo() called
+[2020-10-21 13:32:19,238] - users -  INFO: Created user object for test4
+[2020-10-21 13:32:19,238] - users -  INFO: Created user object for test3
+[2020-10-21 13:32:19,238] - users -  INFO: Created user object for Matt
+[2020-10-21 13:32:19,242] - modes -  DEBUG: _createModes() called
+[2020-10-21 13:32:19,242] - modes -  INFO: Created voo mode
+[2020-10-21 13:32:19,242] - modes -  INFO: Created aoo mode
+[2020-10-21 13:32:19,242] - modes -  INFO: Created vvi mode
+[2020-10-21 13:32:19,243] - modes -  INFO: Created aai mode
+[2020-10-21 13:32:19,244] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 13:32:19,244] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 13:32:19,296] - modes -  DEBUG: allModes() called
+[2020-10-21 13:32:22,654] - pacemaker -  DEBUG: connect() called
+[2020-10-21 13:32:22,654] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 13:32:22,654] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-21 13:32:22,654] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-21 13:32:22,654] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 13:32:22,655] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 13:32:33,195] - users -  DEBUG: signInUser() called for test3
+[2020-10-21 13:32:33,195] - users -  DEBUG: _getInfo() called
+[2020-10-21 13:32:33,195] - data -  DEBUG: getUserInfo() called
+[2020-10-21 13:32:33,195] - users -  INFO: Created user object for test4
+[2020-10-21 13:32:33,195] - users -  INFO: Created user object for test3
+[2020-10-21 13:32:33,195] - users -  INFO: Created user object for Matt
+[2020-10-21 13:32:33,195] - users -  DEBUG: _validateUser() called for test3
+[2020-10-21 13:32:33,195] - users -  INFO: test3 was validated
+[2020-10-21 13:32:33,196] - users -  INFO: test3 is signed in
+[2020-10-21 13:33:29,803] - data -  DEBUG: _readData() called
+[2020-10-21 13:33:29,803] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 13:33:29,803] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 13:33:29,804] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 13:33:29,804] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 13:33:29,804] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 13:33:29,804] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 13:33:29,804] - users -  DEBUG: _getInfo() called
+[2020-10-21 13:33:29,804] - data -  DEBUG: getUserInfo() called
+[2020-10-21 13:33:29,804] - users -  INFO: Created user object for test4
+[2020-10-21 13:33:29,804] - users -  INFO: Created user object for test3
+[2020-10-21 13:33:29,804] - users -  INFO: Created user object for Matt
+[2020-10-21 13:33:29,805] - modes -  DEBUG: _createModes() called
+[2020-10-21 13:33:29,805] - modes -  INFO: Created voo mode
+[2020-10-21 13:33:29,805] - modes -  INFO: Created aoo mode
+[2020-10-21 13:33:29,805] - modes -  INFO: Created vvi mode
+[2020-10-21 13:33:29,805] - modes -  INFO: Created aai mode
+[2020-10-21 13:33:29,810] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 13:33:29,810] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 13:33:33,049] - data -  DEBUG: _readData() called
+[2020-10-21 13:33:33,049] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 13:33:33,049] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 13:33:33,049] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 13:33:33,049] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 13:33:33,049] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 13:33:33,049] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 13:33:33,050] - users -  DEBUG: _getInfo() called
+[2020-10-21 13:33:33,050] - data -  DEBUG: getUserInfo() called
+[2020-10-21 13:33:33,050] - users -  INFO: Created user object for test4
+[2020-10-21 13:33:33,050] - users -  INFO: Created user object for test3
+[2020-10-21 13:33:33,050] - users -  INFO: Created user object for Matt
+[2020-10-21 13:33:33,051] - modes -  DEBUG: _createModes() called
+[2020-10-21 13:33:33,052] - modes -  INFO: Created voo mode
+[2020-10-21 13:33:33,052] - modes -  INFO: Created aoo mode
+[2020-10-21 13:33:33,052] - modes -  INFO: Created vvi mode
+[2020-10-21 13:33:33,052] - modes -  INFO: Created aai mode
+[2020-10-21 13:33:33,053] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 13:33:33,053] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 13:33:33,100] - modes -  DEBUG: allModes() called
+[2020-10-21 13:33:34,835] - pacemaker -  DEBUG: connect() called
+[2020-10-21 13:33:34,835] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 13:33:34,835] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-21 13:33:34,835] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-21 13:33:34,835] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 13:33:34,835] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 13:33:39,967] - users -  DEBUG: signInUser() called for test3
+[2020-10-21 13:33:39,967] - users -  DEBUG: _getInfo() called
+[2020-10-21 13:33:39,967] - data -  DEBUG: getUserInfo() called
+[2020-10-21 13:33:39,967] - users -  INFO: Created user object for test4
+[2020-10-21 13:33:39,967] - users -  INFO: Created user object for test3
+[2020-10-21 13:33:39,967] - users -  INFO: Created user object for Matt
+[2020-10-21 13:33:39,967] - users -  DEBUG: _validateUser() called for test3
+[2020-10-21 13:33:39,967] - users -  INFO: test3 was validated
+[2020-10-21 13:33:39,967] - users -  INFO: test3 is signed in
+[2020-10-21 13:33:42,158] - modes -  ERROR: setCurrentMode requires a Mode object
+[2020-10-21 13:33:46,302] - users -  DEBUG: currentUserInfo() called
+[2020-10-21 13:33:46,302] - users -  INFO: test3 is logged in
+[2020-10-21 13:33:46,302] - users -  DEBUG: signOutUser() called
+[2020-10-21 13:33:46,302] - users -  INFO: test3 has been logged out
+[2020-10-21 13:58:49,447] - data -  DEBUG: _readData() called
+[2020-10-21 13:58:49,451] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 13:58:49,451] - data -  DEBUG: Pacemaker  data read
+[2020-10-21 13:58:49,451] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-21 13:58:49,451] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 13:58:49,451] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 13:58:49,451] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-21 13:58:49,452] - users -  DEBUG: _getInfo() called
+[2020-10-21 13:58:49,452] - data -  DEBUG: getUserInfo() called
+[2020-10-21 13:58:49,452] - users -  INFO: Created user object for test4
+[2020-10-21 13:58:49,452] - users -  INFO: Created user object for test3
+[2020-10-21 13:58:49,452] - users -  INFO: Created user object for Matt
+[2020-10-21 13:58:49,457] - modes -  DEBUG: _createModes() called
+[2020-10-21 13:58:49,457] - modes -  INFO: Created voo mode
+[2020-10-21 13:58:49,457] - modes -  INFO: Created aoo mode
+[2020-10-21 13:58:49,458] - modes -  INFO: Created vvi mode
+[2020-10-21 13:58:49,458] - modes -  INFO: Created aai mode
+[2020-10-21 13:58:49,460] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 13:58:49,460] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 13:58:49,681] - modes -  DEBUG: allModes() called
+[2020-10-21 13:58:50,966] - pacemaker -  DEBUG: connect() called
+[2020-10-21 13:58:50,966] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-21 13:58:50,966] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-21 13:58:50,966] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-21 13:58:50,966] - pacemaker -  DEBUG: _getData() called
+[2020-10-21 13:58:50,966] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-21 13:58:58,569] - users -  DEBUG: signInUser() called for test3
+[2020-10-21 13:58:58,569] - users -  DEBUG: _getInfo() called
+[2020-10-21 13:58:58,569] - data -  DEBUG: getUserInfo() called
+[2020-10-21 13:58:58,569] - users -  INFO: Created user object for test4
+[2020-10-21 13:58:58,569] - users -  INFO: Created user object for test3
+[2020-10-21 13:58:58,570] - users -  INFO: Created user object for Matt
+[2020-10-21 13:58:58,570] - users -  DEBUG: _validateUser() called for test3
+[2020-10-21 13:58:58,570] - users -  INFO: test3 was validated
+[2020-10-21 13:58:58,570] - users -  INFO: test3 is signed in
+[2020-10-21 13:59:01,030] - modes -  ERROR: setCurrentMode requires a Mode object
+[2020-10-21 13:59:20,883] - users -  DEBUG: currentUserInfo() called
+[2020-10-21 13:59:20,883] - users -  INFO: test3 is logged in
+[2020-10-21 13:59:20,883] - users -  DEBUG: signOutUser() called
+[2020-10-21 13:59:20,883] - users -  INFO: test3 has been logged out

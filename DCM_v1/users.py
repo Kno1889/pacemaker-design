@@ -41,10 +41,6 @@ def makeNewUser(name, password):
     logger.info('user was not make for %s')
     return False
 
-# returns all user info from the data class parsed
-def getUsers():
-    return data.getUserInfo()
-
 
 # deletes the given user and the corresponding saved info if they are signed in. Returns true if the user was deleted successfully
 def deleteUser(name):

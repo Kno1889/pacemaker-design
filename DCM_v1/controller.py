@@ -13,7 +13,6 @@ from tkinter import ttk
 from tkinter import messagebox as tm
 
 import users 
-import data         # Should not be imported or used by the frontend
 
 from pages import *
 import settings
@@ -73,40 +72,24 @@ def delete_user():
 
     def del_user(user):
         print(user)
-        if user == "None":
+        if user == []:
+            tm.showinfo("No User Logged In")
             close_window()
-        elif users.deleteUser(user):
+        elif users.deleteUser(user[0]):
             tm.showinfo("Deleted User", "Successfully deleted user")
             close_window()
         else:
             tm.showerror("Error", settings.cfError)
             close_window()
 
-    raw_user_data = users.getUsers()
-    options = []
-    for data in raw_user_data:
-        options.append(data['name'])
-    
-    # Tkinter being silly needs two none options for one to be default and for one to show
-    # in the dropdown
-    options.insert(0,"None")
-    options.insert(0,"None")
-
-
     delete_user = tk.Tk()
     delete_user.minsize(300,100)
-    delete_user.wm_title("Delete a User")
+    delete_user.wm_title("Delete User")
 
     title_text = ttk.Label(delete_user, text = "Delete a User", font=settings.LARGE_FONT)
     title_text.pack(pady=1)
 
-    choice = tk.StringVar(delete_user)
-    choice.set(options[0])
-
-    option = ttk.OptionMenu(delete_user, choice, *options)
-    option.pack()
-
-    B1 = ttk.Button(delete_user, text="Delete", command=lambda: del_user(choice.get()))
+    B1 = ttk.Button(delete_user, text="Delete Current User", command=lambda: del_user(users.currentUserInfo()))
     B1.pack(pady=2)
 
     delete_user.mainloop()
@@ -138,7 +121,7 @@ class Controller(tk.Tk):
 
             frame.grid(row = 0, column = 0, sticky="NSEW")
 
-        self.show_frame(Frames["Login"])
+        self.show_frame(Frames["DevID"])
 
     def show_frame(self, cont):
 

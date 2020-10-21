@@ -60,7 +60,11 @@ def saveParamValues(modeEdit, parameterValues):
         logger.error('saveParamValues requires a Mode object and dictionary')
 
 # Makes the given mode as the current operating mode
-
+def getCurrentMode():
+    # needs logging
+    for mode in all_modes:
+        if mode.currentMode == True:
+            return mode
 
 def setCurrentMode(currMode):
     if type(currMode) == Mode:

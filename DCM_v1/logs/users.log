@@ -1412,3 +1412,274 @@
 [2020-10-21 08:28:22,607] INFO: asdasd could not be verified
 [2020-10-21 08:28:27,061] DEBUG: deleteUser() called for test1
 [2020-10-21 08:28:33,853] DEBUG: deleteUser() called for test2
+[2020-10-21 10:22:17,898] DEBUG: _getInfo() called
+[2020-10-21 10:22:17,898] INFO: Created user object for test1
+[2020-10-21 10:22:17,898] INFO: Created user object for test2
+[2020-10-21 10:22:17,898] INFO: Created user object for test3
+[2020-10-21 10:22:17,898] INFO: Created user object for test4
+[2020-10-21 10:22:17,898] INFO: Created user object for test5
+[2020-10-21 10:22:17,899] INFO: Created user object for test6
+[2020-10-21 10:22:17,899] INFO: Created user object for test7
+[2020-10-21 10:22:17,899] INFO: Created user object for test8
+[2020-10-21 10:22:17,899] INFO: Created user object for test9
+[2020-10-21 10:22:17,899] INFO: Created user object for 1234
+[2020-10-21 10:22:31,333] DEBUG: signInUser() called for test9
+[2020-10-21 10:22:31,333] DEBUG: _getInfo() called
+[2020-10-21 10:22:31,333] INFO: Created user object for test1
+[2020-10-21 10:22:31,333] INFO: Created user object for test2
+[2020-10-21 10:22:31,333] INFO: Created user object for test3
+[2020-10-21 10:22:31,333] INFO: Created user object for test4
+[2020-10-21 10:22:31,333] INFO: Created user object for test5
+[2020-10-21 10:22:31,333] INFO: Created user object for test6
+[2020-10-21 10:22:31,334] INFO: Created user object for test7
+[2020-10-21 10:22:31,334] INFO: Created user object for test8
+[2020-10-21 10:22:31,334] INFO: Created user object for test9
+[2020-10-21 10:22:31,334] INFO: Created user object for 1234
+[2020-10-21 10:22:31,334] DEBUG: _validateUser() called for test9
+[2020-10-21 10:22:31,334] INFO: test9 was validated
+[2020-10-21 10:22:31,334] INFO: test9 is signed in
+[2020-10-21 10:32:02,019] DEBUG: _getInfo() called
+[2020-10-21 10:33:29,769] DEBUG: _getInfo() called
+[2020-10-21 10:33:37,916] DEBUG: _getInfo() called
+[2020-10-21 10:33:56,696] DEBUG: _getInfo() called
+[2020-10-21 10:34:03,750] DEBUG: _getInfo() called
+[2020-10-21 10:34:49,626] DEBUG: _getInfo() called
+[2020-10-21 10:34:52,745] DEBUG: _getInfo() called
+[2020-10-21 10:35:09,232] DEBUG: _getInfo() called
+[2020-10-21 10:35:11,772] DEBUG: _getInfo() called
+[2020-10-21 10:44:12,544] DEBUG: _getInfo() called
+[2020-10-21 10:44:27,620] DEBUG: signInUser() called for test1
+[2020-10-21 10:44:27,620] DEBUG: _getInfo() called
+[2020-10-21 10:44:27,620] DEBUG: _validateUser() called for test1
+[2020-10-21 10:44:27,621] INFO: test1 was not validated
+[2020-10-21 10:44:27,621] INFO: test1 could not be verified
+[2020-10-21 10:44:35,619] DEBUG: signInUser() called for test1
+[2020-10-21 10:44:35,619] DEBUG: _getInfo() called
+[2020-10-21 10:44:35,620] DEBUG: _validateUser() called for test1
+[2020-10-21 10:44:35,620] INFO: test1 was not validated
+[2020-10-21 10:44:35,620] INFO: test1 could not be verified
+[2020-10-21 10:45:05,067] DEBUG: _getInfo() called
+[2020-10-21 10:46:02,294] DEBUG: _getInfo() called
+[2020-10-21 10:46:20,894] DEBUG: signInUser() called for test4
+[2020-10-21 10:46:20,894] DEBUG: _getInfo() called
+[2020-10-21 10:46:20,894] DEBUG: _validateUser() called for test4
+[2020-10-21 10:46:20,894] INFO: test4 was not validated
+[2020-10-21 10:46:20,894] INFO: test4 could not be verified
+[2020-10-21 10:48:31,270] DEBUG: _getInfo() called
+[2020-10-21 10:51:07,771] DEBUG: _getInfo() called
+[2020-10-21 10:51:19,780] DEBUG: signInUser() called for test3
+[2020-10-21 10:51:19,780] DEBUG: _getInfo() called
+[2020-10-21 10:51:19,780] INFO: Created user object for test4
+[2020-10-21 10:51:19,780] INFO: Created user object for test3
+[2020-10-21 10:51:19,780] INFO: Created user object for Matt
+[2020-10-21 10:51:19,780] DEBUG: _validateUser() called for test3
+[2020-10-21 10:51:19,780] INFO: test3 was validated
+[2020-10-21 10:51:19,781] INFO: test3 is signed in
+[2020-10-21 10:51:23,204] DEBUG: signInUser() called for 
+[2020-10-21 10:51:23,204] DEBUG: _getInfo() called
+[2020-10-21 10:51:23,204] INFO: Created user object for test4
+[2020-10-21 10:51:23,204] INFO: Created user object for test3
+[2020-10-21 10:51:23,204] INFO: Created user object for Matt
+[2020-10-21 10:51:23,205] DEBUG: _validateUser() called for 
+[2020-10-21 10:51:23,205] INFO:  was not validated
+[2020-10-21 10:51:23,205] INFO:  could not be verified
+[2020-10-21 10:56:43,666] DEBUG: _getInfo() called
+[2020-10-21 10:56:43,666] INFO: Created user object for test4
+[2020-10-21 10:56:43,666] INFO: Created user object for test3
+[2020-10-21 10:56:43,666] INFO: Created user object for Matt
+[2020-10-21 10:56:53,253] DEBUG: signInUser() called for test1
+[2020-10-21 10:56:53,253] DEBUG: _getInfo() called
+[2020-10-21 10:56:53,253] INFO: Created user object for test4
+[2020-10-21 10:56:53,253] INFO: Created user object for test3
+[2020-10-21 10:56:53,253] INFO: Created user object for Matt
+[2020-10-21 10:56:53,253] DEBUG: _validateUser() called for test1
+[2020-10-21 10:56:53,254] INFO: test1 was not validated
+[2020-10-21 10:56:53,254] INFO: test1 could not be verified
+[2020-10-21 10:56:59,227] DEBUG: signInUser() called for test3
+[2020-10-21 10:56:59,227] DEBUG: _getInfo() called
+[2020-10-21 10:56:59,227] INFO: Created user object for test4
+[2020-10-21 10:56:59,227] INFO: Created user object for test3
+[2020-10-21 10:56:59,227] INFO: Created user object for Matt
+[2020-10-21 10:56:59,227] DEBUG: _validateUser() called for test3
+[2020-10-21 10:56:59,227] INFO: test3 was validated
+[2020-10-21 10:56:59,228] INFO: test3 is signed in
+[2020-10-21 10:57:01,669] DEBUG: currentUserInfo() called
+[2020-10-21 10:57:01,670] INFO: test3 is logged in
+[2020-10-21 10:57:01,670] DEBUG: signOutUser() called
+[2020-10-21 10:57:01,670] INFO: test3 has been logged out
+[2020-10-21 11:00:12,591] DEBUG: _getInfo() called
+[2020-10-21 11:00:12,591] INFO: Created user object for test4
+[2020-10-21 11:00:12,591] INFO: Created user object for test3
+[2020-10-21 11:00:12,591] INFO: Created user object for Matt
+[2020-10-21 11:33:07,415] DEBUG: _getInfo() called
+[2020-10-21 11:33:07,415] INFO: Created user object for test4
+[2020-10-21 11:33:07,415] INFO: Created user object for test3
+[2020-10-21 11:33:07,415] INFO: Created user object for Matt
+[2020-10-21 11:33:18,608] DEBUG: signInUser() called for test3
+[2020-10-21 11:33:18,608] DEBUG: _getInfo() called
+[2020-10-21 11:33:18,609] INFO: Created user object for test4
+[2020-10-21 11:33:18,609] INFO: Created user object for test3
+[2020-10-21 11:33:18,609] INFO: Created user object for Matt
+[2020-10-21 11:33:18,609] DEBUG: _validateUser() called for test3
+[2020-10-21 11:33:18,609] INFO: test3 was validated
+[2020-10-21 11:33:18,609] INFO: test3 is signed in
+[2020-10-21 11:33:19,836] DEBUG: currentUserInfo() called
+[2020-10-21 11:33:19,836] INFO: test3 is logged in
+[2020-10-21 11:33:19,836] DEBUG: signOutUser() called
+[2020-10-21 11:33:19,836] INFO: test3 has been logged out
+[2020-10-21 12:23:06,201] DEBUG: _getInfo() called
+[2020-10-21 12:23:06,201] INFO: Created user object for test4
+[2020-10-21 12:23:06,202] INFO: Created user object for test3
+[2020-10-21 12:23:06,202] INFO: Created user object for Matt
+[2020-10-21 12:23:14,048] DEBUG: signInUser() called for test3
+[2020-10-21 12:23:14,048] DEBUG: _getInfo() called
+[2020-10-21 12:23:14,048] INFO: Created user object for test4
+[2020-10-21 12:23:14,048] INFO: Created user object for test3
+[2020-10-21 12:23:14,048] INFO: Created user object for Matt
+[2020-10-21 12:23:14,048] DEBUG: _validateUser() called for test3
+[2020-10-21 12:23:14,048] INFO: test3 was validated
+[2020-10-21 12:23:14,048] INFO: test3 is signed in
+[2020-10-21 12:26:26,939] DEBUG: _getInfo() called
+[2020-10-21 12:26:26,939] INFO: Created user object for test4
+[2020-10-21 12:26:26,939] INFO: Created user object for test3
+[2020-10-21 12:26:26,940] INFO: Created user object for Matt
+[2020-10-21 12:26:35,529] DEBUG: signInUser() called for test3
+[2020-10-21 12:26:35,529] DEBUG: _getInfo() called
+[2020-10-21 12:26:35,529] INFO: Created user object for test4
+[2020-10-21 12:26:35,529] INFO: Created user object for test3
+[2020-10-21 12:26:35,529] INFO: Created user object for Matt
+[2020-10-21 12:26:35,530] DEBUG: _validateUser() called for test3
+[2020-10-21 12:26:35,530] INFO: test3 was validated
+[2020-10-21 12:26:35,530] INFO: test3 is signed in
+[2020-10-21 12:34:30,584] DEBUG: _getInfo() called
+[2020-10-21 12:34:30,584] INFO: Created user object for test4
+[2020-10-21 12:34:30,584] INFO: Created user object for test3
+[2020-10-21 12:34:30,584] INFO: Created user object for Matt
+[2020-10-21 12:36:00,421] DEBUG: _getInfo() called
+[2020-10-21 12:36:00,421] INFO: Created user object for test4
+[2020-10-21 12:36:00,421] INFO: Created user object for test3
+[2020-10-21 12:36:00,421] INFO: Created user object for Matt
+[2020-10-21 12:36:08,277] DEBUG: signInUser() called for test3
+[2020-10-21 12:36:08,277] DEBUG: _getInfo() called
+[2020-10-21 12:36:08,277] INFO: Created user object for test4
+[2020-10-21 12:36:08,278] INFO: Created user object for test3
+[2020-10-21 12:36:08,278] INFO: Created user object for Matt
+[2020-10-21 12:36:08,278] DEBUG: _validateUser() called for test3
+[2020-10-21 12:36:08,278] INFO: test3 was validated
+[2020-10-21 12:36:08,278] INFO: test3 is signed in
+[2020-10-21 12:36:54,153] DEBUG: _getInfo() called
+[2020-10-21 12:36:54,153] INFO: Created user object for test4
+[2020-10-21 12:36:54,153] INFO: Created user object for test3
+[2020-10-21 12:36:54,153] INFO: Created user object for Matt
+[2020-10-21 12:37:06,991] DEBUG: signInUser() called for test3
+[2020-10-21 12:37:06,992] DEBUG: _getInfo() called
+[2020-10-21 12:37:06,992] INFO: Created user object for test4
+[2020-10-21 12:37:06,992] INFO: Created user object for test3
+[2020-10-21 12:37:06,992] INFO: Created user object for Matt
+[2020-10-21 12:37:06,992] DEBUG: _validateUser() called for test3
+[2020-10-21 12:37:06,992] INFO: test3 was validated
+[2020-10-21 12:37:06,992] INFO: test3 is signed in
+[2020-10-21 12:39:03,050] DEBUG: _getInfo() called
+[2020-10-21 12:39:03,051] INFO: Created user object for test4
+[2020-10-21 12:39:03,051] INFO: Created user object for test3
+[2020-10-21 12:39:03,051] INFO: Created user object for Matt
+[2020-10-21 12:39:13,251] DEBUG: signInUser() called for test3
+[2020-10-21 12:39:13,251] DEBUG: _getInfo() called
+[2020-10-21 12:39:13,251] INFO: Created user object for test4
+[2020-10-21 12:39:13,251] INFO: Created user object for test3
+[2020-10-21 12:39:13,251] INFO: Created user object for Matt
+[2020-10-21 12:39:13,252] DEBUG: _validateUser() called for test3
+[2020-10-21 12:39:13,252] INFO: test3 was validated
+[2020-10-21 12:39:13,252] INFO: test3 is signed in
+[2020-10-21 12:40:42,910] DEBUG: _getInfo() called
+[2020-10-21 12:40:42,910] INFO: Created user object for test4
+[2020-10-21 12:40:42,910] INFO: Created user object for test3
+[2020-10-21 12:40:42,910] INFO: Created user object for Matt
+[2020-10-21 12:40:51,466] DEBUG: signInUser() called for test3
+[2020-10-21 12:40:51,466] DEBUG: _getInfo() called
+[2020-10-21 12:40:51,466] INFO: Created user object for test4
+[2020-10-21 12:40:51,466] INFO: Created user object for test3
+[2020-10-21 12:40:51,466] INFO: Created user object for Matt
+[2020-10-21 12:40:51,466] DEBUG: _validateUser() called for test3
+[2020-10-21 12:40:51,466] INFO: test3 was validated
+[2020-10-21 12:40:51,466] INFO: test3 is signed in
+[2020-10-21 12:41:10,972] DEBUG: currentUserInfo() called
+[2020-10-21 12:41:10,973] INFO: test3 is logged in
+[2020-10-21 12:41:10,973] DEBUG: signOutUser() called
+[2020-10-21 12:41:10,973] INFO: test3 has been logged out
+[2020-10-21 13:19:38,402] DEBUG: _getInfo() called
+[2020-10-21 13:19:38,402] INFO: Created user object for test4
+[2020-10-21 13:19:38,402] INFO: Created user object for test3
+[2020-10-21 13:19:38,402] INFO: Created user object for Matt
+[2020-10-21 13:29:53,472] DEBUG: _getInfo() called
+[2020-10-21 13:29:53,472] INFO: Created user object for test4
+[2020-10-21 13:29:53,472] INFO: Created user object for test3
+[2020-10-21 13:29:53,472] INFO: Created user object for Matt
+[2020-10-21 13:30:04,698] DEBUG: signInUser() called for test3
+[2020-10-21 13:30:04,698] DEBUG: _getInfo() called
+[2020-10-21 13:30:04,698] INFO: Created user object for test4
+[2020-10-21 13:30:04,698] INFO: Created user object for test3
+[2020-10-21 13:30:04,699] INFO: Created user object for Matt
+[2020-10-21 13:30:04,699] DEBUG: _validateUser() called for test3
+[2020-10-21 13:30:04,699] INFO: test3 was validated
+[2020-10-21 13:30:04,699] INFO: test3 is signed in
+[2020-10-21 13:31:21,243] DEBUG: _getInfo() called
+[2020-10-21 13:31:21,243] INFO: Created user object for test4
+[2020-10-21 13:31:21,243] INFO: Created user object for test3
+[2020-10-21 13:31:21,243] INFO: Created user object for Matt
+[2020-10-21 13:31:31,838] DEBUG: signInUser() called for test3
+[2020-10-21 13:31:31,838] DEBUG: _getInfo() called
+[2020-10-21 13:31:31,838] INFO: Created user object for test4
+[2020-10-21 13:31:31,838] INFO: Created user object for test3
+[2020-10-21 13:31:31,838] INFO: Created user object for Matt
+[2020-10-21 13:31:31,839] DEBUG: _validateUser() called for test3
+[2020-10-21 13:31:31,839] INFO: test3 was validated
+[2020-10-21 13:31:31,839] INFO: test3 is signed in
+[2020-10-21 13:32:19,238] DEBUG: _getInfo() called
+[2020-10-21 13:32:19,238] INFO: Created user object for test4
+[2020-10-21 13:32:19,238] INFO: Created user object for test3
+[2020-10-21 13:32:19,238] INFO: Created user object for Matt
+[2020-10-21 13:32:33,195] DEBUG: signInUser() called for test3
+[2020-10-21 13:32:33,195] DEBUG: _getInfo() called
+[2020-10-21 13:32:33,195] INFO: Created user object for test4
+[2020-10-21 13:32:33,195] INFO: Created user object for test3
+[2020-10-21 13:32:33,195] INFO: Created user object for Matt
+[2020-10-21 13:32:33,195] DEBUG: _validateUser() called for test3
+[2020-10-21 13:32:33,195] INFO: test3 was validated
+[2020-10-21 13:32:33,196] INFO: test3 is signed in
+[2020-10-21 13:33:29,804] DEBUG: _getInfo() called
+[2020-10-21 13:33:29,804] INFO: Created user object for test4
+[2020-10-21 13:33:29,804] INFO: Created user object for test3
+[2020-10-21 13:33:29,804] INFO: Created user object for Matt
+[2020-10-21 13:33:33,050] DEBUG: _getInfo() called
+[2020-10-21 13:33:33,050] INFO: Created user object for test4
+[2020-10-21 13:33:33,050] INFO: Created user object for test3
+[2020-10-21 13:33:33,050] INFO: Created user object for Matt
+[2020-10-21 13:33:39,967] DEBUG: signInUser() called for test3
+[2020-10-21 13:33:39,967] DEBUG: _getInfo() called
+[2020-10-21 13:33:39,967] INFO: Created user object for test4
+[2020-10-21 13:33:39,967] INFO: Created user object for test3
+[2020-10-21 13:33:39,967] INFO: Created user object for Matt
+[2020-10-21 13:33:39,967] DEBUG: _validateUser() called for test3
+[2020-10-21 13:33:39,967] INFO: test3 was validated
+[2020-10-21 13:33:39,967] INFO: test3 is signed in
+[2020-10-21 13:33:46,302] DEBUG: currentUserInfo() called
+[2020-10-21 13:33:46,302] INFO: test3 is logged in
+[2020-10-21 13:33:46,302] DEBUG: signOutUser() called
+[2020-10-21 13:33:46,302] INFO: test3 has been logged out
+[2020-10-21 13:58:49,452] DEBUG: _getInfo() called
+[2020-10-21 13:58:49,452] INFO: Created user object for test4
+[2020-10-21 13:58:49,452] INFO: Created user object for test3
+[2020-10-21 13:58:49,452] INFO: Created user object for Matt
+[2020-10-21 13:58:58,569] DEBUG: signInUser() called for test3
+[2020-10-21 13:58:58,569] DEBUG: _getInfo() called
+[2020-10-21 13:58:58,569] INFO: Created user object for test4
+[2020-10-21 13:58:58,569] INFO: Created user object for test3
+[2020-10-21 13:58:58,570] INFO: Created user object for Matt
+[2020-10-21 13:58:58,570] DEBUG: _validateUser() called for test3
+[2020-10-21 13:58:58,570] INFO: test3 was validated
+[2020-10-21 13:58:58,570] INFO: test3 is signed in
+[2020-10-21 13:59:20,883] DEBUG: currentUserInfo() called
+[2020-10-21 13:59:20,883] INFO: test3 is logged in
+[2020-10-21 13:59:20,883] DEBUG: signOutUser() called
+[2020-10-21 13:59:20,883] INFO: test3 has been logged out
