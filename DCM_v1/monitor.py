@@ -1,5 +1,5 @@
 '''
-PageExampleOne.py
+monitor.py
 
 Version: 0.1
 Created By: Elston A.
@@ -16,9 +16,7 @@ from tkinter import messagebox as tm
 import pages
 import settings
  
-
-
-class PageExampleOne(tk.Frame):
+class Monitor(tk.Frame):
 
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)

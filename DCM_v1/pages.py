@@ -9,14 +9,14 @@ Docstrings
 '''
 
 from loginPage import *
-from PageExampleOne import *
-from PageExampleTwo import *
+from monitor import *
+from deviceIdentification import *
 
 # Page imports. Import the page above and throw it into the array below
 
 Frames = {
     "Login": LoginPage, 
-    "exampleOne": PageExampleOne, 
-    "exampleTwo": PageExampleTwo
+    "Monitor": Monitor,
+    "DevID": DeviceIdentification, 
     }
 

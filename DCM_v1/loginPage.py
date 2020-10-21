@@ -44,12 +44,17 @@ class LoginPage(tk.Frame):
         password_entry.grid(row=2, column=2)#pack()
 
         login_button = ttk.Button(self, text="Login", command= lambda: 
-        controller.show_frame(pages.Frames["exampleOne"]) if 
-        self.authenticate(username_entry.get(), password_entry.get()) 
+        controller.show_frame(pages.Frames["DevID"]) if 
+        self.authenticate(username_entry, password_entry) 
         else tm.showerror("Validation Error", settings.invalidUserErr)) 
                                                     
         login_button.grid(row=4, column=2, padx=10, pady=20)#pack() 
-        print(self.grid_size())
     
     def authenticate(self, username, password):
-        return users.signInUser(username, password)
+        ret_val = users.signInUser(username.get(), password.get())
+        # clear fields upon login attempt
+        username.delete(0,tk.END)
+        username.insert(0, "")
+        password.delete(0,tk.END)
+        password.insert(0, "")
+        return ret_val

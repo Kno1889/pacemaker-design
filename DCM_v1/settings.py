@@ -1,5 +1,5 @@
 '''
-Settings.py
+settings.py
 
 Version: 0.1
 Created By: Elston A.
@@ -21,3 +21,5 @@ createdUserNote="You have successfully created a new user!"
 unableToCreateUser="Unable to create. Possibly the user limit has been reached."
 
 cfError = "Catastrophic Failure"
+
+newIdErr ="The device ID does not match the previously connected device ID\n This is a different pacemaker"
