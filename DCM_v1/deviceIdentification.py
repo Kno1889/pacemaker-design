@@ -19,7 +19,7 @@ import pacemaker
 
 def dev_ID_proc(controller, dev_id):
     # done some things
-    last_connected  = pacemaker.connect(dev_id) # this is weird 
+    last_connected  = pacemaker.connect(dev_id) # this is weird   # pacemaker.connect(dev_id) returns true if dev_id was connected last, else returns false
     if last_connected != dev_id:
         tm.showwarning("New ID", settings.newIdErr)
     controller.show_frame(pages.Frames["Monitor"])
