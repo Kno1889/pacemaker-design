@@ -1,8 +1,10 @@
-[2020-10-16 15:43:05,420] DEBUG: _getInfo() called
-[2020-10-16 15:43:05,421] INFO: Created user object for Matt
-[2020-10-16 15:43:05,422] DEBUG: signInUser() called for Matt
-[2020-10-16 15:43:05,422] DEBUG: _getInfo() called
-[2020-10-16 15:43:05,423] INFO: Created user object for Matt
-[2020-10-16 15:43:05,423] DEBUG: _validateUser() called for Matt
-[2020-10-16 15:43:05,423] INFO: Matt was validated
-[2020-10-16 15:43:05,423] INFO: Matt is signed in
+[2020-10-20 22:39:54,039] DEBUG: _getInfo() called
+[2020-10-20 22:39:54,039] INFO: Created user object for test1
+[2020-10-20 22:39:54,039] INFO: Created user object for test2
+[2020-10-20 22:39:54,039] INFO: Created user object for test3
+[2020-10-20 22:39:54,040] INFO: Created user object for test4
+[2020-10-20 22:39:54,040] INFO: Created user object for test5
+[2020-10-20 22:39:54,040] INFO: Created user object for test6
+[2020-10-20 22:39:54,040] INFO: Created user object for test7
+[2020-10-20 22:39:54,040] INFO: Created user object for test8
+[2020-10-20 22:39:54,040] INFO: Created user object for test9

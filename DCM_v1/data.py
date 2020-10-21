@@ -1,6 +1,6 @@
 # Data Module
 #
-# Version 1.0
+# Version 1.1
 # Created by: M. Lemcke
 # Date Modified: Oct. 15, 2020
 #
@@ -84,10 +84,11 @@ def getUserInfo():
 def changeUserInfo(newInfo):
     logger.debug('changeUserInfo() called')
     global current_data
-    current_data['users'] = []
-    for user in newInfo:
-        current_data['users'].append(user)
-    _writeData()
+    if bool(current_data):
+        current_data['users'] = []
+        for user in newInfo:
+            current_data['users'].append(user)
+        _writeData()
 
 
 # Read the JSON file and returns a list of 2 dictionaries to store as all_data and current_data, respectively
@@ -104,7 +105,7 @@ def _readData():
                     currentData = p
                     logger.info('Pacemaker %s is/was connected', p['model'])
     except:
-        logger.error('JSON file could not be opened')
+        logger.warning('JSON file could not be opened')
     return rawData, currentData
 
 
@@ -137,7 +138,7 @@ def _writeData():
             json.dump(all_data, outfile)
             logger.info('Data written to JSON file')
     except:
-        logger.error('JSON file could not be opened')
+        logger.warning('JSON file could not be opened')
 
     all_data, current_data = _readData()
 

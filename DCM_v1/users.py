@@ -1,6 +1,6 @@
 # Users Module
 #
-# Version 2.0
+# Version 2.1
 # Created by: M. Lemcke
 # Date Modified: Oct. 8, 2020
 #
@@ -30,13 +30,15 @@ class User():
 # registers new user information. Returns true if action was successful
 def makeNewUser(name, password):
     logger.debug('makeNewUser() called for %s', name)
-    global all_users
-    all_users = _getInfo()
-    if len(all_users) < 10:
-        newUser = User(name.lstrip().rstrip(), password.lstrip().rstrip())
-        all_users.append(newUser)
-        _saveInfo()
-        return True
+    if type(name) == type('string') and type(password) == type('string'):
+        global all_users
+        all_users = _getInfo()
+        if len(all_users) < 10:
+            newUser = User(name.lstrip().rstrip(), password.lstrip().rstrip())
+            all_users.append(newUser)
+            _saveInfo()
+            return True
+    logger.info('user was not make for %s')
     return False
 
 
@@ -57,16 +59,16 @@ def deleteUser(name):
 def signInUser(name, password):
     logger.debug(
         'signInUser() called for %s', name)
-    global all_users
-    all_users = _getInfo()
-    validatedUser = _validateUser(name, password)
-    if (validatedUser):
-        for user in all_users:
-            if user == validatedUser:
-                user.currentUser = True
-                logger.info('%s is signed in', name)
-                return True
-
+    if type(name) == type('string') and type(password) == type('string'):
+        global all_users
+        all_users = _getInfo()
+        validatedUser = _validateUser(name, password)
+        if (validatedUser):
+            for user in all_users:
+                if user == validatedUser:
+                    user.currentUser = True
+                    logger.info('%s is signed in', name)
+                    return True
     logger.info('%s could not be verified', name)
     return False
 

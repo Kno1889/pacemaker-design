@@ -1,6 +1,6 @@
 # Modes Module
 #
-# Version 1.0
+# Version 1.1
 # Created by: M. Lemcke
 # Date Modified: Oct. 2, 2020
 #
@@ -43,30 +43,42 @@ def allModes():
 # Changes parameter values of the given mode
 # Logs an error message if a parameter name doesn't match the parameters of the mode
 def saveParamValues(modeEdit, parameterValues):
-    logger.debug('saveParamValues() called for %s mode', modeEdit.name)
-    for mode in all_modes:
-        if mode.name == modeEdit.name:
-            for param in parameterValues:
-                try:
-                    mode.params[param]
-                    mode.params[param] = parameterValues[param]
-                except KeyError:
-                    logger.error(
-                        '%s operating parameter does not exist in the %s mode', param, mode.name)
-
+    if type(modeEdit) == Mode and type(parameterValues) == dict:
+        logger.debug('saveParamValues() called for %s mode', modeEdit.name)
+        for mode in all_modes:
+            if mode.name == modeEdit.name:
+                for param in parameterValues:
+                    try:
+                        mode.params[param]
+                        mode.params[param] = parameterValues[param]
+                    except KeyError:
+                        logger.error(
+                            '%s operating parameter does not exist in the %s mode', param, mode.name)
+                return None
+        logger.warning('%s is not a valid mode', modeEdit.name)
+    else:
+        logger.error('saveParamValues requires a Mode object and dictionary')
 
 # Makes the given mode as the current operating mode
-def setCurrentMode(currMode):
-    logger.debug('setCurrentMode() called for %s mode', currMode.name)
-    for mode in all_modes:
-        if mode.name == currMode.name:
-            mode.currentMode = True
-            logger.info('%s is the current mode', mode.name)
-        else:
-            mode.currentMode = False
 
+
+def setCurrentMode(currMode):
+    if type(currMode) == Mode:
+        logger.debug('setCurrentMode() called for %s mode', currMode.name)
+        for mode in all_modes:
+            if mode.name == currMode.name:
+                mode.currentMode = True
+                logger.info('%s is the current mode', mode.name)
+                return None
+            else:
+                mode.currentMode = False
+        logger.warning('%s is not a valid mode', currMode.name)
+    else:
+        logger.error('setCurrentMode requires a Mode object')
 
 # Defines all pacing modes and default values
+
+
 def _createModes():
     logger.debug('_createModes() called')
     modes = []
