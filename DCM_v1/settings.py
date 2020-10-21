@@ -19,3 +19,5 @@ invalidUserErr='''The username or password you have entered is incorrect. \n\n
 createdUserNote="You have successfully created a new user!"
 
 unableToCreateUser="Unable to create. Possibly the user limit has been reached."
+
+cfError = "Catastrophic Failure"

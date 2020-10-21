@@ -32,6 +32,7 @@ def popupmsg(msg):
 
 def create_user():
     def exit_create_user():
+        #create_user.grab_release()
         create_user.destroy()
     
     def add_user(username, password):
@@ -43,6 +44,7 @@ def create_user():
             exit_create_user()
 
     create_user = tk.Tk()
+    #create_user.grab_set()
     create_user.minsize(300,100)
     create_user.wm_title("Add a user")
     
@@ -62,15 +64,33 @@ def create_user():
     B1 = ttk.Button(create_user, text="Add", command=lambda: add_user(username.get(), password.get()))
     B1.pack(pady=2)
 
-
-
     create_user.mainloop()
 
 def delete_user():
+
+    def close_window():
+        delete_user.destroy()
+
+    def del_user(user):
+        print(user)
+        if user == "None":
+            close_window()
+        elif users.deleteUser(user):
+            tm.showinfo("Deleted User", "Successfully deleted user")
+            close_window()
+        else:
+            tm.showerror("Error", settings.cfError)
+            close_window()
+
     raw_user_data = users.getUsers()
     options = []
-    for i in raw_user_data:
-        options.append(i['name'])
+    for data in raw_user_data:
+        options.append(data['name'])
+    
+
+    options.insert(0,"None")
+    options.insert(0,"None")
+
 
     delete_user = tk.Tk()
     delete_user.minsize(300,100)
@@ -80,12 +100,18 @@ def delete_user():
     title_text.pack(pady=1)
 
     choice = tk.StringVar(delete_user)
-    choice.set(None)
+    choice.set(options[0])
 
     option = ttk.OptionMenu(delete_user, choice, *options)
     option.pack()
 
+    B1 = ttk.Button(delete_user, text="Delete", command=lambda: del_user(choice.get()))
+    B1.pack(pady=2)
+
     delete_user.mainloop()
+
+
+
 
 
 class Controller(tk.Tk):
@@ -126,9 +152,9 @@ class Controller(tk.Tk):
         help_menu.add_command(label="Documentation", command = lambda: popupmsg('Not Supported Yet!'))
 
         user_menu = tk.Menu(menubar, tearoff = 0)
-        user_menu.add_command(label="Add User", command = lambda: create_user())
+        user_menu.add_command(label="Add User", command = lambda: self.popup(create_user))
         user_menu.add_command(label="Edit User", command = lambda: popupmsg('Not Supported Yet!'))
-        user_menu.add_command(label="Delete User", command = lambda: delete_user())
+        user_menu.add_command(label="Delete User", command = lambda: self.popup(delete_user))
 
         version_menu = tk.Menu(menubar, tearoff=0)
         version_menu.add_command(label="Version: {}".format(settings.VERSION))
@@ -150,4 +176,6 @@ class Controller(tk.Tk):
         menu.entryconfigure(0, label="Debug: {}".format(self.debug_status))
 
 
-
+    def popup(self, f):
+        # do stuff to main window
+        f()
