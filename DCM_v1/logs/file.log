@@ -25,3 +25,1006 @@
 [2020-10-20 22:39:54,040] - __main__ -  INFO: Created user object for test7
 [2020-10-20 22:39:54,040] - __main__ -  INFO: Created user object for test8
 [2020-10-20 22:39:54,040] - __main__ -  INFO: Created user object for test9
+[2020-10-21 05:20:58,616] - data -  DEBUG: _readData() called
+[2020-10-21 05:20:58,617] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 05:20:58,617] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 05:20:58,617] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 05:20:58,618] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:20:58,618] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:20:58,618] - users -  INFO: Created user object for test1
+[2020-10-21 05:20:58,618] - users -  INFO: Created user object for test2
+[2020-10-21 05:20:58,618] - users -  INFO: Created user object for test3
+[2020-10-21 05:20:58,618] - users -  INFO: Created user object for test4
+[2020-10-21 05:20:58,618] - users -  INFO: Created user object for test5
+[2020-10-21 05:20:58,618] - users -  INFO: Created user object for test6
+[2020-10-21 05:20:58,619] - users -  INFO: Created user object for test7
+[2020-10-21 05:20:58,619] - users -  INFO: Created user object for test8
+[2020-10-21 05:20:58,619] - users -  INFO: Created user object for test9
+[2020-10-21 05:21:22,948] - data -  DEBUG: _readData() called
+[2020-10-21 05:21:22,948] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 05:21:22,948] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 05:21:22,948] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 05:21:22,949] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:21:22,949] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:21:22,949] - users -  INFO: Created user object for test1
+[2020-10-21 05:21:22,949] - users -  INFO: Created user object for test2
+[2020-10-21 05:21:22,949] - users -  INFO: Created user object for test3
+[2020-10-21 05:21:22,949] - users -  INFO: Created user object for test4
+[2020-10-21 05:21:22,949] - users -  INFO: Created user object for test5
+[2020-10-21 05:21:22,949] - users -  INFO: Created user object for test6
+[2020-10-21 05:21:22,949] - users -  INFO: Created user object for test7
+[2020-10-21 05:21:22,949] - users -  INFO: Created user object for test8
+[2020-10-21 05:21:22,949] - users -  INFO: Created user object for test9
+[2020-10-21 05:32:59,100] - data -  DEBUG: _readData() called
+[2020-10-21 05:32:59,100] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 05:32:59,100] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 05:32:59,100] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 05:32:59,100] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:32:59,101] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:32:59,101] - users -  INFO: Created user object for test1
+[2020-10-21 05:32:59,101] - users -  INFO: Created user object for test2
+[2020-10-21 05:32:59,101] - users -  INFO: Created user object for test3
+[2020-10-21 05:32:59,101] - users -  INFO: Created user object for test4
+[2020-10-21 05:32:59,101] - users -  INFO: Created user object for test5
+[2020-10-21 05:32:59,101] - users -  INFO: Created user object for test6
+[2020-10-21 05:32:59,101] - users -  INFO: Created user object for test7
+[2020-10-21 05:32:59,101] - users -  INFO: Created user object for test8
+[2020-10-21 05:32:59,101] - users -  INFO: Created user object for test9
+[2020-10-21 05:33:01,889] - data -  DEBUG: _readData() called
+[2020-10-21 05:33:01,889] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 05:33:01,890] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 05:33:01,890] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 05:33:01,890] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:33:01,890] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:33:01,890] - users -  INFO: Created user object for test1
+[2020-10-21 05:33:01,890] - users -  INFO: Created user object for test2
+[2020-10-21 05:33:01,890] - users -  INFO: Created user object for test3
+[2020-10-21 05:33:01,890] - users -  INFO: Created user object for test4
+[2020-10-21 05:33:01,890] - users -  INFO: Created user object for test5
+[2020-10-21 05:33:01,891] - users -  INFO: Created user object for test6
+[2020-10-21 05:33:01,891] - users -  INFO: Created user object for test7
+[2020-10-21 05:33:01,891] - users -  INFO: Created user object for test8
+[2020-10-21 05:33:01,891] - users -  INFO: Created user object for test9
+[2020-10-21 05:33:03,875] - users -  DEBUG: signInUser() called for asd
+[2020-10-21 05:33:03,875] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:33:03,875] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:33:03,875] - users -  INFO: Created user object for test1
+[2020-10-21 05:33:03,875] - users -  INFO: Created user object for test2
+[2020-10-21 05:33:03,875] - users -  INFO: Created user object for test3
+[2020-10-21 05:33:03,875] - users -  INFO: Created user object for test4
+[2020-10-21 05:33:03,875] - users -  INFO: Created user object for test5
+[2020-10-21 05:33:03,875] - users -  INFO: Created user object for test6
+[2020-10-21 05:33:03,875] - users -  INFO: Created user object for test7
+[2020-10-21 05:33:03,875] - users -  INFO: Created user object for test8
+[2020-10-21 05:33:03,875] - users -  INFO: Created user object for test9
+[2020-10-21 05:33:03,876] - users -  DEBUG: _validateUser() called for asd
+[2020-10-21 05:33:03,876] - users -  INFO: asd was not validated
+[2020-10-21 05:33:03,876] - users -  INFO: asd could not be verified
+[2020-10-21 05:33:05,247] - users -  DEBUG: signInUser() called for asd
+[2020-10-21 05:33:05,247] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:33:05,247] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:33:05,247] - users -  INFO: Created user object for test1
+[2020-10-21 05:33:05,247] - users -  INFO: Created user object for test2
+[2020-10-21 05:33:05,247] - users -  INFO: Created user object for test3
+[2020-10-21 05:33:05,247] - users -  INFO: Created user object for test4
+[2020-10-21 05:33:05,247] - users -  INFO: Created user object for test5
+[2020-10-21 05:33:05,247] - users -  INFO: Created user object for test6
+[2020-10-21 05:33:05,248] - users -  INFO: Created user object for test7
+[2020-10-21 05:33:05,248] - users -  INFO: Created user object for test8
+[2020-10-21 05:33:05,248] - users -  INFO: Created user object for test9
+[2020-10-21 05:33:05,248] - users -  DEBUG: _validateUser() called for asd
+[2020-10-21 05:33:05,248] - users -  INFO: asd was not validated
+[2020-10-21 05:33:05,248] - users -  INFO: asd could not be verified
+[2020-10-21 05:33:05,389] - users -  DEBUG: signInUser() called for asd
+[2020-10-21 05:33:05,389] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:33:05,389] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:33:05,389] - users -  INFO: Created user object for test1
+[2020-10-21 05:33:05,389] - users -  INFO: Created user object for test2
+[2020-10-21 05:33:05,389] - users -  INFO: Created user object for test3
+[2020-10-21 05:33:05,389] - users -  INFO: Created user object for test4
+[2020-10-21 05:33:05,389] - users -  INFO: Created user object for test5
+[2020-10-21 05:33:05,390] - users -  INFO: Created user object for test6
+[2020-10-21 05:33:05,390] - users -  INFO: Created user object for test7
+[2020-10-21 05:33:05,390] - users -  INFO: Created user object for test8
+[2020-10-21 05:33:05,390] - users -  INFO: Created user object for test9
+[2020-10-21 05:33:05,390] - users -  DEBUG: _validateUser() called for asd
+[2020-10-21 05:33:05,390] - users -  INFO: asd was not validated
+[2020-10-21 05:33:05,390] - users -  INFO: asd could not be verified
+[2020-10-21 05:33:05,533] - users -  DEBUG: signInUser() called for asd
+[2020-10-21 05:33:05,533] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:33:05,533] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:33:05,533] - users -  INFO: Created user object for test1
+[2020-10-21 05:33:05,533] - users -  INFO: Created user object for test2
+[2020-10-21 05:33:05,533] - users -  INFO: Created user object for test3
+[2020-10-21 05:33:05,533] - users -  INFO: Created user object for test4
+[2020-10-21 05:33:05,533] - users -  INFO: Created user object for test5
+[2020-10-21 05:33:05,533] - users -  INFO: Created user object for test6
+[2020-10-21 05:33:05,533] - users -  INFO: Created user object for test7
+[2020-10-21 05:33:05,534] - users -  INFO: Created user object for test8
+[2020-10-21 05:33:05,534] - users -  INFO: Created user object for test9
+[2020-10-21 05:33:05,534] - users -  DEBUG: _validateUser() called for asd
+[2020-10-21 05:33:05,534] - users -  INFO: asd was not validated
+[2020-10-21 05:33:05,534] - users -  INFO: asd could not be verified
+[2020-10-21 05:33:05,663] - users -  DEBUG: signInUser() called for asd
+[2020-10-21 05:33:05,663] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:33:05,663] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:33:05,663] - users -  INFO: Created user object for test1
+[2020-10-21 05:33:05,663] - users -  INFO: Created user object for test2
+[2020-10-21 05:33:05,663] - users -  INFO: Created user object for test3
+[2020-10-21 05:33:05,663] - users -  INFO: Created user object for test4
+[2020-10-21 05:33:05,663] - users -  INFO: Created user object for test5
+[2020-10-21 05:33:05,664] - users -  INFO: Created user object for test6
+[2020-10-21 05:33:05,664] - users -  INFO: Created user object for test7
+[2020-10-21 05:33:05,664] - users -  INFO: Created user object for test8
+[2020-10-21 05:33:05,664] - users -  INFO: Created user object for test9
+[2020-10-21 05:33:05,664] - users -  DEBUG: _validateUser() called for asd
+[2020-10-21 05:33:05,664] - users -  INFO: asd was not validated
+[2020-10-21 05:33:05,664] - users -  INFO: asd could not be verified
+[2020-10-21 05:33:05,792] - users -  DEBUG: signInUser() called for asd
+[2020-10-21 05:33:05,792] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:33:05,792] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:33:05,793] - users -  INFO: Created user object for test1
+[2020-10-21 05:33:05,793] - users -  INFO: Created user object for test2
+[2020-10-21 05:33:05,793] - users -  INFO: Created user object for test3
+[2020-10-21 05:33:05,793] - users -  INFO: Created user object for test4
+[2020-10-21 05:33:05,793] - users -  INFO: Created user object for test5
+[2020-10-21 05:33:05,793] - users -  INFO: Created user object for test6
+[2020-10-21 05:33:05,793] - users -  INFO: Created user object for test7
+[2020-10-21 05:33:05,793] - users -  INFO: Created user object for test8
+[2020-10-21 05:33:05,793] - users -  INFO: Created user object for test9
+[2020-10-21 05:33:05,793] - users -  DEBUG: _validateUser() called for asd
+[2020-10-21 05:33:05,793] - users -  INFO: asd was not validated
+[2020-10-21 05:33:05,793] - users -  INFO: asd could not be verified
+[2020-10-21 05:33:05,920] - users -  DEBUG: signInUser() called for asd
+[2020-10-21 05:33:05,920] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:33:05,920] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:33:05,920] - users -  INFO: Created user object for test1
+[2020-10-21 05:33:05,921] - users -  INFO: Created user object for test2
+[2020-10-21 05:33:05,921] - users -  INFO: Created user object for test3
+[2020-10-21 05:33:05,921] - users -  INFO: Created user object for test4
+[2020-10-21 05:33:05,921] - users -  INFO: Created user object for test5
+[2020-10-21 05:33:05,921] - users -  INFO: Created user object for test6
+[2020-10-21 05:33:05,921] - users -  INFO: Created user object for test7
+[2020-10-21 05:33:05,921] - users -  INFO: Created user object for test8
+[2020-10-21 05:33:05,921] - users -  INFO: Created user object for test9
+[2020-10-21 05:33:05,921] - users -  DEBUG: _validateUser() called for asd
+[2020-10-21 05:33:05,921] - users -  INFO: asd was not validated
+[2020-10-21 05:33:05,921] - users -  INFO: asd could not be verified
+[2020-10-21 05:33:24,184] - users -  DEBUG: signInUser() called for test9
+[2020-10-21 05:33:24,184] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:33:24,184] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:33:24,184] - users -  INFO: Created user object for test1
+[2020-10-21 05:33:24,184] - users -  INFO: Created user object for test2
+[2020-10-21 05:33:24,184] - users -  INFO: Created user object for test3
+[2020-10-21 05:33:24,184] - users -  INFO: Created user object for test4
+[2020-10-21 05:33:24,184] - users -  INFO: Created user object for test5
+[2020-10-21 05:33:24,185] - users -  INFO: Created user object for test6
+[2020-10-21 05:33:24,185] - users -  INFO: Created user object for test7
+[2020-10-21 05:33:24,185] - users -  INFO: Created user object for test8
+[2020-10-21 05:33:24,185] - users -  INFO: Created user object for test9
+[2020-10-21 05:33:24,185] - users -  DEBUG: _validateUser() called for test9
+[2020-10-21 05:33:24,185] - users -  INFO: test9 was validated
+[2020-10-21 05:33:24,185] - users -  INFO: test9 is signed in
+[2020-10-21 05:34:27,244] - data -  DEBUG: _readData() called
+[2020-10-21 05:34:27,244] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 05:34:27,244] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 05:34:27,244] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 05:34:27,245] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:34:27,245] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:34:27,245] - users -  INFO: Created user object for test1
+[2020-10-21 05:34:27,245] - users -  INFO: Created user object for test2
+[2020-10-21 05:34:27,245] - users -  INFO: Created user object for test3
+[2020-10-21 05:34:27,245] - users -  INFO: Created user object for test4
+[2020-10-21 05:34:27,245] - users -  INFO: Created user object for test5
+[2020-10-21 05:34:27,246] - users -  INFO: Created user object for test6
+[2020-10-21 05:34:27,246] - users -  INFO: Created user object for test7
+[2020-10-21 05:34:27,246] - users -  INFO: Created user object for test8
+[2020-10-21 05:34:27,246] - users -  INFO: Created user object for test9
+[2020-10-21 05:34:29,175] - data -  DEBUG: _readData() called
+[2020-10-21 05:34:29,175] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 05:34:29,176] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 05:34:29,176] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 05:34:29,176] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:34:29,176] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:34:29,176] - users -  INFO: Created user object for test1
+[2020-10-21 05:34:29,177] - users -  INFO: Created user object for test2
+[2020-10-21 05:34:29,177] - users -  INFO: Created user object for test3
+[2020-10-21 05:34:29,177] - users -  INFO: Created user object for test4
+[2020-10-21 05:34:29,177] - users -  INFO: Created user object for test5
+[2020-10-21 05:34:29,177] - users -  INFO: Created user object for test6
+[2020-10-21 05:34:29,177] - users -  INFO: Created user object for test7
+[2020-10-21 05:34:29,177] - users -  INFO: Created user object for test8
+[2020-10-21 05:34:29,177] - users -  INFO: Created user object for test9
+[2020-10-21 05:34:31,173] - users -  DEBUG: signInUser() called for asd
+[2020-10-21 05:34:31,174] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:34:31,174] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:34:31,174] - users -  INFO: Created user object for test1
+[2020-10-21 05:34:31,174] - users -  INFO: Created user object for test2
+[2020-10-21 05:34:31,174] - users -  INFO: Created user object for test3
+[2020-10-21 05:34:31,174] - users -  INFO: Created user object for test4
+[2020-10-21 05:34:31,174] - users -  INFO: Created user object for test5
+[2020-10-21 05:34:31,174] - users -  INFO: Created user object for test6
+[2020-10-21 05:34:31,174] - users -  INFO: Created user object for test7
+[2020-10-21 05:34:31,174] - users -  INFO: Created user object for test8
+[2020-10-21 05:34:31,174] - users -  INFO: Created user object for test9
+[2020-10-21 05:34:31,174] - users -  DEBUG: _validateUser() called for asd
+[2020-10-21 05:34:31,174] - users -  INFO: asd was not validated
+[2020-10-21 05:34:31,174] - users -  INFO: asd could not be verified
+[2020-10-21 05:36:50,097] - data -  DEBUG: _readData() called
+[2020-10-21 05:36:50,098] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 05:36:50,098] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 05:36:50,098] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 05:36:50,098] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:36:50,098] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:36:50,098] - users -  INFO: Created user object for test1
+[2020-10-21 05:36:50,099] - users -  INFO: Created user object for test2
+[2020-10-21 05:36:50,099] - users -  INFO: Created user object for test3
+[2020-10-21 05:36:50,099] - users -  INFO: Created user object for test4
+[2020-10-21 05:36:50,099] - users -  INFO: Created user object for test5
+[2020-10-21 05:36:50,099] - users -  INFO: Created user object for test6
+[2020-10-21 05:36:50,099] - users -  INFO: Created user object for test7
+[2020-10-21 05:36:50,099] - users -  INFO: Created user object for test8
+[2020-10-21 05:36:50,099] - users -  INFO: Created user object for test9
+[2020-10-21 05:36:53,104] - users -  DEBUG: signInUser() called for asd
+[2020-10-21 05:36:53,104] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:36:53,104] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:36:53,104] - users -  INFO: Created user object for test1
+[2020-10-21 05:36:53,104] - users -  INFO: Created user object for test2
+[2020-10-21 05:36:53,104] - users -  INFO: Created user object for test3
+[2020-10-21 05:36:53,104] - users -  INFO: Created user object for test4
+[2020-10-21 05:36:53,104] - users -  INFO: Created user object for test5
+[2020-10-21 05:36:53,104] - users -  INFO: Created user object for test6
+[2020-10-21 05:36:53,105] - users -  INFO: Created user object for test7
+[2020-10-21 05:36:53,105] - users -  INFO: Created user object for test8
+[2020-10-21 05:36:53,105] - users -  INFO: Created user object for test9
+[2020-10-21 05:36:53,105] - users -  DEBUG: _validateUser() called for asd
+[2020-10-21 05:36:53,105] - users -  INFO: asd was not validated
+[2020-10-21 05:36:53,105] - users -  INFO: asd could not be verified
+[2020-10-21 05:38:43,447] - data -  DEBUG: _readData() called
+[2020-10-21 05:38:43,448] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 05:38:43,448] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 05:38:43,448] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 05:38:43,448] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:38:43,448] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:38:43,448] - users -  INFO: Created user object for test1
+[2020-10-21 05:38:43,449] - users -  INFO: Created user object for test2
+[2020-10-21 05:38:43,449] - users -  INFO: Created user object for test3
+[2020-10-21 05:38:43,449] - users -  INFO: Created user object for test4
+[2020-10-21 05:38:43,449] - users -  INFO: Created user object for test5
+[2020-10-21 05:38:43,449] - users -  INFO: Created user object for test6
+[2020-10-21 05:38:43,449] - users -  INFO: Created user object for test7
+[2020-10-21 05:38:43,449] - users -  INFO: Created user object for test8
+[2020-10-21 05:38:43,449] - users -  INFO: Created user object for test9
+[2020-10-21 05:38:45,256] - users -  DEBUG: signInUser() called for asdasd
+[2020-10-21 05:38:45,256] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:38:45,256] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:38:45,256] - users -  INFO: Created user object for test1
+[2020-10-21 05:38:45,256] - users -  INFO: Created user object for test2
+[2020-10-21 05:38:45,256] - users -  INFO: Created user object for test3
+[2020-10-21 05:38:45,256] - users -  INFO: Created user object for test4
+[2020-10-21 05:38:45,256] - users -  INFO: Created user object for test5
+[2020-10-21 05:38:45,256] - users -  INFO: Created user object for test6
+[2020-10-21 05:38:45,257] - users -  INFO: Created user object for test7
+[2020-10-21 05:38:45,257] - users -  INFO: Created user object for test8
+[2020-10-21 05:38:45,257] - users -  INFO: Created user object for test9
+[2020-10-21 05:38:45,257] - users -  DEBUG: _validateUser() called for asdasd
+[2020-10-21 05:38:45,257] - users -  INFO: asdasd was not validated
+[2020-10-21 05:38:45,257] - users -  INFO: asdasd could not be verified
+[2020-10-21 05:39:02,027] - data -  DEBUG: _readData() called
+[2020-10-21 05:39:02,028] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 05:39:02,028] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 05:39:02,028] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 05:39:02,028] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:39:02,028] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:39:02,028] - users -  INFO: Created user object for test1
+[2020-10-21 05:39:02,029] - users -  INFO: Created user object for test2
+[2020-10-21 05:39:02,029] - users -  INFO: Created user object for test3
+[2020-10-21 05:39:02,029] - users -  INFO: Created user object for test4
+[2020-10-21 05:39:02,029] - users -  INFO: Created user object for test5
+[2020-10-21 05:39:02,029] - users -  INFO: Created user object for test6
+[2020-10-21 05:39:02,029] - users -  INFO: Created user object for test7
+[2020-10-21 05:39:02,029] - users -  INFO: Created user object for test8
+[2020-10-21 05:39:02,029] - users -  INFO: Created user object for test9
+[2020-10-21 05:39:04,147] - users -  DEBUG: signInUser() called for asd
+[2020-10-21 05:39:04,147] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:39:04,147] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:39:04,147] - users -  INFO: Created user object for test1
+[2020-10-21 05:39:04,147] - users -  INFO: Created user object for test2
+[2020-10-21 05:39:04,147] - users -  INFO: Created user object for test3
+[2020-10-21 05:39:04,147] - users -  INFO: Created user object for test4
+[2020-10-21 05:39:04,147] - users -  INFO: Created user object for test5
+[2020-10-21 05:39:04,147] - users -  INFO: Created user object for test6
+[2020-10-21 05:39:04,148] - users -  INFO: Created user object for test7
+[2020-10-21 05:39:04,148] - users -  INFO: Created user object for test8
+[2020-10-21 05:39:04,148] - users -  INFO: Created user object for test9
+[2020-10-21 05:39:04,148] - users -  DEBUG: _validateUser() called for asd
+[2020-10-21 05:39:04,148] - users -  INFO: asd was not validated
+[2020-10-21 05:39:04,148] - users -  INFO: asd could not be verified
+[2020-10-21 05:39:27,007] - data -  DEBUG: _readData() called
+[2020-10-21 05:39:27,007] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 05:39:27,008] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 05:39:27,008] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 05:39:27,008] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:39:27,008] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:39:27,008] - users -  INFO: Created user object for test1
+[2020-10-21 05:39:27,008] - users -  INFO: Created user object for test2
+[2020-10-21 05:39:27,008] - users -  INFO: Created user object for test3
+[2020-10-21 05:39:27,008] - users -  INFO: Created user object for test4
+[2020-10-21 05:39:27,008] - users -  INFO: Created user object for test5
+[2020-10-21 05:39:27,009] - users -  INFO: Created user object for test6
+[2020-10-21 05:39:27,009] - users -  INFO: Created user object for test7
+[2020-10-21 05:39:27,009] - users -  INFO: Created user object for test8
+[2020-10-21 05:39:27,009] - users -  INFO: Created user object for test9
+[2020-10-21 05:39:30,136] - users -  DEBUG: signInUser() called for fsdfsd
+[2020-10-21 05:39:30,136] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:39:30,136] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:39:30,136] - users -  INFO: Created user object for test1
+[2020-10-21 05:39:30,136] - users -  INFO: Created user object for test2
+[2020-10-21 05:39:30,136] - users -  INFO: Created user object for test3
+[2020-10-21 05:39:30,136] - users -  INFO: Created user object for test4
+[2020-10-21 05:39:30,136] - users -  INFO: Created user object for test5
+[2020-10-21 05:39:30,136] - users -  INFO: Created user object for test6
+[2020-10-21 05:39:30,137] - users -  INFO: Created user object for test7
+[2020-10-21 05:39:30,137] - users -  INFO: Created user object for test8
+[2020-10-21 05:39:30,137] - users -  INFO: Created user object for test9
+[2020-10-21 05:39:30,137] - users -  DEBUG: _validateUser() called for fsdfsd
+[2020-10-21 05:39:30,137] - users -  INFO: fsdfsd was not validated
+[2020-10-21 05:39:30,137] - users -  INFO: fsdfsd could not be verified
+[2020-10-21 05:39:44,311] - users -  DEBUG: signInUser() called for test9
+[2020-10-21 05:39:44,311] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:39:44,311] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:39:44,311] - users -  INFO: Created user object for test1
+[2020-10-21 05:39:44,311] - users -  INFO: Created user object for test2
+[2020-10-21 05:39:44,311] - users -  INFO: Created user object for test3
+[2020-10-21 05:39:44,312] - users -  INFO: Created user object for test4
+[2020-10-21 05:39:44,312] - users -  INFO: Created user object for test5
+[2020-10-21 05:39:44,312] - users -  INFO: Created user object for test6
+[2020-10-21 05:39:44,312] - users -  INFO: Created user object for test7
+[2020-10-21 05:39:44,312] - users -  INFO: Created user object for test8
+[2020-10-21 05:39:44,312] - users -  INFO: Created user object for test9
+[2020-10-21 05:39:44,312] - users -  DEBUG: _validateUser() called for test9
+[2020-10-21 05:39:44,312] - users -  INFO: test9 was validated
+[2020-10-21 05:39:44,312] - users -  INFO: test9 is signed in
+[2020-10-21 05:39:46,146] - users -  DEBUG: signInUser() called for test9
+[2020-10-21 05:39:46,146] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:39:46,146] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:39:46,146] - users -  INFO: Created user object for test1
+[2020-10-21 05:39:46,146] - users -  INFO: Created user object for test2
+[2020-10-21 05:39:46,146] - users -  INFO: Created user object for test3
+[2020-10-21 05:39:46,146] - users -  INFO: Created user object for test4
+[2020-10-21 05:39:46,146] - users -  INFO: Created user object for test5
+[2020-10-21 05:39:46,147] - users -  INFO: Created user object for test6
+[2020-10-21 05:39:46,147] - users -  INFO: Created user object for test7
+[2020-10-21 05:39:46,147] - users -  INFO: Created user object for test8
+[2020-10-21 05:39:46,147] - users -  INFO: Created user object for test9
+[2020-10-21 05:39:46,147] - users -  DEBUG: _validateUser() called for test9
+[2020-10-21 05:39:46,147] - users -  INFO: test9 was validated
+[2020-10-21 05:39:46,147] - users -  INFO: test9 is signed in
+[2020-10-21 05:39:46,888] - users -  DEBUG: signInUser() called for test9
+[2020-10-21 05:39:46,888] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:39:46,888] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:39:46,888] - users -  INFO: Created user object for test1
+[2020-10-21 05:39:46,888] - users -  INFO: Created user object for test2
+[2020-10-21 05:39:46,888] - users -  INFO: Created user object for test3
+[2020-10-21 05:39:46,888] - users -  INFO: Created user object for test4
+[2020-10-21 05:39:46,889] - users -  INFO: Created user object for test5
+[2020-10-21 05:39:46,889] - users -  INFO: Created user object for test6
+[2020-10-21 05:39:46,889] - users -  INFO: Created user object for test7
+[2020-10-21 05:39:46,889] - users -  INFO: Created user object for test8
+[2020-10-21 05:39:46,889] - users -  INFO: Created user object for test9
+[2020-10-21 05:39:46,889] - users -  DEBUG: _validateUser() called for test9
+[2020-10-21 05:39:46,889] - users -  INFO: test9 was validated
+[2020-10-21 05:39:46,889] - users -  INFO: test9 is signed in
+[2020-10-21 05:39:47,608] - users -  DEBUG: signInUser() called for test9
+[2020-10-21 05:39:47,608] - users -  DEBUG: _getInfo() called
+[2020-10-21 05:39:47,608] - data -  DEBUG: getUserInfo() called
+[2020-10-21 05:39:47,608] - users -  INFO: Created user object for test1
+[2020-10-21 05:39:47,608] - users -  INFO: Created user object for test2
+[2020-10-21 05:39:47,608] - users -  INFO: Created user object for test3
+[2020-10-21 05:39:47,608] - users -  INFO: Created user object for test4
+[2020-10-21 05:39:47,608] - users -  INFO: Created user object for test5
+[2020-10-21 05:39:47,608] - users -  INFO: Created user object for test6
+[2020-10-21 05:39:47,608] - users -  INFO: Created user object for test7
+[2020-10-21 05:39:47,609] - users -  INFO: Created user object for test8
+[2020-10-21 05:39:47,609] - users -  INFO: Created user object for test9
+[2020-10-21 05:39:47,609] - users -  DEBUG: _validateUser() called for test9
+[2020-10-21 05:39:47,609] - users -  INFO: test9 was validated
+[2020-10-21 05:39:47,609] - users -  INFO: test9 is signed in
+[2020-10-21 06:00:51,883] - data -  DEBUG: _readData() called
+[2020-10-21 06:00:51,883] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:00:51,883] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:00:51,883] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:00:51,884] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:00:51,884] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:00:51,884] - users -  INFO: Created user object for test1
+[2020-10-21 06:00:51,884] - users -  INFO: Created user object for test2
+[2020-10-21 06:00:51,884] - users -  INFO: Created user object for test3
+[2020-10-21 06:00:51,884] - users -  INFO: Created user object for test4
+[2020-10-21 06:00:51,884] - users -  INFO: Created user object for test5
+[2020-10-21 06:00:51,884] - users -  INFO: Created user object for test6
+[2020-10-21 06:00:51,884] - users -  INFO: Created user object for test7
+[2020-10-21 06:00:51,884] - users -  INFO: Created user object for test8
+[2020-10-21 06:00:51,884] - users -  INFO: Created user object for test9
+[2020-10-21 06:00:54,167] - users -  DEBUG: signInUser() called for asd
+[2020-10-21 06:00:54,167] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:00:54,167] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:00:54,168] - users -  INFO: Created user object for test1
+[2020-10-21 06:00:54,168] - users -  INFO: Created user object for test2
+[2020-10-21 06:00:54,168] - users -  INFO: Created user object for test3
+[2020-10-21 06:00:54,168] - users -  INFO: Created user object for test4
+[2020-10-21 06:00:54,168] - users -  INFO: Created user object for test5
+[2020-10-21 06:00:54,168] - users -  INFO: Created user object for test6
+[2020-10-21 06:00:54,168] - users -  INFO: Created user object for test7
+[2020-10-21 06:00:54,168] - users -  INFO: Created user object for test8
+[2020-10-21 06:00:54,168] - users -  INFO: Created user object for test9
+[2020-10-21 06:00:54,169] - users -  DEBUG: _validateUser() called for asd
+[2020-10-21 06:00:54,169] - users -  INFO: asd was not validated
+[2020-10-21 06:00:54,169] - users -  INFO: asd could not be verified
+[2020-10-21 06:03:13,856] - data -  DEBUG: _readData() called
+[2020-10-21 06:03:13,856] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:03:13,856] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:03:13,856] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:03:13,856] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:03:13,857] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:03:13,857] - users -  INFO: Created user object for test1
+[2020-10-21 06:03:13,857] - users -  INFO: Created user object for test2
+[2020-10-21 06:03:13,857] - users -  INFO: Created user object for test3
+[2020-10-21 06:03:13,857] - users -  INFO: Created user object for test4
+[2020-10-21 06:03:13,857] - users -  INFO: Created user object for test5
+[2020-10-21 06:03:13,857] - users -  INFO: Created user object for test6
+[2020-10-21 06:03:13,857] - users -  INFO: Created user object for test7
+[2020-10-21 06:03:13,857] - users -  INFO: Created user object for test8
+[2020-10-21 06:03:13,857] - users -  INFO: Created user object for test9
+[2020-10-21 06:03:17,330] - data -  DEBUG: _readData() called
+[2020-10-21 06:03:17,330] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:03:17,330] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:03:17,330] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:03:17,331] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:03:17,331] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:03:17,331] - users -  INFO: Created user object for test1
+[2020-10-21 06:03:17,331] - users -  INFO: Created user object for test2
+[2020-10-21 06:03:17,331] - users -  INFO: Created user object for test3
+[2020-10-21 06:03:17,331] - users -  INFO: Created user object for test4
+[2020-10-21 06:03:17,331] - users -  INFO: Created user object for test5
+[2020-10-21 06:03:17,331] - users -  INFO: Created user object for test6
+[2020-10-21 06:03:17,331] - users -  INFO: Created user object for test7
+[2020-10-21 06:03:17,331] - users -  INFO: Created user object for test8
+[2020-10-21 06:03:17,331] - users -  INFO: Created user object for test9
+[2020-10-21 06:03:21,567] - users -  DEBUG: signInUser() called for sdf
+[2020-10-21 06:03:21,568] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:03:21,568] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:03:21,568] - users -  INFO: Created user object for test1
+[2020-10-21 06:03:21,568] - users -  INFO: Created user object for test2
+[2020-10-21 06:03:21,568] - users -  INFO: Created user object for test3
+[2020-10-21 06:03:21,568] - users -  INFO: Created user object for test4
+[2020-10-21 06:03:21,568] - users -  INFO: Created user object for test5
+[2020-10-21 06:03:21,569] - users -  INFO: Created user object for test6
+[2020-10-21 06:03:21,569] - users -  INFO: Created user object for test7
+[2020-10-21 06:03:21,569] - users -  INFO: Created user object for test8
+[2020-10-21 06:03:21,569] - users -  INFO: Created user object for test9
+[2020-10-21 06:03:21,569] - users -  DEBUG: _validateUser() called for sdf
+[2020-10-21 06:03:21,569] - users -  INFO: sdf was not validated
+[2020-10-21 06:03:21,569] - users -  INFO: sdf could not be verified
+[2020-10-21 06:04:57,165] - data -  DEBUG: _readData() called
+[2020-10-21 06:04:57,165] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:04:57,165] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:04:57,165] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:04:57,166] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:04:57,166] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:04:57,166] - users -  INFO: Created user object for test1
+[2020-10-21 06:04:57,166] - users -  INFO: Created user object for test2
+[2020-10-21 06:04:57,166] - users -  INFO: Created user object for test3
+[2020-10-21 06:04:57,166] - users -  INFO: Created user object for test4
+[2020-10-21 06:04:57,166] - users -  INFO: Created user object for test5
+[2020-10-21 06:04:57,166] - users -  INFO: Created user object for test6
+[2020-10-21 06:04:57,166] - users -  INFO: Created user object for test7
+[2020-10-21 06:04:57,166] - users -  INFO: Created user object for test8
+[2020-10-21 06:04:57,166] - users -  INFO: Created user object for test9
+[2020-10-21 06:07:06,812] - data -  DEBUG: _readData() called
+[2020-10-21 06:07:06,812] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:07:06,812] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:07:06,812] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:07:06,812] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:07:06,812] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:07:06,813] - users -  INFO: Created user object for test1
+[2020-10-21 06:07:06,813] - users -  INFO: Created user object for test2
+[2020-10-21 06:07:06,813] - users -  INFO: Created user object for test3
+[2020-10-21 06:07:06,813] - users -  INFO: Created user object for test4
+[2020-10-21 06:07:06,813] - users -  INFO: Created user object for test5
+[2020-10-21 06:07:06,813] - users -  INFO: Created user object for test6
+[2020-10-21 06:07:06,813] - users -  INFO: Created user object for test7
+[2020-10-21 06:07:06,813] - users -  INFO: Created user object for test8
+[2020-10-21 06:07:06,813] - users -  INFO: Created user object for test9
+[2020-10-21 06:08:29,186] - data -  DEBUG: _readData() called
+[2020-10-21 06:08:29,187] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:08:29,187] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:08:29,187] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:08:29,187] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:08:29,188] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:08:29,188] - users -  INFO: Created user object for test1
+[2020-10-21 06:08:29,188] - users -  INFO: Created user object for test2
+[2020-10-21 06:08:29,188] - users -  INFO: Created user object for test3
+[2020-10-21 06:08:29,188] - users -  INFO: Created user object for test4
+[2020-10-21 06:08:29,188] - users -  INFO: Created user object for test5
+[2020-10-21 06:08:29,188] - users -  INFO: Created user object for test6
+[2020-10-21 06:08:29,188] - users -  INFO: Created user object for test7
+[2020-10-21 06:08:29,188] - users -  INFO: Created user object for test8
+[2020-10-21 06:08:29,188] - users -  INFO: Created user object for test9
+[2020-10-21 06:08:31,256] - users -  DEBUG: signInUser() called for asd
+[2020-10-21 06:08:31,256] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:08:31,256] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:08:31,257] - users -  INFO: Created user object for test1
+[2020-10-21 06:08:31,257] - users -  INFO: Created user object for test2
+[2020-10-21 06:08:31,257] - users -  INFO: Created user object for test3
+[2020-10-21 06:08:31,257] - users -  INFO: Created user object for test4
+[2020-10-21 06:08:31,257] - users -  INFO: Created user object for test5
+[2020-10-21 06:08:31,257] - users -  INFO: Created user object for test6
+[2020-10-21 06:08:31,257] - users -  INFO: Created user object for test7
+[2020-10-21 06:08:31,257] - users -  INFO: Created user object for test8
+[2020-10-21 06:08:31,257] - users -  INFO: Created user object for test9
+[2020-10-21 06:08:31,257] - users -  DEBUG: _validateUser() called for asd
+[2020-10-21 06:08:31,257] - users -  INFO: asd was not validated
+[2020-10-21 06:08:31,257] - users -  INFO: asd could not be verified
+[2020-10-21 06:09:02,630] - data -  DEBUG: _readData() called
+[2020-10-21 06:09:02,630] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:09:02,630] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:09:02,631] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:09:02,631] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:09:02,631] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:09:02,631] - users -  INFO: Created user object for test1
+[2020-10-21 06:09:02,631] - users -  INFO: Created user object for test2
+[2020-10-21 06:09:02,631] - users -  INFO: Created user object for test3
+[2020-10-21 06:09:02,631] - users -  INFO: Created user object for test4
+[2020-10-21 06:09:02,631] - users -  INFO: Created user object for test5
+[2020-10-21 06:09:02,631] - users -  INFO: Created user object for test6
+[2020-10-21 06:09:02,632] - users -  INFO: Created user object for test7
+[2020-10-21 06:09:02,632] - users -  INFO: Created user object for test8
+[2020-10-21 06:09:02,632] - users -  INFO: Created user object for test9
+[2020-10-21 06:09:05,347] - data -  DEBUG: _readData() called
+[2020-10-21 06:09:05,347] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:09:05,348] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:09:05,348] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:09:05,348] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:09:05,348] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:09:05,348] - users -  INFO: Created user object for test1
+[2020-10-21 06:09:05,348] - users -  INFO: Created user object for test2
+[2020-10-21 06:09:05,348] - users -  INFO: Created user object for test3
+[2020-10-21 06:09:05,348] - users -  INFO: Created user object for test4
+[2020-10-21 06:09:05,348] - users -  INFO: Created user object for test5
+[2020-10-21 06:09:05,349] - users -  INFO: Created user object for test6
+[2020-10-21 06:09:05,349] - users -  INFO: Created user object for test7
+[2020-10-21 06:09:05,349] - users -  INFO: Created user object for test8
+[2020-10-21 06:09:05,349] - users -  INFO: Created user object for test9
+[2020-10-21 06:09:07,796] - users -  DEBUG: signInUser() called for asd
+[2020-10-21 06:09:07,796] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:09:07,796] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:09:07,797] - users -  INFO: Created user object for test1
+[2020-10-21 06:09:07,797] - users -  INFO: Created user object for test2
+[2020-10-21 06:09:07,797] - users -  INFO: Created user object for test3
+[2020-10-21 06:09:07,797] - users -  INFO: Created user object for test4
+[2020-10-21 06:09:07,797] - users -  INFO: Created user object for test5
+[2020-10-21 06:09:07,797] - users -  INFO: Created user object for test6
+[2020-10-21 06:09:07,797] - users -  INFO: Created user object for test7
+[2020-10-21 06:09:07,797] - users -  INFO: Created user object for test8
+[2020-10-21 06:09:07,797] - users -  INFO: Created user object for test9
+[2020-10-21 06:09:07,797] - users -  DEBUG: _validateUser() called for asd
+[2020-10-21 06:09:07,797] - users -  INFO: asd was not validated
+[2020-10-21 06:09:07,798] - users -  INFO: asd could not be verified
+[2020-10-21 06:09:49,405] - data -  DEBUG: _readData() called
+[2020-10-21 06:09:49,406] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:09:49,406] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:09:49,406] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:09:49,406] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:09:49,406] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:09:49,406] - users -  INFO: Created user object for test1
+[2020-10-21 06:09:49,407] - users -  INFO: Created user object for test2
+[2020-10-21 06:09:49,407] - users -  INFO: Created user object for test3
+[2020-10-21 06:09:49,407] - users -  INFO: Created user object for test4
+[2020-10-21 06:09:49,407] - users -  INFO: Created user object for test5
+[2020-10-21 06:09:49,407] - users -  INFO: Created user object for test6
+[2020-10-21 06:09:49,407] - users -  INFO: Created user object for test7
+[2020-10-21 06:09:49,407] - users -  INFO: Created user object for test8
+[2020-10-21 06:09:49,407] - users -  INFO: Created user object for test9
+[2020-10-21 06:10:22,215] - data -  DEBUG: _readData() called
+[2020-10-21 06:10:22,215] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:10:22,215] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:10:22,215] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:10:22,215] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:10:22,216] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:10:22,216] - users -  INFO: Created user object for test1
+[2020-10-21 06:10:22,216] - users -  INFO: Created user object for test2
+[2020-10-21 06:10:22,216] - users -  INFO: Created user object for test3
+[2020-10-21 06:10:22,216] - users -  INFO: Created user object for test4
+[2020-10-21 06:10:22,216] - users -  INFO: Created user object for test5
+[2020-10-21 06:10:22,216] - users -  INFO: Created user object for test6
+[2020-10-21 06:10:22,216] - users -  INFO: Created user object for test7
+[2020-10-21 06:10:22,216] - users -  INFO: Created user object for test8
+[2020-10-21 06:10:22,216] - users -  INFO: Created user object for test9
+[2020-10-21 06:10:24,213] - data -  DEBUG: _readData() called
+[2020-10-21 06:10:24,214] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:10:24,214] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:10:24,214] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:10:24,214] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:10:24,214] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:10:24,214] - users -  INFO: Created user object for test1
+[2020-10-21 06:10:24,214] - users -  INFO: Created user object for test2
+[2020-10-21 06:10:24,215] - users -  INFO: Created user object for test3
+[2020-10-21 06:10:24,215] - users -  INFO: Created user object for test4
+[2020-10-21 06:10:24,215] - users -  INFO: Created user object for test5
+[2020-10-21 06:10:24,215] - users -  INFO: Created user object for test6
+[2020-10-21 06:10:24,215] - users -  INFO: Created user object for test7
+[2020-10-21 06:10:24,215] - users -  INFO: Created user object for test8
+[2020-10-21 06:10:24,215] - users -  INFO: Created user object for test9
+[2020-10-21 06:10:28,041] - users -  DEBUG: signInUser() called for sad
+[2020-10-21 06:10:28,041] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:10:28,041] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:10:28,041] - users -  INFO: Created user object for test1
+[2020-10-21 06:10:28,042] - users -  INFO: Created user object for test2
+[2020-10-21 06:10:28,042] - users -  INFO: Created user object for test3
+[2020-10-21 06:10:28,042] - users -  INFO: Created user object for test4
+[2020-10-21 06:10:28,042] - users -  INFO: Created user object for test5
+[2020-10-21 06:10:28,042] - users -  INFO: Created user object for test6
+[2020-10-21 06:10:28,042] - users -  INFO: Created user object for test7
+[2020-10-21 06:10:28,042] - users -  INFO: Created user object for test8
+[2020-10-21 06:10:28,042] - users -  INFO: Created user object for test9
+[2020-10-21 06:10:28,042] - users -  DEBUG: _validateUser() called for sad
+[2020-10-21 06:10:28,042] - users -  INFO: sad was not validated
+[2020-10-21 06:10:28,042] - users -  INFO: sad could not be verified
+[2020-10-21 06:13:11,721] - data -  DEBUG: _readData() called
+[2020-10-21 06:13:11,721] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:13:11,721] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:13:11,721] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:13:11,721] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:13:11,721] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:13:11,722] - users -  INFO: Created user object for test1
+[2020-10-21 06:13:11,722] - users -  INFO: Created user object for test2
+[2020-10-21 06:13:11,722] - users -  INFO: Created user object for test3
+[2020-10-21 06:13:11,722] - users -  INFO: Created user object for test4
+[2020-10-21 06:13:11,722] - users -  INFO: Created user object for test5
+[2020-10-21 06:13:11,722] - users -  INFO: Created user object for test6
+[2020-10-21 06:13:11,722] - users -  INFO: Created user object for test7
+[2020-10-21 06:13:11,722] - users -  INFO: Created user object for test8
+[2020-10-21 06:13:11,722] - users -  INFO: Created user object for test9
+[2020-10-21 06:13:44,033] - data -  DEBUG: _readData() called
+[2020-10-21 06:13:44,033] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:13:44,033] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:13:44,033] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:13:44,034] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:13:44,034] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:13:44,034] - users -  INFO: Created user object for test1
+[2020-10-21 06:13:44,034] - users -  INFO: Created user object for test2
+[2020-10-21 06:13:44,034] - users -  INFO: Created user object for test3
+[2020-10-21 06:13:44,034] - users -  INFO: Created user object for test4
+[2020-10-21 06:13:44,034] - users -  INFO: Created user object for test5
+[2020-10-21 06:13:44,034] - users -  INFO: Created user object for test6
+[2020-10-21 06:13:44,034] - users -  INFO: Created user object for test7
+[2020-10-21 06:13:44,034] - users -  INFO: Created user object for test8
+[2020-10-21 06:13:44,034] - users -  INFO: Created user object for test9
+[2020-10-21 06:14:20,847] - data -  DEBUG: _readData() called
+[2020-10-21 06:14:20,847] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:14:20,848] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:14:20,848] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:14:20,848] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:14:20,848] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:14:20,848] - users -  INFO: Created user object for test1
+[2020-10-21 06:14:20,848] - users -  INFO: Created user object for test2
+[2020-10-21 06:14:20,848] - users -  INFO: Created user object for test3
+[2020-10-21 06:14:20,848] - users -  INFO: Created user object for test4
+[2020-10-21 06:14:20,848] - users -  INFO: Created user object for test5
+[2020-10-21 06:14:20,849] - users -  INFO: Created user object for test6
+[2020-10-21 06:14:20,849] - users -  INFO: Created user object for test7
+[2020-10-21 06:14:20,849] - users -  INFO: Created user object for test8
+[2020-10-21 06:14:20,849] - users -  INFO: Created user object for test9
+[2020-10-21 06:14:24,508] - data -  DEBUG: _readData() called
+[2020-10-21 06:14:24,508] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:14:24,508] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:14:24,508] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:14:24,509] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:14:24,509] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:14:24,509] - users -  INFO: Created user object for test1
+[2020-10-21 06:14:24,509] - users -  INFO: Created user object for test2
+[2020-10-21 06:14:24,509] - users -  INFO: Created user object for test3
+[2020-10-21 06:14:24,509] - users -  INFO: Created user object for test4
+[2020-10-21 06:14:24,509] - users -  INFO: Created user object for test5
+[2020-10-21 06:14:24,509] - users -  INFO: Created user object for test6
+[2020-10-21 06:14:24,509] - users -  INFO: Created user object for test7
+[2020-10-21 06:14:24,509] - users -  INFO: Created user object for test8
+[2020-10-21 06:14:24,509] - users -  INFO: Created user object for test9
+[2020-10-21 06:15:02,484] - data -  DEBUG: _readData() called
+[2020-10-21 06:15:02,484] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:15:02,484] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:15:02,484] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:15:02,485] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:15:02,485] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:15:02,485] - users -  INFO: Created user object for test1
+[2020-10-21 06:15:02,485] - users -  INFO: Created user object for test2
+[2020-10-21 06:15:02,485] - users -  INFO: Created user object for test3
+[2020-10-21 06:15:02,485] - users -  INFO: Created user object for test4
+[2020-10-21 06:15:02,485] - users -  INFO: Created user object for test5
+[2020-10-21 06:15:02,485] - users -  INFO: Created user object for test6
+[2020-10-21 06:15:02,485] - users -  INFO: Created user object for test7
+[2020-10-21 06:15:02,485] - users -  INFO: Created user object for test8
+[2020-10-21 06:15:02,486] - users -  INFO: Created user object for test9
+[2020-10-21 06:15:36,512] - data -  DEBUG: _readData() called
+[2020-10-21 06:15:36,513] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:15:36,513] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:15:36,513] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:15:36,513] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:15:36,513] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:15:36,514] - users -  INFO: Created user object for test1
+[2020-10-21 06:15:36,514] - users -  INFO: Created user object for test2
+[2020-10-21 06:15:36,514] - users -  INFO: Created user object for test3
+[2020-10-21 06:15:36,514] - users -  INFO: Created user object for test4
+[2020-10-21 06:15:36,514] - users -  INFO: Created user object for test5
+[2020-10-21 06:15:36,514] - users -  INFO: Created user object for test6
+[2020-10-21 06:15:36,514] - users -  INFO: Created user object for test7
+[2020-10-21 06:15:36,514] - users -  INFO: Created user object for test8
+[2020-10-21 06:15:36,514] - users -  INFO: Created user object for test9
+[2020-10-21 06:15:38,601] - data -  DEBUG: _readData() called
+[2020-10-21 06:15:38,602] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:15:38,602] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:15:38,602] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:15:38,602] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:15:38,602] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:15:38,602] - users -  INFO: Created user object for test1
+[2020-10-21 06:15:38,602] - users -  INFO: Created user object for test2
+[2020-10-21 06:15:38,602] - users -  INFO: Created user object for test3
+[2020-10-21 06:15:38,602] - users -  INFO: Created user object for test4
+[2020-10-21 06:15:38,603] - users -  INFO: Created user object for test5
+[2020-10-21 06:15:38,603] - users -  INFO: Created user object for test6
+[2020-10-21 06:15:38,603] - users -  INFO: Created user object for test7
+[2020-10-21 06:15:38,603] - users -  INFO: Created user object for test8
+[2020-10-21 06:15:38,603] - users -  INFO: Created user object for test9
+[2020-10-21 06:15:47,569] - users -  DEBUG: makeNewUser() called for 1234
+[2020-10-21 06:15:47,569] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:15:47,569] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:15:47,569] - users -  INFO: Created user object for test1
+[2020-10-21 06:15:47,569] - users -  INFO: Created user object for test2
+[2020-10-21 06:15:47,569] - users -  INFO: Created user object for test3
+[2020-10-21 06:15:47,569] - users -  INFO: Created user object for test4
+[2020-10-21 06:15:47,569] - users -  INFO: Created user object for test5
+[2020-10-21 06:15:47,569] - users -  INFO: Created user object for test6
+[2020-10-21 06:15:47,570] - users -  INFO: Created user object for test7
+[2020-10-21 06:15:47,570] - users -  INFO: Created user object for test8
+[2020-10-21 06:15:47,570] - users -  INFO: Created user object for test9
+[2020-10-21 06:15:47,570] - users -  INFO: Created user object for 1234
+[2020-10-21 06:15:47,570] - users -  DEBUG: _saveInfo() called
+[2020-10-21 06:15:47,570] - data -  DEBUG: changeUserInfo() called
+[2020-10-21 06:15:47,570] - data -  DEBUG: _writeData() called
+[2020-10-21 06:15:47,570] - data -  INFO: Pacemaker 2 updated
+[2020-10-21 06:15:47,571] - data -  INFO: Data written to JSON file
+[2020-10-21 06:15:47,571] - data -  DEBUG: _readData() called
+[2020-10-21 06:15:47,576] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:15:47,576] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:15:47,576] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:15:47,576] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:15:47,576] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:15:47,576] - users -  INFO: Created user object for test1
+[2020-10-21 06:15:47,576] - users -  INFO: Created user object for test2
+[2020-10-21 06:15:47,576] - users -  INFO: Created user object for test3
+[2020-10-21 06:15:47,576] - users -  INFO: Created user object for test4
+[2020-10-21 06:15:47,576] - users -  INFO: Created user object for test5
+[2020-10-21 06:15:47,576] - users -  INFO: Created user object for test6
+[2020-10-21 06:15:47,576] - users -  INFO: Created user object for test7
+[2020-10-21 06:15:47,576] - users -  INFO: Created user object for test8
+[2020-10-21 06:15:47,577] - users -  INFO: Created user object for test9
+[2020-10-21 06:15:47,577] - users -  INFO: Created user object for 1234
+[2020-10-21 06:15:50,517] - users -  DEBUG: signInUser() called for 1234
+[2020-10-21 06:15:50,517] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:15:50,517] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:15:50,517] - users -  INFO: Created user object for test1
+[2020-10-21 06:15:50,518] - users -  INFO: Created user object for test2
+[2020-10-21 06:15:50,518] - users -  INFO: Created user object for test3
+[2020-10-21 06:15:50,518] - users -  INFO: Created user object for test4
+[2020-10-21 06:15:50,518] - users -  INFO: Created user object for test5
+[2020-10-21 06:15:50,518] - users -  INFO: Created user object for test6
+[2020-10-21 06:15:50,518] - users -  INFO: Created user object for test7
+[2020-10-21 06:15:50,518] - users -  INFO: Created user object for test8
+[2020-10-21 06:15:50,518] - users -  INFO: Created user object for test9
+[2020-10-21 06:15:50,518] - users -  INFO: Created user object for 1234
+[2020-10-21 06:15:50,518] - users -  DEBUG: _validateUser() called for 1234
+[2020-10-21 06:15:50,518] - users -  INFO: 1234 was validated
+[2020-10-21 06:15:50,518] - users -  INFO: 1234 is signed in
+[2020-10-21 06:29:06,017] - data -  DEBUG: _readData() called
+[2020-10-21 06:29:06,017] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:29:06,017] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:29:06,017] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:29:06,017] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:29:06,018] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:29:06,018] - users -  INFO: Created user object for test1
+[2020-10-21 06:29:06,018] - users -  INFO: Created user object for test2
+[2020-10-21 06:29:06,018] - users -  INFO: Created user object for test3
+[2020-10-21 06:29:06,018] - users -  INFO: Created user object for test4
+[2020-10-21 06:29:06,018] - users -  INFO: Created user object for test5
+[2020-10-21 06:29:06,018] - users -  INFO: Created user object for test6
+[2020-10-21 06:29:06,018] - users -  INFO: Created user object for test7
+[2020-10-21 06:29:06,018] - users -  INFO: Created user object for test8
+[2020-10-21 06:29:06,018] - users -  INFO: Created user object for test9
+[2020-10-21 06:29:06,018] - users -  INFO: Created user object for 1234
+[2020-10-21 06:29:29,712] - data -  DEBUG: _readData() called
+[2020-10-21 06:29:29,713] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:29:29,713] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:29:29,713] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:29:29,714] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:29:29,714] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:29:29,714] - users -  INFO: Created user object for test1
+[2020-10-21 06:29:29,714] - users -  INFO: Created user object for test2
+[2020-10-21 06:29:29,714] - users -  INFO: Created user object for test3
+[2020-10-21 06:29:29,714] - users -  INFO: Created user object for test4
+[2020-10-21 06:29:29,714] - users -  INFO: Created user object for test5
+[2020-10-21 06:29:29,714] - users -  INFO: Created user object for test6
+[2020-10-21 06:29:29,714] - users -  INFO: Created user object for test7
+[2020-10-21 06:29:29,714] - users -  INFO: Created user object for test8
+[2020-10-21 06:29:29,714] - users -  INFO: Created user object for test9
+[2020-10-21 06:29:29,714] - users -  INFO: Created user object for 1234
+[2020-10-21 06:30:06,669] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:30:06,670] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:30:06,670] - users -  INFO: Created user object for test1
+[2020-10-21 06:30:06,670] - users -  INFO: Created user object for test2
+[2020-10-21 06:30:06,670] - users -  INFO: Created user object for test3
+[2020-10-21 06:30:06,670] - users -  INFO: Created user object for test4
+[2020-10-21 06:30:06,670] - users -  INFO: Created user object for test5
+[2020-10-21 06:30:06,670] - users -  INFO: Created user object for test6
+[2020-10-21 06:30:06,670] - users -  INFO: Created user object for test7
+[2020-10-21 06:30:06,670] - users -  INFO: Created user object for test8
+[2020-10-21 06:30:06,670] - users -  INFO: Created user object for test9
+[2020-10-21 06:30:06,670] - users -  INFO: Created user object for 1234
+[2020-10-21 06:31:20,644] - data -  DEBUG: _readData() called
+[2020-10-21 06:31:20,644] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:31:20,644] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:31:20,644] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:31:20,645] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:31:20,645] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:31:20,645] - users -  INFO: Created user object for test1
+[2020-10-21 06:31:20,645] - users -  INFO: Created user object for test2
+[2020-10-21 06:31:20,645] - users -  INFO: Created user object for test3
+[2020-10-21 06:31:20,645] - users -  INFO: Created user object for test4
+[2020-10-21 06:31:20,645] - users -  INFO: Created user object for test5
+[2020-10-21 06:31:20,645] - users -  INFO: Created user object for test6
+[2020-10-21 06:31:20,645] - users -  INFO: Created user object for test7
+[2020-10-21 06:31:20,646] - users -  INFO: Created user object for test8
+[2020-10-21 06:31:20,646] - users -  INFO: Created user object for test9
+[2020-10-21 06:31:20,646] - users -  INFO: Created user object for 1234
+[2020-10-21 06:31:24,323] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:31:24,323] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:31:24,323] - users -  INFO: Created user object for test1
+[2020-10-21 06:31:24,323] - users -  INFO: Created user object for test2
+[2020-10-21 06:31:24,323] - users -  INFO: Created user object for test3
+[2020-10-21 06:31:24,323] - users -  INFO: Created user object for test4
+[2020-10-21 06:31:24,323] - users -  INFO: Created user object for test5
+[2020-10-21 06:31:24,323] - users -  INFO: Created user object for test6
+[2020-10-21 06:31:24,323] - users -  INFO: Created user object for test7
+[2020-10-21 06:31:24,324] - users -  INFO: Created user object for test8
+[2020-10-21 06:31:24,324] - users -  INFO: Created user object for test9
+[2020-10-21 06:31:24,324] - users -  INFO: Created user object for 1234
+[2020-10-21 06:32:20,534] - data -  DEBUG: _readData() called
+[2020-10-21 06:32:20,535] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:32:20,535] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:32:20,535] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:32:20,535] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:32:20,535] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:32:20,535] - users -  INFO: Created user object for test1
+[2020-10-21 06:32:20,535] - users -  INFO: Created user object for test2
+[2020-10-21 06:32:20,535] - users -  INFO: Created user object for test3
+[2020-10-21 06:32:20,535] - users -  INFO: Created user object for test4
+[2020-10-21 06:32:20,535] - users -  INFO: Created user object for test5
+[2020-10-21 06:32:20,536] - users -  INFO: Created user object for test6
+[2020-10-21 06:32:20,536] - users -  INFO: Created user object for test7
+[2020-10-21 06:32:20,536] - users -  INFO: Created user object for test8
+[2020-10-21 06:32:20,536] - users -  INFO: Created user object for test9
+[2020-10-21 06:32:20,536] - users -  INFO: Created user object for 1234
+[2020-10-21 06:37:13,664] - data -  DEBUG: _readData() called
+[2020-10-21 06:37:13,665] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:37:13,665] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:37:13,665] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:37:13,665] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:37:13,665] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:37:13,665] - users -  INFO: Created user object for test1
+[2020-10-21 06:37:13,666] - users -  INFO: Created user object for test2
+[2020-10-21 06:37:13,666] - users -  INFO: Created user object for test3
+[2020-10-21 06:37:13,666] - users -  INFO: Created user object for test4
+[2020-10-21 06:37:13,666] - users -  INFO: Created user object for test5
+[2020-10-21 06:37:13,666] - users -  INFO: Created user object for test6
+[2020-10-21 06:37:13,666] - users -  INFO: Created user object for test7
+[2020-10-21 06:37:13,666] - users -  INFO: Created user object for test8
+[2020-10-21 06:37:13,666] - users -  INFO: Created user object for test9
+[2020-10-21 06:37:13,666] - users -  INFO: Created user object for 1234
+[2020-10-21 06:37:16,541] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:37:36,976] - data -  DEBUG: _readData() called
+[2020-10-21 06:37:36,976] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:37:36,976] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:37:36,976] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:37:36,976] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:37:36,977] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:37:36,977] - users -  INFO: Created user object for test1
+[2020-10-21 06:37:36,977] - users -  INFO: Created user object for test2
+[2020-10-21 06:37:36,977] - users -  INFO: Created user object for test3
+[2020-10-21 06:37:36,977] - users -  INFO: Created user object for test4
+[2020-10-21 06:37:36,977] - users -  INFO: Created user object for test5
+[2020-10-21 06:37:36,977] - users -  INFO: Created user object for test6
+[2020-10-21 06:37:36,977] - users -  INFO: Created user object for test7
+[2020-10-21 06:37:36,977] - users -  INFO: Created user object for test8
+[2020-10-21 06:37:36,977] - users -  INFO: Created user object for test9
+[2020-10-21 06:37:36,977] - users -  INFO: Created user object for 1234
+[2020-10-21 06:37:39,485] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:39:25,916] - data -  DEBUG: _readData() called
+[2020-10-21 06:39:25,916] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:39:25,916] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:39:25,916] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:39:25,917] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:39:25,917] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:39:25,917] - users -  INFO: Created user object for test1
+[2020-10-21 06:39:25,917] - users -  INFO: Created user object for test2
+[2020-10-21 06:39:25,917] - users -  INFO: Created user object for test3
+[2020-10-21 06:39:25,917] - users -  INFO: Created user object for test4
+[2020-10-21 06:39:25,917] - users -  INFO: Created user object for test5
+[2020-10-21 06:39:25,917] - users -  INFO: Created user object for test6
+[2020-10-21 06:39:25,918] - users -  INFO: Created user object for test7
+[2020-10-21 06:39:25,918] - users -  INFO: Created user object for test8
+[2020-10-21 06:39:25,918] - users -  INFO: Created user object for test9
+[2020-10-21 06:39:25,918] - users -  INFO: Created user object for 1234
+[2020-10-21 06:39:26,007] - data -  DEBUG: _readData() called
+[2020-10-21 06:39:26,007] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:39:26,007] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:39:26,007] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:39:26,007] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:39:26,007] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:39:26,007] - users -  INFO: Created user object for test1
+[2020-10-21 06:39:26,008] - users -  INFO: Created user object for test2
+[2020-10-21 06:39:26,008] - users -  INFO: Created user object for test3
+[2020-10-21 06:39:26,008] - users -  INFO: Created user object for test4
+[2020-10-21 06:39:26,008] - users -  INFO: Created user object for test5
+[2020-10-21 06:39:26,008] - users -  INFO: Created user object for test6
+[2020-10-21 06:39:26,008] - users -  INFO: Created user object for test7
+[2020-10-21 06:39:26,008] - users -  INFO: Created user object for test8
+[2020-10-21 06:39:26,008] - users -  INFO: Created user object for test9
+[2020-10-21 06:39:26,008] - users -  INFO: Created user object for 1234
+[2020-10-21 06:39:27,158] - data -  DEBUG: _readData() called
+[2020-10-21 06:39:27,159] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:39:27,159] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:39:27,159] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:39:27,159] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:39:27,159] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:39:27,159] - users -  INFO: Created user object for test1
+[2020-10-21 06:39:27,160] - users -  INFO: Created user object for test2
+[2020-10-21 06:39:27,160] - users -  INFO: Created user object for test3
+[2020-10-21 06:39:27,160] - users -  INFO: Created user object for test4
+[2020-10-21 06:39:27,160] - users -  INFO: Created user object for test5
+[2020-10-21 06:39:27,160] - users -  INFO: Created user object for test6
+[2020-10-21 06:39:27,160] - users -  INFO: Created user object for test7
+[2020-10-21 06:39:27,160] - users -  INFO: Created user object for test8
+[2020-10-21 06:39:27,160] - users -  INFO: Created user object for test9
+[2020-10-21 06:39:27,160] - users -  INFO: Created user object for 1234
+[2020-10-21 06:39:29,394] - data -  DEBUG: _readData() called
+[2020-10-21 06:39:29,394] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-21 06:39:29,394] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-21 06:39:29,394] - data -  INFO: Pacemaker 2 is/was connected
+[2020-10-21 06:39:29,395] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:39:29,395] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:39:29,395] - users -  INFO: Created user object for test1
+[2020-10-21 06:39:29,395] - users -  INFO: Created user object for test2
+[2020-10-21 06:39:29,395] - users -  INFO: Created user object for test3
+[2020-10-21 06:39:29,395] - users -  INFO: Created user object for test4
+[2020-10-21 06:39:29,395] - users -  INFO: Created user object for test5
+[2020-10-21 06:39:29,395] - users -  INFO: Created user object for test6
+[2020-10-21 06:39:29,395] - users -  INFO: Created user object for test7
+[2020-10-21 06:39:29,395] - users -  INFO: Created user object for test8
+[2020-10-21 06:39:29,396] - users -  INFO: Created user object for test9
+[2020-10-21 06:39:29,396] - users -  INFO: Created user object for 1234
+[2020-10-21 06:39:31,019] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:40:03,457] - users -  DEBUG: signInUser() called for asd
+[2020-10-21 06:40:03,457] - users -  DEBUG: _getInfo() called
+[2020-10-21 06:40:03,457] - data -  DEBUG: getUserInfo() called
+[2020-10-21 06:40:03,457] - users -  INFO: Created user object for test1
+[2020-10-21 06:40:03,457] - users -  INFO: Created user object for test2
+[2020-10-21 06:40:03,457] - users -  INFO: Created user object for test3
+[2020-10-21 06:40:03,457] - users -  INFO: Created user object for test4
+[2020-10-21 06:40:03,457] - users -  INFO: Created user object for test5
+[2020-10-21 06:40:03,457] - users -  INFO: Created user object for test6
+[2020-10-21 06:40:03,457] - users -  INFO: Created user object for test7
+[2020-10-21 06:40:03,458] - users -  INFO: Created user object for test8
+[2020-10-21 06:40:03,458] - users -  INFO: Created user object for test9
+[2020-10-21 06:40:03,458] - users -  INFO: Created user object for 1234
+[2020-10-21 06:40:03,458] - users -  DEBUG: _validateUser() called for asd
+[2020-10-21 06:40:03,458] - users -  INFO: asd was not validated
+[2020-10-21 06:40:03,458] - users -  INFO: asd could not be verified
