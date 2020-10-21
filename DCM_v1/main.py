@@ -14,7 +14,7 @@ def popupmsg(msg):
         popup.destroy()
 
     popup = tk.Tk()
-    popup.minsize(300,80)
+    #popup.minsize(300,80)
     popup.wm_title("Notice")
     label = ttk.Label(popup, text = msg, font=NORM_FONT)
     label.pack(side="top", expand=True, pady=10)
@@ -29,10 +29,11 @@ class Application(tk.Tk):
         tk.Tk.__init__(self, *args, **kwargs)
 
         tk.Tk.wm_title(self, "Heart DCM")
+        tk.Tk.resizable(self, width=True, height=True)
         self.debug_status = False
 
         container = tk.Frame(self)
-        container.pack(side="top", fill = "both", expand=True)
+        container.grid(row=0, column =0, sticky='NSEW')
         container.grid_columnconfigure(0,weight=1)
         container.grid_rowconfigure(0,weight=1)
 
@@ -45,7 +46,7 @@ class Application(tk.Tk):
             frame = F(parent = container, controller = self)
             self.frames[F] = frame
 
-            frame.grid(row=0, column=0, sticky="nsew")
+            frame.grid(row = 0, column = 0, sticky="NSEW")
 
         self.show_frame(LoginPage)
 
@@ -92,28 +93,32 @@ class Application(tk.Tk):
 class LoginPage(tk.Frame):
 
     def __init__(self, parent, controller):
-        tk.Frame.__init__(self, parent)
-        page_title = tk.Label(self, text="Login Page", font=LARGE_FONT)
-        page_title.pack(side="top", pady=10, padx=10)
+        tk.Frame.__init__(self, master = parent)
+        self.grid_columnconfigure((0,3),weight=2)
+        self.grid_columnconfigure((1,2),weight=1)
+        
 
-        login_label = tk.Label(self, text="Username: ", font=NORM_FONT)
-        login_label.pack()
+        page_title = tk.Label(self, text="Login Page", font=LARGE_FONT, bg="green")
+        page_title.grid(row=0, column=1, ipadx=100, ipady=50, columnspan=2) #(side="top", pady=10, padx=10)
+
+        login_label = tk.Label(self, text="Username: ", font=NORM_FONT, bg="green")
+        login_label.grid(row=1, column=1)# pack()
 
         username_entry = ttk.Entry(self)
-        username_entry.pack()
+        username_entry.grid(row=1, column=2 ) #pack()
 
-        password_label = tk.Label(self, text="Password: ", font=NORM_FONT)
-        password_label.pack()
+        password_label = tk.Label(self, text="Password: ", font=NORM_FONT, bg="green")
+        password_label.grid(row=2, column=1)#pack()
 
         password_entry = ttk.Entry(self, show="*")
-        password_entry.pack()
+        password_entry.grid(row=2, column=2)#pack()
 
-        button1 = ttk.Button(self, text="Login", command= lambda: 
+        login_button = ttk.Button(self, text="Login", command= lambda: 
         controller.show_frame(PageExampleOne) if 
         self.authenticate(username_entry.get(), password_entry.get()) else False) 
                                                     
-        button1.pack() 
-        
+        login_button.grid(row=3, column=0)#pack() 
+        print(self.grid_size())
     
     def authenticate(self, username, password):
         # do some stuff
@@ -126,19 +131,34 @@ class PageExampleOne(tk.Frame):
 
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
+        #self.grid(row =0, column = 0, sticky="nsew")
+        self.columnconfigure((1,4), weight=1)
+        self.rowconfigure((0,1),weight=1)
+
+        garbage = {"A":1, "B": 2, "C": "Banana"}
+        
         label = tk.Label(self, text = 'Page Example One', font=LARGE_FONT)
-        label.pack(padx=10,pady=10)
+        label.grid(row=0, column=0)#pack(side="top", padx=10,pady=10)
+
+        x = 1
+        for key in garbage:
+            dcm_data_label = tk.Label(self, text = '{} :'.format(key), font=NORM_FONT)
+            dcm_value_label = tk.Label(self, text = '{}'.format(garbage[key]), font=NORM_FONT)
+            dcm_data_label.grid(row=x, column=0, sticky="nsew")
+            dcm_value_label.grid(row=x, column=1,sticky="nsew")
+            x += 1
+
         button1 = ttk.Button(self, text="Back to Login", command= lambda: controller.show_frame(LoginPage))
-        button1.pack()
+        button1.grid(row=x+1, column = 2)#pack()
 
 class PageExampleTwo(tk.Frame):
 
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         label = tk.Label(self, text = 'Page Example Two', font=LARGE_FONT)
-        label.pack(padx=10,pady=10)
+        label.grid(row=0)#pack(padx=10,pady=10)
         button1 = ttk.Button(self, text="Back to Login", command= lambda: controller.show_frame(LoginPage))
-        button1.pack()
+        button1.grid(row=0)#pack()
 
 
 
