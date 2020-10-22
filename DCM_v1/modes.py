@@ -106,7 +106,7 @@ def saveParamValues(modeEdit, parameterValues):
 
 # Makes the given mode as the current operating mode
 def getCurrentMode():
-    # needs logging
+    logger.debug('getCurrentMode() called')
     for mode in all_modes:
         if mode.currentMode == True:
             return mode
