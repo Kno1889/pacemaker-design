@@ -31,15 +31,21 @@ class User():
 def makeNewUser(name, password):
     logger.debug('makeNewUser() called for %s', name)
     if type(name) == type('string') and type(password) == type('string'):
+        name = name.lstrip().rstrip()
+        password = password.lstrip().rstrip()
         global all_users
         all_users = _getInfo()
         if len(all_users) < 10:
-            newUser = User(name.lstrip().rstrip(), password.lstrip().rstrip())
+            for user in all_users:
+                if user.name == name:
+                    return 2
+            newUser = User(name, password)
             all_users.append(newUser)
             _saveInfo()
-            return True
-    logger.info('user was not make for %s')
-    return False
+            return 0
+        return 3
+    logger.info('user was not made for %s')
+    return 0
 
 
 # deletes the given user and the corresponding saved info if they are signed in. Returns true if the user was deleted successfully
