@@ -817,3 +817,42 @@
 [2020-10-22 14:54:40,145] DEBUG: getPacemakerInfo() called
 [2020-10-22 14:54:59,449] DEBUG: getUserInfo() called
 [2020-10-22 14:55:12,923] DEBUG: getUserInfo() called
+[2020-10-22 14:56:21,608] DEBUG: _readData() called
+[2020-10-22 14:56:21,608] DEBUG: Pacemaker  data read
+[2020-10-22 14:56:21,608] DEBUG: Pacemaker 123 data read
+[2020-10-22 14:56:21,608] DEBUG: Pacemaker 1 data read
+[2020-10-22 14:56:21,608] DEBUG: Pacemaker 2 data read
+[2020-10-22 14:56:21,608] DEBUG: Pacemaker 3 data read
+[2020-10-22 14:56:21,608] DEBUG: Pacemaker 1 data read
+[2020-10-22 14:56:21,609] INFO: Pacemaker 1 is/was connected
+[2020-10-22 14:56:21,609] DEBUG: getUserInfo() called
+[2020-10-22 14:56:21,612] DEBUG: getPacemakerInfo() called
+[2020-10-22 14:56:23,341] DEBUG: getPacemakerInfo() called
+[2020-10-22 14:56:41,223] DEBUG: getUserInfo() called
+[2020-10-22 14:57:47,960] DEBUG: getPacemakerInfo() called
+[2020-10-22 14:58:54,962] DEBUG: _readData() called
+[2020-10-22 14:58:54,963] DEBUG: Pacemaker  data read
+[2020-10-22 14:58:54,963] DEBUG: Pacemaker 123 data read
+[2020-10-22 14:58:54,963] DEBUG: Pacemaker 1 data read
+[2020-10-22 14:58:54,963] DEBUG: Pacemaker 2 data read
+[2020-10-22 14:58:54,963] DEBUG: Pacemaker 3 data read
+[2020-10-22 14:58:54,963] DEBUG: Pacemaker 1 data read
+[2020-10-22 14:58:54,963] INFO: Pacemaker 1 is/was connected
+[2020-10-22 14:58:54,964] DEBUG: getUserInfo() called
+[2020-10-22 14:58:54,967] DEBUG: getPacemakerInfo() called
+[2020-10-22 15:04:13,894] DEBUG: _readData() called
+[2020-10-22 15:04:13,895] DEBUG: Pacemaker  data read
+[2020-10-22 15:04:13,895] DEBUG: Pacemaker 123 data read
+[2020-10-22 15:04:13,895] DEBUG: Pacemaker 1 data read
+[2020-10-22 15:04:13,895] DEBUG: Pacemaker 2 data read
+[2020-10-22 15:04:13,895] DEBUG: Pacemaker 3 data read
+[2020-10-22 15:04:13,895] DEBUG: Pacemaker 1 data read
+[2020-10-22 15:04:13,895] INFO: Pacemaker 1 is/was connected
+[2020-10-22 15:04:13,896] DEBUG: getUserInfo() called
+[2020-10-22 15:04:13,903] DEBUG: getPacemakerInfo() called
+[2020-10-22 15:04:15,382] DEBUG: getPacemakerInfo() called
+[2020-10-22 15:04:24,491] DEBUG: getUserInfo() called
+[2020-10-22 15:04:33,893] DEBUG: getPacemakerInfo() called
+[2020-10-22 15:04:43,031] DEBUG: getUserInfo() called
+[2020-10-22 15:04:47,389] DEBUG: getUserInfo() called
+[2020-10-22 15:04:55,562] DEBUG: getUserInfo() called

@@ -27,7 +27,6 @@ class LoginPage(tk.Frame):
         self.grid_columnconfigure((0,2),weight=2)
         self.grid_columnconfigure((0,1),weight=1)
         
-
         page_title = tk.Label(self, text="Login Page", font=settings.LARGE_FONT)
         page_title.grid(row=0, column=1, ipadx=100, ipady=50, columnspan=2) #(side="top", pady=10, padx=10)
 

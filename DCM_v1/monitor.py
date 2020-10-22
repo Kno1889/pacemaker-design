@@ -189,7 +189,7 @@ class ModeEdit(tk.Frame):
             elif status == 2:
                 tm.showerror("Error", "The parameters provided are of wrong datatype")
                 return None
-            else :
+            else:
                 tm.showerror("Error", settings.cfError)
                 print(status)
                 return None
