@@ -39,10 +39,10 @@ class DefMode(tk.Frame):
         self.columnconfigure(0, weight=1)
 
         page_title = tk.Label(self, text="Mode Selection", font=settings.LARGE_FONT)
-        page_title.grid(row=0, column=1, ipadx=100, ipady=50, columnspan=2)
+        page_title.grid(row=0, column=0, ipadx=0, ipady=50)
 
         mode_label = tk.Label(self, text="Mode: ", font=settings.NORM_FONT)
-        mode_label.grid(row=1, column=1)# pack()
+        mode_label.grid(row=1, column=0)# pack()
 
         mode_options = [mode.name for mode in modes.allModes()]
         # default text
@@ -52,13 +52,13 @@ class DefMode(tk.Frame):
         choice.set(mode_options[0])
 
         dropdown = ttk.OptionMenu(self, choice, *mode_options)
-        dropdown.grid(row = 1, column=2)
+        dropdown.grid(row = 1, column=1)
 
         b1 = ttk.Button(self, text="Set", command= lambda: self.set_mode(controller, choice))
         b2 = ttk.Button(self, text="Exit Session", command= lambda: exit_session(controller))
 
-        b1.grid(row=3, column = 2)
-        b2.grid(row=4, column = 2)
+        b1.grid(row=3, column = 1)
+        b2.grid(row=4, column = 1)
 
         
     def set_mode(self, controller, mode):
@@ -98,7 +98,7 @@ class Monitor(tk.Frame):
         print(self.mode.params)
         
         label = tk.Label(self, text = 'DCM', font=settings.LARGE_FONT)
-        label.grid(row=0, column=0)
+        label.grid(row=0, column=0, columnspan=2, pady=20)
 
         x = 1
         for key in self.mode.params:
@@ -113,9 +113,9 @@ class Monitor(tk.Frame):
         b2 = ttk.Button(self, text="Change Mode", command = lambda: self.change_mode())
         bx = ttk.Button(self, text="Exit Session", command= lambda: exit_session(controller))
 
-        b1.grid(row=x+1, column = 2)
-        b2.grid(row=x+2, column = 2)
-        bx.grid(row=x+3, column = 2)
+        b1.grid(row=x+1, column = 0, sticky="nswe", columnspan=2, pady=10)
+        b2.grid(row=x+2, column = 0, sticky="nsew", columnspan=2, pady=10)
+        bx.grid(row=x+3, column = 1)
 
     def edit_params(self):
         # bring up ModeChange delete frame  
@@ -181,7 +181,7 @@ class ModeEdit(tk.Frame):
             print(params)
 
             status = modes.saveParamValues(modes.getCurrentMode(), params)
-            if status == None:
+            if status == []:
                 tm.showinfo("Success", "Successfully changed mode paramters")
             elif status == 1:
                 tm.showerror("Error", "The given mode is not valid!")
@@ -189,8 +189,9 @@ class ModeEdit(tk.Frame):
             elif status == 2:
                 tm.showerror("Error", "The parameters provided are of wrong datatype")
                 return None
-            else:
+            else :
                 tm.showerror("Error", settings.cfError)
+                print(status)
                 return None
         except Exception as e:
             tm.showerror("Error", str(e) + "\n\n" + str(traceback.print_exc()))
@@ -206,5 +207,5 @@ class ModeEdit(tk.Frame):
     def get_param_dict(self):
         params_rebuilt = {}
         for i in range(len(self.entries)):
-            params_rebuilt[self.labels[i].cget("text")] = int(float(self.entries[i].get()))
+            params_rebuilt[self.labels[i].cget("text")[:-2]] = float(self.entries[i].get())
         return params_rebuilt

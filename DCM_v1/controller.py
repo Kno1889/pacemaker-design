@@ -103,13 +103,16 @@ class Controller(tk.Tk):
         tk.Tk.__init__(self, *args, **kwargs)
 
         tk.Tk.wm_title(self, "Heart DCM")
-        tk.Tk.resizable(self, width=True, height=True)
+        tk.Tk.resizable(self, width=False, height=False)
         self.debug_status = False
 
         container = tk.Frame(self)
-        container.grid(row=0, column =0, sticky='NSEW')
-        container.grid_columnconfigure(0,weight=1)
-        container.grid_rowconfigure(0,weight=1)
+        container.grid_propagate(True)
+
+        self.grid_columnconfigure(0,weight=1)
+        #self.grid_rowconfigure(0,weight=1)
+        container.grid(row=0, column =0, sticky='nsew')
+
 
         self.create_menu(container)
 

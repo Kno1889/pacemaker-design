@@ -24,8 +24,8 @@ class LoginPage(tk.Frame):
 
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, master = parent)
-        self.grid_columnconfigure((0,3),weight=2)
-        self.grid_columnconfigure((1,2),weight=1)
+        self.grid_columnconfigure((0,2),weight=2)
+        self.grid_columnconfigure((0,1),weight=1)
         
 
         page_title = tk.Label(self, text="Login Page", font=settings.LARGE_FONT)
@@ -49,6 +49,7 @@ class LoginPage(tk.Frame):
         else tm.showerror("Validation Error", settings.invalidUserErr)) 
                                                     
         login_button.grid(row=4, column=2, padx=10, pady=20)#pack() 
+        print(self.grid_size())
     
     def authenticate(self, username, password):
         ret_val = users.signInUser(username.get(), password.get())

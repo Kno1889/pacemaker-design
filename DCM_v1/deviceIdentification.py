@@ -33,20 +33,21 @@ class DeviceIdentification(tk.Frame):
         tk.Frame.__init__(self, parent)
 
         #self.rowconfigure(1,weight=1)
-        self.columnconfigure( (0,5),weight=1, minsize=20)
-        self.rowconfigure( (0,5),weight=1, minsize=20)
+        self.columnconfigure((0),weight=1)
+        #self.rowconfigure(0,weight=1)
 
         label = tk.Label(self, text = 'Identification Window', font=settings.LARGE_FONT)
-        label.grid(row=0, sticky="nsew", padx=550, pady=10)#pack(padx=10,pady=10)
+        label.grid(row=0, column=0, sticky="n", pady=10, padx=240)#pack(padx=10,pady=10)
         
 
         id_label = ttk.Label(self, text = "Device ID", font=settings.NORM_FONT )
-        id_label.grid(row=1, sticky="nswe", pady=10)
+        id_label.grid(row=1, column=0,sticky="n", pady=10)
 
         id = ttk.Entry(self)
-        id.grid(row=2, sticky="nswe")
+        id.grid(row=2,column=0, sticky="n")
 
         b1 = ttk.Button(self, text="Connect", command= lambda: dev_ID_proc(controller, id))
-        b1.grid(row=3, sticky="nsew", pady=30)#pack()
+        b1.grid(row=3,column=0, sticky="n", pady=30)#pack()
+        print(self.grid_size())
 
 

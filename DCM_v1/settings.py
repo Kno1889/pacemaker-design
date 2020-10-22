@@ -11,7 +11,8 @@ Docstrings
 VERSION = 0.01
 LARGE_FONT = ("Verdana", 12)
 NORM_FONT = ("Verdana", 8)
-
+WIDTH = 720
+HEIGHT = 480
 
 invalidUserErr='''The username or password you have entered is incorrect. \n\n
                                 Please try again.'''
