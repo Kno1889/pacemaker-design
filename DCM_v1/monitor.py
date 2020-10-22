@@ -183,6 +183,12 @@ class ModeEdit(tk.Frame):
             status = modes.saveParamValues(modes.getCurrentMode(), params)
             if status == []:
                 tm.showinfo("Success", "Successfully changed mode paramters")
+            elif type(status) == list and len(status) > 0:
+                err_msg = "These paramters are invalid:"
+                for i in status:
+                    err_msg = err_msg + "\n{}".format(str(i))
+                tm.showerror("Error",err_msg )
+                return None
             elif status == 1:
                 tm.showerror("Error", "The given mode is not valid!")
                 return None
