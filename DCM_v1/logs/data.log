@@ -949,3 +949,49 @@
 [2020-10-22 15:33:00,640] INFO: Pacemaker 5 is/was connected
 [2020-10-22 15:33:00,641] DEBUG: getUserInfo() called
 [2020-10-22 15:33:08,892] DEBUG: getUserInfo() called
+[2020-10-22 16:38:28,978] DEBUG: _readData() called
+[2020-10-22 16:38:28,979] DEBUG: Pacemaker  data read
+[2020-10-22 16:38:28,979] DEBUG: Pacemaker 123 data read
+[2020-10-22 16:38:28,979] DEBUG: Pacemaker 1 data read
+[2020-10-22 16:38:28,979] DEBUG: Pacemaker 2 data read
+[2020-10-22 16:38:28,979] DEBUG: Pacemaker 1 data read
+[2020-10-22 16:38:28,979] DEBUG: Pacemaker 3 data read
+[2020-10-22 16:38:28,979] DEBUG: Pacemaker 5 data read
+[2020-10-22 16:38:28,979] INFO: Pacemaker 5 is/was connected
+[2020-10-22 16:38:41,952] DEBUG: _readData() called
+[2020-10-22 16:38:41,952] DEBUG: Pacemaker  data read
+[2020-10-22 16:38:41,953] DEBUG: Pacemaker 123 data read
+[2020-10-22 16:38:41,953] DEBUG: Pacemaker 1 data read
+[2020-10-22 16:38:41,953] DEBUG: Pacemaker 2 data read
+[2020-10-22 16:38:41,953] DEBUG: Pacemaker 1 data read
+[2020-10-22 16:38:41,953] DEBUG: Pacemaker 3 data read
+[2020-10-22 16:38:41,953] DEBUG: Pacemaker 5 data read
+[2020-10-22 16:38:41,953] INFO: Pacemaker 5 is/was connected
+[2020-10-22 16:38:41,954] DEBUG: getUserInfo() called
+[2020-10-22 16:38:41,969] DEBUG: getPacemakerInfo() called
+[2020-10-22 16:38:46,563] DEBUG: getPacemakerInfo() called
+[2020-10-22 16:38:53,407] DEBUG: getUserInfo() called
+[2020-10-22 16:38:59,493] DEBUG: getUserInfo() called
+[2020-10-22 16:39:38,829] DEBUG: _readData() called
+[2020-10-22 16:39:38,829] WARNING: JSON file could not be opened
+[2020-10-22 16:39:38,830] DEBUG: getUserInfo() called
+[2020-10-22 16:39:38,845] DEBUG: getPacemakerInfo() called
+[2020-10-22 16:39:42,037] DEBUG: setConnectedPacemaker() called
+[2020-10-22 16:39:42,037] INFO: No existing pacemakers
+[2020-10-22 16:39:42,037] DEBUG: _writeData() called
+[2020-10-22 16:39:42,037] INFO: First pacemaker added
+[2020-10-22 16:39:42,038] INFO: Data written to JSON file
+[2020-10-22 16:39:42,041] DEBUG: _readData() called
+[2020-10-22 16:39:42,061] DEBUG: Pacemaker 5 data read
+[2020-10-22 16:39:42,061] INFO: Pacemaker 5 is/was connected
+[2020-10-22 16:39:42,062] DEBUG: getPacemakerInfo() called
+[2020-10-22 16:39:49,967] DEBUG: getUserInfo() called
+[2020-10-22 16:39:49,968] DEBUG: changeUserInfo() called
+[2020-10-22 16:39:49,968] DEBUG: _writeData() called
+[2020-10-22 16:39:49,968] INFO: Pacemaker 5 updated
+[2020-10-22 16:39:49,969] INFO: Data written to JSON file
+[2020-10-22 16:39:49,972] DEBUG: _readData() called
+[2020-10-22 16:39:49,980] DEBUG: Pacemaker 5 data read
+[2020-10-22 16:39:49,980] INFO: Pacemaker 5 is/was connected
+[2020-10-22 16:39:49,981] DEBUG: getUserInfo() called
+[2020-10-22 16:39:55,779] DEBUG: getUserInfo() called

@@ -97,7 +97,7 @@ def _readData():
     rawData = {}
     currentData = {}
     try:
-        with open('DCM_v1/data/data.txt') as infile:
+        with open('DCM_v1/data/data.json') as infile:
             rawData = json.load(infile)
             for p in rawData['pacemakers']:
                 logger.debug('Pacemaker %s data read', p['model'])
@@ -134,7 +134,7 @@ def _writeData():
         all_data['pacemakers'].append(current_data)
         logger.info('First pacemaker added')
     try:
-        with open('DCM_v1/data/data.txt', 'w') as outfile:
+        with open('DCM_v1/data/data.json', 'w') as outfile:
             json.dump(all_data, outfile)
             logger.info('Data written to JSON file')
     except:
