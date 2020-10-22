@@ -75,7 +75,6 @@ class DefMode(tk.Frame):
                     frame = F(parent=self.parent, controller = self.controller)
                     frame.grid(row = 0, column = 0, sticky="NSEW")
                     frame.tkraise()
-                    self.destroy()
                     break
 
 '''
@@ -177,9 +176,6 @@ class ModeEdit(tk.Frame):
         params = self.get_param_dict()
         
         try:
-            print(modes.getCurrentMode())
-            print(params)
-
             status = modes.saveParamValues(modes.getCurrentMode(), params)
             if status == []:
                 tm.showinfo("Success", "Successfully changed mode paramters")
