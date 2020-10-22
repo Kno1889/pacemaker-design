@@ -71,3 +71,120 @@
 [2020-10-21 20:26:58,131] - data -  INFO: Pacemaker 3 is/was connected
 [2020-10-21 20:26:58,131] - users -  DEBUG: _getInfo() called
 [2020-10-21 20:26:58,131] - data -  DEBUG: getUserInfo() called
+[2020-10-22 02:31:36,073] - data -  DEBUG: _readData() called
+[2020-10-22 02:31:36,074] - data -  DEBUG: Pacemaker  data read
+[2020-10-22 02:31:36,074] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-22 02:31:36,074] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-22 02:31:36,074] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-22 02:31:36,074] - data -  DEBUG: Pacemaker 3 data read
+[2020-10-22 02:31:36,074] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-22 02:31:36,074] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-22 02:31:36,075] - users -  DEBUG: _getInfo() called
+[2020-10-22 02:31:36,075] - data -  DEBUG: getUserInfo() called
+[2020-10-22 02:31:36,075] - users -  INFO: Created user object for test4
+[2020-10-22 02:31:36,075] - users -  INFO: Created user object for test3
+[2020-10-22 02:31:36,075] - users -  INFO: Created user object for Matt
+[2020-10-22 02:31:36,080] - modes -  DEBUG: _createModes() called
+[2020-10-22 02:31:36,081] - modes -  INFO: Created voo mode
+[2020-10-22 02:31:36,081] - modes -  INFO: Created aoo mode
+[2020-10-22 02:31:36,081] - modes -  INFO: Created vvi mode
+[2020-10-22 02:31:36,081] - modes -  INFO: Created aai mode
+[2020-10-22 02:31:36,083] - pacemaker -  DEBUG: _getData() called
+[2020-10-22 02:31:36,083] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-22 02:31:36,130] - modes -  DEBUG: allModes() called
+[2020-10-22 02:31:37,762] - pacemaker -  DEBUG: connect() called
+[2020-10-22 02:31:37,762] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-22 02:31:37,762] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-22 02:31:37,763] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-22 02:31:37,763] - pacemaker -  DEBUG: _getData() called
+[2020-10-22 02:31:37,763] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-22 02:31:45,879] - users -  DEBUG: signInUser() called for test3
+[2020-10-22 02:31:45,879] - users -  DEBUG: _getInfo() called
+[2020-10-22 02:31:45,879] - data -  DEBUG: getUserInfo() called
+[2020-10-22 02:31:45,879] - users -  INFO: Created user object for test4
+[2020-10-22 02:31:45,879] - users -  INFO: Created user object for test3
+[2020-10-22 02:31:45,879] - users -  INFO: Created user object for Matt
+[2020-10-22 02:31:45,879] - users -  DEBUG: _validateUser() called for test3
+[2020-10-22 02:31:45,879] - users -  INFO: test3 was validated
+[2020-10-22 02:31:45,879] - users -  INFO: test3 is signed in
+[2020-10-22 02:31:47,703] - modes -  DEBUG: allModes() called
+[2020-10-22 02:31:47,703] - modes -  DEBUG: setCurrentMode() called for aoo mode
+[2020-10-22 02:31:47,703] - modes -  INFO: aoo is the current mode
+[2020-10-22 02:33:52,462] - data -  DEBUG: _readData() called
+[2020-10-22 02:33:52,463] - data -  DEBUG: Pacemaker  data read
+[2020-10-22 02:33:52,463] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-22 02:33:52,463] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-22 02:33:52,463] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-22 02:33:52,463] - data -  DEBUG: Pacemaker 3 data read
+[2020-10-22 02:33:52,463] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-22 02:33:52,463] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-22 02:33:52,463] - users -  DEBUG: _getInfo() called
+[2020-10-22 02:33:52,464] - data -  DEBUG: getUserInfo() called
+[2020-10-22 02:33:52,464] - users -  INFO: Created user object for test4
+[2020-10-22 02:33:52,464] - users -  INFO: Created user object for test3
+[2020-10-22 02:33:52,464] - users -  INFO: Created user object for Matt
+[2020-10-22 02:33:52,469] - modes -  DEBUG: _createModes() called
+[2020-10-22 02:33:52,469] - modes -  INFO: Created voo mode
+[2020-10-22 02:33:52,469] - modes -  INFO: Created aoo mode
+[2020-10-22 02:33:52,469] - modes -  INFO: Created vvi mode
+[2020-10-22 02:33:52,469] - modes -  INFO: Created aai mode
+[2020-10-22 02:33:52,470] - pacemaker -  DEBUG: _getData() called
+[2020-10-22 02:33:52,471] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-22 02:33:52,517] - modes -  DEBUG: allModes() called
+[2020-10-22 02:33:53,845] - pacemaker -  DEBUG: connect() called
+[2020-10-22 02:33:53,845] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-22 02:33:53,845] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-22 02:33:53,845] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-22 02:33:53,846] - pacemaker -  DEBUG: _getData() called
+[2020-10-22 02:33:53,846] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-22 02:33:58,956] - users -  DEBUG: signInUser() called for test3
+[2020-10-22 02:33:58,956] - users -  DEBUG: _getInfo() called
+[2020-10-22 02:33:58,956] - data -  DEBUG: getUserInfo() called
+[2020-10-22 02:33:58,956] - users -  INFO: Created user object for test4
+[2020-10-22 02:33:58,956] - users -  INFO: Created user object for test3
+[2020-10-22 02:33:58,956] - users -  INFO: Created user object for Matt
+[2020-10-22 02:33:58,956] - users -  DEBUG: _validateUser() called for test3
+[2020-10-22 02:33:58,956] - users -  INFO: test3 was validated
+[2020-10-22 02:33:58,956] - users -  INFO: test3 is signed in
+[2020-10-22 02:34:00,596] - modes -  DEBUG: allModes() called
+[2020-10-22 02:34:00,597] - modes -  DEBUG: setCurrentMode() called for voo mode
+[2020-10-22 02:34:00,597] - modes -  INFO: voo is the current mode
+[2020-10-22 02:39:09,323] - data -  DEBUG: _readData() called
+[2020-10-22 02:39:09,323] - data -  DEBUG: Pacemaker  data read
+[2020-10-22 02:39:09,323] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-22 02:39:09,323] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-22 02:39:09,323] - data -  DEBUG: Pacemaker 2 data read
+[2020-10-22 02:39:09,323] - data -  DEBUG: Pacemaker 3 data read
+[2020-10-22 02:39:09,323] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-22 02:39:09,323] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-22 02:39:09,324] - users -  DEBUG: _getInfo() called
+[2020-10-22 02:39:09,324] - data -  DEBUG: getUserInfo() called
+[2020-10-22 02:39:09,324] - users -  INFO: Created user object for test4
+[2020-10-22 02:39:09,324] - users -  INFO: Created user object for test3
+[2020-10-22 02:39:09,324] - users -  INFO: Created user object for Matt
+[2020-10-22 02:39:09,329] - modes -  DEBUG: _createModes() called
+[2020-10-22 02:39:09,329] - modes -  INFO: Created voo mode
+[2020-10-22 02:39:09,329] - modes -  INFO: Created aoo mode
+[2020-10-22 02:39:09,329] - modes -  INFO: Created vvi mode
+[2020-10-22 02:39:09,329] - modes -  INFO: Created aai mode
+[2020-10-22 02:39:09,331] - pacemaker -  DEBUG: _getData() called
+[2020-10-22 02:39:09,331] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-22 02:39:09,377] - modes -  DEBUG: allModes() called
+[2020-10-22 02:39:11,587] - pacemaker -  DEBUG: connect() called
+[2020-10-22 02:39:11,587] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-22 02:39:11,587] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-22 02:39:11,587] - pacemaker -  INFO: Pacemaker 1 is already connected
+[2020-10-22 02:39:11,588] - pacemaker -  DEBUG: _getData() called
+[2020-10-22 02:39:11,588] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-22 02:39:17,767] - users -  DEBUG: signInUser() called for test3
+[2020-10-22 02:39:17,767] - users -  DEBUG: _getInfo() called
+[2020-10-22 02:39:17,767] - data -  DEBUG: getUserInfo() called
+[2020-10-22 02:39:17,767] - users -  INFO: Created user object for test4
+[2020-10-22 02:39:17,767] - users -  INFO: Created user object for test3
+[2020-10-22 02:39:17,767] - users -  INFO: Created user object for Matt
+[2020-10-22 02:39:17,767] - users -  DEBUG: _validateUser() called for test3
+[2020-10-22 02:39:17,768] - users -  INFO: test3 was validated
+[2020-10-22 02:39:17,768] - users -  INFO: test3 is signed in
+[2020-10-22 02:39:19,131] - modes -  DEBUG: allModes() called
+[2020-10-22 02:39:19,131] - modes -  DEBUG: setCurrentMode() called for aoo mode
+[2020-10-22 02:39:19,131] - modes -  INFO: aoo is the current mode

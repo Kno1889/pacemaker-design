@@ -4,3 +4,21 @@
 [2020-10-21 20:26:33,017] INFO: Pacemaker 2 is connected
 [2020-10-21 20:26:33,034] INFO: Pacemaker 3 is now connected
 [2020-10-21 20:26:33,034] DEBUG: _getData() called
+[2020-10-22 02:31:36,083] DEBUG: _getData() called
+[2020-10-22 02:31:37,762] DEBUG: connect() called
+[2020-10-22 02:31:37,762] DEBUG: _currentPacemaker() called
+[2020-10-22 02:31:37,762] INFO: Pacemaker 1 is connected
+[2020-10-22 02:31:37,763] INFO: Pacemaker 1 is already connected
+[2020-10-22 02:31:37,763] DEBUG: _getData() called
+[2020-10-22 02:33:52,470] DEBUG: _getData() called
+[2020-10-22 02:33:53,845] DEBUG: connect() called
+[2020-10-22 02:33:53,845] DEBUG: _currentPacemaker() called
+[2020-10-22 02:33:53,845] INFO: Pacemaker 1 is connected
+[2020-10-22 02:33:53,845] INFO: Pacemaker 1 is already connected
+[2020-10-22 02:33:53,846] DEBUG: _getData() called
+[2020-10-22 02:39:09,331] DEBUG: _getData() called
+[2020-10-22 02:39:11,587] DEBUG: connect() called
+[2020-10-22 02:39:11,587] DEBUG: _currentPacemaker() called
+[2020-10-22 02:39:11,587] INFO: Pacemaker 1 is connected
+[2020-10-22 02:39:11,587] INFO: Pacemaker 1 is already connected
+[2020-10-22 02:39:11,588] DEBUG: _getData() called

@@ -20,3 +20,39 @@
 [2020-10-21 20:26:58,117] INFO: Matt deleted
 [2020-10-21 20:26:58,117] DEBUG: _saveInfo() called
 [2020-10-21 20:26:58,131] DEBUG: _getInfo() called
+[2020-10-22 02:31:36,075] DEBUG: _getInfo() called
+[2020-10-22 02:31:36,075] INFO: Created user object for test4
+[2020-10-22 02:31:36,075] INFO: Created user object for test3
+[2020-10-22 02:31:36,075] INFO: Created user object for Matt
+[2020-10-22 02:31:45,879] DEBUG: signInUser() called for test3
+[2020-10-22 02:31:45,879] DEBUG: _getInfo() called
+[2020-10-22 02:31:45,879] INFO: Created user object for test4
+[2020-10-22 02:31:45,879] INFO: Created user object for test3
+[2020-10-22 02:31:45,879] INFO: Created user object for Matt
+[2020-10-22 02:31:45,879] DEBUG: _validateUser() called for test3
+[2020-10-22 02:31:45,879] INFO: test3 was validated
+[2020-10-22 02:31:45,879] INFO: test3 is signed in
+[2020-10-22 02:33:52,463] DEBUG: _getInfo() called
+[2020-10-22 02:33:52,464] INFO: Created user object for test4
+[2020-10-22 02:33:52,464] INFO: Created user object for test3
+[2020-10-22 02:33:52,464] INFO: Created user object for Matt
+[2020-10-22 02:33:58,956] DEBUG: signInUser() called for test3
+[2020-10-22 02:33:58,956] DEBUG: _getInfo() called
+[2020-10-22 02:33:58,956] INFO: Created user object for test4
+[2020-10-22 02:33:58,956] INFO: Created user object for test3
+[2020-10-22 02:33:58,956] INFO: Created user object for Matt
+[2020-10-22 02:33:58,956] DEBUG: _validateUser() called for test3
+[2020-10-22 02:33:58,956] INFO: test3 was validated
+[2020-10-22 02:33:58,956] INFO: test3 is signed in
+[2020-10-22 02:39:09,324] DEBUG: _getInfo() called
+[2020-10-22 02:39:09,324] INFO: Created user object for test4
+[2020-10-22 02:39:09,324] INFO: Created user object for test3
+[2020-10-22 02:39:09,324] INFO: Created user object for Matt
+[2020-10-22 02:39:17,767] DEBUG: signInUser() called for test3
+[2020-10-22 02:39:17,767] DEBUG: _getInfo() called
+[2020-10-22 02:39:17,767] INFO: Created user object for test4
+[2020-10-22 02:39:17,767] INFO: Created user object for test3
+[2020-10-22 02:39:17,767] INFO: Created user object for Matt
+[2020-10-22 02:39:17,767] DEBUG: _validateUser() called for test3
+[2020-10-22 02:39:17,768] INFO: test3 was validated
+[2020-10-22 02:39:17,768] INFO: test3 is signed in

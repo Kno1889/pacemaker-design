@@ -22,4 +22,5 @@ Frames = {
 
 customDataFrame = {
     "Monitor": Monitor,
+    "Edit": ModeEdit,
 }

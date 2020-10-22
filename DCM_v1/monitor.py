@@ -84,9 +84,9 @@ class Monitor(tk.Frame):
 
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
-        #self.grid(row =0, column = 0, sticky="nsew")
+        self.parent = parent
+        self.controller = controller
         self.columnconfigure(0, weight=1)
-        #self.rowconfigure((0,weight=1)
 
         self.mode = [] if modes.getCurrentMode() is None else modes.getCurrentMode()
 
@@ -104,27 +104,34 @@ class Monitor(tk.Frame):
             x += 1
 
 
-        b1 = ttk.Button(self, text="Edit Parameters", command = lambda: edit_params())
-        b2 = ttk.Button(self, text="Change Mode", command = lambda: edit_params())
+        b1 = ttk.Button(self, text="Edit Parameters", command = lambda: self.edit_params())
+        b2 = ttk.Button(self, text="Change Mode", command = lambda: self.change_mode())
         bx = ttk.Button(self, text="Exit Session", command= lambda: exit_session(controller))
 
         b1.grid(row=x+1, column = 2)
         b2.grid(row=x+2, column = 2)
-        bx.grid(row=x+3, column = 2)#pack()
+        bx.grid(row=x+3, column = 2)
 
     def edit_params(self):
-        pass
+        # bring up ModeChange delete frame  
+        # dynamic loading of the next frame
+        # This is because the data does not exist until after
+        F = pages.customDataFrame["Edit"]
+        frame = F(parent=self.parent, controller = self.controller)
+        frame.grid(row = 0, column = 0, sticky="NSEW")
+        frame.tkraise()
+        self.destroy()
 
     def change_mode(self):
         pass
         
             
-class ModeChange(tk.frame):
+class ModeEdit(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
-        #self.grid(row =0, column = 0, sticky="nsew")
         self.columnconfigure(0, weight=1)
-        #self.rowconfigure((0,weight=1)
+        self.parent = parent
+        self.controller = controller
 
         self.mode = [] if modes.getCurrentMode() is None else modes.getCurrentMode()
 
@@ -135,15 +142,17 @@ class ModeChange(tk.frame):
 
         x = 1
         for key in self.mode.params:
+            text = tk.StringVar(self, value=self.mode.params[key])
             dcm_data_label = tk.Label(self, text = '{} :'.format(key), font=settings.NORM_FONT)
-            dcm_value_label = tk.Label(self, text = '{}'.format(self.mode.params[key]), font=settings.NORM_FONT)
+            dcm_value = tk.Entry(self, textvariable = text)
             dcm_data_label.grid(row=x, column=0, sticky="nsew")
-            dcm_value_label.grid(row=x, column=1,sticky="nsew")
+            dcm_value.grid(row=x, column=1,sticky="nsew")
             x += 1
 
 
-        b1 = ttk.Button(self, text="Completed Edits", command = lambda: self.go_back())
+        b1 = ttk.Button(self, text="Save", command = lambda: self.save())
 
         b1.grid(row=x+1, column = 2)
-        b2.grid(row=x+2, column = 2)
-        bx.grid(row=x+3, column = 2)#pack()
+    
+    def save(self):
+        pass
