@@ -18,3 +18,16 @@
 [2020-10-22 15:32:53,359] INFO: Pacemaker 5 created
 [2020-10-22 15:32:53,381] INFO: Pacemaker 5 is now connected
 [2020-10-22 15:32:53,381] DEBUG: _getData() called
+[2020-10-22 16:38:41,969] DEBUG: _getData() called
+[2020-10-22 16:38:46,562] DEBUG: connect() called
+[2020-10-22 16:38:46,563] DEBUG: _currentPacemaker() called
+[2020-10-22 16:38:46,563] INFO: Pacemaker 5 is connected
+[2020-10-22 16:38:46,563] INFO: Pacemaker 5 is already connected
+[2020-10-22 16:38:46,563] DEBUG: _getData() called
+[2020-10-22 16:39:38,845] DEBUG: _getData() called
+[2020-10-22 16:39:42,036] DEBUG: connect() called
+[2020-10-22 16:39:42,036] DEBUG: _currentPacemaker() called
+[2020-10-22 16:39:42,036] DEBUG: _addNewPacemaker called
+[2020-10-22 16:39:42,037] INFO: Pacemaker 5 created
+[2020-10-22 16:39:42,061] INFO: Pacemaker 5 is now connected
+[2020-10-22 16:39:42,062] DEBUG: _getData() called
