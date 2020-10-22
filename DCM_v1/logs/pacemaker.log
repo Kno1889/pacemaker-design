@@ -22,3 +22,119 @@
 [2020-10-22 02:39:11,587] INFO: Pacemaker 1 is connected
 [2020-10-22 02:39:11,587] INFO: Pacemaker 1 is already connected
 [2020-10-22 02:39:11,588] DEBUG: _getData() called
+[2020-10-22 02:56:21,323] DEBUG: _getData() called
+[2020-10-22 02:56:23,216] DEBUG: connect() called
+[2020-10-22 02:56:23,216] DEBUG: _currentPacemaker() called
+[2020-10-22 02:56:23,216] INFO: Pacemaker 1 is connected
+[2020-10-22 02:56:23,216] INFO: Pacemaker 1 is already connected
+[2020-10-22 02:56:23,216] DEBUG: _getData() called
+[2020-10-22 02:57:08,893] DEBUG: _getData() called
+[2020-10-22 02:57:10,385] DEBUG: connect() called
+[2020-10-22 02:57:10,385] DEBUG: _currentPacemaker() called
+[2020-10-22 02:57:10,385] INFO: Pacemaker 1 is connected
+[2020-10-22 02:57:10,385] INFO: Pacemaker 1 is already connected
+[2020-10-22 02:57:10,385] DEBUG: _getData() called
+[2020-10-22 02:58:28,695] DEBUG: _getData() called
+[2020-10-22 02:58:31,563] DEBUG: connect() called
+[2020-10-22 02:58:31,564] DEBUG: _currentPacemaker() called
+[2020-10-22 02:58:31,564] INFO: Pacemaker 1 is connected
+[2020-10-22 02:58:31,564] INFO: Pacemaker 1 is already connected
+[2020-10-22 02:58:31,564] DEBUG: _getData() called
+[2020-10-22 03:13:14,284] DEBUG: _getData() called
+[2020-10-22 03:13:15,760] DEBUG: connect() called
+[2020-10-22 03:13:15,760] DEBUG: _currentPacemaker() called
+[2020-10-22 03:13:15,760] INFO: Pacemaker 1 is connected
+[2020-10-22 03:13:15,760] INFO: Pacemaker 1 is already connected
+[2020-10-22 03:13:15,760] DEBUG: _getData() called
+[2020-10-22 03:15:26,859] DEBUG: _getData() called
+[2020-10-22 03:15:28,514] DEBUG: connect() called
+[2020-10-22 03:15:28,514] DEBUG: _currentPacemaker() called
+[2020-10-22 03:15:28,515] INFO: Pacemaker 1 is connected
+[2020-10-22 03:15:28,515] INFO: Pacemaker 1 is already connected
+[2020-10-22 03:15:28,515] DEBUG: _getData() called
+[2020-10-22 03:32:41,319] DEBUG: _getData() called
+[2020-10-22 03:36:01,952] DEBUG: _getData() called
+[2020-10-22 03:36:04,114] DEBUG: connect() called
+[2020-10-22 03:36:04,114] DEBUG: _currentPacemaker() called
+[2020-10-22 03:36:04,114] INFO: Pacemaker 1 is connected
+[2020-10-22 03:36:04,114] INFO: Pacemaker 1 is already connected
+[2020-10-22 03:36:04,114] DEBUG: _getData() called
+[2020-10-22 03:37:59,986] DEBUG: _getData() called
+[2020-10-22 03:38:01,665] DEBUG: connect() called
+[2020-10-22 03:38:01,665] DEBUG: _currentPacemaker() called
+[2020-10-22 03:38:01,665] INFO: Pacemaker 1 is connected
+[2020-10-22 03:38:01,665] INFO: Pacemaker 1 is already connected
+[2020-10-22 03:38:01,665] DEBUG: _getData() called
+[2020-10-22 03:40:18,163] DEBUG: _getData() called
+[2020-10-22 03:40:19,497] DEBUG: connect() called
+[2020-10-22 03:40:19,497] DEBUG: _currentPacemaker() called
+[2020-10-22 03:40:19,497] INFO: Pacemaker 1 is connected
+[2020-10-22 03:40:19,497] INFO: Pacemaker 1 is already connected
+[2020-10-22 03:40:19,497] DEBUG: _getData() called
+[2020-10-22 03:41:11,328] DEBUG: _getData() called
+[2020-10-22 03:41:12,553] DEBUG: connect() called
+[2020-10-22 03:41:12,553] DEBUG: _currentPacemaker() called
+[2020-10-22 03:41:12,553] INFO: Pacemaker 1 is connected
+[2020-10-22 03:41:12,553] INFO: Pacemaker 1 is already connected
+[2020-10-22 03:41:12,554] DEBUG: _getData() called
+[2020-10-22 03:42:14,124] DEBUG: _getData() called
+[2020-10-22 03:42:16,224] DEBUG: connect() called
+[2020-10-22 03:42:16,224] DEBUG: _currentPacemaker() called
+[2020-10-22 03:42:16,224] INFO: Pacemaker 1 is connected
+[2020-10-22 03:42:16,224] INFO: Pacemaker 1 is already connected
+[2020-10-22 03:42:16,224] DEBUG: _getData() called
+[2020-10-22 03:42:23,807] DEBUG: connect() called
+[2020-10-22 03:42:23,807] DEBUG: _currentPacemaker() called
+[2020-10-22 03:42:23,807] INFO: Pacemaker 1 is connected
+[2020-10-22 03:42:23,807] INFO: Pacemaker 1 is already connected
+[2020-10-22 03:42:23,807] DEBUG: _getData() called
+[2020-10-22 03:49:43,490] DEBUG: _getData() called
+[2020-10-22 03:49:45,255] DEBUG: connect() called
+[2020-10-22 03:49:45,255] DEBUG: _currentPacemaker() called
+[2020-10-22 03:49:45,255] INFO: Pacemaker 1 is connected
+[2020-10-22 03:49:45,255] INFO: Pacemaker 1 is already connected
+[2020-10-22 03:49:45,255] DEBUG: _getData() called
+[2020-10-22 03:50:29,282] DEBUG: _getData() called
+[2020-10-22 03:50:30,981] DEBUG: connect() called
+[2020-10-22 03:50:30,981] DEBUG: _currentPacemaker() called
+[2020-10-22 03:50:30,982] INFO: Pacemaker 1 is connected
+[2020-10-22 03:50:30,982] INFO: Pacemaker 1 is already connected
+[2020-10-22 03:50:30,982] DEBUG: _getData() called
+[2020-10-22 03:53:13,899] DEBUG: _getData() called
+[2020-10-22 03:53:17,191] DEBUG: _getData() called
+[2020-10-22 03:53:24,201] DEBUG: connect() called
+[2020-10-22 03:53:24,201] DEBUG: _currentPacemaker() called
+[2020-10-22 03:53:24,201] INFO: Pacemaker 1 is connected
+[2020-10-22 03:53:24,201] INFO: Pacemaker 1 is already connected
+[2020-10-22 03:53:24,201] DEBUG: _getData() called
+[2020-10-22 03:55:31,272] DEBUG: _getData() called
+[2020-10-22 03:56:40,318] DEBUG: _getData() called
+[2020-10-22 03:59:39,654] DEBUG: _getData() called
+[2020-10-22 04:00:01,956] DEBUG: _getData() called
+[2020-10-22 04:00:16,093] DEBUG: _getData() called
+[2020-10-22 04:00:35,135] DEBUG: _getData() called
+[2020-10-22 04:01:11,025] DEBUG: _getData() called
+[2020-10-22 04:01:20,555] DEBUG: _getData() called
+[2020-10-22 04:01:50,493] DEBUG: _getData() called
+[2020-10-22 04:03:41,190] DEBUG: _getData() called
+[2020-10-22 04:04:03,827] DEBUG: _getData() called
+[2020-10-22 04:04:16,148] DEBUG: _getData() called
+[2020-10-22 04:04:30,838] DEBUG: _getData() called
+[2020-10-22 04:04:44,796] DEBUG: _getData() called
+[2020-10-22 04:05:18,694] DEBUG: _getData() called
+[2020-10-22 04:05:32,392] DEBUG: _getData() called
+[2020-10-22 04:05:36,939] DEBUG: _getData() called
+[2020-10-22 04:05:47,799] DEBUG: _getData() called
+[2020-10-22 04:06:41,759] DEBUG: _getData() called
+[2020-10-22 04:07:16,573] DEBUG: _getData() called
+[2020-10-22 04:07:28,996] DEBUG: _getData() called
+[2020-10-22 04:07:53,878] DEBUG: _getData() called
+[2020-10-22 04:08:02,598] DEBUG: _getData() called
+[2020-10-22 04:08:09,494] DEBUG: _getData() called
+[2020-10-22 04:08:31,209] DEBUG: _getData() called
+[2020-10-22 04:08:42,881] DEBUG: _getData() called
+[2020-10-22 04:08:47,612] DEBUG: _getData() called
+[2020-10-22 04:09:54,099] DEBUG: _getData() called
+[2020-10-22 04:10:11,255] DEBUG: _getData() called
+[2020-10-22 04:11:01,019] DEBUG: _getData() called
+[2020-10-22 04:12:04,121] DEBUG: _getData() called

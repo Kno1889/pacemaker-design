@@ -16,6 +16,8 @@ from tkinter import messagebox as tm
 import users
 import modes
 
+import traceback
+
 import pages
 import settings
 
@@ -34,12 +36,10 @@ class DefMode(tk.Frame):
         tk.Frame.__init__(self, parent)
         self.controller = controller
         self.parent = parent
-        #self.grid(row =0, column = 0, sticky="nsew")
         self.columnconfigure(0, weight=1)
-        #self.rowconfigure((0,1),weight=1)
 
         page_title = tk.Label(self, text="Mode Selection", font=settings.LARGE_FONT)
-        page_title.grid(row=0, column=1, ipadx=100, ipady=50, columnspan=2) #(side="top", pady=10, padx=10)
+        page_title.grid(row=0, column=1, ipadx=100, ipady=50, columnspan=2)
 
         mode_label = tk.Label(self, text="Mode: ", font=settings.NORM_FONT)
         mode_label.grid(row=1, column=1)# pack()
@@ -48,18 +48,17 @@ class DefMode(tk.Frame):
         # default text
         mode_options.insert(0, "Choose")
 
-
         choice = tk.StringVar(self)
         choice.set(mode_options[0])
 
         dropdown = ttk.OptionMenu(self, choice, *mode_options)
         dropdown.grid(row = 1, column=2)
 
-        button2 = ttk.Button(self, text="Set", command= lambda: self.set_mode(controller, choice))
-        button2.grid(row=3, column = 2)#pack()
+        b1 = ttk.Button(self, text="Set", command= lambda: self.set_mode(controller, choice))
+        b2 = ttk.Button(self, text="Exit Session", command= lambda: exit_session(controller))
 
-        button1 = ttk.Button(self, text="Exit Session", command= lambda: exit_session(controller))
-        button1.grid(row=4, column = 2)#pack()
+        b1.grid(row=3, column = 2)
+        b2.grid(row=4, column = 2)
 
         
     def set_mode(self, controller, mode):
@@ -76,10 +75,16 @@ class DefMode(tk.Frame):
                     frame = F(parent=self.parent, controller = self.controller)
                     frame.grid(row = 0, column = 0, sticky="NSEW")
                     frame.tkraise()
+                    self.destroy()
                     break
 
+'''
+Class: Monitor
 
-
+Description: 
+Displays current operating mode and current parameters. Provides options to the user
+to edit the current mode, change mode, and exit current session.
+'''
 class Monitor(tk.Frame):
 
     def __init__(self, parent, controller):
@@ -93,7 +98,7 @@ class Monitor(tk.Frame):
         print(self.mode.params)
         
         label = tk.Label(self, text = 'DCM', font=settings.LARGE_FONT)
-        label.grid(row=0, column=0)#pack(side="top", padx=10,pady=10)
+        label.grid(row=0, column=0)
 
         x = 1
         for key in self.mode.params:
@@ -123,7 +128,13 @@ class Monitor(tk.Frame):
         self.destroy()
 
     def change_mode(self):
-        pass
+        # go back to defmode
+        F = pages.Frames["DefMode"]
+        frame = F(parent=self.parent, controller = self.controller)
+        frame.grid(row = 0, column = 0, sticky="NSEW")
+        frame.tkraise()
+        self.destroy()
+
         
             
 class ModeEdit(tk.Frame):
@@ -134,11 +145,15 @@ class ModeEdit(tk.Frame):
         self.controller = controller
 
         self.mode = [] if modes.getCurrentMode() is None else modes.getCurrentMode()
+        
+        # placeholders for labels and entries
+        self.entries = []
+        self.labels = []
 
         print(self.mode.params)
         
         label = tk.Label(self, text = 'DCM', font=settings.LARGE_FONT)
-        label.grid(row=0, column=0)#pack(side="top", padx=10,pady=10)
+        label.grid(row=0, column=0)
 
         x = 1
         for key in self.mode.params:
@@ -147,12 +162,49 @@ class ModeEdit(tk.Frame):
             dcm_value = tk.Entry(self, textvariable = text)
             dcm_data_label.grid(row=x, column=0, sticky="nsew")
             dcm_value.grid(row=x, column=1,sticky="nsew")
-            x += 1
 
+            # store the entries and their labels to rebuild param array
+            self.entries.append(dcm_value)
+            self.labels.append(dcm_data_label)
+            x += 1
 
         b1 = ttk.Button(self, text="Save", command = lambda: self.save())
 
         b1.grid(row=x+1, column = 2)
     
+    # save the current entered parameters and return back to monitor
     def save(self):
-        pass
+        params = self.get_param_dict()
+        
+        try:
+            print(modes.getCurrentMode())
+            print(params)
+
+            status = modes.saveParamValues(modes.getCurrentMode(), params)
+            if status == None:
+                tm.showinfo("Success", "Successfully changed mode paramters")
+            elif status == 1:
+                tm.showerror("Error", "The given mode is not valid!")
+                return None
+            elif status == 2:
+                tm.showerror("Error", "The parameters provided are of wrong datatype")
+                return None
+            else:
+                tm.showerror("Error", settings.cfError)
+                return None
+        except Exception as e:
+            tm.showerror("Error", str(e) + "\n\n" + str(traceback.print_exc()))
+            return None
+
+        F = pages.customDataFrame["Monitor"]
+        frame = F(parent=self.parent, controller = self.controller)
+        frame.grid(row = 0, column = 0, sticky="NSEW")
+        frame.tkraise()
+        self.destroy()
+
+    # recreate parameter array
+    def get_param_dict(self):
+        params_rebuilt = {}
+        for i in range(len(self.entries)):
+            params_rebuilt[self.labels[i].cget("text")] = int(float(self.entries[i].get()))
+        return params_rebuilt
