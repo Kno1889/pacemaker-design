@@ -15,9 +15,11 @@ from deviceIdentification import *
 # Page imports. Import the page above and throw it into the array below
 
 Frames = {
-    "Login": LoginPage, 
-    "Monitor": Monitor,
+    "Login": LoginPage,
     "DefMode": DefMode,
     "DevID": DeviceIdentification, 
     }
 
+customDataFrame = {
+    "Monitor": Monitor,
+}
