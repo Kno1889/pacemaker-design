@@ -14,13 +14,19 @@ NORM_FONT = ("Verdana", 8)
 WIDTH = 720
 HEIGHT = 480
 
-invalidUserErr='''The username or password you have entered is incorrect. \n\n
+invalidUserErr = '''The username or password you have entered is incorrect. \n\n
                                 Please try again.'''
 
-createdUserNote="You have successfully created a new user!"
+createdUserNote = "You have successfully created a new user!"
 
-unableToCreateUser="Unable to create. Possibly the user limit has been reached."
+unableToCreateUser = "Unable to create. Not sure why."
+
+dataType = "Data Type Error"
+
+nameExists = "A User With This Name Already Exists"
+
+maxCapacity = "Pacemaker At Max Capacity"
 
 cfError = "Catastrophic Failure"
 
-newIdErr ="The device ID does not match the previously connected device ID\n This is a different pacemaker"
+newIdErr = "The device ID does not match the previously connected device ID\n This is a different pacemaker"

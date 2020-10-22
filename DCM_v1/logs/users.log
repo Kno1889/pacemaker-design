@@ -1,0 +1,44 @@
+[2020-10-22 15:24:32,665] DEBUG: _getInfo() called
+[2020-10-22 15:24:32,665] INFO: Created user object for test4
+[2020-10-22 15:24:32,666] INFO: Created user object for test3
+[2020-10-22 15:24:32,666] INFO: Created user object for Matt
+[2020-10-22 15:25:55,909] DEBUG: makeNewUser() called for Matt
+[2020-10-22 15:25:55,909] DEBUG: _getInfo() called
+[2020-10-22 15:25:55,909] INFO: Created user object for Matt
+[2020-10-22 15:25:55,910] DEBUG: _saveInfo() called
+[2020-10-22 15:25:55,933] DEBUG: _getInfo() called
+[2020-10-22 15:25:55,934] INFO: Created user object for Matt
+[2020-10-22 15:26:05,487] DEBUG: signInUser() called for Matt
+[2020-10-22 15:26:05,487] DEBUG: _getInfo() called
+[2020-10-22 15:26:05,488] INFO: Created user object for Matt
+[2020-10-22 15:26:05,491] DEBUG: _validateUser() called for Matt
+[2020-10-22 15:26:05,491] INFO: Matt was validated
+[2020-10-22 15:26:05,492] INFO: Matt is signed in
+[2020-10-22 15:26:30,422] DEBUG: currentUserInfo() called
+[2020-10-22 15:26:30,422] INFO: Matt is logged in
+[2020-10-22 15:26:30,422] DEBUG: signOutUser() called
+[2020-10-22 15:26:30,422] INFO: Matt has been logged out
+[2020-10-22 15:26:37,053] DEBUG: signInUser() called for Matt
+[2020-10-22 15:26:37,053] DEBUG: _getInfo() called
+[2020-10-22 15:26:37,054] INFO: Created user object for Matt
+[2020-10-22 15:26:37,054] DEBUG: _validateUser() called for Matt
+[2020-10-22 15:26:37,054] INFO: Matt was validated
+[2020-10-22 15:26:37,054] INFO: Matt is signed in
+[2020-10-22 15:26:46,313] DEBUG: makeNewUser() called for Matt
+[2020-10-22 15:26:46,313] DEBUG: _getInfo() called
+[2020-10-22 15:26:46,314] INFO: Created user object for Matt
+[2020-10-22 15:32:42,269] DEBUG: _getInfo() called
+[2020-10-22 15:32:42,269] INFO: Created user object for Matt
+[2020-10-22 15:32:49,438] DEBUG: _getInfo() called
+[2020-10-22 15:32:49,439] INFO: Created user object for Matt
+[2020-10-22 15:33:00,617] DEBUG: makeNewUser() called for Matt
+[2020-10-22 15:33:00,618] DEBUG: _getInfo() called
+[2020-10-22 15:33:00,618] INFO: Created user object for Matt
+[2020-10-22 15:33:00,618] DEBUG: _saveInfo() called
+[2020-10-22 15:33:00,640] DEBUG: _getInfo() called
+[2020-10-22 15:33:00,641] INFO: Created user object for Matt
+[2020-10-22 15:33:08,891] DEBUG: makeNewUser() called for Matt
+[2020-10-22 15:33:08,891] DEBUG: _getInfo() called
+[2020-10-22 15:33:08,892] INFO: Created user object for Matt
+[2020-10-22 15:33:19,819] DEBUG: currentUserInfo() called
+[2020-10-22 15:33:19,819] INFO: No user logged in

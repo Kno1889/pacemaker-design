@@ -1,0 +1,21 @@
+[2020-10-22 15:24:32,697] DEBUG: _createModes() called
+[2020-10-22 15:24:32,697] INFO: Created voo mode
+[2020-10-22 15:24:32,698] INFO: Created aoo mode
+[2020-10-22 15:24:32,698] INFO: Created vvi mode
+[2020-10-22 15:24:32,698] INFO: Created aai mode
+[2020-10-22 15:24:32,787] DEBUG: allModes() called
+[2020-10-22 15:26:08,573] DEBUG: allModes() called
+[2020-10-22 15:26:08,573] DEBUG: setCurrentMode() called for voo mode
+[2020-10-22 15:26:08,573] INFO: voo is the current mode
+[2020-10-22 15:26:26,352] DEBUG: saveParamValues() called for voo mode
+[2020-10-22 15:32:42,272] DEBUG: _createModes() called
+[2020-10-22 15:32:42,272] INFO: Created voo mode
+[2020-10-22 15:32:42,273] INFO: Created aoo mode
+[2020-10-22 15:32:42,273] INFO: Created vvi mode
+[2020-10-22 15:32:42,276] INFO: Created aai mode
+[2020-10-22 15:32:49,442] DEBUG: _createModes() called
+[2020-10-22 15:32:49,442] INFO: Created voo mode
+[2020-10-22 15:32:49,442] INFO: Created aoo mode
+[2020-10-22 15:32:49,442] INFO: Created vvi mode
+[2020-10-22 15:32:49,442] INFO: Created aai mode
+[2020-10-22 15:32:49,528] DEBUG: allModes() called

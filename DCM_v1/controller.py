@@ -42,15 +42,13 @@ def create_user():
             tm.showinfo("User Created", settings.createdUserNote)
             exit_create_user()
         elif code == 1:
-            tm.showerror("Data Type Error", settings.unableToCreateUser)
+            tm.showerror("User Creation Error", settings.dataType)
             exit_create_user()
         elif code == 2:
-            tm.showerror("A User With This Name Already Exists",
-                         settings.unableToCreateUser)
+            tm.showerror("User Creation Error", settings.nameExists)
             exit_create_user()
         elif code == 3:
-            tm.showerror(
-                "Could Not Create User: Pacemaker At Max Capacity", settings.unableToCreateUser)
+            tm.showerror("User Creation Error", setting.maxCapacity)
             exit_create_user()
         else:
             tm.showerror("Error", settings.unableToCreateUser)
