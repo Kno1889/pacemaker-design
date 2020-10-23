@@ -1,1 +1,1 @@
-{"pacemakers": [{"model": 5, "numUsers": 1, "lastUsed": true, "users": [{"name": "Matt", "password": "123"}]}]}
+{"pacemakers": [{"model": 5, "numUsers": 1, "lastUsed": false, "users": [{"name": "Matt", "password": "123"}]}, {"model": 123, "numUsers": 0, "lastUsed": false, "users": []}, {"model": 1, "numUsers": 1, "lastUsed": true, "users": [{"name": "test", "password": "test"}]}]}

@@ -26,35 +26,55 @@ class LoginPage(tk.Frame):
         tk.Frame.__init__(self, master = parent)
         self.grid_columnconfigure((0,2),weight=2)
         self.grid_columnconfigure((0,1),weight=1)
-        
+
+        self.parent = parent
+        self.controller = controller
+
+        # Page Widgets
         page_title = tk.Label(self, text="Login Page", font=settings.LARGE_FONT)
+        uname_l =    tk.Label(self, text="Username: ", font=settings.NORM_FONT)
+        pwd_l =      tk.Label(self, text="Password: ", font=settings.NORM_FONT)
+
+        uname_e = ttk.Entry(self)
+        pwd_e =   ttk.Entry(self, show="*")
+
+        login_b = ttk.Button(self, text="Login", command= lambda: self.authenticate(uname_e, pwd_e))
+        back_b =  ttk.Button(self, text="Back", command= lambda: self.go_back(uname_e, pwd_e))
+
+        # Alignments
         page_title.grid(row=0, column=1, ipadx=100, ipady=50, columnspan=2) #(side="top", pady=10, padx=10)
+        
+        uname_l.grid(row=1, column=1) 
+        uname_e.grid(row=1, column=2)
+        
+        pwd_l.grid(row=2, column=1, pady=10)
+        pwd_e.grid(row=2, column=2)
+        
+        login_b.grid(row=4, column=2, padx=10, pady=20)
+        back_b.grid(row=5, column=1, padx=10, pady=20, columnspan=2)
 
-        login_label = tk.Label(self, text="Username: ", font=settings.NORM_FONT)
-        login_label.grid(row=1, column=1)# pack()
-
-        username_entry = ttk.Entry(self)
-        username_entry.grid(row=1, column=2 ) #pack()
-
-        password_label = tk.Label(self, text="Password: ", font=settings.NORM_FONT)
-        password_label.grid(row=2, column=1, pady=10)#pack()
-
-        password_entry = ttk.Entry(self, show="*")
-        password_entry.grid(row=2, column=2)#pack()
-
-        login_button = ttk.Button(self, text="Login", command= lambda: 
-        controller.show_frame(pages.Frames["DefMode"]) if 
-        self.authenticate(username_entry, password_entry) 
-        else tm.showerror("Validation Error", settings.invalidUserErr)) 
-                                                    
-        login_button.grid(row=4, column=2, padx=10, pady=20)#pack() 
-        print(self.grid_size())
-    
     def authenticate(self, username, password):
-        ret_val = users.signInUser(username.get(), password.get())
+        if users.signInUser(username.get(), password.get()):
+            self.controller.show_frame(pages.Frames["DefMode"])
+
+            # enable user deletion and user editing
+            self.controller.user_menu.entryconfigure(1, state=tk.NORMAL)
+            self.controller.user_menu.entryconfigure(2, state=tk.NORMAL)
+        else:
+            tm.showerror("Validation Error", settings.invalidUserErr)
         # clear fields upon login attempt
         username.delete(0,tk.END)
         username.insert(0, "")
         password.delete(0,tk.END)
         password.insert(0, "")
-        return ret_val
+
+    def go_back(self, uname, pwd):
+        self.controller.show_frame(pages.Frames["DevID"])
+        self.menu_bar()
+        uname.delete(0,tk.END)
+        uname.insert(0, "")
+        pwd.delete(0,tk.END)
+        pwd.insert(0, "")
+
+    def menu_bar(self):
+        self.controller.user_menu.entryconfigure(0, state=tk.DISABLED)

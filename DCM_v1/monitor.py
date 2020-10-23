@@ -26,6 +26,12 @@ chosen_mode = None
 
 def exit_session(controller):
     users.signOutUser(users.currentUserInfo()[0])
+    
+    # disable all user options
+    controller.user_menu.entryconfigure(0, state=tk.DISABLED)
+    controller.user_menu.entryconfigure(1, state=tk.DISABLED)
+    controller.user_menu.entryconfigure(2, state=tk.DISABLED)
+
     controller.show_frame(pages.Frames["DevID"])
 
 
@@ -128,10 +134,7 @@ class Monitor(tk.Frame):
 
     def change_mode(self):
         # go back to defmode
-        F = pages.Frames["DefMode"]
-        frame = F(parent=self.parent, controller = self.controller)
-        frame.grid(row = 0, column = 0, sticky="NSEW")
-        frame.tkraise()
+        self.controller.show_frame(pages.Frames["DefMode"])
         self.destroy()
 
         

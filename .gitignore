@@ -1,3 +1,2 @@
-
 *.log
-*.log
+**DCM_v1/logs/*

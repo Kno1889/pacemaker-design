@@ -8,7 +8,7 @@ Date Modified: Oct 21, 2020
 Docstrings
 '''
 
-VERSION = 0.01
+VERSION = 0.30
 LARGE_FONT = ("Verdana", 12)
 NORM_FONT = ("Verdana", 8)
 WIDTH = 720
@@ -19,14 +19,14 @@ invalidUserErr = '''The username or password you have entered is incorrect. \n\n
 
 createdUserNote = "You have successfully created a new user!"
 
-unableToCreateUser = "Unable to create. Not sure why."
+unableToCreateUser = "Unable to create. Undefined Error!"
 
-dataType = "Data Type Error"
+dataType = "Data Type Error!"
 
-nameExists = "A User With This Name Already Exists"
+nameExists = "A User With This Name Already Exists!"
 
-maxCapacity = "Pacemaker At Max Capacity"
+maxCapacity = "Pacemaker At Max Capacity!"
 
-cfError = "Catastrophic Failure"
+cfError = "Catastrophic Failure!"
 
-newIdErr = "The device ID does not match the previously connected device ID\n This is a different pacemaker"
+newIdErr = "The device ID does not match the previously connected device ID\n This is a different pacemaker!"
