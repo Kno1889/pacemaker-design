@@ -1,11 +1,11 @@
 '''
 loginPage.py
 
-Version: 0.1
+Version: 0.3
 Created By: Elston A.
 Date Modified: Oct 21, 2020
 
-Docstrings
+Description: Contains the Tkinter class for the Login Page Window
 '''
 
 import tkinter as tk
@@ -19,7 +19,12 @@ import settings
 import pages
 
 
+'''
+Class: LoginPage
 
+Description:
+The class that defines the Tkinter Frame for the login screen.
+'''
 class LoginPage(tk.Frame):
 
     def __init__(self, parent, controller):

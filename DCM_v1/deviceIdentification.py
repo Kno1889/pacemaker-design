@@ -1,11 +1,12 @@
 '''
 deviceIdentification.py
 
-Version: 0.1
+Version: 0.3
 Created By: Elston A.
 Date Modified: Oct 21, 2020
 
-Docstrings
+Description: deviceIdentification is used to contain the class which specifies the Tkinter 
+frame shown when trying to identify a pacemaker.
 '''
 
 import tkinter as tk
@@ -16,7 +17,13 @@ import pages
 import settings
 import pacemaker
 
+'''
+Class: DeviceIdentification
 
+Description:
+Tkinter class that defines the window where a user defines the ID of the pacemaker.
+The pacemaker must have an ID which is an integer. 
+'''
 class DeviceIdentification(tk.Frame):
 
     def __init__(self, parent, controller):
@@ -28,24 +35,21 @@ class DeviceIdentification(tk.Frame):
         self.parent = parent
         self.controller = controller
 
-        label = tk.Label(self, text='Identification Window',
-                         font=settings.LARGE_FONT)
-        label.grid(row=0, column=0, sticky="n", pady=10,
-                   padx=240)  # pack(padx=10,pady=10)
-
+        # Widgets
+        label = tk.Label(self, text='Identification Window', font=settings.LARGE_FONT)
         id_label = ttk.Label(self, text="Device ID", font=settings.NORM_FONT)
-        id_label.grid(row=1, column=0, sticky="n", pady=10)
-
+        b1 = ttk.Button(self, text="Connect",command=lambda: self.dev_ID_register(id))
         id = ttk.Entry(self)
-        id.grid(row=2, column=0, sticky="n")
-
-        b1 = ttk.Button(self, text="Connect",
-                        command=lambda: self.dev_ID_register(id))
+        
+        # Widget Placement
+        id_label.grid(row=1, column=0, sticky="n", pady=10)
+        label.grid(row=0, column=0, sticky="n", pady=10, padx=240)
+        id.grid(row=2, column=0, sticky="n")        
         b1.grid(row=3, column=0, sticky="n", pady=30)  # pack()
 
-    # dev id
+    # dev id registration handler
     def dev_ID_register(self, dev_id):
-
+        # validation on ID input. Make sure only numbers!
         def is_int(var):
             try:
                 int(var)
@@ -53,6 +57,7 @@ class DeviceIdentification(tk.Frame):
             except:
                 return False
 
+        # Ensure that the ID is not empty
         if dev_id.get() == None or dev_id.get() == "":
             tm.showinfo(
                 "Warn", "There is no device id given. Please enter a device ID.")
@@ -61,8 +66,9 @@ class DeviceIdentification(tk.Frame):
             tm.showerror("Error", "You did not provide a valid ID")
             return False
 
-        # probs device id should be string: 1-AA2-DD2
+        # Check if this pacemaker has been identified before
         last_connected = pacemaker.connect(int(dev_id.get()))
+        # Ensure to warn the user that a new pacemaker has been connected 
         if last_connected != True:
             tm.showwarning("New ID", settings.newIdErr)
 
@@ -70,6 +76,7 @@ class DeviceIdentification(tk.Frame):
         dev_id.delete(0, tk.END)
         dev_id.insert(0, "")
 
+        # Go back to login page
         self.controller.show_frame(pages.Frames["Login"])
 
         # allow users to be created

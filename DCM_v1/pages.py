@@ -1,11 +1,11 @@
 '''
 pages.py
 
-Version: 0.1
+Version: 0.3
 Created By: Elston A.
 Date Modified: Oct 21, 2020
 
-Docstrings
+Purpose: Keeping track of Tkinter frames in a single place
 '''
 
 from loginPage import *
