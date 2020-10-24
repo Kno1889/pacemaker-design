@@ -1413,3 +1413,182 @@
 [2020-10-23 19:17:45,359] INFO: Pacemaker 1 is/was connected
 [2020-10-23 19:17:45,360] DEBUG: getUserInfo() called
 [2020-10-23 19:17:45,364] DEBUG: getPacemakerInfo() called
+[2020-10-23 19:42:37,445] DEBUG: _readData() called
+[2020-10-23 19:42:37,446] DEBUG: Pacemaker 5 data read
+[2020-10-23 19:42:37,446] DEBUG: Pacemaker 123 data read
+[2020-10-23 19:42:37,446] DEBUG: Pacemaker 1 data read
+[2020-10-23 19:42:37,446] INFO: Pacemaker 1 is/was connected
+[2020-10-23 19:42:37,447] DEBUG: getUserInfo() called
+[2020-10-23 19:42:37,511] DEBUG: getPacemakerInfo() called
+[2020-10-23 19:42:46,857] DEBUG: setConnectedPacemaker() called
+[2020-10-23 19:42:46,857] INFO: Pacemaker 1 disconnected
+[2020-10-23 19:42:46,857] DEBUG: _writeData() called
+[2020-10-23 19:42:46,857] INFO: Pacemaker 5 updated
+[2020-10-23 19:42:46,858] INFO: Data written to JSON file
+[2020-10-23 19:42:46,861] DEBUG: _readData() called
+[2020-10-23 19:42:46,877] DEBUG: Pacemaker 123 data read
+[2020-10-23 19:42:46,878] DEBUG: Pacemaker 1 data read
+[2020-10-23 19:42:46,878] DEBUG: Pacemaker 5 data read
+[2020-10-23 19:42:46,878] INFO: Pacemaker 5 is/was connected
+[2020-10-23 19:42:46,879] DEBUG: getPacemakerInfo() called
+[2020-10-23 19:42:59,669] DEBUG: getUserInfo() called
+[2020-10-23 19:43:10,928] DEBUG: changeUserInfo() called
+[2020-10-23 19:43:10,928] DEBUG: _writeData() called
+[2020-10-23 19:43:10,928] INFO: Pacemaker 5 updated
+[2020-10-23 19:43:10,929] INFO: Data written to JSON file
+[2020-10-23 19:43:10,932] DEBUG: _readData() called
+[2020-10-23 19:43:10,939] DEBUG: Pacemaker 123 data read
+[2020-10-23 19:43:10,939] DEBUG: Pacemaker 1 data read
+[2020-10-23 19:43:10,940] DEBUG: Pacemaker 5 data read
+[2020-10-23 19:43:10,940] INFO: Pacemaker 5 is/was connected
+[2020-10-23 19:43:10,940] DEBUG: getUserInfo() called
+[2020-10-23 19:43:18,303] DEBUG: getUserInfo() called
+[2020-10-23 19:43:30,013] DEBUG: getUserInfo() called
+[2020-10-23 19:43:30,013] DEBUG: changeUserInfo() called
+[2020-10-23 19:43:30,013] DEBUG: _writeData() called
+[2020-10-23 19:43:30,014] INFO: Pacemaker 5 updated
+[2020-10-23 19:43:30,015] INFO: Data written to JSON file
+[2020-10-23 19:43:30,018] DEBUG: _readData() called
+[2020-10-23 19:43:30,019] DEBUG: Pacemaker 123 data read
+[2020-10-23 19:43:30,019] DEBUG: Pacemaker 1 data read
+[2020-10-23 19:43:30,020] DEBUG: Pacemaker 5 data read
+[2020-10-23 19:43:30,020] INFO: Pacemaker 5 is/was connected
+[2020-10-23 19:43:30,020] DEBUG: getUserInfo() called
+[2020-10-23 19:43:36,761] DEBUG: getUserInfo() called
+[2020-10-23 19:44:28,979] DEBUG: setConnectedPacemaker() called
+[2020-10-23 19:44:28,980] INFO: Pacemaker 5 disconnected
+[2020-10-23 19:44:28,980] DEBUG: _writeData() called
+[2020-10-23 19:44:28,980] INFO: Pacemaker 10 added to list
+[2020-10-23 19:44:28,981] INFO: Data written to JSON file
+[2020-10-23 19:44:28,984] DEBUG: _readData() called
+[2020-10-23 19:44:28,989] DEBUG: Pacemaker 123 data read
+[2020-10-23 19:44:28,989] DEBUG: Pacemaker 1 data read
+[2020-10-23 19:44:28,989] DEBUG: Pacemaker 5 data read
+[2020-10-23 19:44:28,989] DEBUG: Pacemaker 10 data read
+[2020-10-23 19:44:28,989] INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:44:28,990] DEBUG: getPacemakerInfo() called
+[2020-10-23 19:44:43,899] DEBUG: getUserInfo() called
+[2020-10-23 19:44:43,900] DEBUG: changeUserInfo() called
+[2020-10-23 19:44:43,900] DEBUG: _writeData() called
+[2020-10-23 19:44:43,900] INFO: Pacemaker 10 updated
+[2020-10-23 19:44:43,901] INFO: Data written to JSON file
+[2020-10-23 19:44:43,904] DEBUG: _readData() called
+[2020-10-23 19:44:43,909] DEBUG: Pacemaker 123 data read
+[2020-10-23 19:44:43,909] DEBUG: Pacemaker 1 data read
+[2020-10-23 19:44:43,909] DEBUG: Pacemaker 5 data read
+[2020-10-23 19:44:43,909] DEBUG: Pacemaker 10 data read
+[2020-10-23 19:44:43,909] INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:44:43,909] DEBUG: getUserInfo() called
+[2020-10-23 19:44:58,531] DEBUG: getUserInfo() called
+[2020-10-23 19:44:58,531] DEBUG: changeUserInfo() called
+[2020-10-23 19:44:58,532] DEBUG: _writeData() called
+[2020-10-23 19:44:58,532] INFO: Pacemaker 10 updated
+[2020-10-23 19:44:58,533] INFO: Data written to JSON file
+[2020-10-23 19:44:58,536] DEBUG: _readData() called
+[2020-10-23 19:44:58,541] DEBUG: Pacemaker 123 data read
+[2020-10-23 19:44:58,541] DEBUG: Pacemaker 1 data read
+[2020-10-23 19:44:58,541] DEBUG: Pacemaker 5 data read
+[2020-10-23 19:44:58,541] DEBUG: Pacemaker 10 data read
+[2020-10-23 19:44:58,541] INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:44:58,541] DEBUG: getUserInfo() called
+[2020-10-23 19:45:12,358] DEBUG: getUserInfo() called
+[2020-10-23 19:45:12,359] DEBUG: changeUserInfo() called
+[2020-10-23 19:45:12,359] DEBUG: _writeData() called
+[2020-10-23 19:45:12,359] INFO: Pacemaker 10 updated
+[2020-10-23 19:45:12,360] INFO: Data written to JSON file
+[2020-10-23 19:45:12,361] DEBUG: _readData() called
+[2020-10-23 19:45:12,366] DEBUG: Pacemaker 123 data read
+[2020-10-23 19:45:12,367] DEBUG: Pacemaker 1 data read
+[2020-10-23 19:45:12,367] DEBUG: Pacemaker 5 data read
+[2020-10-23 19:45:12,367] DEBUG: Pacemaker 10 data read
+[2020-10-23 19:45:12,367] INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:45:12,367] DEBUG: getUserInfo() called
+[2020-10-23 19:45:24,912] DEBUG: getUserInfo() called
+[2020-10-23 19:45:24,913] DEBUG: changeUserInfo() called
+[2020-10-23 19:45:24,914] DEBUG: _writeData() called
+[2020-10-23 19:45:24,914] INFO: Pacemaker 10 updated
+[2020-10-23 19:45:24,915] INFO: Data written to JSON file
+[2020-10-23 19:45:24,917] DEBUG: _readData() called
+[2020-10-23 19:45:24,922] DEBUG: Pacemaker 123 data read
+[2020-10-23 19:45:24,923] DEBUG: Pacemaker 1 data read
+[2020-10-23 19:45:24,923] DEBUG: Pacemaker 5 data read
+[2020-10-23 19:45:24,923] DEBUG: Pacemaker 10 data read
+[2020-10-23 19:45:24,923] INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:45:24,923] DEBUG: getUserInfo() called
+[2020-10-23 19:45:33,429] DEBUG: getUserInfo() called
+[2020-10-23 19:45:33,430] DEBUG: changeUserInfo() called
+[2020-10-23 19:45:33,430] DEBUG: _writeData() called
+[2020-10-23 19:45:33,430] INFO: Pacemaker 10 updated
+[2020-10-23 19:45:33,432] INFO: Data written to JSON file
+[2020-10-23 19:45:33,434] DEBUG: _readData() called
+[2020-10-23 19:45:33,439] DEBUG: Pacemaker 123 data read
+[2020-10-23 19:45:33,439] DEBUG: Pacemaker 1 data read
+[2020-10-23 19:45:33,439] DEBUG: Pacemaker 5 data read
+[2020-10-23 19:45:33,439] DEBUG: Pacemaker 10 data read
+[2020-10-23 19:45:33,440] INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:45:33,440] DEBUG: getUserInfo() called
+[2020-10-23 19:45:40,717] DEBUG: getUserInfo() called
+[2020-10-23 19:45:40,718] DEBUG: changeUserInfo() called
+[2020-10-23 19:45:40,718] DEBUG: _writeData() called
+[2020-10-23 19:45:40,718] INFO: Pacemaker 10 updated
+[2020-10-23 19:45:40,719] INFO: Data written to JSON file
+[2020-10-23 19:45:40,722] DEBUG: _readData() called
+[2020-10-23 19:45:40,729] DEBUG: Pacemaker 123 data read
+[2020-10-23 19:45:40,729] DEBUG: Pacemaker 1 data read
+[2020-10-23 19:45:40,729] DEBUG: Pacemaker 5 data read
+[2020-10-23 19:45:40,729] DEBUG: Pacemaker 10 data read
+[2020-10-23 19:45:40,729] INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:45:40,730] DEBUG: getUserInfo() called
+[2020-10-23 19:45:47,716] DEBUG: getUserInfo() called
+[2020-10-23 19:45:47,719] DEBUG: changeUserInfo() called
+[2020-10-23 19:45:47,719] DEBUG: _writeData() called
+[2020-10-23 19:45:47,719] INFO: Pacemaker 10 updated
+[2020-10-23 19:45:47,720] INFO: Data written to JSON file
+[2020-10-23 19:45:47,723] DEBUG: _readData() called
+[2020-10-23 19:45:47,727] DEBUG: Pacemaker 123 data read
+[2020-10-23 19:45:47,727] DEBUG: Pacemaker 1 data read
+[2020-10-23 19:45:47,727] DEBUG: Pacemaker 5 data read
+[2020-10-23 19:45:47,727] DEBUG: Pacemaker 10 data read
+[2020-10-23 19:45:47,727] INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:45:47,727] DEBUG: getUserInfo() called
+[2020-10-23 19:45:55,669] DEBUG: getUserInfo() called
+[2020-10-23 19:45:55,671] DEBUG: changeUserInfo() called
+[2020-10-23 19:45:55,671] DEBUG: _writeData() called
+[2020-10-23 19:45:55,671] INFO: Pacemaker 10 updated
+[2020-10-23 19:45:55,673] INFO: Data written to JSON file
+[2020-10-23 19:45:55,675] DEBUG: _readData() called
+[2020-10-23 19:45:55,678] DEBUG: Pacemaker 123 data read
+[2020-10-23 19:45:55,680] DEBUG: Pacemaker 1 data read
+[2020-10-23 19:45:55,680] DEBUG: Pacemaker 5 data read
+[2020-10-23 19:45:55,680] DEBUG: Pacemaker 10 data read
+[2020-10-23 19:45:55,680] INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:45:55,680] DEBUG: getUserInfo() called
+[2020-10-23 19:46:04,144] DEBUG: getUserInfo() called
+[2020-10-23 19:46:04,146] DEBUG: changeUserInfo() called
+[2020-10-23 19:46:04,146] DEBUG: _writeData() called
+[2020-10-23 19:46:04,146] INFO: Pacemaker 10 updated
+[2020-10-23 19:46:04,148] INFO: Data written to JSON file
+[2020-10-23 19:46:04,151] DEBUG: _readData() called
+[2020-10-23 19:46:04,161] DEBUG: Pacemaker 123 data read
+[2020-10-23 19:46:04,161] DEBUG: Pacemaker 1 data read
+[2020-10-23 19:46:04,161] DEBUG: Pacemaker 5 data read
+[2020-10-23 19:46:04,162] DEBUG: Pacemaker 10 data read
+[2020-10-23 19:46:04,162] INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:46:04,162] DEBUG: getUserInfo() called
+[2020-10-23 19:46:12,700] DEBUG: getUserInfo() called
+[2020-10-23 19:46:12,701] DEBUG: changeUserInfo() called
+[2020-10-23 19:46:12,701] DEBUG: _writeData() called
+[2020-10-23 19:46:12,701] INFO: Pacemaker 10 updated
+[2020-10-23 19:46:12,702] INFO: Data written to JSON file
+[2020-10-23 19:46:12,704] DEBUG: _readData() called
+[2020-10-23 19:46:12,710] DEBUG: Pacemaker 123 data read
+[2020-10-23 19:46:12,711] DEBUG: Pacemaker 1 data read
+[2020-10-23 19:46:12,711] DEBUG: Pacemaker 5 data read
+[2020-10-23 19:46:12,711] DEBUG: Pacemaker 10 data read
+[2020-10-23 19:46:12,711] INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:46:12,711] DEBUG: getUserInfo() called
+[2020-10-23 19:46:20,690] DEBUG: getUserInfo() called
+[2020-10-23 19:46:25,903] DEBUG: getUserInfo() called
+[2020-10-23 19:46:31,777] DEBUG: getUserInfo() called
+[2020-10-23 19:46:45,214] DEBUG: getUserInfo() called
+[2020-10-23 19:46:52,801] DEBUG: getUserInfo() called

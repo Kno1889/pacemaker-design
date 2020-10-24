@@ -1,6 +1,6 @@
 # Data Module
 #
-# Version 1.1
+# Version 0.1
 # Created by: M. Lemcke
 # Date Modified: Oct. 15, 2020
 #
@@ -146,7 +146,7 @@ def _writeData():
 # Sets up logging file used for debugging and reporting errors
 def _startLog():
     logger = logging.getLogger(__name__)
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.WARNING)
 
     f_handler = logging.FileHandler('DCM_v1/logs/file.log')
     l_handler = logging.FileHandler('DCM_v1/logs/data.log')

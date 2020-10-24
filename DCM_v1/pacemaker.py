@@ -1,6 +1,6 @@
 # Pacemaker Module
 #
-# Version 1.0
+# Version 0.2
 # Created by: M. Lemcke
 # Date Modified: Oct. 16, 2020
 #
@@ -94,7 +94,7 @@ def _getData():
 # Sets up logging file used for debugging and reporting errors
 def _startLog():
     logger = logging.getLogger(__name__)
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.WARNING)
 
     f_handler = logging.FileHandler('DCM_v1/logs/file.log')
     l_handler = logging.FileHandler('DCM_v1/logs/pacemaker.log')

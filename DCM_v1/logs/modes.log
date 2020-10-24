@@ -300,3 +300,31 @@
 [2020-10-23 19:17:45,362] INFO: Created vvi mode
 [2020-10-23 19:17:45,362] INFO: Created aai mode
 [2020-10-23 19:17:45,412] DEBUG: allModes() called
+[2020-10-23 19:42:37,488] DEBUG: _createModes() called
+[2020-10-23 19:42:37,488] INFO: Created voo mode
+[2020-10-23 19:42:37,488] INFO: Created aoo mode
+[2020-10-23 19:42:37,488] INFO: Created vvi mode
+[2020-10-23 19:42:37,488] INFO: Created aai mode
+[2020-10-23 19:42:37,856] DEBUG: allModes() called
+[2020-10-23 19:43:43,878] DEBUG: allModes() called
+[2020-10-23 19:43:43,879] DEBUG: setCurrentMode() called for aai mode
+[2020-10-23 19:43:43,879] INFO: aai is the current mode
+[2020-10-23 19:43:43,879] DEBUG: getCurrentMode() called
+[2020-10-23 19:43:43,879] DEBUG: getCurrentMode() called
+[2020-10-23 19:43:46,792] DEBUG: getCurrentMode() called
+[2020-10-23 19:43:46,792] DEBUG: getCurrentMode() called
+[2020-10-23 19:44:03,346] DEBUG: getCurrentMode() called
+[2020-10-23 19:44:03,346] DEBUG: saveParamValues() called for aai mode
+[2020-10-23 19:44:04,323] DEBUG: getCurrentMode() called
+[2020-10-23 19:44:04,323] DEBUG: getCurrentMode() called
+[2020-10-23 19:44:09,416] DEBUG: allModes() called
+[2020-10-23 19:44:09,417] DEBUG: setCurrentMode() called for voo mode
+[2020-10-23 19:44:09,417] INFO: voo is the current mode
+[2020-10-23 19:44:09,417] DEBUG: getCurrentMode() called
+[2020-10-23 19:44:09,417] DEBUG: getCurrentMode() called
+[2020-10-23 19:44:10,688] DEBUG: getCurrentMode() called
+[2020-10-23 19:44:10,688] DEBUG: getCurrentMode() called
+[2020-10-23 19:44:17,392] DEBUG: getCurrentMode() called
+[2020-10-23 19:44:17,392] DEBUG: saveParamValues() called for voo mode
+[2020-10-23 19:44:18,463] DEBUG: getCurrentMode() called
+[2020-10-23 19:44:18,463] DEBUG: getCurrentMode() called

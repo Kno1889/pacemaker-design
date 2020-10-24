@@ -1,8 +1,8 @@
 # Modes Module
 #
-# Version 1.2
+# Version 0.2
 # Created by: M. Lemcke
-# Date Modified: Oct. 2, 2020
+# Date Modified: Oct. 20, 2020
 #
 # Purpose: To store and edit parameter information for each operating mode on the pacemaker.
 # This module interfaces with the GUI module by providing information on the current operating
@@ -112,6 +112,7 @@ def getCurrentMode():
             return mode
 
 
+# sets the given mode as the current operating mode on the pacemaker
 def setCurrentMode(currMode):
     if type(currMode) == Mode:
         logger.debug('setCurrentMode() called for %s mode', currMode.name)
@@ -126,9 +127,8 @@ def setCurrentMode(currMode):
     else:
         logger.error('setCurrentMode requires a Mode object')
 
+
 # Defines all pacing modes and default values
-
-
 def _createModes():
     logger.debug('_createModes() called')
     modes = []
@@ -191,7 +191,7 @@ def _createModes():
 # Starts the logging file
 def _startLog():
     logger = logging.getLogger(__name__)
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.WARNING)
 
     f_handler = logging.FileHandler('DCM_v1/logs/file.log')
     l_handler = logging.FileHandler('DCM_v1/logs/modes.log')

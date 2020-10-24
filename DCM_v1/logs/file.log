@@ -1545,3 +1545,504 @@
 [2020-10-23 19:17:45,364] - pacemaker -  DEBUG: _getData() called
 [2020-10-23 19:17:45,364] - data -  DEBUG: getPacemakerInfo() called
 [2020-10-23 19:17:45,412] - modes -  DEBUG: allModes() called
+[2020-10-23 19:42:37,445] - data -  DEBUG: _readData() called
+[2020-10-23 19:42:37,446] - data -  DEBUG: Pacemaker 5 data read
+[2020-10-23 19:42:37,446] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-23 19:42:37,446] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-23 19:42:37,446] - data -  INFO: Pacemaker 1 is/was connected
+[2020-10-23 19:42:37,446] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:42:37,447] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:42:37,447] - users -  INFO: Created user object for test
+[2020-10-23 19:42:37,488] - modes -  DEBUG: _createModes() called
+[2020-10-23 19:42:37,488] - modes -  INFO: Created voo mode
+[2020-10-23 19:42:37,488] - modes -  INFO: Created aoo mode
+[2020-10-23 19:42:37,488] - modes -  INFO: Created vvi mode
+[2020-10-23 19:42:37,488] - modes -  INFO: Created aai mode
+[2020-10-23 19:42:37,510] - pacemaker -  DEBUG: _getData() called
+[2020-10-23 19:42:37,511] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-23 19:42:37,856] - modes -  DEBUG: allModes() called
+[2020-10-23 19:42:46,856] - pacemaker -  DEBUG: connect() called
+[2020-10-23 19:42:46,856] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-23 19:42:46,856] - pacemaker -  INFO: Pacemaker 1 is connected
+[2020-10-23 19:42:46,857] - data -  DEBUG: setConnectedPacemaker() called
+[2020-10-23 19:42:46,857] - data -  INFO: Pacemaker 1 disconnected
+[2020-10-23 19:42:46,857] - data -  DEBUG: _writeData() called
+[2020-10-23 19:42:46,857] - data -  INFO: Pacemaker 5 updated
+[2020-10-23 19:42:46,858] - data -  INFO: Data written to JSON file
+[2020-10-23 19:42:46,861] - data -  DEBUG: _readData() called
+[2020-10-23 19:42:46,877] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-23 19:42:46,878] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-23 19:42:46,878] - data -  DEBUG: Pacemaker 5 data read
+[2020-10-23 19:42:46,878] - data -  INFO: Pacemaker 5 is/was connected
+[2020-10-23 19:42:46,878] - pacemaker -  INFO: Pacemaker 5 is now connected
+[2020-10-23 19:42:46,878] - pacemaker -  DEBUG: _getData() called
+[2020-10-23 19:42:46,879] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-23 19:42:59,668] - users -  DEBUG: signInUser() called for Matt
+[2020-10-23 19:42:59,668] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:42:59,669] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:42:59,669] - users -  INFO: Created user object for Matt
+[2020-10-23 19:42:59,669] - users -  DEBUG: _validateUser() called for Matt
+[2020-10-23 19:42:59,669] - users -  INFO: Matt was validated
+[2020-10-23 19:42:59,669] - users -  INFO: Matt is signed in
+[2020-10-23 19:43:10,927] - users -  DEBUG: currentUserInfo() called
+[2020-10-23 19:43:10,927] - users -  INFO: Matt is logged in
+[2020-10-23 19:43:10,927] - users -  DEBUG: deleteUser() called for Matt
+[2020-10-23 19:43:10,927] - users -  INFO: Matt deleted
+[2020-10-23 19:43:10,927] - users -  DEBUG: _saveInfo() called
+[2020-10-23 19:43:10,928] - data -  DEBUG: changeUserInfo() called
+[2020-10-23 19:43:10,928] - data -  DEBUG: _writeData() called
+[2020-10-23 19:43:10,928] - data -  INFO: Pacemaker 5 updated
+[2020-10-23 19:43:10,929] - data -  INFO: Data written to JSON file
+[2020-10-23 19:43:10,932] - data -  DEBUG: _readData() called
+[2020-10-23 19:43:10,939] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-23 19:43:10,939] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-23 19:43:10,940] - data -  DEBUG: Pacemaker 5 data read
+[2020-10-23 19:43:10,940] - data -  INFO: Pacemaker 5 is/was connected
+[2020-10-23 19:43:10,940] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:43:10,940] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:43:18,302] - users -  DEBUG: signInUser() called for Matt
+[2020-10-23 19:43:18,302] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:43:18,303] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:43:18,303] - users -  DEBUG: _validateUser() called for Matt
+[2020-10-23 19:43:18,303] - users -  INFO: Matt was not validated
+[2020-10-23 19:43:18,303] - users -  INFO: Matt could not be verified
+[2020-10-23 19:43:21,858] - users -  DEBUG: currentUserInfo() called
+[2020-10-23 19:43:21,859] - users -  INFO: No user logged in
+[2020-10-23 19:43:30,012] - users -  DEBUG: makeNewUser() called for Matt
+[2020-10-23 19:43:30,013] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:43:30,013] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:43:30,013] - users -  INFO: Created user object for Matt
+[2020-10-23 19:43:30,013] - users -  DEBUG: _saveInfo() called
+[2020-10-23 19:43:30,013] - data -  DEBUG: changeUserInfo() called
+[2020-10-23 19:43:30,013] - data -  DEBUG: _writeData() called
+[2020-10-23 19:43:30,014] - data -  INFO: Pacemaker 5 updated
+[2020-10-23 19:43:30,015] - data -  INFO: Data written to JSON file
+[2020-10-23 19:43:30,018] - data -  DEBUG: _readData() called
+[2020-10-23 19:43:30,019] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-23 19:43:30,019] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-23 19:43:30,020] - data -  DEBUG: Pacemaker 5 data read
+[2020-10-23 19:43:30,020] - data -  INFO: Pacemaker 5 is/was connected
+[2020-10-23 19:43:30,020] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:43:30,020] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:43:30,020] - users -  INFO: Created user object for Matt
+[2020-10-23 19:43:36,760] - users -  DEBUG: signInUser() called for Matt
+[2020-10-23 19:43:36,761] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:43:36,761] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:43:36,761] - users -  INFO: Created user object for Matt
+[2020-10-23 19:43:36,761] - users -  DEBUG: _validateUser() called for Matt
+[2020-10-23 19:43:36,761] - users -  INFO: Matt was validated
+[2020-10-23 19:43:36,762] - users -  INFO: Matt is signed in
+[2020-10-23 19:43:43,878] - modes -  DEBUG: allModes() called
+[2020-10-23 19:43:43,879] - modes -  DEBUG: setCurrentMode() called for aai mode
+[2020-10-23 19:43:43,879] - modes -  INFO: aai is the current mode
+[2020-10-23 19:43:43,879] - modes -  DEBUG: getCurrentMode() called
+[2020-10-23 19:43:43,879] - modes -  DEBUG: getCurrentMode() called
+[2020-10-23 19:43:46,792] - modes -  DEBUG: getCurrentMode() called
+[2020-10-23 19:43:46,792] - modes -  DEBUG: getCurrentMode() called
+[2020-10-23 19:44:03,346] - modes -  DEBUG: getCurrentMode() called
+[2020-10-23 19:44:03,346] - modes -  DEBUG: saveParamValues() called for aai mode
+[2020-10-23 19:44:04,323] - modes -  DEBUG: getCurrentMode() called
+[2020-10-23 19:44:04,323] - modes -  DEBUG: getCurrentMode() called
+[2020-10-23 19:44:09,416] - modes -  DEBUG: allModes() called
+[2020-10-23 19:44:09,417] - modes -  DEBUG: setCurrentMode() called for voo mode
+[2020-10-23 19:44:09,417] - modes -  INFO: voo is the current mode
+[2020-10-23 19:44:09,417] - modes -  DEBUG: getCurrentMode() called
+[2020-10-23 19:44:09,417] - modes -  DEBUG: getCurrentMode() called
+[2020-10-23 19:44:10,688] - modes -  DEBUG: getCurrentMode() called
+[2020-10-23 19:44:10,688] - modes -  DEBUG: getCurrentMode() called
+[2020-10-23 19:44:17,392] - modes -  DEBUG: getCurrentMode() called
+[2020-10-23 19:44:17,392] - modes -  DEBUG: saveParamValues() called for voo mode
+[2020-10-23 19:44:18,463] - modes -  DEBUG: getCurrentMode() called
+[2020-10-23 19:44:18,463] - modes -  DEBUG: getCurrentMode() called
+[2020-10-23 19:44:21,658] - users -  DEBUG: currentUserInfo() called
+[2020-10-23 19:44:21,659] - users -  INFO: Matt is logged in
+[2020-10-23 19:44:21,659] - users -  DEBUG: signOutUser() called
+[2020-10-23 19:44:21,659] - users -  INFO: Matt has been logged out
+[2020-10-23 19:44:28,978] - pacemaker -  DEBUG: connect() called
+[2020-10-23 19:44:28,979] - pacemaker -  DEBUG: _currentPacemaker() called
+[2020-10-23 19:44:28,979] - pacemaker -  INFO: Pacemaker 5 is connected
+[2020-10-23 19:44:28,979] - pacemaker -  DEBUG: _addNewPacemaker called
+[2020-10-23 19:44:28,979] - pacemaker -  INFO: Pacemaker 10 created
+[2020-10-23 19:44:28,979] - data -  DEBUG: setConnectedPacemaker() called
+[2020-10-23 19:44:28,980] - data -  INFO: Pacemaker 5 disconnected
+[2020-10-23 19:44:28,980] - data -  DEBUG: _writeData() called
+[2020-10-23 19:44:28,980] - data -  INFO: Pacemaker 10 added to list
+[2020-10-23 19:44:28,981] - data -  INFO: Data written to JSON file
+[2020-10-23 19:44:28,984] - data -  DEBUG: _readData() called
+[2020-10-23 19:44:28,989] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-23 19:44:28,989] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-23 19:44:28,989] - data -  DEBUG: Pacemaker 5 data read
+[2020-10-23 19:44:28,989] - data -  DEBUG: Pacemaker 10 data read
+[2020-10-23 19:44:28,989] - data -  INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:44:28,989] - pacemaker -  INFO: Pacemaker 10 is now connected
+[2020-10-23 19:44:28,989] - pacemaker -  DEBUG: _getData() called
+[2020-10-23 19:44:28,990] - data -  DEBUG: getPacemakerInfo() called
+[2020-10-23 19:44:32,402] - users -  DEBUG: currentUserInfo() called
+[2020-10-23 19:44:32,402] - users -  INFO: No user logged in
+[2020-10-23 19:44:43,899] - users -  DEBUG: makeNewUser() called for test1
+[2020-10-23 19:44:43,899] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:44:43,899] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:44:43,899] - users -  INFO: Created user object for test1
+[2020-10-23 19:44:43,899] - users -  DEBUG: _saveInfo() called
+[2020-10-23 19:44:43,900] - data -  DEBUG: changeUserInfo() called
+[2020-10-23 19:44:43,900] - data -  DEBUG: _writeData() called
+[2020-10-23 19:44:43,900] - data -  INFO: Pacemaker 10 updated
+[2020-10-23 19:44:43,901] - data -  INFO: Data written to JSON file
+[2020-10-23 19:44:43,904] - data -  DEBUG: _readData() called
+[2020-10-23 19:44:43,909] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-23 19:44:43,909] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-23 19:44:43,909] - data -  DEBUG: Pacemaker 5 data read
+[2020-10-23 19:44:43,909] - data -  DEBUG: Pacemaker 10 data read
+[2020-10-23 19:44:43,909] - data -  INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:44:43,909] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:44:43,909] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:44:43,909] - users -  INFO: Created user object for test1
+[2020-10-23 19:44:47,206] - users -  DEBUG: currentUserInfo() called
+[2020-10-23 19:44:47,207] - users -  INFO: No user logged in
+[2020-10-23 19:44:58,530] - users -  DEBUG: makeNewUser() called for test2
+[2020-10-23 19:44:58,531] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:44:58,531] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:44:58,531] - users -  INFO: Created user object for test1
+[2020-10-23 19:44:58,531] - users -  INFO: Created user object for test2
+[2020-10-23 19:44:58,531] - users -  DEBUG: _saveInfo() called
+[2020-10-23 19:44:58,531] - data -  DEBUG: changeUserInfo() called
+[2020-10-23 19:44:58,532] - data -  DEBUG: _writeData() called
+[2020-10-23 19:44:58,532] - data -  INFO: Pacemaker 10 updated
+[2020-10-23 19:44:58,533] - data -  INFO: Data written to JSON file
+[2020-10-23 19:44:58,536] - data -  DEBUG: _readData() called
+[2020-10-23 19:44:58,541] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-23 19:44:58,541] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-23 19:44:58,541] - data -  DEBUG: Pacemaker 5 data read
+[2020-10-23 19:44:58,541] - data -  DEBUG: Pacemaker 10 data read
+[2020-10-23 19:44:58,541] - data -  INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:44:58,541] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:44:58,541] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:44:58,541] - users -  INFO: Created user object for test1
+[2020-10-23 19:44:58,542] - users -  INFO: Created user object for test2
+[2020-10-23 19:45:01,320] - users -  DEBUG: currentUserInfo() called
+[2020-10-23 19:45:01,320] - users -  INFO: No user logged in
+[2020-10-23 19:45:12,358] - users -  DEBUG: makeNewUser() called for test3
+[2020-10-23 19:45:12,358] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:45:12,358] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:45:12,358] - users -  INFO: Created user object for test1
+[2020-10-23 19:45:12,359] - users -  INFO: Created user object for test2
+[2020-10-23 19:45:12,359] - users -  INFO: Created user object for test3
+[2020-10-23 19:45:12,359] - users -  DEBUG: _saveInfo() called
+[2020-10-23 19:45:12,359] - data -  DEBUG: changeUserInfo() called
+[2020-10-23 19:45:12,359] - data -  DEBUG: _writeData() called
+[2020-10-23 19:45:12,359] - data -  INFO: Pacemaker 10 updated
+[2020-10-23 19:45:12,360] - data -  INFO: Data written to JSON file
+[2020-10-23 19:45:12,361] - data -  DEBUG: _readData() called
+[2020-10-23 19:45:12,366] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-23 19:45:12,367] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-23 19:45:12,367] - data -  DEBUG: Pacemaker 5 data read
+[2020-10-23 19:45:12,367] - data -  DEBUG: Pacemaker 10 data read
+[2020-10-23 19:45:12,367] - data -  INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:45:12,367] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:45:12,367] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:45:12,367] - users -  INFO: Created user object for test1
+[2020-10-23 19:45:12,367] - users -  INFO: Created user object for test2
+[2020-10-23 19:45:12,367] - users -  INFO: Created user object for test3
+[2020-10-23 19:45:15,153] - users -  DEBUG: currentUserInfo() called
+[2020-10-23 19:45:15,153] - users -  INFO: No user logged in
+[2020-10-23 19:45:24,912] - users -  DEBUG: makeNewUser() called for test4
+[2020-10-23 19:45:24,912] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:45:24,912] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:45:24,913] - users -  INFO: Created user object for test1
+[2020-10-23 19:45:24,913] - users -  INFO: Created user object for test2
+[2020-10-23 19:45:24,913] - users -  INFO: Created user object for test3
+[2020-10-23 19:45:24,913] - users -  INFO: Created user object for test4
+[2020-10-23 19:45:24,913] - users -  DEBUG: _saveInfo() called
+[2020-10-23 19:45:24,913] - data -  DEBUG: changeUserInfo() called
+[2020-10-23 19:45:24,914] - data -  DEBUG: _writeData() called
+[2020-10-23 19:45:24,914] - data -  INFO: Pacemaker 10 updated
+[2020-10-23 19:45:24,915] - data -  INFO: Data written to JSON file
+[2020-10-23 19:45:24,917] - data -  DEBUG: _readData() called
+[2020-10-23 19:45:24,922] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-23 19:45:24,923] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-23 19:45:24,923] - data -  DEBUG: Pacemaker 5 data read
+[2020-10-23 19:45:24,923] - data -  DEBUG: Pacemaker 10 data read
+[2020-10-23 19:45:24,923] - data -  INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:45:24,923] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:45:24,923] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:45:24,923] - users -  INFO: Created user object for test1
+[2020-10-23 19:45:24,923] - users -  INFO: Created user object for test2
+[2020-10-23 19:45:24,923] - users -  INFO: Created user object for test3
+[2020-10-23 19:45:24,923] - users -  INFO: Created user object for test4
+[2020-10-23 19:45:28,472] - users -  DEBUG: currentUserInfo() called
+[2020-10-23 19:45:28,472] - users -  INFO: No user logged in
+[2020-10-23 19:45:33,429] - users -  DEBUG: makeNewUser() called for test5
+[2020-10-23 19:45:33,429] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:45:33,429] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:45:33,429] - users -  INFO: Created user object for test1
+[2020-10-23 19:45:33,429] - users -  INFO: Created user object for test2
+[2020-10-23 19:45:33,430] - users -  INFO: Created user object for test3
+[2020-10-23 19:45:33,430] - users -  INFO: Created user object for test4
+[2020-10-23 19:45:33,430] - users -  INFO: Created user object for test5
+[2020-10-23 19:45:33,430] - users -  DEBUG: _saveInfo() called
+[2020-10-23 19:45:33,430] - data -  DEBUG: changeUserInfo() called
+[2020-10-23 19:45:33,430] - data -  DEBUG: _writeData() called
+[2020-10-23 19:45:33,430] - data -  INFO: Pacemaker 10 updated
+[2020-10-23 19:45:33,432] - data -  INFO: Data written to JSON file
+[2020-10-23 19:45:33,434] - data -  DEBUG: _readData() called
+[2020-10-23 19:45:33,439] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-23 19:45:33,439] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-23 19:45:33,439] - data -  DEBUG: Pacemaker 5 data read
+[2020-10-23 19:45:33,439] - data -  DEBUG: Pacemaker 10 data read
+[2020-10-23 19:45:33,440] - data -  INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:45:33,440] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:45:33,440] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:45:33,440] - users -  INFO: Created user object for test1
+[2020-10-23 19:45:33,440] - users -  INFO: Created user object for test2
+[2020-10-23 19:45:33,440] - users -  INFO: Created user object for test3
+[2020-10-23 19:45:33,440] - users -  INFO: Created user object for test4
+[2020-10-23 19:45:33,440] - users -  INFO: Created user object for test5
+[2020-10-23 19:45:35,932] - users -  DEBUG: currentUserInfo() called
+[2020-10-23 19:45:35,932] - users -  INFO: No user logged in
+[2020-10-23 19:45:40,716] - users -  DEBUG: makeNewUser() called for test6
+[2020-10-23 19:45:40,716] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:45:40,717] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:45:40,717] - users -  INFO: Created user object for test1
+[2020-10-23 19:45:40,717] - users -  INFO: Created user object for test2
+[2020-10-23 19:45:40,717] - users -  INFO: Created user object for test3
+[2020-10-23 19:45:40,717] - users -  INFO: Created user object for test4
+[2020-10-23 19:45:40,717] - users -  INFO: Created user object for test5
+[2020-10-23 19:45:40,718] - users -  INFO: Created user object for test6
+[2020-10-23 19:45:40,718] - users -  DEBUG: _saveInfo() called
+[2020-10-23 19:45:40,718] - data -  DEBUG: changeUserInfo() called
+[2020-10-23 19:45:40,718] - data -  DEBUG: _writeData() called
+[2020-10-23 19:45:40,718] - data -  INFO: Pacemaker 10 updated
+[2020-10-23 19:45:40,719] - data -  INFO: Data written to JSON file
+[2020-10-23 19:45:40,722] - data -  DEBUG: _readData() called
+[2020-10-23 19:45:40,729] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-23 19:45:40,729] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-23 19:45:40,729] - data -  DEBUG: Pacemaker 5 data read
+[2020-10-23 19:45:40,729] - data -  DEBUG: Pacemaker 10 data read
+[2020-10-23 19:45:40,729] - data -  INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:45:40,730] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:45:40,730] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:45:40,730] - users -  INFO: Created user object for test1
+[2020-10-23 19:45:40,730] - users -  INFO: Created user object for test2
+[2020-10-23 19:45:40,730] - users -  INFO: Created user object for test3
+[2020-10-23 19:45:40,730] - users -  INFO: Created user object for test4
+[2020-10-23 19:45:40,730] - users -  INFO: Created user object for test5
+[2020-10-23 19:45:40,730] - users -  INFO: Created user object for test6
+[2020-10-23 19:45:43,119] - users -  DEBUG: currentUserInfo() called
+[2020-10-23 19:45:43,120] - users -  INFO: No user logged in
+[2020-10-23 19:45:47,716] - users -  DEBUG: makeNewUser() called for test7
+[2020-10-23 19:45:47,716] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:45:47,716] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:45:47,716] - users -  INFO: Created user object for test1
+[2020-10-23 19:45:47,716] - users -  INFO: Created user object for test2
+[2020-10-23 19:45:47,718] - users -  INFO: Created user object for test3
+[2020-10-23 19:45:47,718] - users -  INFO: Created user object for test4
+[2020-10-23 19:45:47,718] - users -  INFO: Created user object for test5
+[2020-10-23 19:45:47,718] - users -  INFO: Created user object for test6
+[2020-10-23 19:45:47,718] - users -  INFO: Created user object for test7
+[2020-10-23 19:45:47,718] - users -  DEBUG: _saveInfo() called
+[2020-10-23 19:45:47,719] - data -  DEBUG: changeUserInfo() called
+[2020-10-23 19:45:47,719] - data -  DEBUG: _writeData() called
+[2020-10-23 19:45:47,719] - data -  INFO: Pacemaker 10 updated
+[2020-10-23 19:45:47,720] - data -  INFO: Data written to JSON file
+[2020-10-23 19:45:47,723] - data -  DEBUG: _readData() called
+[2020-10-23 19:45:47,727] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-23 19:45:47,727] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-23 19:45:47,727] - data -  DEBUG: Pacemaker 5 data read
+[2020-10-23 19:45:47,727] - data -  DEBUG: Pacemaker 10 data read
+[2020-10-23 19:45:47,727] - data -  INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:45:47,727] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:45:47,727] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:45:47,727] - users -  INFO: Created user object for test1
+[2020-10-23 19:45:47,727] - users -  INFO: Created user object for test2
+[2020-10-23 19:45:47,727] - users -  INFO: Created user object for test3
+[2020-10-23 19:45:47,727] - users -  INFO: Created user object for test4
+[2020-10-23 19:45:47,729] - users -  INFO: Created user object for test5
+[2020-10-23 19:45:47,729] - users -  INFO: Created user object for test6
+[2020-10-23 19:45:47,729] - users -  INFO: Created user object for test7
+[2020-10-23 19:45:50,509] - users -  DEBUG: currentUserInfo() called
+[2020-10-23 19:45:50,509] - users -  INFO: No user logged in
+[2020-10-23 19:45:55,669] - users -  DEBUG: makeNewUser() called for test8
+[2020-10-23 19:45:55,669] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:45:55,669] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:45:55,669] - users -  INFO: Created user object for test1
+[2020-10-23 19:45:55,670] - users -  INFO: Created user object for test2
+[2020-10-23 19:45:55,670] - users -  INFO: Created user object for test3
+[2020-10-23 19:45:55,670] - users -  INFO: Created user object for test4
+[2020-10-23 19:45:55,670] - users -  INFO: Created user object for test5
+[2020-10-23 19:45:55,670] - users -  INFO: Created user object for test6
+[2020-10-23 19:45:55,670] - users -  INFO: Created user object for test7
+[2020-10-23 19:45:55,670] - users -  INFO: Created user object for test8
+[2020-10-23 19:45:55,671] - users -  DEBUG: _saveInfo() called
+[2020-10-23 19:45:55,671] - data -  DEBUG: changeUserInfo() called
+[2020-10-23 19:45:55,671] - data -  DEBUG: _writeData() called
+[2020-10-23 19:45:55,671] - data -  INFO: Pacemaker 10 updated
+[2020-10-23 19:45:55,673] - data -  INFO: Data written to JSON file
+[2020-10-23 19:45:55,675] - data -  DEBUG: _readData() called
+[2020-10-23 19:45:55,678] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-23 19:45:55,680] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-23 19:45:55,680] - data -  DEBUG: Pacemaker 5 data read
+[2020-10-23 19:45:55,680] - data -  DEBUG: Pacemaker 10 data read
+[2020-10-23 19:45:55,680] - data -  INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:45:55,680] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:45:55,680] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:45:55,680] - users -  INFO: Created user object for test1
+[2020-10-23 19:45:55,680] - users -  INFO: Created user object for test2
+[2020-10-23 19:45:55,680] - users -  INFO: Created user object for test3
+[2020-10-23 19:45:55,680] - users -  INFO: Created user object for test4
+[2020-10-23 19:45:55,680] - users -  INFO: Created user object for test5
+[2020-10-23 19:45:55,680] - users -  INFO: Created user object for test6
+[2020-10-23 19:45:55,680] - users -  INFO: Created user object for test7
+[2020-10-23 19:45:55,680] - users -  INFO: Created user object for test8
+[2020-10-23 19:45:58,574] - users -  DEBUG: currentUserInfo() called
+[2020-10-23 19:45:58,574] - users -  INFO: No user logged in
+[2020-10-23 19:46:04,144] - users -  DEBUG: makeNewUser() called for test9
+[2020-10-23 19:46:04,144] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:46:04,144] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:46:04,144] - users -  INFO: Created user object for test1
+[2020-10-23 19:46:04,145] - users -  INFO: Created user object for test2
+[2020-10-23 19:46:04,145] - users -  INFO: Created user object for test3
+[2020-10-23 19:46:04,145] - users -  INFO: Created user object for test4
+[2020-10-23 19:46:04,145] - users -  INFO: Created user object for test5
+[2020-10-23 19:46:04,145] - users -  INFO: Created user object for test6
+[2020-10-23 19:46:04,145] - users -  INFO: Created user object for test7
+[2020-10-23 19:46:04,146] - users -  INFO: Created user object for test8
+[2020-10-23 19:46:04,146] - users -  INFO: Created user object for test9
+[2020-10-23 19:46:04,146] - users -  DEBUG: _saveInfo() called
+[2020-10-23 19:46:04,146] - data -  DEBUG: changeUserInfo() called
+[2020-10-23 19:46:04,146] - data -  DEBUG: _writeData() called
+[2020-10-23 19:46:04,146] - data -  INFO: Pacemaker 10 updated
+[2020-10-23 19:46:04,148] - data -  INFO: Data written to JSON file
+[2020-10-23 19:46:04,151] - data -  DEBUG: _readData() called
+[2020-10-23 19:46:04,161] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-23 19:46:04,161] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-23 19:46:04,161] - data -  DEBUG: Pacemaker 5 data read
+[2020-10-23 19:46:04,162] - data -  DEBUG: Pacemaker 10 data read
+[2020-10-23 19:46:04,162] - data -  INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:46:04,162] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:46:04,162] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:46:04,162] - users -  INFO: Created user object for test1
+[2020-10-23 19:46:04,163] - users -  INFO: Created user object for test2
+[2020-10-23 19:46:04,163] - users -  INFO: Created user object for test3
+[2020-10-23 19:46:04,163] - users -  INFO: Created user object for test4
+[2020-10-23 19:46:04,163] - users -  INFO: Created user object for test5
+[2020-10-23 19:46:04,163] - users -  INFO: Created user object for test6
+[2020-10-23 19:46:04,163] - users -  INFO: Created user object for test7
+[2020-10-23 19:46:04,163] - users -  INFO: Created user object for test8
+[2020-10-23 19:46:04,164] - users -  INFO: Created user object for test9
+[2020-10-23 19:46:06,767] - users -  DEBUG: currentUserInfo() called
+[2020-10-23 19:46:06,767] - users -  INFO: No user logged in
+[2020-10-23 19:46:12,700] - users -  DEBUG: makeNewUser() called for test10
+[2020-10-23 19:46:12,700] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:46:12,700] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:46:12,700] - users -  INFO: Created user object for test1
+[2020-10-23 19:46:12,700] - users -  INFO: Created user object for test2
+[2020-10-23 19:46:12,700] - users -  INFO: Created user object for test3
+[2020-10-23 19:46:12,700] - users -  INFO: Created user object for test4
+[2020-10-23 19:46:12,700] - users -  INFO: Created user object for test5
+[2020-10-23 19:46:12,701] - users -  INFO: Created user object for test6
+[2020-10-23 19:46:12,701] - users -  INFO: Created user object for test7
+[2020-10-23 19:46:12,701] - users -  INFO: Created user object for test8
+[2020-10-23 19:46:12,701] - users -  INFO: Created user object for test9
+[2020-10-23 19:46:12,701] - users -  INFO: Created user object for test10
+[2020-10-23 19:46:12,701] - users -  DEBUG: _saveInfo() called
+[2020-10-23 19:46:12,701] - data -  DEBUG: changeUserInfo() called
+[2020-10-23 19:46:12,701] - data -  DEBUG: _writeData() called
+[2020-10-23 19:46:12,701] - data -  INFO: Pacemaker 10 updated
+[2020-10-23 19:46:12,702] - data -  INFO: Data written to JSON file
+[2020-10-23 19:46:12,704] - data -  DEBUG: _readData() called
+[2020-10-23 19:46:12,710] - data -  DEBUG: Pacemaker 123 data read
+[2020-10-23 19:46:12,711] - data -  DEBUG: Pacemaker 1 data read
+[2020-10-23 19:46:12,711] - data -  DEBUG: Pacemaker 5 data read
+[2020-10-23 19:46:12,711] - data -  DEBUG: Pacemaker 10 data read
+[2020-10-23 19:46:12,711] - data -  INFO: Pacemaker 10 is/was connected
+[2020-10-23 19:46:12,711] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:46:12,711] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:46:12,711] - users -  INFO: Created user object for test1
+[2020-10-23 19:46:12,711] - users -  INFO: Created user object for test2
+[2020-10-23 19:46:12,711] - users -  INFO: Created user object for test3
+[2020-10-23 19:46:12,712] - users -  INFO: Created user object for test4
+[2020-10-23 19:46:12,712] - users -  INFO: Created user object for test5
+[2020-10-23 19:46:12,712] - users -  INFO: Created user object for test6
+[2020-10-23 19:46:12,712] - users -  INFO: Created user object for test7
+[2020-10-23 19:46:12,712] - users -  INFO: Created user object for test8
+[2020-10-23 19:46:12,712] - users -  INFO: Created user object for test9
+[2020-10-23 19:46:12,712] - users -  INFO: Created user object for test10
+[2020-10-23 19:46:16,047] - users -  DEBUG: currentUserInfo() called
+[2020-10-23 19:46:16,047] - users -  INFO: No user logged in
+[2020-10-23 19:46:20,690] - users -  DEBUG: makeNewUser() called for test11
+[2020-10-23 19:46:20,690] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:46:20,690] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:46:20,690] - users -  INFO: Created user object for test1
+[2020-10-23 19:46:20,691] - users -  INFO: Created user object for test2
+[2020-10-23 19:46:20,691] - users -  INFO: Created user object for test3
+[2020-10-23 19:46:20,691] - users -  INFO: Created user object for test4
+[2020-10-23 19:46:20,691] - users -  INFO: Created user object for test5
+[2020-10-23 19:46:20,691] - users -  INFO: Created user object for test6
+[2020-10-23 19:46:20,691] - users -  INFO: Created user object for test7
+[2020-10-23 19:46:20,691] - users -  INFO: Created user object for test8
+[2020-10-23 19:46:20,692] - users -  INFO: Created user object for test9
+[2020-10-23 19:46:20,692] - users -  INFO: Created user object for test10
+[2020-10-23 19:46:25,902] - users -  DEBUG: signInUser() called for 
+[2020-10-23 19:46:25,902] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:46:25,903] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:46:25,903] - users -  INFO: Created user object for test1
+[2020-10-23 19:46:25,903] - users -  INFO: Created user object for test2
+[2020-10-23 19:46:25,903] - users -  INFO: Created user object for test3
+[2020-10-23 19:46:25,903] - users -  INFO: Created user object for test4
+[2020-10-23 19:46:25,903] - users -  INFO: Created user object for test5
+[2020-10-23 19:46:25,904] - users -  INFO: Created user object for test6
+[2020-10-23 19:46:25,904] - users -  INFO: Created user object for test7
+[2020-10-23 19:46:25,904] - users -  INFO: Created user object for test8
+[2020-10-23 19:46:25,904] - users -  INFO: Created user object for test9
+[2020-10-23 19:46:25,904] - users -  INFO: Created user object for test10
+[2020-10-23 19:46:25,904] - users -  DEBUG: _validateUser() called for 
+[2020-10-23 19:46:25,904] - users -  INFO:  was not validated
+[2020-10-23 19:46:25,905] - users -  INFO:  could not be verified
+[2020-10-23 19:46:31,776] - users -  DEBUG: signInUser() called for test4
+[2020-10-23 19:46:31,777] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:46:31,777] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:46:31,777] - users -  INFO: Created user object for test1
+[2020-10-23 19:46:31,777] - users -  INFO: Created user object for test2
+[2020-10-23 19:46:31,777] - users -  INFO: Created user object for test3
+[2020-10-23 19:46:31,777] - users -  INFO: Created user object for test4
+[2020-10-23 19:46:31,778] - users -  INFO: Created user object for test5
+[2020-10-23 19:46:31,778] - users -  INFO: Created user object for test6
+[2020-10-23 19:46:31,778] - users -  INFO: Created user object for test7
+[2020-10-23 19:46:31,778] - users -  INFO: Created user object for test8
+[2020-10-23 19:46:31,778] - users -  INFO: Created user object for test9
+[2020-10-23 19:46:31,778] - users -  INFO: Created user object for test10
+[2020-10-23 19:46:31,778] - users -  DEBUG: _validateUser() called for test4
+[2020-10-23 19:46:31,779] - users -  INFO: test4 was validated
+[2020-10-23 19:46:31,779] - users -  INFO: test4 is signed in
+[2020-10-23 19:46:39,273] - users -  DEBUG: currentUserInfo() called
+[2020-10-23 19:46:39,273] - users -  INFO: test4 is logged in
+[2020-10-23 19:46:45,214] - users -  DEBUG: makeNewUser() called for test11
+[2020-10-23 19:46:45,214] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:46:45,214] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:46:45,214] - users -  INFO: Created user object for test1
+[2020-10-23 19:46:45,215] - users -  INFO: Created user object for test2
+[2020-10-23 19:46:45,215] - users -  INFO: Created user object for test3
+[2020-10-23 19:46:45,215] - users -  INFO: Created user object for test4
+[2020-10-23 19:46:45,215] - users -  INFO: Created user object for test5
+[2020-10-23 19:46:45,215] - users -  INFO: Created user object for test6
+[2020-10-23 19:46:45,215] - users -  INFO: Created user object for test7
+[2020-10-23 19:46:45,216] - users -  INFO: Created user object for test8
+[2020-10-23 19:46:45,216] - users -  INFO: Created user object for test9
+[2020-10-23 19:46:45,216] - users -  INFO: Created user object for test10
+[2020-10-23 19:46:52,801] - users -  DEBUG: makeNewUser() called for test11
+[2020-10-23 19:46:52,801] - users -  DEBUG: _getInfo() called
+[2020-10-23 19:46:52,801] - data -  DEBUG: getUserInfo() called
+[2020-10-23 19:46:52,801] - users -  INFO: Created user object for test1
+[2020-10-23 19:46:52,801] - users -  INFO: Created user object for test2
+[2020-10-23 19:46:52,801] - users -  INFO: Created user object for test3
+[2020-10-23 19:46:52,801] - users -  INFO: Created user object for test4
+[2020-10-23 19:46:52,801] - users -  INFO: Created user object for test5
+[2020-10-23 19:46:52,801] - users -  INFO: Created user object for test6
+[2020-10-23 19:46:52,801] - users -  INFO: Created user object for test7
+[2020-10-23 19:46:52,801] - users -  INFO: Created user object for test8
+[2020-10-23 19:46:52,801] - users -  INFO: Created user object for test9
+[2020-10-23 19:46:52,802] - users -  INFO: Created user object for test10
+[2020-10-23 19:47:03,604] - users -  DEBUG: currentUserInfo() called
+[2020-10-23 19:47:03,604] - users -  INFO: No user logged in
+[2020-10-23 19:47:07,243] - users -  DEBUG: currentUserInfo() called
+[2020-10-23 19:47:07,243] - users -  INFO: No user logged in

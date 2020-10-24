@@ -1,8 +1,8 @@
 # Users Module
 #
-# Version 2.1
+# Version 0.4
 # Created by: M. Lemcke
-# Date Modified: Oct. 8, 2020
+# Date Modified: Oct. 19, 2020
 #
 # Purpose: To register and store new user information and verify user credentials to access to the
 # pacemaker application
@@ -141,7 +141,7 @@ def _validateUser(name, password):
 # Starts the logging file
 def _startLog():
     logger = logging.getLogger(__name__)
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.WARNING)
 
     f_handler = logging.FileHandler('DCM_v1/logs/file.log')
     l_handler = logging.FileHandler('DCM_v1/logs/users.log')

@@ -404,3 +404,284 @@
 [2020-10-23 19:16:12,207] INFO: No user logged in
 [2020-10-23 19:17:45,360] DEBUG: _getInfo() called
 [2020-10-23 19:17:45,360] INFO: Created user object for test
+[2020-10-23 19:42:37,446] DEBUG: _getInfo() called
+[2020-10-23 19:42:37,447] INFO: Created user object for test
+[2020-10-23 19:42:59,668] DEBUG: signInUser() called for Matt
+[2020-10-23 19:42:59,668] DEBUG: _getInfo() called
+[2020-10-23 19:42:59,669] INFO: Created user object for Matt
+[2020-10-23 19:42:59,669] DEBUG: _validateUser() called for Matt
+[2020-10-23 19:42:59,669] INFO: Matt was validated
+[2020-10-23 19:42:59,669] INFO: Matt is signed in
+[2020-10-23 19:43:10,927] DEBUG: currentUserInfo() called
+[2020-10-23 19:43:10,927] INFO: Matt is logged in
+[2020-10-23 19:43:10,927] DEBUG: deleteUser() called for Matt
+[2020-10-23 19:43:10,927] INFO: Matt deleted
+[2020-10-23 19:43:10,927] DEBUG: _saveInfo() called
+[2020-10-23 19:43:10,940] DEBUG: _getInfo() called
+[2020-10-23 19:43:18,302] DEBUG: signInUser() called for Matt
+[2020-10-23 19:43:18,302] DEBUG: _getInfo() called
+[2020-10-23 19:43:18,303] DEBUG: _validateUser() called for Matt
+[2020-10-23 19:43:18,303] INFO: Matt was not validated
+[2020-10-23 19:43:18,303] INFO: Matt could not be verified
+[2020-10-23 19:43:21,858] DEBUG: currentUserInfo() called
+[2020-10-23 19:43:21,859] INFO: No user logged in
+[2020-10-23 19:43:30,012] DEBUG: makeNewUser() called for Matt
+[2020-10-23 19:43:30,013] DEBUG: _getInfo() called
+[2020-10-23 19:43:30,013] INFO: Created user object for Matt
+[2020-10-23 19:43:30,013] DEBUG: _saveInfo() called
+[2020-10-23 19:43:30,020] DEBUG: _getInfo() called
+[2020-10-23 19:43:30,020] INFO: Created user object for Matt
+[2020-10-23 19:43:36,760] DEBUG: signInUser() called for Matt
+[2020-10-23 19:43:36,761] DEBUG: _getInfo() called
+[2020-10-23 19:43:36,761] INFO: Created user object for Matt
+[2020-10-23 19:43:36,761] DEBUG: _validateUser() called for Matt
+[2020-10-23 19:43:36,761] INFO: Matt was validated
+[2020-10-23 19:43:36,762] INFO: Matt is signed in
+[2020-10-23 19:44:21,658] DEBUG: currentUserInfo() called
+[2020-10-23 19:44:21,659] INFO: Matt is logged in
+[2020-10-23 19:44:21,659] DEBUG: signOutUser() called
+[2020-10-23 19:44:21,659] INFO: Matt has been logged out
+[2020-10-23 19:44:32,402] DEBUG: currentUserInfo() called
+[2020-10-23 19:44:32,402] INFO: No user logged in
+[2020-10-23 19:44:43,899] DEBUG: makeNewUser() called for test1
+[2020-10-23 19:44:43,899] DEBUG: _getInfo() called
+[2020-10-23 19:44:43,899] INFO: Created user object for test1
+[2020-10-23 19:44:43,899] DEBUG: _saveInfo() called
+[2020-10-23 19:44:43,909] DEBUG: _getInfo() called
+[2020-10-23 19:44:43,909] INFO: Created user object for test1
+[2020-10-23 19:44:47,206] DEBUG: currentUserInfo() called
+[2020-10-23 19:44:47,207] INFO: No user logged in
+[2020-10-23 19:44:58,530] DEBUG: makeNewUser() called for test2
+[2020-10-23 19:44:58,531] DEBUG: _getInfo() called
+[2020-10-23 19:44:58,531] INFO: Created user object for test1
+[2020-10-23 19:44:58,531] INFO: Created user object for test2
+[2020-10-23 19:44:58,531] DEBUG: _saveInfo() called
+[2020-10-23 19:44:58,541] DEBUG: _getInfo() called
+[2020-10-23 19:44:58,541] INFO: Created user object for test1
+[2020-10-23 19:44:58,542] INFO: Created user object for test2
+[2020-10-23 19:45:01,320] DEBUG: currentUserInfo() called
+[2020-10-23 19:45:01,320] INFO: No user logged in
+[2020-10-23 19:45:12,358] DEBUG: makeNewUser() called for test3
+[2020-10-23 19:45:12,358] DEBUG: _getInfo() called
+[2020-10-23 19:45:12,358] INFO: Created user object for test1
+[2020-10-23 19:45:12,359] INFO: Created user object for test2
+[2020-10-23 19:45:12,359] INFO: Created user object for test3
+[2020-10-23 19:45:12,359] DEBUG: _saveInfo() called
+[2020-10-23 19:45:12,367] DEBUG: _getInfo() called
+[2020-10-23 19:45:12,367] INFO: Created user object for test1
+[2020-10-23 19:45:12,367] INFO: Created user object for test2
+[2020-10-23 19:45:12,367] INFO: Created user object for test3
+[2020-10-23 19:45:15,153] DEBUG: currentUserInfo() called
+[2020-10-23 19:45:15,153] INFO: No user logged in
+[2020-10-23 19:45:24,912] DEBUG: makeNewUser() called for test4
+[2020-10-23 19:45:24,912] DEBUG: _getInfo() called
+[2020-10-23 19:45:24,913] INFO: Created user object for test1
+[2020-10-23 19:45:24,913] INFO: Created user object for test2
+[2020-10-23 19:45:24,913] INFO: Created user object for test3
+[2020-10-23 19:45:24,913] INFO: Created user object for test4
+[2020-10-23 19:45:24,913] DEBUG: _saveInfo() called
+[2020-10-23 19:45:24,923] DEBUG: _getInfo() called
+[2020-10-23 19:45:24,923] INFO: Created user object for test1
+[2020-10-23 19:45:24,923] INFO: Created user object for test2
+[2020-10-23 19:45:24,923] INFO: Created user object for test3
+[2020-10-23 19:45:24,923] INFO: Created user object for test4
+[2020-10-23 19:45:28,472] DEBUG: currentUserInfo() called
+[2020-10-23 19:45:28,472] INFO: No user logged in
+[2020-10-23 19:45:33,429] DEBUG: makeNewUser() called for test5
+[2020-10-23 19:45:33,429] DEBUG: _getInfo() called
+[2020-10-23 19:45:33,429] INFO: Created user object for test1
+[2020-10-23 19:45:33,429] INFO: Created user object for test2
+[2020-10-23 19:45:33,430] INFO: Created user object for test3
+[2020-10-23 19:45:33,430] INFO: Created user object for test4
+[2020-10-23 19:45:33,430] INFO: Created user object for test5
+[2020-10-23 19:45:33,430] DEBUG: _saveInfo() called
+[2020-10-23 19:45:33,440] DEBUG: _getInfo() called
+[2020-10-23 19:45:33,440] INFO: Created user object for test1
+[2020-10-23 19:45:33,440] INFO: Created user object for test2
+[2020-10-23 19:45:33,440] INFO: Created user object for test3
+[2020-10-23 19:45:33,440] INFO: Created user object for test4
+[2020-10-23 19:45:33,440] INFO: Created user object for test5
+[2020-10-23 19:45:35,932] DEBUG: currentUserInfo() called
+[2020-10-23 19:45:35,932] INFO: No user logged in
+[2020-10-23 19:45:40,716] DEBUG: makeNewUser() called for test6
+[2020-10-23 19:45:40,716] DEBUG: _getInfo() called
+[2020-10-23 19:45:40,717] INFO: Created user object for test1
+[2020-10-23 19:45:40,717] INFO: Created user object for test2
+[2020-10-23 19:45:40,717] INFO: Created user object for test3
+[2020-10-23 19:45:40,717] INFO: Created user object for test4
+[2020-10-23 19:45:40,717] INFO: Created user object for test5
+[2020-10-23 19:45:40,718] INFO: Created user object for test6
+[2020-10-23 19:45:40,718] DEBUG: _saveInfo() called
+[2020-10-23 19:45:40,730] DEBUG: _getInfo() called
+[2020-10-23 19:45:40,730] INFO: Created user object for test1
+[2020-10-23 19:45:40,730] INFO: Created user object for test2
+[2020-10-23 19:45:40,730] INFO: Created user object for test3
+[2020-10-23 19:45:40,730] INFO: Created user object for test4
+[2020-10-23 19:45:40,730] INFO: Created user object for test5
+[2020-10-23 19:45:40,730] INFO: Created user object for test6
+[2020-10-23 19:45:43,119] DEBUG: currentUserInfo() called
+[2020-10-23 19:45:43,120] INFO: No user logged in
+[2020-10-23 19:45:47,716] DEBUG: makeNewUser() called for test7
+[2020-10-23 19:45:47,716] DEBUG: _getInfo() called
+[2020-10-23 19:45:47,716] INFO: Created user object for test1
+[2020-10-23 19:45:47,716] INFO: Created user object for test2
+[2020-10-23 19:45:47,718] INFO: Created user object for test3
+[2020-10-23 19:45:47,718] INFO: Created user object for test4
+[2020-10-23 19:45:47,718] INFO: Created user object for test5
+[2020-10-23 19:45:47,718] INFO: Created user object for test6
+[2020-10-23 19:45:47,718] INFO: Created user object for test7
+[2020-10-23 19:45:47,718] DEBUG: _saveInfo() called
+[2020-10-23 19:45:47,727] DEBUG: _getInfo() called
+[2020-10-23 19:45:47,727] INFO: Created user object for test1
+[2020-10-23 19:45:47,727] INFO: Created user object for test2
+[2020-10-23 19:45:47,727] INFO: Created user object for test3
+[2020-10-23 19:45:47,727] INFO: Created user object for test4
+[2020-10-23 19:45:47,729] INFO: Created user object for test5
+[2020-10-23 19:45:47,729] INFO: Created user object for test6
+[2020-10-23 19:45:47,729] INFO: Created user object for test7
+[2020-10-23 19:45:50,509] DEBUG: currentUserInfo() called
+[2020-10-23 19:45:50,509] INFO: No user logged in
+[2020-10-23 19:45:55,669] DEBUG: makeNewUser() called for test8
+[2020-10-23 19:45:55,669] DEBUG: _getInfo() called
+[2020-10-23 19:45:55,669] INFO: Created user object for test1
+[2020-10-23 19:45:55,670] INFO: Created user object for test2
+[2020-10-23 19:45:55,670] INFO: Created user object for test3
+[2020-10-23 19:45:55,670] INFO: Created user object for test4
+[2020-10-23 19:45:55,670] INFO: Created user object for test5
+[2020-10-23 19:45:55,670] INFO: Created user object for test6
+[2020-10-23 19:45:55,670] INFO: Created user object for test7
+[2020-10-23 19:45:55,670] INFO: Created user object for test8
+[2020-10-23 19:45:55,671] DEBUG: _saveInfo() called
+[2020-10-23 19:45:55,680] DEBUG: _getInfo() called
+[2020-10-23 19:45:55,680] INFO: Created user object for test1
+[2020-10-23 19:45:55,680] INFO: Created user object for test2
+[2020-10-23 19:45:55,680] INFO: Created user object for test3
+[2020-10-23 19:45:55,680] INFO: Created user object for test4
+[2020-10-23 19:45:55,680] INFO: Created user object for test5
+[2020-10-23 19:45:55,680] INFO: Created user object for test6
+[2020-10-23 19:45:55,680] INFO: Created user object for test7
+[2020-10-23 19:45:55,680] INFO: Created user object for test8
+[2020-10-23 19:45:58,574] DEBUG: currentUserInfo() called
+[2020-10-23 19:45:58,574] INFO: No user logged in
+[2020-10-23 19:46:04,144] DEBUG: makeNewUser() called for test9
+[2020-10-23 19:46:04,144] DEBUG: _getInfo() called
+[2020-10-23 19:46:04,144] INFO: Created user object for test1
+[2020-10-23 19:46:04,145] INFO: Created user object for test2
+[2020-10-23 19:46:04,145] INFO: Created user object for test3
+[2020-10-23 19:46:04,145] INFO: Created user object for test4
+[2020-10-23 19:46:04,145] INFO: Created user object for test5
+[2020-10-23 19:46:04,145] INFO: Created user object for test6
+[2020-10-23 19:46:04,145] INFO: Created user object for test7
+[2020-10-23 19:46:04,146] INFO: Created user object for test8
+[2020-10-23 19:46:04,146] INFO: Created user object for test9
+[2020-10-23 19:46:04,146] DEBUG: _saveInfo() called
+[2020-10-23 19:46:04,162] DEBUG: _getInfo() called
+[2020-10-23 19:46:04,162] INFO: Created user object for test1
+[2020-10-23 19:46:04,163] INFO: Created user object for test2
+[2020-10-23 19:46:04,163] INFO: Created user object for test3
+[2020-10-23 19:46:04,163] INFO: Created user object for test4
+[2020-10-23 19:46:04,163] INFO: Created user object for test5
+[2020-10-23 19:46:04,163] INFO: Created user object for test6
+[2020-10-23 19:46:04,163] INFO: Created user object for test7
+[2020-10-23 19:46:04,163] INFO: Created user object for test8
+[2020-10-23 19:46:04,164] INFO: Created user object for test9
+[2020-10-23 19:46:06,767] DEBUG: currentUserInfo() called
+[2020-10-23 19:46:06,767] INFO: No user logged in
+[2020-10-23 19:46:12,700] DEBUG: makeNewUser() called for test10
+[2020-10-23 19:46:12,700] DEBUG: _getInfo() called
+[2020-10-23 19:46:12,700] INFO: Created user object for test1
+[2020-10-23 19:46:12,700] INFO: Created user object for test2
+[2020-10-23 19:46:12,700] INFO: Created user object for test3
+[2020-10-23 19:46:12,700] INFO: Created user object for test4
+[2020-10-23 19:46:12,700] INFO: Created user object for test5
+[2020-10-23 19:46:12,701] INFO: Created user object for test6
+[2020-10-23 19:46:12,701] INFO: Created user object for test7
+[2020-10-23 19:46:12,701] INFO: Created user object for test8
+[2020-10-23 19:46:12,701] INFO: Created user object for test9
+[2020-10-23 19:46:12,701] INFO: Created user object for test10
+[2020-10-23 19:46:12,701] DEBUG: _saveInfo() called
+[2020-10-23 19:46:12,711] DEBUG: _getInfo() called
+[2020-10-23 19:46:12,711] INFO: Created user object for test1
+[2020-10-23 19:46:12,711] INFO: Created user object for test2
+[2020-10-23 19:46:12,711] INFO: Created user object for test3
+[2020-10-23 19:46:12,712] INFO: Created user object for test4
+[2020-10-23 19:46:12,712] INFO: Created user object for test5
+[2020-10-23 19:46:12,712] INFO: Created user object for test6
+[2020-10-23 19:46:12,712] INFO: Created user object for test7
+[2020-10-23 19:46:12,712] INFO: Created user object for test8
+[2020-10-23 19:46:12,712] INFO: Created user object for test9
+[2020-10-23 19:46:12,712] INFO: Created user object for test10
+[2020-10-23 19:46:16,047] DEBUG: currentUserInfo() called
+[2020-10-23 19:46:16,047] INFO: No user logged in
+[2020-10-23 19:46:20,690] DEBUG: makeNewUser() called for test11
+[2020-10-23 19:46:20,690] DEBUG: _getInfo() called
+[2020-10-23 19:46:20,690] INFO: Created user object for test1
+[2020-10-23 19:46:20,691] INFO: Created user object for test2
+[2020-10-23 19:46:20,691] INFO: Created user object for test3
+[2020-10-23 19:46:20,691] INFO: Created user object for test4
+[2020-10-23 19:46:20,691] INFO: Created user object for test5
+[2020-10-23 19:46:20,691] INFO: Created user object for test6
+[2020-10-23 19:46:20,691] INFO: Created user object for test7
+[2020-10-23 19:46:20,691] INFO: Created user object for test8
+[2020-10-23 19:46:20,692] INFO: Created user object for test9
+[2020-10-23 19:46:20,692] INFO: Created user object for test10
+[2020-10-23 19:46:25,902] DEBUG: signInUser() called for 
+[2020-10-23 19:46:25,902] DEBUG: _getInfo() called
+[2020-10-23 19:46:25,903] INFO: Created user object for test1
+[2020-10-23 19:46:25,903] INFO: Created user object for test2
+[2020-10-23 19:46:25,903] INFO: Created user object for test3
+[2020-10-23 19:46:25,903] INFO: Created user object for test4
+[2020-10-23 19:46:25,903] INFO: Created user object for test5
+[2020-10-23 19:46:25,904] INFO: Created user object for test6
+[2020-10-23 19:46:25,904] INFO: Created user object for test7
+[2020-10-23 19:46:25,904] INFO: Created user object for test8
+[2020-10-23 19:46:25,904] INFO: Created user object for test9
+[2020-10-23 19:46:25,904] INFO: Created user object for test10
+[2020-10-23 19:46:25,904] DEBUG: _validateUser() called for 
+[2020-10-23 19:46:25,904] INFO:  was not validated
+[2020-10-23 19:46:25,905] INFO:  could not be verified
+[2020-10-23 19:46:31,776] DEBUG: signInUser() called for test4
+[2020-10-23 19:46:31,777] DEBUG: _getInfo() called
+[2020-10-23 19:46:31,777] INFO: Created user object for test1
+[2020-10-23 19:46:31,777] INFO: Created user object for test2
+[2020-10-23 19:46:31,777] INFO: Created user object for test3
+[2020-10-23 19:46:31,777] INFO: Created user object for test4
+[2020-10-23 19:46:31,778] INFO: Created user object for test5
+[2020-10-23 19:46:31,778] INFO: Created user object for test6
+[2020-10-23 19:46:31,778] INFO: Created user object for test7
+[2020-10-23 19:46:31,778] INFO: Created user object for test8
+[2020-10-23 19:46:31,778] INFO: Created user object for test9
+[2020-10-23 19:46:31,778] INFO: Created user object for test10
+[2020-10-23 19:46:31,778] DEBUG: _validateUser() called for test4
+[2020-10-23 19:46:31,779] INFO: test4 was validated
+[2020-10-23 19:46:31,779] INFO: test4 is signed in
+[2020-10-23 19:46:39,273] DEBUG: currentUserInfo() called
+[2020-10-23 19:46:39,273] INFO: test4 is logged in
+[2020-10-23 19:46:45,214] DEBUG: makeNewUser() called for test11
+[2020-10-23 19:46:45,214] DEBUG: _getInfo() called
+[2020-10-23 19:46:45,214] INFO: Created user object for test1
+[2020-10-23 19:46:45,215] INFO: Created user object for test2
+[2020-10-23 19:46:45,215] INFO: Created user object for test3
+[2020-10-23 19:46:45,215] INFO: Created user object for test4
+[2020-10-23 19:46:45,215] INFO: Created user object for test5
+[2020-10-23 19:46:45,215] INFO: Created user object for test6
+[2020-10-23 19:46:45,215] INFO: Created user object for test7
+[2020-10-23 19:46:45,216] INFO: Created user object for test8
+[2020-10-23 19:46:45,216] INFO: Created user object for test9
+[2020-10-23 19:46:45,216] INFO: Created user object for test10
+[2020-10-23 19:46:52,801] DEBUG: makeNewUser() called for test11
+[2020-10-23 19:46:52,801] DEBUG: _getInfo() called
+[2020-10-23 19:46:52,801] INFO: Created user object for test1
+[2020-10-23 19:46:52,801] INFO: Created user object for test2
+[2020-10-23 19:46:52,801] INFO: Created user object for test3
+[2020-10-23 19:46:52,801] INFO: Created user object for test4
+[2020-10-23 19:46:52,801] INFO: Created user object for test5
+[2020-10-23 19:46:52,801] INFO: Created user object for test6
+[2020-10-23 19:46:52,801] INFO: Created user object for test7
+[2020-10-23 19:46:52,801] INFO: Created user object for test8
+[2020-10-23 19:46:52,801] INFO: Created user object for test9
+[2020-10-23 19:46:52,802] INFO: Created user object for test10
+[2020-10-23 19:47:03,604] DEBUG: currentUserInfo() called
+[2020-10-23 19:47:03,604] INFO: No user logged in
+[2020-10-23 19:47:07,243] DEBUG: currentUserInfo() called
+[2020-10-23 19:47:07,243] INFO: No user logged in
