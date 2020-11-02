@@ -22,9 +22,10 @@ import settings
 
 # Function handles user creation
 def create_user(controller):
-    def exit_create_user():
+    def exit_create_user(op):
         # create_user.grab_release()
-        create_user.destroy()
+        op.destroy()
+        return 0
 
     # username validation using regex
     def username_valid(u):
@@ -44,11 +45,11 @@ def create_user(controller):
     def add_user(controller, username, password):
         if username_valid(username) is not True and settings.debug is False:
             tm.showerror("Username Error", settings.unameErr)
-            exit_create_user()
+            exit_create_user(create_user)
             return 0
         if pwd_valid(password) is not True and settings.debug is False:
             tm.showerror("Password Error", settings.passErr)
-            exit_create_user()
+            exit_create_user(create_user)
             return 0
 
         code = users.makeNewUser(username, password)
@@ -64,16 +65,17 @@ def create_user(controller):
             # Successfully added user
             controller.show_frame(pages.Frames["Login"])
             tm.showinfo("User Created", settings.createdUserNote)
-            exit_create_user()
+            exit_create_user(create_user)
             return 1
         else:
             if type(code) == int and code > 0 and code <= 3:
                 tm.showerror("User Creation Error", err_codes[code])
+                exit_create_user(create_user)
                 return 0
             else:
                 # The user should not reach here
                 tm.showerror("Error?", settings.unableToCreateUser)
-                exit_create_user()
+                exit_create_user(create_user)
                 return 0
 
     # Check if the user is currently signed in. Returns true if signed in. Returns false if not signed in.
@@ -86,7 +88,9 @@ def create_user(controller):
 
     # Make sure to warn the user that they will be signed out when trying to add a user. 
     if is_signedIn():
-        tm.showwarning("Warning", "Adding a user will log you out of your current session!")
+        tm.showwarning("Warning", "Adding a user logs you out of your current session!")
+        users.signOutUser(users.currentUserInfo()[0])
+        controller.show_frame(pages.Frames["Login"])
     
     # Tkinter window params
     create_user = tk.Tk()
@@ -175,6 +179,10 @@ Loads static frames, menues, debugging, etc
 '''
 class Controller(tk.Tk):
     def __init__(self, *args, **kwargs):
+
+        if settings.connected == False:
+            tm.showerror("Error", "No pacemaker connected, exiting!")
+            self.destroy()
 
         # Tkinter window params
         tk.Tk.__init__(self, *args, **kwargs)

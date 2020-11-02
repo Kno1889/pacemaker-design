@@ -117,6 +117,9 @@ class Monitor(tk.Frame):
         # Find the current operating mode
         self.mode = [] if modes.getCurrentMode() is None else modes.getCurrentMode()
 
+        if self.mode == []:
+            tm.showerror("Unexpected Error, no current operating mode for pacemaker") # should not reach here
+
         label = tk.Label(self, text='DCM', font=settings.LARGE_FONT)
         label.grid(row=0, column=0, columnspan=2, pady=20)
 
@@ -171,6 +174,9 @@ class ModeEdit(tk.Frame):
 
         # Get the current mode
         self.mode = [] if modes.getCurrentMode() is None else modes.getCurrentMode()
+
+        if self.mode == []:
+            tm.showerror("Unexpected Error, no current operating mode for pacemaker") # should not reach here
 
         # placeholders for labels and entries
         self.entries = []

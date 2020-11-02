@@ -17,6 +17,8 @@ HEIGHT = 480
 
 debug = False
 
+connected = True
+
 # State Return Strings
 invalidUserErr = '''The username or password you have entered is incorrect. \n\n
                                 Please try again.'''
