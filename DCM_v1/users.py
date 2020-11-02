@@ -45,7 +45,7 @@ def makeNewUser(name, password):
             return 0
         return 3
     logger.info('user was not made for %s')
-    return 0
+    return 1
 
 
 # deletes the given user and the corresponding saved info if they are signed in. Returns true if the user was deleted successfully
