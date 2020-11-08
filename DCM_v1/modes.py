@@ -1,6 +1,6 @@
 # Modes Module
 #
-# Version 0.2
+# Version 1.1
 # Created by: M. Lemcke
 # Date Modified: Oct. 20, 2020
 #
@@ -25,27 +25,36 @@ ranges = {
     "ventricular_amplitude": [1, 0, [0.5, 3.2], [3.5, 7]],
     "ventricular_pulse_width": [1, 0.05, [0.1, 1.9]],
     "ventricular_sensitivity": [1, 0.25, 0.5, 0.75, [1, 10]],
-    "ventricular_refactory_period": [0, 150, 500],
-    "hysteresis": [1, True, False],
-    "rate_smoothing": [1, 0, 3, 6, 9, 12, 15, 18, 21, 25],
     "atrial_amplitude": [1, 0, [0.5, 3.2], [3.5, 7]],
     "atrial_pulse_width": [1, 0.05, [0.1, 1.9]],
     "atrial_sensitivity": [1, 0.25, 0.5, 0.75, [1, 10]],
+    "ventricular_refactory_period": [0, 150, 500],
     "atrial_refactory_period": [0, 150, 500],
-    "post_ventricular_atrial_refractory_period": [0, 150, 500]
+    "post_ventricular_atrial_refractory_period": [0, 150, 500],
+    "hysteresis": [1, 1, 0],
+    "rate_smoothing": [1, 0, 3, 6, 9, 12, 15, 18, 21, 25],
+    "fixed_av_delay": [0, 70, 300],
+    "maximum_sensor_rate": [0, 50, 175],
+    # Activity Threshold range 0-6 represents the 7 possible options
+    "activity_threshold": [0, 0, 6],
+    "reaction_time": [0, 10, 50],
+    "response_factor": [0, 1, 16],
+    "recovery_time": [0, 2, 16]
 }
 
 
 class Mode():
 
-    name = ''               # name code of the pacing module
+    name = ''               # name code of the pacing mode
+    code = 0                # operating code of the pacing mode
     synch = False           # indicates if mode is synchronous
     currentMode = False     # indicates if the pacemaker is operating with the mode
     params = {}             # operation parameters and values
 
     # Initializes all variables from the given parameters
-    def __init__(self, name, synch, params):
+    def __init__(self, name, code, synch, params):
         self.name = name
+        self.code = code
         self.synch = synch
         self.params = params
         logger.info('Created %s mode', self.name)
@@ -104,7 +113,7 @@ def saveParamValues(modeEdit, parameterValues):
     return invalid
 
 
-# Makes the given mode as the current operating mode
+# Returns the active mode
 def getCurrentMode():
     logger.debug('getCurrentMode() called')
     for mode in all_modes:
@@ -134,6 +143,7 @@ def _createModes():
     modes = []
     voo = Mode(
         'voo',
+        0,
         False,
         {
             "upper_rate_limit": 120,
@@ -145,6 +155,7 @@ def _createModes():
     modes.append(voo)
     aoo = Mode(
         'aoo',
+        1,
         False,
         {
             "upper_rate_limit": 120,
@@ -156,6 +167,7 @@ def _createModes():
     modes.append(aoo)
     vvi = Mode(
         'vvi',
+        2,
         True,
         {
             "upper_rate_limit": 120,
@@ -164,13 +176,14 @@ def _createModes():
             "ventricular_pulse_width": 0.4,
             "ventricular_sensitivity": 2.5,
             "ventricular_refactory_period": 320,
-            "hysteresis": False,
+            "hysteresis": 0,
             "rate_smoothing": 0
         }
     )
     modes.append(vvi)
     aai = Mode(
         'aai',
+        3,
         True,
         {
             "upper_rate_limit": 120,
@@ -180,11 +193,123 @@ def _createModes():
             "atrial_sensitivity": 0.75,
             "atrial_refactory_period": 250,
             "post_ventricular_atrial_refractory_period": 250,
-            "hysteresis": False,
+            "hysteresis": 0,
             "rate_smoothing": 0
         }
     )
     modes.append(aai)
+    doo = Mode(
+        'doo',
+        4,
+        False,
+        {
+            "upper_rate_limit": 120,
+            "lower_rate_limit": 60,
+            "ventricular_amplitude": 3.5,
+            "ventricular_pulse_width": 0.4,
+            "atrial_amplitude": 3.5,
+            "atrial_pulse_width": 0.4,
+            "fixed_av_delay": 150
+        }
+    )
+    modes.append(doo)
+    voor = Mode(
+        'voor',
+        5,
+        False,
+        {
+            "upper_rate_limit": 120,
+            "lower_rate_limit": 60,
+            "ventricular_amplitude": 3.5,
+            "ventricular_pulse_width": 0.4,
+            "maximum_sensor_rate": 120,
+            "activity_threshold": 3,
+            "reaction_time": 30,
+            "response_factor": 8,
+            "recovery_time": 5
+        }
+    )
+    modes.append(voor)
+    aoor = Mode(
+        'aoor',
+        6,
+        False,
+        {
+            "upper_rate_limit": 120,
+            "lower_rate_limit": 60,
+            "atrial_amplitude": 3.5,
+            "atrial_pulse_width": 0.4,
+            "maximum_sensor_rate": 120,
+            "activity_threshold": 3,
+            "reaction_time": 30,
+            "response_factor": 8,
+            "recovery_time": 5
+        }
+    )
+    modes.append(aoor)
+    aair = Mode(
+        'aair',
+        7,
+        True,
+        {
+            "upper_rate_limit": 120,
+            "lower_rate_limit": 60,
+            "atrial_amplitude": 3.5,
+            "atrial_pulse_width": 0.4,
+            "atrial_sensitivity": 0.75,
+            "atrial_refactory_period": 250,
+            "post_ventricular_atrial_refractory_period": 250,
+            "hysteresis": 0,
+            "rate_smoothing": 0,
+            "maximum_sensor_rate": 120,
+            "activity_threshold": 3,
+            "reaction_time": 30,
+            "response_factor": 8,
+            "recovery_time": 5
+        }
+    )
+    modes.append(aair)
+    vvir = Mode(
+        'vvir',
+        8,
+        True,
+        {
+            "upper_rate_limit": 120,
+            "lower_rate_limit": 60,
+            "ventricular_amplitude": 3.5,
+            "ventricular_pulse_width": 0.4,
+            "ventricular_sensitivity": 2.5,
+            "ventricular_refactory_period": 320,
+            "hysteresis": 0,
+            "rate_smoothing": 0,
+            "maximum_sensor_rate": 120,
+            "activity_threshold": 3,
+            "reaction_time": 30,
+            "response_factor": 8,
+            "recovery_time": 5
+        }
+    )
+    modes.append(vvir)
+    door = Mode(
+        'door',
+        9,
+        False,
+        {
+            "upper_rate_limit": 120,
+            "lower_rate_limit": 60,
+            "ventricular_amplitude": 3.5,
+            "ventricular_pulse_width": 0.4,
+            "atrial_amplitude": 3.5,
+            "atrial_pulse_width": 0.4,
+            "fixed_av_delay": 150,
+            "maximum_sensor_rate": 120,
+            "activity_threshold": 3,
+            "reaction_time": 30,
+            "response_factor": 8,
+            "recovery_time": 5
+        }
+    )
+    modes.append(door)
     return modes
 
 
