@@ -2,7 +2,7 @@
 #
 # Version 1.1
 # Created by: M. Lemcke
-# Date Modified: Oct. 20, 2020
+# Date Modified: Nov. 9, 2020
 #
 # Purpose: To store and edit parameter information for each operating mode on the pacemaker.
 # This module interfaces with the GUI module by providing information on the current operating
@@ -22,24 +22,22 @@ all_modes = []      # List to hold all operating mode objects
 ranges = {
     "upper_rate_limit": [0, 50, 175],
     "lower_rate_limit": [0, 30, 175],
-    "ventricular_amplitude": [1, 0, [0.5, 3.2], [3.5, 7]],
-    "ventricular_pulse_width": [1, 0.05, [0.1, 1.9]],
-    "ventricular_sensitivity": [1, 0.25, 0.5, 0.75, [1, 10]],
-    "atrial_amplitude": [1, 0, [0.5, 3.2], [3.5, 7]],
-    "atrial_pulse_width": [1, 0.05, [0.1, 1.9]],
-    "atrial_sensitivity": [1, 0.25, 0.5, 0.75, [1, 10]],
-    "ventricular_refactory_period": [0, 150, 500],
-    "atrial_refactory_period": [0, 150, 500],
-    "post_ventricular_atrial_refractory_period": [0, 150, 500],
+    "ventricular_amplitude": [0, 0.0, 5.0],                     # mV
+    "ventricular_pulse_width": [0, 1, 20],                      # msec
+    "atrial_amplitude": [0, 0.0, 5.0],                          # mV
+    "atrial_pulse_width": [0, 1, 20],                           # msec
+    "ventricular_refactory_period": [0, 150, 500],              # msec
+    "atrial_refactory_period": [0, 150, 500],                   # msec
+    "post_ventricular_atrial_refractory_period": [0, 150, 500],  # msec
     "hysteresis": [1, 1, 0],
     "rate_smoothing": [1, 0, 3, 6, 9, 12, 15, 18, 21, 25],
-    "fixed_av_delay": [0, 70, 300],
+    "fixed_av_delay": [0, 70, 300],                             # msec
     "maximum_sensor_rate": [0, 50, 175],
     # Activity Threshold range 0-6 represents the 7 possible options
     "activity_threshold": [0, 0, 6],
-    "reaction_time": [0, 10, 50],
+    "reaction_time": [0, 10, 57],                               # sec
     "response_factor": [0, 1, 16],
-    "recovery_time": [0, 2, 16]
+    "recovery_time": [0, 2, 16]                                 # min
 }
 
 
@@ -149,7 +147,7 @@ def _createModes():
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
             "ventricular_amplitude": 3.5,
-            "ventricular_pulse_width": 0.4
+            "ventricular_pulse_width": 4
         }
     )
     modes.append(voo)
@@ -161,7 +159,7 @@ def _createModes():
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
             "atrial_amplitude": 3.5,
-            "atrial_pulse_width": 0.4
+            "atrial_pulse_width": 4
         }
     )
     modes.append(aoo)
@@ -173,8 +171,7 @@ def _createModes():
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
             "ventricular_amplitude": 3.5,
-            "ventricular_pulse_width": 0.4,
-            "ventricular_sensitivity": 2.5,
+            "ventricular_pulse_width": 4,
             "ventricular_refactory_period": 320,
             "hysteresis": 0,
             "rate_smoothing": 0
@@ -189,8 +186,7 @@ def _createModes():
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
             "atrial_amplitude": 3.5,
-            "atrial_pulse_width": 0.4,
-            "atrial_sensitivity": 0.75,
+            "atrial_pulse_width": 4,
             "atrial_refactory_period": 250,
             "post_ventricular_atrial_refractory_period": 250,
             "hysteresis": 0,
@@ -206,9 +202,9 @@ def _createModes():
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
             "ventricular_amplitude": 3.5,
-            "ventricular_pulse_width": 0.4,
+            "ventricular_pulse_width": 4,
             "atrial_amplitude": 3.5,
-            "atrial_pulse_width": 0.4,
+            "atrial_pulse_width": 4,
             "fixed_av_delay": 150
         }
     )
@@ -221,7 +217,7 @@ def _createModes():
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
             "ventricular_amplitude": 3.5,
-            "ventricular_pulse_width": 0.4,
+            "ventricular_pulse_width": 4,
             "maximum_sensor_rate": 120,
             "activity_threshold": 3,
             "reaction_time": 30,
@@ -238,7 +234,7 @@ def _createModes():
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
             "atrial_amplitude": 3.5,
-            "atrial_pulse_width": 0.4,
+            "atrial_pulse_width": 4,
             "maximum_sensor_rate": 120,
             "activity_threshold": 3,
             "reaction_time": 30,
@@ -255,8 +251,7 @@ def _createModes():
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
             "atrial_amplitude": 3.5,
-            "atrial_pulse_width": 0.4,
-            "atrial_sensitivity": 0.75,
+            "atrial_pulse_width": 4,
             "atrial_refactory_period": 250,
             "post_ventricular_atrial_refractory_period": 250,
             "hysteresis": 0,
@@ -277,8 +272,7 @@ def _createModes():
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
             "ventricular_amplitude": 3.5,
-            "ventricular_pulse_width": 0.4,
-            "ventricular_sensitivity": 2.5,
+            "ventricular_pulse_width": 4,
             "ventricular_refactory_period": 320,
             "hysteresis": 0,
             "rate_smoothing": 0,
@@ -298,9 +292,9 @@ def _createModes():
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
             "ventricular_amplitude": 3.5,
-            "ventricular_pulse_width": 0.4,
+            "ventricular_pulse_width": 4,
             "atrial_amplitude": 3.5,
-            "atrial_pulse_width": 0.4,
+            "atrial_pulse_width": 4,
             "fixed_av_delay": 150,
             "maximum_sensor_rate": 120,
             "activity_threshold": 3,
