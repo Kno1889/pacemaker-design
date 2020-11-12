@@ -10,6 +10,8 @@ import serial
 from struct import pack, unpack, calcsize
 from modes import ranges
 from random import randint
+import numpy as np
+from time import sleep
 
 UINT_8 = 'B'        # Uint8 format character (1 byte)
 UINT_16 = 'H'       # Uint16 format character (2 bytes)
@@ -36,11 +38,19 @@ def startEgram():
     return 1
 
 
+# Add a sampling speed(in sec) and number of data points as parameters
+# Return numpy array
 # Dummy function for egram development
-def getValues():
-    vent = randint(0, 10)
-    atr = randint(0, 10)
-    return vent, atr
+def getValues(sampleSpeed, dataPoints):
+    info = [[], []]
+    for i in range(dataPoints):
+        # Read serial
+        vent = randint(0, 10)
+        atr = randint(0, 10)
+        info[0].append(vent)
+        info[1].append(atr)
+        sleep(sampleSpeed)
+    return np.array(info)
 
 
 # Dummy function for egram development
