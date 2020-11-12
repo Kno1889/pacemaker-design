@@ -22,9 +22,9 @@ all_modes = []      # List to hold all operating mode objects
 ranges = {
     "upper_rate_limit": [0, 50, 175],
     "lower_rate_limit": [0, 30, 175],
-    "ventricular_amplitude": [0, 0.0, 5.0],                     # mV
+    "ventricular_amplitude": [0, 0.0, 5.0],                     # V
     "ventricular_pulse_width": [0, 1, 20],                      # msec
-    "atrial_amplitude": [0, 0.0, 5.0],                          # mV
+    "atrial_amplitude": [0, 0.0, 5.0],                          # V
     "atrial_pulse_width": [0, 1, 20],                           # msec
     "ventricular_refactory_period": [0, 150, 500],              # msec
     "atrial_refactory_period": [0, 150, 500],                   # msec
@@ -45,15 +45,13 @@ class Mode():
 
     name = ''               # name code of the pacing mode
     code = 0                # operating code of the pacing mode
-    synch = False           # indicates if mode is synchronous
     currentMode = False     # indicates if the pacemaker is operating with the mode
     params = {}             # operation parameters and values
 
     # Initializes all variables from the given parameters
-    def __init__(self, name, code, synch, params):
+    def __init__(self, name, code, params):
         self.name = name
         self.code = code
-        self.synch = synch
         self.params = params
         logger.info('Created %s mode', self.name)
 
@@ -142,7 +140,6 @@ def _createModes():
     voo = Mode(
         'voo',
         0,
-        False,
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
@@ -154,7 +151,6 @@ def _createModes():
     aoo = Mode(
         'aoo',
         1,
-        False,
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
@@ -166,7 +162,6 @@ def _createModes():
     vvi = Mode(
         'vvi',
         2,
-        True,
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
@@ -181,7 +176,6 @@ def _createModes():
     aai = Mode(
         'aai',
         3,
-        True,
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
@@ -197,7 +191,6 @@ def _createModes():
     doo = Mode(
         'doo',
         4,
-        False,
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
@@ -212,7 +205,6 @@ def _createModes():
     voor = Mode(
         'voor',
         5,
-        False,
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
@@ -229,7 +221,6 @@ def _createModes():
     aoor = Mode(
         'aoor',
         6,
-        False,
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
@@ -246,7 +237,6 @@ def _createModes():
     aair = Mode(
         'aair',
         7,
-        True,
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
@@ -267,7 +257,6 @@ def _createModes():
     vvir = Mode(
         'vvir',
         8,
-        True,
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
@@ -287,7 +276,6 @@ def _createModes():
     door = Mode(
         'door',
         9,
-        False,
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
