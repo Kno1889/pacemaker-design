@@ -22,9 +22,9 @@ all_modes = []      # List to hold all operating mode objects
 ranges = {
     "upper_rate_limit": [0, 50, 175],
     "lower_rate_limit": [0, 30, 175],
-    "ventricular_amplitude": [0, 0.0, 5.0],                     # V
+    "ventricular_amplitude": [0, 0, 100],                       # %
     "ventricular_pulse_width": [0, 1, 20],                      # msec
-    "atrial_amplitude": [0, 0.0, 5.0],                          # V
+    "atrial_amplitude": [0, 0, 100],                            # %
     "atrial_pulse_width": [0, 1, 20],                           # msec
     "ventricular_refactory_period": [0, 150, 500],              # msec
     "atrial_refactory_period": [0, 150, 500],                   # msec
@@ -143,7 +143,7 @@ def _createModes():
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
-            "ventricular_amplitude": 3.5,
+            "ventricular_amplitude": 70,
             "ventricular_pulse_width": 4
         }
     )
@@ -154,7 +154,7 @@ def _createModes():
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
-            "atrial_amplitude": 3.5,
+            "atrial_amplitude": 70,
             "atrial_pulse_width": 4
         }
     )
@@ -165,7 +165,7 @@ def _createModes():
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
-            "ventricular_amplitude": 3.5,
+            "ventricular_amplitude": 70,
             "ventricular_pulse_width": 4,
             "ventricular_refactory_period": 320,
             "hysteresis": 0,
@@ -179,7 +179,7 @@ def _createModes():
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
-            "atrial_amplitude": 3.5,
+            "atrial_amplitude": 70,
             "atrial_pulse_width": 4,
             "atrial_refactory_period": 250,
             "post_ventricular_atrial_refractory_period": 250,
@@ -194,7 +194,7 @@ def _createModes():
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
-            "ventricular_amplitude": 3.5,
+            "ventricular_amplitude": 70,
             "ventricular_pulse_width": 4,
             "atrial_amplitude": 3.5,
             "atrial_pulse_width": 4,
@@ -208,7 +208,7 @@ def _createModes():
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
-            "ventricular_amplitude": 3.5,
+            "ventricular_amplitude": 70,
             "ventricular_pulse_width": 4,
             "maximum_sensor_rate": 120,
             "activity_threshold": 3,
@@ -224,7 +224,7 @@ def _createModes():
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
-            "atrial_amplitude": 3.5,
+            "atrial_amplitude": 70,
             "atrial_pulse_width": 4,
             "maximum_sensor_rate": 120,
             "activity_threshold": 3,
@@ -240,7 +240,7 @@ def _createModes():
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
-            "atrial_amplitude": 3.5,
+            "atrial_amplitude": 70,
             "atrial_pulse_width": 4,
             "atrial_refactory_period": 250,
             "post_ventricular_atrial_refractory_period": 250,
@@ -260,7 +260,7 @@ def _createModes():
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
-            "ventricular_amplitude": 3.5,
+            "ventricular_amplitude": 70,
             "ventricular_pulse_width": 4,
             "ventricular_refactory_period": 320,
             "hysteresis": 0,
@@ -279,7 +279,7 @@ def _createModes():
         {
             "upper_rate_limit": 120,
             "lower_rate_limit": 60,
-            "ventricular_amplitude": 3.5,
+            "ventricular_amplitude": 70,
             "ventricular_pulse_width": 4,
             "atrial_amplitude": 3.5,
             "atrial_pulse_width": 4,

@@ -19,7 +19,7 @@ SINGLE = 'f'        # Single format character (4 bytes)
 
 SYNCH = 0           # Serial synch code
 
-comPort = 'COM6'    # Communication port identifier
+comPort = 'COM5'    # Communication port identifier
 
 # Initialize serial connection parameters
 ser = serial.Serial(port=comPort, baudrate=57600, bytesize=serial.EIGHTBITS)
@@ -51,7 +51,7 @@ def startEgram():
 # Return numpy array, return false if egram is not running
 # Dummy function for egram development
 def getEgramValues(sampleSpeed, dataPoints):
-    if ser.is_open():
+    if ser.isOpen():
         info = [[], []]
         for i in range(dataPoints):
             # Serial read ventrical and atrium signal
@@ -68,7 +68,7 @@ def getEgramValues(sampleSpeed, dataPoints):
 # Returns true if sucessful, return false if egram is not open
 # Dummy function for egram development
 def stopEgram():
-    if ser.is_open():
+    if ser.isOpen():
         _sendCommand(3)
         _endSerial()
         return True
@@ -148,7 +148,7 @@ def _sendCommand(fn_code):
 def _startSerial():
     try:
         # Close old serial connection and start new
-        if ser.is_open():
+        if ser.isOpen():
             ser.close()
         ser.open()
         return True
