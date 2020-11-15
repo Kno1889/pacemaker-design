@@ -17,12 +17,13 @@ UINT_8 = 'B'        # Uint8 format character (1 byte)
 UINT_16 = 'H'       # Uint16 format character (2 bytes)
 SINGLE = 'f'        # Single format character (4 bytes)
 
-SYNCH = 0           # Serial synch code
+SYNCH = 22           # Serial synch code
 
 comPort = 'COM5'    # Communication port identifier
 
 # Initialize serial connection parameters
-ser = serial.Serial(port=comPort, baudrate=57600, bytesize=serial.EIGHTBITS)
+ser = serial.Serial(port=comPort, baudrate=115200, bytesize=serial.EIGHTBITS,
+                    stopbits=serial.STOPBITS_ONE, parity=serial.PARITY_NONE, timeout=0)
 
 
 # Function to get the device ID of the connected pacemaker
@@ -79,7 +80,7 @@ def stopEgram():
 # Returns true if sucessful, return false if no device connected
 def setPacemakerMode(mode):
     if _startSerial():
-        fn_code = 1
+        fn_code = 85
         buffer = '='
         # Add function code and mode number to the binary value
         binary = pack(UINT_8, SYNCH) + pack(UINT_8, fn_code) + \
@@ -112,7 +113,7 @@ def setPacemakerMode(mode):
             if not match:
                 binary += pack(size, 0)
             buffer += size
-        # Serial write binary
+        ser.write(binary)
         print(calcsize(buffer))
         print(unpack(buffer, binary))
         _endSerial()
@@ -166,3 +167,8 @@ def _endSerial():
     except(serial.SerialException):
         print("Cannot connect to serial")
         return False
+
+
+ser.close()
+ser.open()
+ser.write(pack(UINT_8, 22))
