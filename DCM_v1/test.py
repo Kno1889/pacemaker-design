@@ -4,4 +4,4 @@ from struct import pack, calcsize
 
 
 modes.setCurrentMode(modes.allModes()[6])
-print(com.sendParams(modes.getCurrentMode()))
+print(com.setPacemakerMode(modes.getCurrentMode()))

@@ -21,6 +21,7 @@ SYNCH = 22           # Serial synch code
 
 comPort = 'COM5'    # Communication port identifier
 
+
 # Initialize serial connection parameters
 ser = serial.Serial(port=comPort, baudrate=115200, bytesize=serial.EIGHTBITS,
                     stopbits=serial.STOPBITS_ONE, parity=serial.PARITY_NONE, timeout=0)
@@ -83,8 +84,9 @@ def setPacemakerMode(mode):
         fn_code = 85
         buffer = '='
         # Add function code and mode number to the binary value
-        binary = pack(UINT_8, SYNCH) + pack(UINT_8, fn_code) + \
-            pack(UINT_8, mode.code)
+        # binary = pack(UINT_8, SYNCH) + pack(UINT_8, fn_code) + \
+        #     pack(UINT_8, mode.code)
+        binary = b"\x16\x55" + pack(UINT_8, mode.code)
         buffer += UINT_8 + UINT_8 + UINT_8
         # Add a binary value for every possible parameter value
         for r in ranges:
@@ -169,6 +171,6 @@ def _endSerial():
         return False
 
 
-ser.close()
-ser.open()
-ser.write(pack(UINT_8, 22))
+# ser.close()
+# ser.open()
+# ser.write(pack(UINT_8, 22))
