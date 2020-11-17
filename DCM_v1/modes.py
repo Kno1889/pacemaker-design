@@ -22,9 +22,9 @@ all_modes = []      # List to hold all operating mode objects
 ranges = {
     "upper_rate_limit": [0, 50, 175],
     "lower_rate_limit": [0, 30, 175],
-    "ventricular_amplitude": [0, 0.0, 100.0],                       # %
+    "ventricular_amplitude": [0, 0, 100],                       # %
     "ventricular_pulse_width": [0, 1, 20],                      # msec
-    "atrial_amplitude": [0, 0.0, 100.0],                            # %
+    "atrial_amplitude": [0, 0, 100],                            # %
     "atrial_pulse_width": [0, 1, 20],                           # msec
     "ventricular_refactory_period": [0, 150, 500],              # msec
     "atrial_refactory_period": [0, 150, 500],                   # msec
