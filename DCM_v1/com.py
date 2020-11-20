@@ -21,6 +21,8 @@ ser = serial.Serial()
 
 
 class Com():
+
+    # Initializes class variables and state variable ser parameters
     def __init__(self, port):
 
         self.dataBuffer = ''
@@ -51,8 +53,8 @@ class Com():
         except(serial.SerialException):
             print("Serial cannot be connected")
 
-    # Send all mode information and parameters to pacemaker via serial communication
-    # Returns true if sucessful, return false if no device connected
+    # Sends parameter data of the given mode to the pacemaker to change the current operating mode.
+    # Returns false is the serial connection was lost, returns true if successful
     def setPacemakerMode(self, mode):
         if self._startSerial():
             # Add function code and mode number to the binary value
@@ -79,11 +81,8 @@ class Com():
             return True
         return False
 
-    # Read the current mode and parameter values on the pacemaker
-    # Returns a Mode object created using the parameters recieved from the pacemaker, returns 0 if no device connected
-    # Frontend will find the existing mode object with the same code number and pass it to the saveParamValues() function
-    # in the modes module with the params dict variable in the mode object returned
-    # Temporary dummy function
+    # requests the current mode information on the pacemaker. Returns a mode object with the name
+    # “current” and the mode parameters on the pacemaker. Returns 0 if serial connection was interrupted
     def getPacemakerMode(self):
         if self._startSerial():
             code = -1
@@ -102,8 +101,9 @@ class Com():
             return mode
         return 0
 
-    # Function to get the device ID of the connected pacemaker
-    # Returns device id number, returns 0 if no device connected
+    # requests the serial number of the pacemaker connected to the DCM. Returns the device
+    # serial number, returns 0 if the serial connection was interrupted
+    # Not finished
     def getDeviceID(self):
         if self._startSerial():
             binary = b"\x16\x44" + b"\x00"*(calcsize(self.dataBuffer)+1)
@@ -115,8 +115,9 @@ class Com():
             return deviceID
         return 0
 
-    # Tells the pacemaker to start sending egram data
-    # Returns true if sucessful, return false if no device connected
+    # Sends a request to the pacemaker to start sending egram data. Returns true  if
+    # successful, returns false if the serial connection was interrupted
+
     def startEgram(self):
         if self._startSerial():
             binary = b"\x16\x11" + b"\x00"*(calcsize(self.dataBuffer)+1)
@@ -124,8 +125,8 @@ class Com():
             return True
         return False
 
-    # Tells the pacemaker to stop sending egram data
-    # Returns true if sucessful, return false if egram is not open
+    # Sends a request to the pacemaker to stop sending egram data. Returns true if
+    # successful, returns false if the serial connection was interrupted
     def stopEgram(self):
         if ser.isOpen():
             binary = b"\x16\x33" + b"\x00"*(calcsize(self.dataBuffer)+1)
@@ -134,8 +135,9 @@ class Com():
             return True
         return False
 
-    # Retrieves egram data given a sampling speed(in sec) and number of data points
-    # Return numpy array, return false if egram is not running
+    # Returns a 2 dimensional numpy array with dataPoints number of samples of atrial
+    # and ventricular signal values taken at the time intervals specified by sampleSpeed.
+    # If serial connection was interrupted, returns false instead
     # Dummy function for egram development
     def getEgramValues(self, sampleSpeed, dataPoints):
         if ser.isOpen():
@@ -150,8 +152,7 @@ class Com():
             return np.array(info)
         return False
 
-    # Start serial communication
-    # Return true if successful, return false if no device connected
+    # opens the serial connection. Returns true if successful, returns false otherwise
     def _startSerial(self):
         try:
             # Close old serial connection and start new
@@ -163,8 +164,7 @@ class Com():
             print("Lost serial connection")
             return False
 
-    # Stop serial communication
-    # Return true if successful, return false if no device connected
+    # closes the serial connection. Returns true if successful, returns false otherwise
     def _endSerial(self):
         try:
             ser.close()
