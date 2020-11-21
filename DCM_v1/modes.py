@@ -29,7 +29,6 @@ ranges = {
     "ventricular_refactory_period": [0, 150, 500],              # msec
     "atrial_refactory_period": [0, 150, 500],                   # msec
     "post_ventricular_atrial_refractory_period": [0, 150, 500],  # msec
-    "hysteresis": [1, 1, 0],
     "rate_smoothing": [1, 0, 3, 6, 9, 12, 15, 18, 21, 25],
     "fixed_av_delay": [0, 70, 300],                             # msec
     "maximum_sensor_rate": [0, 50, 175],
@@ -168,7 +167,6 @@ def _createModes():
             "ventricular_amplitude": 70,
             "ventricular_pulse_width": 4,
             "ventricular_refactory_period": 320,
-            "hysteresis": 0,
             "rate_smoothing": 0
         }
     )
@@ -183,7 +181,6 @@ def _createModes():
             "atrial_pulse_width": 4,
             "atrial_refactory_period": 250,
             "post_ventricular_atrial_refractory_period": 250,
-            "hysteresis": 0,
             "rate_smoothing": 0
         }
     )
@@ -244,7 +241,6 @@ def _createModes():
             "atrial_pulse_width": 4,
             "atrial_refactory_period": 250,
             "post_ventricular_atrial_refractory_period": 250,
-            "hysteresis": 0,
             "rate_smoothing": 0,
             "maximum_sensor_rate": 120,
             "activity_threshold": 3,
@@ -263,7 +259,6 @@ def _createModes():
             "ventricular_amplitude": 70,
             "ventricular_pulse_width": 4,
             "ventricular_refactory_period": 320,
-            "hysteresis": 0,
             "rate_smoothing": 0,
             "maximum_sensor_rate": 120,
             "activity_threshold": 3,
