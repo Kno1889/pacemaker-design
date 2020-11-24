@@ -98,6 +98,7 @@ class Com():
             for p in params:
                 params[p], data = data[0], data[1:]
             mode = Mode('current', code, params)
+            self._endSerial()
             return mode
         return 0
 

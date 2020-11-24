@@ -33,7 +33,7 @@ ranges = {
     "fixed_av_delay": [0, 70, 300],                             # msec
     "maximum_sensor_rate": [0, 50, 175],
     # Activity Threshold range 0-6 represents the 7 possible options
-    "activity_threshold": [0, 0, 6],
+    "activity_threshold": [0, 0.0, 1.0],
     "reaction_time": [0, 10, 57],                               # sec
     "response_factor": [0, 1, 16],
     "recovery_time": [0, 2, 16]                                 # min
@@ -208,7 +208,7 @@ def _createModes():
             "ventricular_amplitude": 70,
             "ventricular_pulse_width": 4,
             "maximum_sensor_rate": 120,
-            "activity_threshold": 3,
+            "activity_threshold": 0.5,
             "reaction_time": 30,
             "response_factor": 8,
             "recovery_time": 5
@@ -224,7 +224,7 @@ def _createModes():
             "atrial_amplitude": 70,
             "atrial_pulse_width": 4,
             "maximum_sensor_rate": 120,
-            "activity_threshold": 3,
+            "activity_threshold": 0.5,
             "reaction_time": 30,
             "response_factor": 8,
             "recovery_time": 5
@@ -243,7 +243,7 @@ def _createModes():
             "post_ventricular_atrial_refractory_period": 250,
             "rate_smoothing": 0,
             "maximum_sensor_rate": 120,
-            "activity_threshold": 3,
+            "activity_threshold": 0.5,
             "reaction_time": 30,
             "response_factor": 8,
             "recovery_time": 5
@@ -261,7 +261,7 @@ def _createModes():
             "ventricular_refactory_period": 320,
             "rate_smoothing": 0,
             "maximum_sensor_rate": 120,
-            "activity_threshold": 3,
+            "activity_threshold": 0.5,
             "reaction_time": 30,
             "response_factor": 8,
             "recovery_time": 5
@@ -280,7 +280,7 @@ def _createModes():
             "atrial_pulse_width": 4,
             "fixed_av_delay": 150,
             "maximum_sensor_rate": 120,
-            "activity_threshold": 3,
+            "activity_threshold": 0.5,
             "reaction_time": 30,
             "response_factor": 8,
             "recovery_time": 5
