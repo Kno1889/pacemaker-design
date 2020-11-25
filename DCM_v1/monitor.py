@@ -16,15 +16,20 @@ from tkinter import messagebox as tm
 import users
 import modes
 
+from com import Com
+
 import traceback
 
 import pages
 import settings
 
+c = Com('com5')
 
 # Log Out of Session
+
+
 def exit_session(controller):
-    # Return Back to Device ID Frame 
+    # Return Back to Device ID Frame
     controller.show_frame(pages.Frames["DevID"])
 
     # Call the log out function in the backend
@@ -43,6 +48,8 @@ Description:
 Tkinter class used to define the frame for when the user chooses an
 operating mode for the pacemaker. 
 '''
+
+
 class DefMode(tk.Frame):
 
     def __init__(self, parent, controller):
@@ -54,22 +61,25 @@ class DefMode(tk.Frame):
         self.columnconfigure(0, weight=1)
 
         # Widgets
-        page_title = tk.Label(self, text="Mode Selection", font=settings.LARGE_FONT)
+        page_title = tk.Label(self, text="Mode Selection",
+                              font=settings.LARGE_FONT)
         mode_label = tk.Label(self, text="Mode: ", font=settings.NORM_FONT)
-        b1 = ttk.Button(self, text="Set", command=lambda: self.set_mode(controller, choice))
-        b2 = ttk.Button(self, text="Exit Session", command=lambda: exit_session(controller))
+        b1 = ttk.Button(self, text="Set",
+                        command=lambda: self.set_mode(controller, choice))
+        b2 = ttk.Button(self, text="Exit Session",
+                        command=lambda: exit_session(controller))
 
         # Get all possible modes and ensure that a default option is "chosen"
         mode_options = [mode.name for mode in modes.allModes()]
         mode_options.insert(0, "Choose")
 
-        # Create a Tkinter string var which is used for dropdown choice 
+        # Create a Tkinter string var which is used for dropdown choice
         choice = tk.StringVar(self)
         choice.set(mode_options[0])
 
         # Define dropdown widget
         dropdown = ttk.OptionMenu(self, choice, *mode_options)
-        
+
         # Placement of widgets
         page_title.grid(row=0, column=0, ipadx=0, ipady=50)
         mode_label.grid(row=1, column=0)
@@ -89,6 +99,8 @@ class DefMode(tk.Frame):
                     # Calls the backend function setCurrentMode()
                     modes.setCurrentMode(mode)
 
+                    c.setPacemakerMode(modes.getCurrentMode())
+
                     # dynamic loading of the next frame
                     # This is because the data does not exist until after
                     F = pages.customDataFrame["Monitor"]
@@ -105,6 +117,8 @@ Description:
 Displays current operating mode and current parameters. Provides options to the user
 to edit the current mode, change mode, and exit current session.
 '''
+
+
 class Monitor(tk.Frame):
 
     def __init__(self, parent, controller):
@@ -118,24 +132,31 @@ class Monitor(tk.Frame):
         self.mode = [] if modes.getCurrentMode() is None else modes.getCurrentMode()
 
         if self.mode == []:
-            tm.showerror("Unexpected Error, no current operating mode for pacemaker") # should not reach here
+            # should not reach here
+            tm.showerror(
+                "Unexpected Error, no current operating mode for pacemaker")
 
         label = tk.Label(self, text='DCM', font=settings.LARGE_FONT)
         label.grid(row=0, column=0, columnspan=2, pady=20)
 
-        # Dynamically create widgets for various parameters 
+        # Dynamically create widgets for various parameters
         x = 1
         for key in self.mode.params:
-            dcm_data_label = tk.Label(self, text='{} :'.format(key), font=settings.NORM_FONT)
-            dcm_value_label = tk.Label(self, text='{}'.format(self.mode.params[key]), font=settings.NORM_FONT)
+            dcm_data_label = tk.Label(
+                self, text='{} :'.format(key), font=settings.NORM_FONT)
+            dcm_value_label = tk.Label(self, text='{}'.format(
+                self.mode.params[key]), font=settings.NORM_FONT)
             dcm_data_label.grid(row=x, column=0, sticky="nsew")
             dcm_value_label.grid(row=x, column=1, sticky="nsew")
             x += 1
 
         # Button Widgets
-        b1 = ttk.Button(self, text="Edit Parameters", command=lambda: self.edit_params())
-        b2 = ttk.Button(self, text="Change Mode", command=lambda: self.change_mode())
-        bx = ttk.Button(self, text="Exit Session", command=lambda: exit_session(controller))
+        b1 = ttk.Button(self, text="Edit Parameters",
+                        command=lambda: self.edit_params())
+        b2 = ttk.Button(self, text="Change Mode",
+                        command=lambda: self.change_mode())
+        bx = ttk.Button(self, text="Exit Session",
+                        command=lambda: exit_session(controller))
 
         # Alignment of Widgets
         b1.grid(row=x+1, column=0, sticky="nswe", columnspan=2, pady=10)
@@ -157,6 +178,7 @@ class Monitor(tk.Frame):
         self.controller.show_frame(pages.Frames["DefMode"])
         self.destroy()
 
+
 '''
 Class: Mode Edit
 
@@ -164,6 +186,8 @@ Description:
 Tkinter class used for defining the window where the user would change the parameters
 of the pacemaker. 
 '''
+
+
 class ModeEdit(tk.Frame):
     def __init__(self, parent, controller):
         # Tkinter Fame Setup
@@ -176,7 +200,9 @@ class ModeEdit(tk.Frame):
         self.mode = [] if modes.getCurrentMode() is None else modes.getCurrentMode()
 
         if self.mode == []:
-            tm.showerror("Unexpected Error, no current operating mode for pacemaker") # should not reach here
+            # should not reach here
+            tm.showerror(
+                "Unexpected Error, no current operating mode for pacemaker")
 
         # placeholders for labels and entries
         self.entries = []
@@ -189,7 +215,8 @@ class ModeEdit(tk.Frame):
         x = 1
         for key in self.mode.params:
             text = tk.StringVar(self, value=self.mode.params[key])
-            dcm_data_label = tk.Label(self, text='{} :'.format(key), font=settings.NORM_FONT)
+            dcm_data_label = tk.Label(
+                self, text='{} :'.format(key), font=settings.NORM_FONT)
             dcm_value = tk.Entry(self, textvariable=text)
             dcm_data_label.grid(row=x, column=0, sticky="nsew")
             dcm_value.grid(row=x, column=1, sticky="nsew")
@@ -214,6 +241,7 @@ class ModeEdit(tk.Frame):
             status = modes.saveParamValues(modes.getCurrentMode(), params)
             if status == []:
                 tm.showinfo("Success", "Successfully changed mode paramters")
+                c.setPacemakerMode(modes.getCurrentMode())
             elif type(status) == list and len(status) > 0:
                 err_msg = "These paramters are invalid:"
                 for i in status:
@@ -245,5 +273,6 @@ class ModeEdit(tk.Frame):
     def get_param_dict(self):
         params_rebuilt = {}
         for i in range(len(self.entries)):
-            params_rebuilt[self.labels[i].cget("text")[:-2]] = float(self.entries[i].get())
+            params_rebuilt[self.labels[i].cget(
+                "text")[:-2]] = float(self.entries[i].get())
         return params_rebuilt

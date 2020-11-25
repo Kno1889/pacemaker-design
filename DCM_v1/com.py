@@ -53,8 +53,8 @@ class Com():
         except(serial.SerialException):
             print("Serial cannot be connected")
 
-    # Sends parameter data of the given mode to the pacemaker to change the current operating mode.
-    # Returns false is the serial connection was lost, returns true if successful
+        # Sends parameter data of the given mode to the pacemaker to change the current operating mode.
+        # Returns false is the serial connection was lost, returns true if successful
     def setPacemakerMode(self, mode):
         if self._startSerial():
             # Add function code and mode number to the binary value
@@ -92,6 +92,7 @@ class Com():
             sleep(0.1)
             buffer = '=' + UINT_8 + self.dataBuffer
             data = ser.read(calcsize(self.dataBuffer)+1)
+            print(data)
             data = unpack(buffer, data)
             code, data = data[0], data[1:]
             params.update(ranges)
@@ -111,6 +112,8 @@ class Com():
             ser.write(binary)
             sleep(0.1)
             deviceID = 0
+            data = ser.read(calcsize(self.dataBuffer)+1)
+            print(data)
             # Serial read id number
             self._endSerial()
             return deviceID
@@ -123,6 +126,9 @@ class Com():
         if self._startSerial():
             binary = b"\x16\x11" + b"\x00"*(calcsize(self.dataBuffer)+1)
             ser.write(binary)
+            sleep(0.1)
+            data = ser.read(calcsize(self.dataBuffer)+1)
+            print(data)
             return True
         return False
 

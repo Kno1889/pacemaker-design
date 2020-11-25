@@ -94,8 +94,12 @@ def saveParamValues(modeEdit, parameterValues):
                 if mode.name == modeEdit.name:
                     for param in parameterValues:
                         try:
-                            mode.params[param]
-                            mode.params[param] = parameterValues[param]
+                            if type(mode.params[param]) == int:
+                                mode.params[param] = int(
+                                    parameterValues[param])
+                            else:
+                                mode.params[param] = float(
+                                    parameterValues[param])
                         except KeyError:
                             logger.error(
                                 '%s operating parameter does not exist in the %s mode', param, mode.name)
@@ -193,7 +197,7 @@ def _createModes():
             "lower_rate_limit": 60,
             "ventricular_amplitude": 70,
             "ventricular_pulse_width": 4,
-            "atrial_amplitude": 3.5,
+            "atrial_amplitude": 70,
             "atrial_pulse_width": 4,
             "fixed_av_delay": 150
         }
@@ -276,7 +280,7 @@ def _createModes():
             "lower_rate_limit": 60,
             "ventricular_amplitude": 70,
             "ventricular_pulse_width": 4,
-            "atrial_amplitude": 3.5,
+            "atrial_amplitude": 70,
             "atrial_pulse_width": 4,
             "fixed_av_delay": 150,
             "maximum_sensor_rate": 120,

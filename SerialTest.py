@@ -14,4 +14,4 @@ ser = serial.Serial(port=comPort, baudrate=9600, bytesize=serial.EIGHTBITS,
 
 ser.close()
 ser.open()
-ser.write(pack(UINT_8, 22))
+ser.write(b'hello')
