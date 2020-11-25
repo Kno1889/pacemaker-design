@@ -8,9 +8,11 @@ MODE = 0
 c = Com('com5')     # Set to your com port number
 
 
-modes.setCurrentMode(modes.allModes()[MODE])
-currentMode = modes.getCurrentMode()
-print(c.setPacemakerMode(currentMode))
+# modes.setCurrentMode(modes.allModes()[MODE])
+# currentMode = modes.getCurrentMode()
+# print(c.setPacemakerMode(currentMode))
+
+c.getDeviceID()
 
 
 # Should always print true when you run it. Otherwise there is a problem with the serial connection
