@@ -97,7 +97,7 @@ def _readData():
     rawData = {}
     currentData = {}
     try:
-        with open('data/data.json') as infile:
+        with open('DCM_v1/data/data.json') as infile:
             rawData = json.load(infile)
             for p in rawData['pacemakers']:
                 logger.debug('Pacemaker %s data read', p['model'])
@@ -134,7 +134,7 @@ def _writeData():
         all_data['pacemakers'].append(current_data)
         logger.info('First pacemaker added')
     try:
-        with open('data/data.json', 'w') as outfile:
+        with open('DCM_v1/data/data.json', 'w') as outfile:
             json.dump(all_data, outfile)
             logger.info('Data written to JSON file')
     except:
@@ -148,8 +148,8 @@ def _startLog():
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.WARNING)
 
-    f_handler = logging.FileHandler('logs/file.log')
-    l_handler = logging.FileHandler('logs/data.log')
+    f_handler = logging.FileHandler('DCM_v1/logs/file.log')
+    l_handler = logging.FileHandler('DCM_v1/logs/data.log')
     f_formatter = logging.Formatter(
         '[%(asctime)s] - %(name)s -  %(levelname)s: %(message)s')
     l_formatter = logging.Formatter(

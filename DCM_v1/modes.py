@@ -29,12 +29,11 @@ ranges = {
     "ventricular_refactory_period": [0, 150, 500],              # msec
     "atrial_refactory_period": [0, 150, 500],                   # msec
     "post_ventricular_atrial_refractory_period": [0, 150, 500],  # msec
-    "hysteresis": [1, 1, 0],
     "rate_smoothing": [1, 0, 3, 6, 9, 12, 15, 18, 21, 25],
     "fixed_av_delay": [0, 70, 300],                             # msec
     "maximum_sensor_rate": [0, 50, 175],
     # Activity Threshold range 0-6 represents the 7 possible options
-    "activity_threshold": [0, 0, 6],
+    "activity_threshold": [0, 0.0, 1.0],
     "reaction_time": [0, 10, 57],                               # sec
     "response_factor": [0, 1, 16],
     "recovery_time": [0, 2, 16]                                 # min
@@ -95,8 +94,12 @@ def saveParamValues(modeEdit, parameterValues):
                 if mode.name == modeEdit.name:
                     for param in parameterValues:
                         try:
-                            mode.params[param]
-                            mode.params[param] = parameterValues[param]
+                            if type(mode.params[param]) == int:
+                                mode.params[param] = int(
+                                    parameterValues[param])
+                            else:
+                                mode.params[param] = float(
+                                    parameterValues[param])
                         except KeyError:
                             logger.error(
                                 '%s operating parameter does not exist in the %s mode', param, mode.name)
@@ -168,7 +171,6 @@ def _createModes():
             "ventricular_amplitude": 70,
             "ventricular_pulse_width": 4,
             "ventricular_refactory_period": 320,
-            "hysteresis": 0,
             "rate_smoothing": 0
         }
     )
@@ -183,7 +185,6 @@ def _createModes():
             "atrial_pulse_width": 4,
             "atrial_refactory_period": 250,
             "post_ventricular_atrial_refractory_period": 250,
-            "hysteresis": 0,
             "rate_smoothing": 0
         }
     )
@@ -196,7 +197,7 @@ def _createModes():
             "lower_rate_limit": 60,
             "ventricular_amplitude": 70,
             "ventricular_pulse_width": 4,
-            "atrial_amplitude": 3.5,
+            "atrial_amplitude": 70,
             "atrial_pulse_width": 4,
             "fixed_av_delay": 150
         }
@@ -211,7 +212,7 @@ def _createModes():
             "ventricular_amplitude": 70,
             "ventricular_pulse_width": 4,
             "maximum_sensor_rate": 120,
-            "activity_threshold": 3,
+            "activity_threshold": 0.5,
             "reaction_time": 30,
             "response_factor": 8,
             "recovery_time": 5
@@ -227,7 +228,7 @@ def _createModes():
             "atrial_amplitude": 70,
             "atrial_pulse_width": 4,
             "maximum_sensor_rate": 120,
-            "activity_threshold": 3,
+            "activity_threshold": 0.5,
             "reaction_time": 30,
             "response_factor": 8,
             "recovery_time": 5
@@ -244,10 +245,9 @@ def _createModes():
             "atrial_pulse_width": 4,
             "atrial_refactory_period": 250,
             "post_ventricular_atrial_refractory_period": 250,
-            "hysteresis": 0,
             "rate_smoothing": 0,
             "maximum_sensor_rate": 120,
-            "activity_threshold": 3,
+            "activity_threshold": 0.5,
             "reaction_time": 30,
             "response_factor": 8,
             "recovery_time": 5
@@ -263,10 +263,9 @@ def _createModes():
             "ventricular_amplitude": 70,
             "ventricular_pulse_width": 4,
             "ventricular_refactory_period": 320,
-            "hysteresis": 0,
             "rate_smoothing": 0,
             "maximum_sensor_rate": 120,
-            "activity_threshold": 3,
+            "activity_threshold": 0.5,
             "reaction_time": 30,
             "response_factor": 8,
             "recovery_time": 5
@@ -281,11 +280,11 @@ def _createModes():
             "lower_rate_limit": 60,
             "ventricular_amplitude": 70,
             "ventricular_pulse_width": 4,
-            "atrial_amplitude": 3.5,
+            "atrial_amplitude": 70,
             "atrial_pulse_width": 4,
             "fixed_av_delay": 150,
             "maximum_sensor_rate": 120,
-            "activity_threshold": 3,
+            "activity_threshold": 0.5,
             "reaction_time": 30,
             "response_factor": 8,
             "recovery_time": 5
@@ -300,8 +299,8 @@ def _startLog():
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.WARNING)
 
-    f_handler = logging.FileHandler('logs/file.log')
-    l_handler = logging.FileHandler('logs/modes.log')
+    f_handler = logging.FileHandler('DCM_v1/logs/file.log')
+    l_handler = logging.FileHandler('DCM_v1/logs/modes.log')
     f_formatter = logging.Formatter(
         '[%(asctime)s] - %(name)s -  %(levelname)s: %(message)s')
     l_formatter = logging.Formatter(
