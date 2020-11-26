@@ -60,7 +60,9 @@ class LoginPage(tk.Frame):
 
     def authenticate(self, username, password):
         if users.signInUser(username.get(), password.get()):
-            self.controller.show_frame(pages.Frames["DefMode"])
+            # Show the heartview frame and start data collection
+            self.controller.show_frame(pages.Frames["HeartView"])
+            settings.PD_Flag = True
 
             # enable user deletion and user editing
             self.controller.user_menu.entryconfigure(1, state=tk.NORMAL)

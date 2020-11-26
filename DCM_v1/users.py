@@ -143,8 +143,8 @@ def _startLog():
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.WARNING)
 
-    f_handler = logging.FileHandler('DCM_v1/logs/file.log')
-    l_handler = logging.FileHandler('DCM_v1/logs/users.log')
+    f_handler = logging.FileHandler('logs/file.log')
+    l_handler = logging.FileHandler('logs/users.log')
     f_formatter = logging.Formatter(
         '[%(asctime)s] - %(name)s -  %(levelname)s: %(message)s')
     l_formatter = logging.Formatter(

@@ -215,7 +215,6 @@ class Controller(tk.Tk):
 
     # Method used for switching frames
     def show_frame(self, cont):
-
         frame = self.frames[cont]
         frame.tkraise()
 

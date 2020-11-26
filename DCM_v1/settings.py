@@ -19,6 +19,9 @@ debug = False
 
 connected = True
 
+# Get pacemaker data
+PD_Flag = False
+
 # State Return Strings
 invalidUserErr = '''The username or password you have entered is incorrect. \n\n
                                 Please try again.'''

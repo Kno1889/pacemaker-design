@@ -23,8 +23,8 @@ comPort = 'COM5'    # Communication port identifier
 
 
 # Initialize serial connection parameters
-ser = serial.Serial(port=comPort, baudrate=115200, bytesize=serial.EIGHTBITS,
-                    stopbits=serial.STOPBITS_ONE, parity=serial.PARITY_NONE, timeout=0)
+#ser = serial.Serial(port=comPort, baudrate=115200, bytesize=serial.EIGHTBITS,
+#                    stopbits=serial.STOPBITS_ONE, parity=serial.PARITY_NONE, timeout=0)
 
 
 # Function to get the device ID of the connected pacemaker
@@ -52,18 +52,18 @@ def startEgram():
 # Retrieves egram data given a sampling speed(in sec) and number of data points
 # Return numpy array, return false if egram is not running
 # Dummy function for egram development
-def getEgramValues(sampleSpeed, dataPoints):
-    if ser.isOpen():
-        info = [[], []]
-        for i in range(dataPoints):
-            # Serial read ventrical and atrium signal
-            vent = randint(0, 10)
-            atr = randint(0, 10)
-            info[0].append(vent)
-            info[1].append(atr)
-            sleep(sampleSpeed)
-        return np.array(info)
-    return False
+def getEgramValues( dataPoints):
+    #if ser.isOpen():
+    info = [[], []]
+    for i in range(dataPoints):
+        # Serial read ventrical and atrium signal
+        vent = randint(0, 10)
+        atr = randint(0, 10)
+        info[0].append(vent)
+        info[1].append(atr)
+        #sleep(sampleSpeed)
+    return np.array(info)
+    #return False
 
 
 # Tells the pacemaker to stop sending egram data
