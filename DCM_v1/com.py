@@ -92,16 +92,18 @@ class Com():
             ser.write(binary)
             sleep(0.1)
             buffer = '=' + UINT_8 + DOUBLE + \
-                DOUBLE + UINT_8 + self.dataBuffer[1:]
+                DOUBLE + UINT_8 + UINT_8 + self.dataBuffer[1:]
             data = ser.read(calcsize(buffer))
-            data = unpack(buffer, data)[3:]
-            code, data = data[0], data[1:]
-            params.update(ranges)
-            for p in params:
-                params[p], data = data[0], data[1:]
-            mode = Mode('current', code, params)
+            if data:
+                data = unpack(buffer, data)[4:]
+                code, data = data[0], data[1:]
+                params.update(ranges)
+                for p in params:
+                    params[p], data = data[0], data[1:]
+                mode = Mode('current', code, params)
+                self._endSerial()
+                return mode
             self._endSerial()
-            return mode
         return 0
 
     # requests the serial number of the pacemaker connected to the DCM. Returns the device
@@ -132,8 +134,11 @@ class Com():
             sleep(sampleSpeed)
             buffer = '=' + UINT_8 + DOUBLE + DOUBLE
             data = ser.read(calcsize(buffer))
-            data = unpack(buffer, data)
-            return data
+            dataArray = []
+            if data:
+                dataArray = unpack(buffer, data)
+            self._endSerial()
+            return dataArray
         return False
 
     # Returns a 2 dimensional numpy array with dataPoints number of samples of atrial
