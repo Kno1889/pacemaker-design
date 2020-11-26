@@ -16,6 +16,7 @@ from time import sleep
 UINT_8 = 'B'        # Uint8 format character (1 byte)
 UINT_16 = 'H'       # Uint16 format character (2 bytes)
 SINGLE = 'f'        # Single format character (4 bytes)
+DOUBLE = 'd'
 
 ser = serial.Serial()
 
@@ -25,7 +26,7 @@ class Com():
     # Initializes class variables and state variable ser parameters
     def __init__(self, port):
 
-        self.dataBuffer = ''
+        self.dataBuffer = '='
         self.comPort = port
 
         for r in ranges:
@@ -60,7 +61,7 @@ class Com():
             # Add function code and mode number to the binary value
             binary = b"\x16\x55"
             binary += pack(UINT_8, mode.code)
-            size = self.dataBuffer
+            size = self.dataBuffer[1:]
             # Add a binary value for every possible parameter value
             for r in ranges:
                 match = False
@@ -90,10 +91,10 @@ class Com():
             binary = b"\x16\x22" + b"\x00"*(calcsize(self.dataBuffer)+1)
             ser.write(binary)
             sleep(0.1)
-            buffer = '=' + UINT_8 + self.dataBuffer
-            data = ser.read(calcsize(self.dataBuffer)+1)
-            print(data)
-            data = unpack(buffer, data)
+            buffer = '=' + UINT_8 + DOUBLE + \
+                DOUBLE + UINT_8 + self.dataBuffer[1:]
+            data = ser.read(calcsize(buffer))
+            data = unpack(buffer, data)[3:]
             code, data = data[0], data[1:]
             params.update(ranges)
             for p in params:
@@ -108,56 +109,46 @@ class Com():
     # Not finished
     def getDeviceID(self):
         if self._startSerial():
-            binary = b"\x16\x44" + b"\x00"*(calcsize(self.dataBuffer)+1)
+            binary = b"\x16\x22" + b"\x00"*(calcsize(self.dataBuffer)+1)
             ser.write(binary)
             sleep(0.1)
             deviceID = 0
-            data = ser.read(calcsize(self.dataBuffer)+1)
+            data = ser.read(calcsize(self.dataBuffer)+18)
+            print(data)
+            print(calcsize(data))
+            buffer = '=' + UINT_8 + DOUBLE + \
+                DOUBLE + UINT_8 + self.dataBuffer[1:]
+            data = unpack(buffer, data)
             print(data)
             # Serial read id number
             self._endSerial()
             return deviceID
         return 0
 
-    # Sends a request to the pacemaker to start sending egram data. Returns true  if
-    # successful, returns false if the serial connection was interrupted
-
-    def startEgram(self):
+    def _readEgram(self, sampleSpeed):
         if self._startSerial():
-            binary = b"\x16\x11" + b"\x00"*(calcsize(self.dataBuffer)+1)
+            binary = b"\x16\x22" + b"\x00"*(calcsize(self.dataBuffer)+1)
             ser.write(binary)
-            sleep(0.1)
-            data = ser.read(calcsize(self.dataBuffer)+1)
-            print(data)
-            return True
-        return False
-
-    # Sends a request to the pacemaker to stop sending egram data. Returns true if
-    # successful, returns false if the serial connection was interrupted
-    def stopEgram(self):
-        if ser.isOpen():
-            binary = b"\x16\x33" + b"\x00"*(calcsize(self.dataBuffer)+1)
-            ser.write(binary)
-            self._endSerial()
-            return True
+            sleep(sampleSpeed)
+            buffer = '=' + UINT_8 + DOUBLE + DOUBLE
+            data = ser.read(calcsize(buffer))
+            data = unpack(buffer, data)
+            return data
         return False
 
     # Returns a 2 dimensional numpy array with dataPoints number of samples of atrial
     # and ventricular signal values taken at the time intervals specified by sampleSpeed.
     # If serial connection was interrupted, returns false instead
     # Dummy function for egram development
+
     def getEgramValues(self, sampleSpeed, dataPoints):
-        if ser.isOpen():
-            info = [[], []]
-            for i in range(dataPoints):
-                # Serial read ventrical and atrium signal
-                vent = randint(0, 10)
-                atr = randint(0, 10)
-                info[0].append(vent)
-                info[1].append(atr)
-                sleep(sampleSpeed)
-            return np.array(info)
-        return False
+        info = [[], []]
+        for i in range(dataPoints):
+            data = self._readEgram(sampleSpeed)
+            if data and not data[0]:
+                info[0].append(data[1])  # Artial data
+                info[1].append(data[2])  # Ventricular data
+        return np.array(info)
 
     # opens the serial connection. Returns true if successful, returns false otherwise
     def _startSerial(self):
