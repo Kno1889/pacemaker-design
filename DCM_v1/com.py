@@ -133,7 +133,6 @@ class Com():
     # Dummy function for egram development
 
     def getEgramValues(self):
-        info = []
         if self._startSerial():
             binary = b"\x16\x22" + b"\x00"*(calcsize(self.dataBuffer)+1)
             ser.write(binary)
@@ -141,10 +140,10 @@ class Com():
             buffer = '=' + UINT_8 + DOUBLE + DOUBLE + UINT_8
             data = ser.read(calcsize(buffer))
             if data:
-                info = unpack(buffer, data)
+                data = unpack(buffer, data)
             self._endSerial()
-            if data and not info[0]:
-                return np.array(info[1:])
+            if data and not data[0]:
+                return np.array(data[1:])
         return []
 
     # opens the serial connection. Returns true if successful, returns false otherwise
