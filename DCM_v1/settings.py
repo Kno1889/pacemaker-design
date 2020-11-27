@@ -15,7 +15,7 @@ NORM_FONT = ("Verdana", 8)
 WIDTH = 720
 HEIGHT = 480
 
-COMPORT = 'COM3'    # Communication port identifier
+COMPORT = 'COM5'    # Communication port identifier
 
 debug = False
 

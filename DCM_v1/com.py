@@ -91,10 +91,10 @@ class Com():
             ser.write(binary)
             sleep(0.1)
             buffer = '=' + UINT_8 + DOUBLE + \
-                DOUBLE + UINT_8 + UINT_8 + self.dataBuffer[1:]
+                DOUBLE + UINT_8 + SINGLE + UINT_8 + self.dataBuffer[1:]
             data = ser.read(calcsize(buffer))
             if data:
-                data = unpack(buffer, data)[4:]
+                data = unpack(buffer, data)[5:]
                 code, data = data[0], data[1:]
                 params.update(ranges)
                 for p in params:
@@ -113,7 +113,7 @@ class Com():
             binary = b"\x16\x22" + b"\x00"*(calcsize(self.dataBuffer)+1)
             ser.write(binary)
             sleep(0.02)
-            buffer = '=' + UINT_8 + DOUBLE + DOUBLE + UINT_8
+            buffer = '=' + UINT_8 + DOUBLE + DOUBLE + UINT_16 + SINGLE
             data = ser.read(calcsize(buffer))
             if data:
                 data = unpack(buffer, data)
