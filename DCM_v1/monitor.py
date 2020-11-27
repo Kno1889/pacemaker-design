@@ -9,6 +9,7 @@ Description: Contains classes and methods required for operation of the DCM.
 '''
 
 
+
 import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox as tm
@@ -19,11 +20,23 @@ import modes
 from com import Com
 
 import traceback
-
 import pages
 import settings
 
 c = Com('com5')
+
+##########
+# REMOVE # 
+# This snippet is because we have not selected a mode
+# This snippet pre-selects a mode for testing
+##########
+m = modes.allModes()
+c = 'aoo'
+for mode in m:
+    if mode.name == c:
+        modes.setCurrentMode(mode)
+        break
+##########
 
 # Log Out of Session
 
@@ -151,17 +164,17 @@ class Monitor(tk.Frame):
             x += 1
 
         # Button Widgets
-        b1 = ttk.Button(self, text="Edit Parameters",
-                        command=lambda: self.edit_params())
-        b2 = ttk.Button(self, text="Change Mode",
-                        command=lambda: self.change_mode())
-        bx = ttk.Button(self, text="Exit Session",
-                        command=lambda: exit_session(controller))
+        b1 = ttk.Button(self, text="Edit Parameters", command=lambda: self.edit_params())
+        b2 = ttk.Button(self, text="Change Mode", command=lambda: self.change_mode())
+        b3 = ttk.Button(self, text="Heart Monitor", command=lambda: self.show_heartview())
+        bx = ttk.Button(self, text="Exit Session", command=lambda: exit_session(controller))
 
         # Alignment of Widgets
-        b1.grid(row=x+1, column=0, sticky="nswe", columnspan=2, pady=10)
-        b2.grid(row=x+2, column=0, sticky="nsew", columnspan=2, pady=10)
-        bx.grid(row=x+3, column=1)
+        b1.grid(row=x+1, column=0, sticky="ns", columnspan=1, pady=5)
+        b2.grid(row=x+2, column=0, sticky="ns", columnspan=1, pady=5)
+        b3.grid(row=x+3, column=0, sticky="ns", columnspan=1, pady=5)
+
+        bx.grid(row=x+4, column=1)
 
     def edit_params(self):
         # bring up ModeChange delete frame
@@ -171,6 +184,11 @@ class Monitor(tk.Frame):
         frame = F(parent=self.parent, controller=self.controller)
         frame.grid(row=0, column=0, sticky="NSEW")
         frame.tkraise()
+        self.destroy()
+
+    def show_heartview(self):
+        settings.PD_Flag = True
+        self.controller.show_frame(pages.Frames["HeartView"])
         self.destroy()
 
     def change_mode(self):

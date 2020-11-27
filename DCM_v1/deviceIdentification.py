@@ -35,6 +35,10 @@ class DeviceIdentification(tk.Frame):
         self.parent = parent
         self.controller = controller
 
+        # Changes to be made:
+        # have a connect button
+        # Have a quit button
+
         # Widgets
         label = tk.Label(self, text='Identification Window', font=settings.LARGE_FONT)
         id_label = ttk.Label(self, text="Device ID", font=settings.NORM_FONT)

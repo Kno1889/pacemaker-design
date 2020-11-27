@@ -15,9 +15,14 @@ NORM_FONT = ("Verdana", 8)
 WIDTH = 720
 HEIGHT = 480
 
+COMPORT = 'COM3'    # Communication port identifier
+
 debug = False
 
 connected = True
+
+# Get pacemaker data
+PD_Flag = False
 
 # State Return Strings
 invalidUserErr = '''The username or password you have entered is incorrect. \n\n

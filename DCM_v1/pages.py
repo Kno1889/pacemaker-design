@@ -11,14 +11,15 @@ Purpose: Keeping track of Tkinter frames in a single place
 from loginPage import *
 from monitor import *
 from deviceIdentification import *
+from heartview import *
 
 # Page imports. Import the page above and throw it into the array below
-
 # Frames that can be loaded on startup
 Frames = {
     "Login": LoginPage,
     "DefMode": DefMode,
     "DevID": DeviceIdentification, 
+    "HeartView": HeartView,
     }
 
 # Frames that need previous frame data

@@ -12,6 +12,11 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox as tm
 
+import plotter
+
+import matplotlib
+import matplotlib.animation as animation
+
 import settings
 import controller
 
@@ -19,7 +24,7 @@ def main():
 
     # Create Tkinter App from Controller Class
     app = controller.Controller()
-
+    
     # Center Window on screen
     window_width = settings.WIDTH
     window_height  = settings.HEIGHT
@@ -34,6 +39,7 @@ def main():
     ))
 
     # run main tkinter loop
+    ani = animation.FuncAnimation(plotter.f,plotter.animate, interval=100)
     app.mainloop()
 
 if __name__ == "__main__":

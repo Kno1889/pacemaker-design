@@ -13,17 +13,16 @@ from random import randint
 import numpy as np
 from time import sleep
 
+import settings
+
 UINT_8 = 'B'        # Uint8 format character (1 byte)
 UINT_16 = 'H'       # Uint16 format character (2 bytes)
 SINGLE = 'f'        # Single format character (4 bytes)
 
 SYNCH = 22           # Serial synch code
 
-comPort = 'COM5'    # Communication port identifier
-
-
 # Initialize serial connection parameters
-ser = serial.Serial(port=comPort, baudrate=115200, bytesize=serial.EIGHTBITS,
+ser = serial.Serial(port=settings.COMPORT, baudrate=115200, bytesize=serial.EIGHTBITS,
                     stopbits=serial.STOPBITS_ONE, parity=serial.PARITY_NONE, timeout=0)
 
 
@@ -52,7 +51,7 @@ def startEgram():
 # Retrieves egram data given a sampling speed(in sec) and number of data points
 # Return numpy array, return false if egram is not running
 # Dummy function for egram development
-def getEgramValues(sampleSpeed, dataPoints):
+def getEgramValues(sampleSpeed=1, dataPoints=1):
     if ser.isOpen():
         info = [[], []]
         for i in range(dataPoints):
