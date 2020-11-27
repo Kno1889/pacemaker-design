@@ -1,22 +1,21 @@
 # Communicate Module
 #
-# Version 1.0
+# Version 1.1
 # Created by: M. Lemcke
-# Date Modified: Nov. 19, 2020
+# Date Modified: Nov. 27, 2020
 #
 # Purpose: Process data to send and recieve from the pacemaker through UART serial communication
 
 import serial
 from struct import pack, unpack, calcsize
 from modes import ranges, Mode
-from random import randint
 import numpy as np
 from time import sleep
 
 UINT_8 = 'B'        # Uint8 format character (1 byte)
 UINT_16 = 'H'       # Uint16 format character (2 bytes)
 SINGLE = 'f'        # Single format character (4 bytes)
-DOUBLE = 'd'
+DOUBLE = 'd'        # Double format character (8 bytes)
 
 ser = serial.Serial()
 
@@ -54,8 +53,8 @@ class Com():
         except(serial.SerialException):
             print("Serial cannot be connected")
 
-        # Sends parameter data of the given mode to the pacemaker to change the current operating mode.
-        # Returns false is the serial connection was lost, returns true if successful
+    # Sends parameter data of the given mode to the pacemaker to change the current operating mode.
+    # Returns false is the serial connection was lost, returns true if successful
     def setPacemakerMode(self, mode):
         if self._startSerial():
             # Add function code and mode number to the binary value
@@ -106,32 +105,9 @@ class Com():
             self._endSerial()
         return 0
 
-    # requests the serial number of the pacemaker connected to the DCM. Returns the device
-    # serial number, returns 0 if the serial connection was interrupted
-    # Not finished
-    def getDeviceID(self):
-        if self._startSerial():
-            binary = b"\x16\x22" + b"\x00"*(calcsize(self.dataBuffer)+1)
-            ser.write(binary)
-            sleep(0.1)
-            deviceID = 0
-            data = ser.read(calcsize(self.dataBuffer)+18)
-            print(data)
-            print(calcsize(data))
-            buffer = '=' + UINT_8 + DOUBLE + \
-                DOUBLE + UINT_8 + self.dataBuffer[1:]
-            data = unpack(buffer, data)
-            print(data)
-            # Serial read id number
-            self._endSerial()
-            return deviceID
-        return 0
-
-    # Returns a 2 dimensional numpy array with dataPoints number of samples of atrial
-    # and ventricular signal values taken at the time intervals specified by sampleSpeed.
-    # If serial connection was interrupted, returns false instead
-    # Dummy function for egram development
-
+    # Requests the values read by the pacemaker on the ventricle and atrium signal pins of
+    # the heart board. Returns a numpy array of the atrial signal, ventricular signal, and
+    # current heart rate. Returns an empty array if serial connection was interrupted
     def getEgramValues(self):
         if self._startSerial():
             binary = b"\x16\x22" + b"\x00"*(calcsize(self.dataBuffer)+1)
@@ -146,7 +122,7 @@ class Com():
                 return np.array(data[1:])
         return []
 
-    # opens the serial connection. Returns true if successful, returns false otherwise
+    # Opens the serial connection. Returns true if successful, returns false otherwise
     def _startSerial(self):
         try:
             # Close old serial connection and start new
@@ -158,7 +134,7 @@ class Com():
             print("Lost serial connection")
             return False
 
-    # closes the serial connection. Returns true if successful, returns false otherwise
+    # Closes the serial connection. Returns true if successful, returns false otherwise
     def _endSerial(self):
         try:
             ser.close()
