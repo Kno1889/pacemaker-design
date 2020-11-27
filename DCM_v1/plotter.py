@@ -1,6 +1,7 @@
 import matplotlib
 import matplotlib.animation as animation
 from matplotlib.figure import Figure
+import matplotlib.pyplot as plt
 from matplotlib import style
 style.use('ggplot')
 matplotlib.use("TkAgg")
@@ -9,19 +10,17 @@ import pages
 import controller
 import settings
 
+import math
 import com
 
 comms = com.Com(settings.COMPORT)
-
+time_interval = 0.0
 NUM_POINTS = 40
-
-
-
 
 class Data():
 
     def __init__(self, SIZE):
-        self.data = [0]*SIZE
+        self.data = [0.5]*SIZE
 
     def add(self, val):
         self.data.pop(0)
@@ -30,19 +29,19 @@ class Data():
     def get_data(self):
         return self.data
 
-
 atrial = Data(NUM_POINTS)
 ventrical = Data(NUM_POINTS)
 time = Data(NUM_POINTS)
-time_interval = 0.0
+
 
 def animate(i):
     if settings.PD_Flag == True:
+        global time_interval
         data = comms.getEgramValues()
-        time_interval = time_interval + 0.2 
+        time_interval += 0.04 
 
-        a_val = data[0]
-        v_val = data[1]
+        a_val = round(data[0],3)
+        v_val = round(data[1],3)
         r_val = data[2] ## implemenent me later
 
         atrial.add(a_val)
@@ -50,17 +49,13 @@ def animate(i):
         time.add(time_interval)
         
         a.clear()
-        
-        a.plot(time.get_data(), atrial.get_data())
-        a.plot(time.get_data(), ventrical.get_data())
-
-        print(data)
-
-        # check number of points to add to 40
-        # scrap extra points at the end to make space for new points 
-        # time interval = 0.2
-        a.plot(data)
+        #have min scale
+        a.plot(time.get_data(), atrial.get_data(), label = "atrial")
+        a.plot(time.get_data(), ventrical.get_data(), label = "ventrical")
+        legend = a.legend(loc='upper right')
 
 f = Figure(figsize=(5,5), dpi=100)
 a = f.add_subplot(111)
-
+axes = plt.axes()
+print(axes)
+axes.set_ylim([0, 1])

@@ -39,7 +39,7 @@ def main():
     ))
 
     # run main tkinter loop
-    ani = animation.FuncAnimation(plotter.f,plotter.animate, interval=100)
+    ani = animation.FuncAnimation(plotter.f,plotter.animate, interval=20)
     app.mainloop()
 
 if __name__ == "__main__":

@@ -31,9 +31,9 @@ c = Com('com5')
 # This snippet pre-selects a mode for testing
 ##########
 m = modes.allModes()
-c = 'aoo'
+ahoo = 'aoo'
 for mode in m:
-    if mode.name == c:
+    if mode.name == ahoo:
         modes.setCurrentMode(mode)
         break
 ##########

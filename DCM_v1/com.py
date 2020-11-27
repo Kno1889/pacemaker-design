@@ -136,7 +136,7 @@ class Com():
         if self._startSerial():
             binary = b"\x16\x22" + b"\x00"*(calcsize(self.dataBuffer)+1)
             ser.write(binary)
-            sleep(0.1)
+            sleep(0.02)
             buffer = '=' + UINT_8 + DOUBLE + DOUBLE + UINT_8
             data = ser.read(calcsize(buffer))
             if data:
