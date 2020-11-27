@@ -127,42 +127,25 @@ class Com():
             return deviceID
         return 0
 
-    def _readEgram(self, sampleSpeed):
-        if self._startSerial():
-            binary = b"\x16\x22" + b"\x00"*(calcsize(self.dataBuffer)+1)
-            ser.write(binary)
-            sleep(sampleSpeed)
-            buffer = '=' + UINT_8 + DOUBLE + DOUBLE
-            data = ser.read(calcsize(buffer))
-            dataArray = []
-            if data:
-                dataArray = unpack(buffer, data)
-            self._endSerial()
-            return dataArray
-        return False
-
     # Returns a 2 dimensional numpy array with dataPoints number of samples of atrial
     # and ventricular signal values taken at the time intervals specified by sampleSpeed.
     # If serial connection was interrupted, returns false instead
     # Dummy function for egram development
 
     def getEgramValues(self):
-        info = [[], []]
+        info = []
         if self._startSerial():
             binary = b"\x16\x22" + b"\x00"*(calcsize(self.dataBuffer)+1)
             ser.write(binary)
             sleep(0.1)
-            buffer = '=' + UINT_8 + DOUBLE + DOUBLE
+            buffer = '=' + UINT_8 + DOUBLE + DOUBLE + UINT_8
             data = ser.read(calcsize(buffer))
-            dataArray = []
             if data:
-                dataArray = unpack(buffer, data)
+                info = unpack(buffer, data)
             self._endSerial()
-
-            if data and not dataArray:
-                info[0].append(dataArray[1])  # Artial data
-                info[1].append(dataArray[2])  # Ventricular data
-        return np.array(info)
+            if data and not info[0]:
+                return np.array(info[1:])
+        return []
 
     # opens the serial connection. Returns true if successful, returns false otherwise
     def _startSerial(self):
