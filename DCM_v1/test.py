@@ -20,7 +20,7 @@ while run:
     else:
         print("error")
 
-# print(c.getEgramValues(0.05, 40))
+print(c.getEgramValues())
 
 
 # Should always print true when you run it. Otherwise there is a problem with the serial connection

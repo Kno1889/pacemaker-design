@@ -146,13 +146,22 @@ class Com():
     # If serial connection was interrupted, returns false instead
     # Dummy function for egram development
 
-    def getEgramValues(self, sampleSpeed, dataPoints):
+    def getEgramValues(self):
         info = [[], []]
-        for i in range(dataPoints):
-            data = self._readEgram(sampleSpeed)
-            if data and not data[0]:
-                info[0].append(data[1])  # Artial data
-                info[1].append(data[2])  # Ventricular data
+        if self._startSerial():
+            binary = b"\x16\x22" + b"\x00"*(calcsize(self.dataBuffer)+1)
+            ser.write(binary)
+            sleep(0.1)
+            buffer = '=' + UINT_8 + DOUBLE + DOUBLE
+            data = ser.read(calcsize(buffer))
+            dataArray = []
+            if data:
+                dataArray = unpack(buffer, data)
+            self._endSerial()
+
+            if data and not dataArray:
+                info[0].append(dataArray[1])  # Artial data
+                info[1].append(dataArray[2])  # Ventricular data
         return np.array(info)
 
     # opens the serial connection. Returns true if successful, returns false otherwise

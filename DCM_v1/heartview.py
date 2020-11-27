@@ -14,7 +14,6 @@ from tkinter import messagebox as tm
 
 # potentially make this import cleaner, maybe make special file for making users etc.
 import users
-import communicate
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import settings
 import pages

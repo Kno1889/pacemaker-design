@@ -13,7 +13,7 @@ from tkinter import ttk
 from tkinter import messagebox as tm
 
 import re
-
+import com
 import users
 
 from pages import *
@@ -193,7 +193,7 @@ class Controller(tk.Tk):
 
         container = tk.Frame(self)
         container.grid_propagate(True)
-
+        self.com_handler = com.Com(settings.COMPORT)
         self.grid_columnconfigure(0, weight=1)
 
         container.grid(row=0, column=0, sticky='nsew')
