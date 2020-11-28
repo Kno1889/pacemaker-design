@@ -56,7 +56,7 @@ class Com():
     # Sends parameter data of the given mode to the pacemaker to change the current operating mode.
     # Returns false is the serial connection was lost, returns true if successful
     def setPacemakerMode(self, mode):
-        if self._startSerial():
+        if self._startSerial() and type(mode) == Mode:
             # Add function code and mode number to the binary value
             binary = b"\x16\x55"
             binary += pack(UINT_8, mode.code)
@@ -91,7 +91,7 @@ class Com():
             ser.write(binary)
             sleep(0.1)
             buffer = '=' + UINT_8 + DOUBLE + \
-                DOUBLE + UINT_8 + SINGLE + UINT_8 + self.dataBuffer[1:]
+                DOUBLE + UINT_16 + SINGLE + UINT_8 + self.dataBuffer[1:]
             data = ser.read(calcsize(buffer))
             if data:
                 data = unpack(buffer, data)[5:]
