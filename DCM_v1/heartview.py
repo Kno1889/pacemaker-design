@@ -38,22 +38,32 @@ class HeartView(tk.Frame):
         self.parent = parent
         self.controller = controller
 
+        # default values for the string var 
+        self.activity_rate = tk.StringVar()
+        self.activity_rate.set("hello")
+
         # Page Widgets
         page_title = tk.Label(self, text="EGram", font=settings.LARGE_FONT)
-
         logout_session_b = ttk.Button(self, text = "Exit Session", command=lambda:self.exit_session() )
         edit_settings_b = ttk.Button(self, text = "View Parameters", command=lambda:self.view_params() )
+        plot_atr_check = tk.Checkbutton(self, text = "Plot Atrial", command=lambda:self.toggle_atr_plot())
+        plot_vtr_check = tk.Checkbutton(self, text = "Plot Ventrical", command=lambda:self.toggle_vtr_plot())
+        activity_rate = tk.Label(self, textvariable=self.activity_rate)
 
-        ## TODO Change data source
-    
+        plot_atr_check.select()
+        plot_vtr_check.select()
+
         canvas = FigureCanvasTkAgg(plotter.f, self)
         canvas.draw()
 
         # Alignments
-        page_title.grid(row=0, column=0, ipadx=0, ipady=50) #(side="top", pady=10, padx=10)
+        page_title.grid(row=0, column=0, ipadx=0, ipady=10) #(side="top", pady=10, padx=10)
         edit_settings_b.grid(row=1, column = 0, sticky="n")
         logout_session_b.grid(row=2, column = 0, sticky="n")
-        canvas.get_tk_widget().grid(row=0,column=1, rowspan=5)
+        plot_atr_check.grid(row=3, column = 0, sticky='n')
+        plot_vtr_check.grid(row=4, column = 0, sticky='n')
+        activity_rate.grid(row=5, column = 0, sticky='n')
+        canvas.get_tk_widget().grid(row=0,column=1, rowspan=6)
         
     def exit_session(self):
         settings.PD_Flag = False
@@ -72,6 +82,17 @@ class HeartView(tk.Frame):
         frame = F(parent=self.parent, controller=self.controller)
         frame.grid(row=0, column=0, sticky="NSEW")
         frame.tkraise()
+
+    def toggle_atr_plot(self):
+        settings.PLOT_ATR = not settings.PLOT_ATR
+        print(settings.PLOT_ATR)
+
+    def toggle_vtr_plot(self):
+        settings.PLOT_VTR = not settings.PLOT_VTR
+        print(settings.PLOT_VTR)
+
+    def update_activity_rate(self):
+        self.activity_rate.set(str(plotter.r_val))
 
     def menu_bar(self):
         self.controller.user_menu.entryconfigure(0, state=tk.DISABLED)

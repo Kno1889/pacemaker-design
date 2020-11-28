@@ -11,7 +11,6 @@ from matplotlib import style
 style.use('ggplot')
 matplotlib.use("TkAgg")
 
-
 comms = com.Com(settings.COMPORT)
 time_interval = 0.0
 NUM_POINTS = 40
@@ -34,6 +33,9 @@ atrial = Data(NUM_POINTS)
 ventrical = Data(NUM_POINTS)
 time = Data(NUM_POINTS)
 
+global r_val
+
+r_val = 0
 
 def animate(i):
     if settings.PD_Flag == True:
@@ -55,10 +57,14 @@ def animate(i):
         time.add(time_interval)
 
         a.clear()
-        # have min scale
-        a.plot(time.get_data(), atrial.get_data(), label="atrial")
-        a.plot(time.get_data(), ventrical.get_data(), label="ventrical")
-        legend = a.legend(loc='upper right')
+
+        if settings.PLOT_ATR == True:
+            a.plot(time.get_data(), atrial.get_data(), label="atrial")
+        if settings.PLOT_VTR == True:
+            a.plot(time.get_data(), ventrical.get_data(), label="ventrical")
+        a.legend(loc='upper right')
+
+        
 
 
 f = Figure(figsize=(5, 5), dpi=100)

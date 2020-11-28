@@ -217,6 +217,9 @@ class Controller(tk.Tk):
     def show_frame(self, cont):
         frame = self.frames[cont]
         frame.tkraise()
+    
+    def get_page(self, page_name):
+        return self.frames[page_name]
 
     # Method which handles creation of the menu in Tkinter
     def create_menu(self, container):
