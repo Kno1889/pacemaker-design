@@ -30,18 +30,20 @@ Class: LoginPage
 Description:
 The class that defines the Tkinter Frame for the login screen.
 '''
+
+
 class HeartView(tk.Frame):
 
     def __init__(self, parent, controller):
 
-        tk.Frame.__init__(self, master = parent)
-        self.grid_columnconfigure((0,2),weight=2)
-        self.grid_columnconfigure((0,1),weight=1)
+        tk.Frame.__init__(self, master=parent)
+        self.grid_columnconfigure((0, 2), weight=2)
+        self.grid_columnconfigure((0, 1), weight=1)
 
         self.parent = parent
         self.controller = controller
 
-        # default values for the string var 
+        # default values for the string var
         self.activity_rate = tk.StringVar()
         self.activity_rate.set("hello")
 
@@ -49,10 +51,14 @@ class HeartView(tk.Frame):
 
         # Page Widgets
         page_title = tk.Label(self, text="EGram", font=settings.LARGE_FONT)
-        logout_session_b = ttk.Button(self, text = "Exit Session", command=lambda:self.exit_session() )
-        edit_settings_b = ttk.Button(self, text = "View Parameters", command=lambda:self.view_params() )
-        plot_atr_check = tk.Checkbutton(self, text = "Plot Atrial", command=lambda:self.toggle_atr_plot())
-        plot_vtr_check = tk.Checkbutton(self, text = "Plot Ventricle", command=lambda:self.toggle_vtr_plot())
+        logout_session_b = ttk.Button(
+            self, text="Exit Session", command=lambda: self.exit_session())
+        edit_settings_b = ttk.Button(
+            self, text="View Parameters", command=lambda: self.view_params())
+        plot_atr_check = tk.Checkbutton(
+            self, text="Plot Atrial", command=lambda: self.toggle_atr_plot())
+        plot_vtr_check = tk.Checkbutton(
+            self, text="Plot Ventricle", command=lambda: self.toggle_vtr_plot())
         activity_rate = tk.Label(self, textvariable=self.activity_rate)
 
         plot_atr_check.select()
@@ -62,14 +68,15 @@ class HeartView(tk.Frame):
         canvas.draw()
 
         # Alignments
-        page_title.grid(row=0, column=0, ipadx=0, ipady=10) #(side="top", pady=10, padx=10)
-        edit_settings_b.grid(row=1, column = 0, sticky="n")
-        logout_session_b.grid(row=2, column = 0, sticky="n")
-        plot_atr_check.grid(row=3, column = 0, sticky='n')
-        plot_vtr_check.grid(row=4, column = 0, sticky='n')
-        activity_rate.grid(row=5, column = 0, sticky='n')
-        canvas.get_tk_widget().grid(row=0,column=1, rowspan=6)
-        
+        # (side="top", pady=10, padx=10)
+        page_title.grid(row=0, column=0, ipadx=0, ipady=10)
+        edit_settings_b.grid(row=1, column=0, sticky="n")
+        logout_session_b.grid(row=2, column=0, sticky="n")
+        plot_atr_check.grid(row=3, column=0, sticky='n')
+        plot_vtr_check.grid(row=4, column=0, sticky='n')
+        activity_rate.grid(row=5, column=0, sticky='n')
+        canvas.get_tk_widget().grid(row=0, column=1, rowspan=6)
+
     def exit_session(self):
         settings.PD_Flag = False
         self.controller.show_frame(pages.Frames["DevID"])
@@ -99,9 +106,12 @@ class HeartView(tk.Frame):
 
     def update_mode(self):
         c = com.Com(settings.COMPORT)
-        curr_mode = c.getPacemakerMode()
+        # Matt changed
+        update_mode = c.getPacemakerMode()
+        curr_mode = modes.allModes()[update_mode.code]
         modes.setCurrentMode(curr_mode)
-
+        modes.saveParamValues(curr_mode, update_mode.params)
+        # Matt changed
 
     def menu_bar(self):
         self.controller.user_menu.entryconfigure(0, state=tk.DISABLED)
