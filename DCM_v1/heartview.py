@@ -47,7 +47,7 @@ class HeartView(tk.Frame):
         logout_session_b = ttk.Button(self, text = "Exit Session", command=lambda:self.exit_session() )
         edit_settings_b = ttk.Button(self, text = "View Parameters", command=lambda:self.view_params() )
         plot_atr_check = tk.Checkbutton(self, text = "Plot Atrial", command=lambda:self.toggle_atr_plot())
-        plot_vtr_check = tk.Checkbutton(self, text = "Plot Ventrical", command=lambda:self.toggle_vtr_plot())
+        plot_vtr_check = tk.Checkbutton(self, text = "Plot Ventricle", command=lambda:self.toggle_vtr_plot())
         activity_rate = tk.Label(self, textvariable=self.activity_rate)
 
         plot_atr_check.select()
