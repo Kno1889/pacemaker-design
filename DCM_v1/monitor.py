@@ -220,7 +220,7 @@ class ModeEdit(tk.Frame):
         if self.mode == []:
             # should not reach here
             tm.showerror(
-                "Unexpected Error, no current operating mode for pacemaker")
+                "Unexpected Error", "No current operating mode for pacemaker")
 
         # placeholders for labels and entries
         self.entries = []
