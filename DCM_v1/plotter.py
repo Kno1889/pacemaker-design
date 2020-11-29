@@ -1,7 +1,6 @@
 import com
 import math
 import settings
-import controller
 import pages
 import matplotlib
 import matplotlib.animation as animation

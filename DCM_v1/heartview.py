@@ -12,6 +12,9 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox as tm
 
+import com
+import modes
+
 # potentially make this import cleaner, maybe make special file for making users etc.
 import users
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
@@ -41,6 +44,8 @@ class HeartView(tk.Frame):
         # default values for the string var 
         self.activity_rate = tk.StringVar()
         self.activity_rate.set("hello")
+
+        self.update_mode()
 
         # Page Widgets
         page_title = tk.Label(self, text="EGram", font=settings.LARGE_FONT)
@@ -91,6 +96,12 @@ class HeartView(tk.Frame):
 
     def update_activity_rate(self):
         self.activity_rate.set(str(plotter.r_val))
+
+    def update_mode(self):
+        c = com.Com(settings.COMPORT)
+        curr_mode = c.getPacemakerMode()
+        modes.setCurrentMode(curr_mode)
+
 
     def menu_bar(self):
         self.controller.user_menu.entryconfigure(0, state=tk.DISABLED)
