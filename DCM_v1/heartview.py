@@ -85,11 +85,9 @@ class HeartView(tk.Frame):
 
     def toggle_atr_plot(self):
         settings.PLOT_ATR = not settings.PLOT_ATR
-        print(settings.PLOT_ATR)
 
     def toggle_vtr_plot(self):
         settings.PLOT_VTR = not settings.PLOT_VTR
-        print(settings.PLOT_VTR)
 
     def update_activity_rate(self):
         self.activity_rate.set(str(plotter.r_val))
