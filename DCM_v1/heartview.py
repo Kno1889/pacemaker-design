@@ -19,7 +19,8 @@ import settings
 import pages
 
 import plotter
-
+import com
+import modes
 
 '''
 Class: LoginPage
@@ -91,6 +92,11 @@ class HeartView(tk.Frame):
 
     def update_activity_rate(self):
         self.activity_rate.set(str(plotter.r_val))
+
+    def set_curr_mode(self):
+        c = com.COM(settings.COMPORT)
+        curr_mode = c.getPacemakerMode()
+        modes.setCurrentMode(curr_mode)
 
     def menu_bar(self):
         self.controller.user_menu.entryconfigure(0, state=tk.DISABLED)

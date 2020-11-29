@@ -23,19 +23,19 @@ import traceback
 import pages
 import settings
 
-c = Com('com5')
+c = Com(settings.COMPORT)
 
 ##########
 # REMOVE # 
 # This snippet is because we have not selected a mode
 # This snippet pre-selects a mode for testing
 ##########
-m = modes.allModes()
-ahoo = 'aoo'
-for mode in m:
-    if mode.name == ahoo:
-        modes.setCurrentMode(mode)
-        break
+#m = modes.allModes()
+#ahoo = 'aoo'
+#for mode in m:
+#    if mode.name == ahoo:
+#        modes.setCurrentMode(mode)
+#        break
 ##########
 
 # Log Out of Session
