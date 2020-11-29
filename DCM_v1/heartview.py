@@ -107,14 +107,15 @@ class HeartView(tk.Frame):
     def update_mode(self):
         c = com.Com(settings.COMPORT)
         update_mode = c.getPacemakerMode()
-        if update_mode is int and update_mode == 0:
-            tm.showerror("Error", "Unable to connect to pacemaker to get current mode. Please restart the DCM with the pacemaker connected")
+        if type(update_mode) == int and update_mode == 0:
+            tm.showerror(
+                "Error", "Unable to connect to pacemaker to get current mode. Please restart the DCM with the pacemaker connected")
         elif update_mode.code == -1:
-            tm.showerror("Error", "Mode was not set due to an invalid call. Please restart the DCM")
+            tm.showerror(
+                "Error", "Mode was not set due to an invalid call. Please restart the DCM")
         else:
-            curr_mode = modes.allModes()[update_mode.code]
-            modes.setCurrentMode(curr_mode)
-            modes.saveParamValues(curr_mode, update_mode.params)
+            modes.setCurrentMode(modes.allModes()[update_mode.code])
+            modes.saveParamValues(modes.getCurrentMode(), update_mode.params)
 
     def menu_bar(self):
         self.controller.user_menu.entryconfigure(0, state=tk.DISABLED)

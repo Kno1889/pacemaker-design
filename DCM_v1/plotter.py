@@ -36,6 +36,7 @@ global r_val
 
 r_val = 0
 
+
 def animate(i):
     if settings.PD_Flag == True:
         global time_interval
@@ -48,8 +49,7 @@ def animate(i):
 
         a_val = round(data[0], 3)
         v_val = round(data[1], 3)
-        r_val = data[2:]  # implemenent me later
-        print(r_val)
+        r_val = data[2:]  # for testing
 
         atrial.add(a_val)
         ventrical.add(v_val)
@@ -63,11 +63,8 @@ def animate(i):
             a.plot(time.get_data(), ventrical.get_data(), label="ventrical")
         a.legend(loc='upper right')
 
-        
-
 
 f = Figure(figsize=(5, 5), dpi=100)
 a = f.add_subplot(111)
 axes = plt.axes()
-print(axes)
 axes.set_ylim([0, 1])
