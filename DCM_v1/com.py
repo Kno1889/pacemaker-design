@@ -1,8 +1,8 @@
 # Communicate Module
 #
-# Version 1.1
+# Version 1.2
 # Created by: M. Lemcke
-# Date Modified: Nov. 27, 2020
+# Date Modified: Nov. 29, 2020
 #
 # Purpose: Process data to send and recieve from the pacemaker through UART serial communication
 

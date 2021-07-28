@@ -34,3 +34,39 @@
 [2020-11-25 12:45:52,745] - modes -  ERROR: setCurrentMode requires a Mode object
 [2020-11-25 12:46:32,852] - modes -  ERROR: setCurrentMode requires a Mode object
 [2020-11-25 12:46:54,682] - modes -  ERROR: setCurrentMode requires a Mode object
+[2020-11-29 15:45:52,062] - modes -  ERROR: ventricular_amplitude operating parameter does not exist in the aoo mode
+[2020-11-29 15:45:52,063] - modes -  ERROR: ventricular_pulse_width operating parameter does not exist in the aoo mode
+[2020-11-29 15:45:52,065] - modes -  ERROR: ventricular_refactory_period operating parameter does not exist in the aoo mode
+[2020-11-29 15:45:52,065] - modes -  ERROR: atrial_refactory_period operating parameter does not exist in the aoo mode
+[2020-11-29 15:45:52,065] - modes -  ERROR: post_ventricular_atrial_refractory_period operating parameter does not exist in the aoo mode
+[2020-11-29 15:45:52,065] - modes -  ERROR: rate_smoothing operating parameter does not exist in the aoo mode
+[2020-11-29 15:45:52,065] - modes -  ERROR: fixed_av_delay operating parameter does not exist in the aoo mode
+[2020-11-29 15:45:52,065] - modes -  ERROR: maximum_sensor_rate operating parameter does not exist in the aoo mode
+[2020-11-29 15:45:52,066] - modes -  ERROR: activity_threshold operating parameter does not exist in the aoo mode
+[2020-11-29 15:45:52,066] - modes -  ERROR: reaction_time operating parameter does not exist in the aoo mode
+[2020-11-29 15:45:52,066] - modes -  ERROR: response_factor operating parameter does not exist in the aoo mode
+[2020-11-29 15:45:52,066] - modes -  ERROR: recovery_time operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:15,990] - modes -  ERROR: ventricular_amplitude operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:15,991] - modes -  ERROR: ventricular_pulse_width operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:15,991] - modes -  ERROR: ventricular_refactory_period operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:15,991] - modes -  ERROR: atrial_refactory_period operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:15,991] - modes -  ERROR: post_ventricular_atrial_refractory_period operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:15,991] - modes -  ERROR: rate_smoothing operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:15,991] - modes -  ERROR: fixed_av_delay operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:15,991] - modes -  ERROR: maximum_sensor_rate operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:15,991] - modes -  ERROR: activity_threshold operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:15,991] - modes -  ERROR: reaction_time operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:15,991] - modes -  ERROR: response_factor operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:15,991] - modes -  ERROR: recovery_time operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:42,216] - modes -  ERROR: ventricular_amplitude operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:42,217] - modes -  ERROR: ventricular_pulse_width operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:42,217] - modes -  ERROR: ventricular_refactory_period operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:42,217] - modes -  ERROR: atrial_refactory_period operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:42,217] - modes -  ERROR: post_ventricular_atrial_refractory_period operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:42,217] - modes -  ERROR: rate_smoothing operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:42,218] - modes -  ERROR: fixed_av_delay operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:42,218] - modes -  ERROR: maximum_sensor_rate operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:42,218] - modes -  ERROR: activity_threshold operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:42,218] - modes -  ERROR: reaction_time operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:42,218] - modes -  ERROR: response_factor operating parameter does not exist in the aoo mode
+[2020-11-29 15:47:42,218] - modes -  ERROR: recovery_time operating parameter does not exist in the aoo mode

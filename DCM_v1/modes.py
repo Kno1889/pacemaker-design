@@ -1,8 +1,8 @@
 # Modes Module
 #
-# Version 1.1
+# Version 1.2
 # Created by: M. Lemcke
-# Date Modified: Nov. 9, 2020
+# Date Modified: Nov. 29, 2020
 #
 # Purpose: To store and edit parameter information for each operating mode on the pacemaker.
 # This module interfaces with the GUI module by providing information on the current operating
@@ -58,21 +58,22 @@ class Mode():
         global ranges
         invalid = []
         for p in params:
-            validParam = False
-            try:
-                r = ranges[p]
-            except KeyError:
-                r = []
-            if r[0] == 0 and params[p] >= r[1] and params[p] <= r[2]:
-                validParam = True
-            elif r[0] == 1:
-                for i in range(1, len(r)):
-                    if type(r[i]) == list and params[p] >= r[i][0] and params[p] <= r[i][1]:
-                        validParam = True
-                    elif r[i] == params[p]:
-                        validParam = True
-            if not validParam:
-                invalid.append(p)
+            if p in self.params:
+                validParam = False
+                try:
+                    r = ranges[p]
+                except KeyError:
+                    r = []
+                if r[0] == 0 and params[p] >= r[1] and params[p] <= r[2]:
+                    validParam = True
+                elif r[0] == 1:
+                    for i in range(1, len(r)):
+                        if type(r[i]) == list and params[p] >= r[i][0] and params[p] <= r[i][1]:
+                            validParam = True
+                        elif r[i] == params[p]:
+                            validParam = True
+                if not validParam:
+                    invalid.append(p)
         return invalid
 
 
